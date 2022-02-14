@@ -1,7 +1,7 @@
 {{ footer({ 
-    agencyname: "Digital Services",
+    agencyname: "OGS Digital Services Utilities",
     link: "/",
-    arialabel: "New York State Digital Services",
+    arialabel: "OGS Digital Services Utilities",
     color: "bg-admin-third",
     github:"https://github.com/OGS-Digital-Service/digital-services-utilities",
     items: [
