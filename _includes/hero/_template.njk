@@ -1,16 +1,26 @@
 <style>
 .hero-background-image {
-    url:{{params.imagelink}}
+    background-image: url('../img/{{params.image}}');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 </style>
-<section class="">
-<div class="">
-<div class="lg:nysds-min-h-512 hero-background-image"> <!-- Background image wrapper -->
-<h2 class="font-extrabold nysds-text-36">{{params.title}}</h2>
-<p class=""> {{params.description }} </p>
+
+<section class="relative -mx-8 md:-mx-20 text-white">
+<div class="lg:nysds-min-h-512 hero-background-image"> <!-- Background image wrapper --></div>
+<div class="absolute top-0 w-full h-full flex">
+<div class="flex w-1/2 items-center ml-8 md:ml-20">
+<section class="w-3/4 bg-admin-first p-9 rounded-2xl bg-opacity-90">
+<h2 class="font-extrabold nysds-text-36 mb-4">{{params.title}}</h2>
+<p class="mb-8"> {{params.description }} </p>
+<div class="flex flex-col md:flex-row">
 {% for button in params.buttons%}
-<a href="{{button.link}}">{{button.text}}</a>
+<a class="mr-1 uppercase text-sm font-bold border-b border-white hover:nysds-border-b-3 hover:border-white" href="{{button.link}}">{{button.text}}</a><span class="icon-long-arrow-right mr-8" aria-hidden="true"></span>
 {% endfor %}
 </div>
+</section>
 </div>
+</div>
+
 </section>

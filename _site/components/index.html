@@ -6,13 +6,13 @@
     <link href="/css/nysds-utilities.css" rel="stylesheet">
 <link href="/css/tailwind-dev.css" rel="stylesheet">
 <link href="/css/fonts.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+<link href="/css/fa.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 
     
     <title>NYS Digital Services Components</title>
   </head>
-  <body class="">
+  <body class="nysds-normalize">
   <a href="#main-site-content-for-skiplink" class="sr-only focus:not-sr-only text-blue-700 underline">Skip to Main Content</a>
     
      <header class="flex flex-col md:flex-row bg-gray-50">
@@ -34,19 +34,28 @@
     <main class="mx-8 md:mx-20" id="main-site-content-for-skiplink">
     <style>
 .hero-background-image {
-    url:
+    background-image: url('../img/Hochul_WebsiteHero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 </style>
-<section class="">
-<div class="">
-<div class="lg:nysds-min-h-512 hero-background-image"> <!-- Background image wrapper -->
-<h2 class="font-extrabold nysds-text-36">This is the hero title</h2>
-<p class=""> A paragraph of text up to whatever the truncation limit is. This is a longer one for demonstrating what it will look like and how to position it. </p>
-<p><a href="google.com">First Button</a></p>
-<p><a href="apple.com">Second Button</a></p>
+<section class="relative -mx-8 md:-mx-20 text-white">
+<div class="lg:nysds-min-h-512 hero-background-image"> <!-- Background image wrapper --></div>
+<div class="absolute top-0 w-full h-full flex">
+<div class="flex w-1/2 items-center ml-8 md:ml-20">
+<section class="w-3/4 bg-admin-first p-9 rounded-2xl bg-opacity-90">
+<h2 class="font-extrabold nysds-text-36 mb-4">This is the hero title</h2>
+<p class="mb-8"> A paragraph of text up to whatever the truncation limit is. This is a longer one for demonstrating what it will look like and how to position it. </p>
+<div class="flex flex-col md:flex-row">
+<p><a class="mr-1 uppercase text-sm font-bold border-b border-white hover:nysds-border-b-3 hover:border-white" href="google.com">First Button</a><span class="icon-long-arrow-right mr-8" aria-hidden="true"></span></p>
+<p><a class="mr-1 uppercase text-sm font-bold border-b border-white hover:nysds-border-b-3 hover:border-white" href="apple.com">Second Button</a><span class="icon-long-arrow-right mr-8" aria-hidden="true"></span></p>
+</div>
+</section>
 </div>
 </div>
 </section>
+<p><a href="#"> A link </a></p>
 
     </main>
     <footer class="bg-admin-third px-4 py-8 flex flex-col md:flex-row md:items-center items-baseline mt-12">

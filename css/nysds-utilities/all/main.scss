@@ -22,17 +22,6 @@
 
 
 // layout modifiers 
-.nysds-m-30 {
-    margin: 30px;
-}
-
-.nysds-mx-30 {
-    margin: 0px 30px;
-}
-
-.nysds-my-30 {
-    margin: 30px 0px;
-}
 
 .nysds-min-h-512 {
     min-height: 512px;
@@ -45,6 +34,19 @@
 .nysds-min-h-256 {
     min-height: 256px;
 }
+
+// stuff tailwind doesn't have easily
+.hover\:nysds-border-b-3:hover {
+    border-bottom-width: 3px;
+}
+
+// icons
+.icon-long-arrow-right::before {
+    content: "\F30B" !important;
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 900 !important;
+  }
+  
 
 // responsive not needed
 .oswald {

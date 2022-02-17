@@ -4,7 +4,6 @@ module.exports = {
     // 'docs/**/*.html'  
 
   ],
-  darkMode: false, // or 'media' onpm init -yr 'class'
   theme: {
     fontFamily: {
       sans: ['Proxima Nova', 'Arial', 'sans-serif']
@@ -27,7 +26,6 @@ module.exports = {
     }
   },
   variants: {
-    extend: {},
   },
   plugins: [],
 }
