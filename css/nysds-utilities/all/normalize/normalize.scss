@@ -2,18 +2,6 @@
 .nysds-normalize {
     font-family:'Proxima Nova', 'Arial', 'sans-serif' ;
 
-    a {
-        text-decoration: none;
-        
-
-        &:hover:not(.hover) {
-            text-decoration: underline;
-        } 
-
-        &:focus {
-
-        }
-    }
 
 }
 
