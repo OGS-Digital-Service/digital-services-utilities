@@ -2,7 +2,7 @@
 layout: layout.njk
 title: NYS Digital Services Components
 ---
-{% from './_includes/_components.njk' import hero  %}
+{% from './_includes/_components.njk' import hero, categorytiles  %}
 
 
 {{ hero({ 
@@ -23,4 +23,35 @@ title: NYS Digital Services Components
         }
     ]
 
+})}}
+
+
+{{ categorytiles({ 
+    title:"Category Tiles",
+    items: [
+        {
+            text:"first tile",
+            link:"https://budget.ny.gov"
+        },
+        {
+            text:"second tile",
+            link:"https://budget.ny.gov"
+        },
+        {
+            text:"third tile",
+            link:"https://budget.ny.gov"
+        },
+        {
+            text:"fourth tile",
+            link:"https://budget.ny.gov"
+        },
+        {
+            text:"another tile with a long title that you might use",
+            link:"https://budget.ny.gov"
+        },
+        {
+            text:"one that has two lines of text",
+            link:"https://budget.ny.gov"
+        }
+    ]
 })}}
