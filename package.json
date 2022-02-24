@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "eleventy --serve & npx tailwindcss -i tailwind-setup.css -o css/tailwind.css --minify --watch"
+  },
   "dependencies": {
     "js-yaml": "^4.1.0"
   },
