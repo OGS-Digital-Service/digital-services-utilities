@@ -1,8 +1,18 @@
 ---
 layout: layout.njk
-title: Digital Services Utilities
+title: OGS Digital Services Utilities
 ---
+{% from './_includes/_components.njk' import hero, categorytiles  %}
 
-# {{title}}
+<h1 class="nysds-text-36 font-extrabold"> {{title}} </h2>
 
-We don't have anything to show here yet! Please check back soon!
+{{ categorytiles({ 
+    title:"Utility Index",
+    items: [
+        {
+            text:"Components for DOB",
+            link:"/components"
+        }
+    ]
+})}}
+
