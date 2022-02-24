@@ -1,6 +1,16 @@
 # digital-services-utilities
 Digital assets and utilities helper repo for support to enterprise sites.
 
+## Opinions
+We have two major opinions here, so stop reading or using if they drive you into a rage:
+1. Eleventy for static site generation and general theme management.
+2. Utility-first css with tailwindcss as the backbone.
+
+### Also some minor opinons:
+1. Nunjucks as a templating language.
+2. markdown for page building.
+3. as little js as possible in production.
+
 ## Some setup considerations for this theme
 - This theme mainly uses tailwind utilities + some extensions/customizations
 - there's a blend of tailwind defaults and extended colors as well as some tailwind-inspired-but-not-handled-by-tailwind custom utilities. Mainly because we wanted to limit dependencies and didn't want to use postcss. (Update: they didn't want to use it either so it's no longer a problem)
