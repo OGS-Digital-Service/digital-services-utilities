@@ -1,8 +1,7 @@
 module.exports = {
-  purge: [
-    // 'docs/*.html',
-    // 'docs/**/*.html'  
-
+  content: [
+     '_site/*.html',
+    '_site/**/*.html'  
   ],
   theme: {
     fontFamily: {
@@ -24,8 +23,6 @@ module.exports = {
         'ny-light': '#ededed'
       }
     }
-  },
-  variants: {
   },
   plugins: [],
 }

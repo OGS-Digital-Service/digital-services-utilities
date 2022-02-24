@@ -24,6 +24,3 @@ title: NYS Digital Services Components
     ]
 
 })}}
-
-
-<a href="#"> A link </a>
