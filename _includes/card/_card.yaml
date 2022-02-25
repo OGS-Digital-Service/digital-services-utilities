@@ -15,9 +15,12 @@ params:
   - name: link
     type: string
     required: true
-  - name: linktext
+  - name: arialabel
     type: string
     required: true
-  - name: arialabel
+  - name: image
+    type: string
+    required: true
+  - name: imagealt
     type: string
     required: true

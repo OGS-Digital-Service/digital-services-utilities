@@ -1,7 +1,7 @@
 /*! NYSDS normalize and accessibilitize (made up a word). This is mainly for encapsulating single components and resetting other defaults in other NYS sites. */
 .nysds-normalize {
     font-family:'Proxima Nova', 'Arial', 'sans-serif' ;
-
+    
     :focus {
         outline: 2px solid #000;
         outline-offset: 3px;

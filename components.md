@@ -2,7 +2,7 @@
 layout: layout.njk
 title: NYS Digital Services Components
 ---
-{% from './_includes/_components.njk' import hero, categorytiles  %}
+{% from './_includes/_components.njk' import hero,categorytiles,card  %}
 
 
 {{ hero({ 
@@ -24,6 +24,39 @@ title: NYS Digital Services Components
     ]
 
 })}}
+
+{{ card({ 
+    frametitle:"Row of Cards",
+    cards: [
+        {
+           title:"First Card",
+           content:"A sentence or two of text that gives the general idea of what this link goes to or the topic of the page.",
+           link:"https://budget.ny.gov",
+           arialabel:"",
+           image:"",
+           imagealt:""
+        },
+        {
+           title:"Second Card",
+           content:"A sentence or two of text that gives the general idea of what this link goes to or the topic of the page.",
+           link:"https://budget.ny.gov",
+           arialabel:"",
+           image:"",
+           imagealt:""
+        },
+        {
+           title:"Third Card",
+           content:"A sentence or two of text that gives the general idea of what this link goes to or the topic of the page.",
+           link:"https://budget.ny.gov",
+           arialabel:"",
+           image:"",
+           imagealt:""
+        }
+    ]
+})}}
+
+
+
 
 
 {{ categorytiles({ 

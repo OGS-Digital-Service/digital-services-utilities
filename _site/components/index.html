@@ -44,7 +44,7 @@
 <div class="hero-background-image nysds-min-h-256 md:nysds-min-h-300 lg:nysds-min-h-512"></div> <!-- Background image -->
 <div class="w-full h-full flex lg:absolute lg:top-0">
 <div class="flex w-full lg:w-1/2 items-center lg:ml-20">
-<section class="bg-admin-first p-9 w-full lg:w-3/4 lg:bg-opacity-90 lg:rounded-2xl">
+<section class="bg-admin-first p-9 w-full lg:w-3/4 lg:bg-opacity-90 lg:rounded-2xl 2xl:max-w-2xl">
 <h2 class="font-extrabold nysds-text-36 mb-4">This is the hero title</h2>
 <p class="mb-8"> A paragraph of text up to whatever the truncation limit is. This is a longer one for demonstrating what it will look like and how to position it. </p>
 <div class="flex flex-col md:flex-row">
@@ -59,15 +59,41 @@
 </div>
 </div>
 </section>  
-<section class="-mx-8 md:-mx-20 bg-admin-third my-14 py-12">
-<h3 class="nysds-text-36 font-extrabold text-center mb-4">Category Tiles</h3>
-<ul class="flex flex-row flex-wrap justify-center list-none mx-8 md:mx-0" >
-<li class="m-2 w-full md:w-1/3 lg:w-1/5  "><a href="https://budget.ny.gov" class="flex items-center justify-center text-center h-20 md:h-24 lg:h-28 m-2 p-8 text-white tracking-wide text-md font-bold rounded-xl uppercase hover:underline hover:bg-white hover:text-black bg-admin-first focus:bg-white focus:text-black focus:underline">first tile </a></li>
-<li class="m-2 w-full md:w-1/3 lg:w-1/5  "><a href="https://budget.ny.gov" class="flex items-center justify-center text-center h-20 md:h-24 lg:h-28 m-2 p-8 text-white tracking-wide text-md font-bold rounded-xl uppercase hover:underline hover:bg-white hover:text-black bg-admin-first focus:bg-white focus:text-black focus:underline">second tile </a></li>
-<li class="m-2 w-full md:w-1/3 lg:w-1/5  "><a href="https://budget.ny.gov" class="flex items-center justify-center text-center h-20 md:h-24 lg:h-28 m-2 p-8 text-white tracking-wide text-md font-bold rounded-xl uppercase hover:underline hover:bg-white hover:text-black bg-admin-first focus:bg-white focus:text-black focus:underline">third tile </a></li>
-<li class="m-2 w-full md:w-1/3 lg:w-1/5  "><a href="https://budget.ny.gov" class="flex items-center justify-center text-center h-20 md:h-24 lg:h-28 m-2 p-8 text-white tracking-wide text-md font-bold rounded-xl uppercase hover:underline hover:bg-white hover:text-black bg-admin-first focus:bg-white focus:text-black focus:underline">fourth tile </a></li>
-<li class="m-2 w-full md:w-1/3 lg:w-1/5  "><a href="https://budget.ny.gov" class="flex items-center justify-center text-center h-20 md:h-24 lg:h-28 m-2 p-8 text-white tracking-wide text-md font-bold rounded-xl uppercase hover:underline hover:bg-white hover:text-black bg-admin-first focus:bg-white focus:text-black focus:underline">another tile with a long title that you might use </a></li>
-<li class="m-2 w-full md:w-1/3 lg:w-1/5  "><a href="https://budget.ny.gov" class="flex items-center justify-center text-center h-20 md:h-24 lg:h-28 m-2 p-8 text-white tracking-wide text-md font-bold rounded-xl uppercase hover:underline hover:bg-white hover:text-black bg-admin-first focus:bg-white focus:text-black focus:underline">one that has two lines of text </a></li>
+<section class="flex flex-col -mx-8 md:-mx-20 my-14">
+<h2 class="nysds-text-36 font-extrabold text-center mb-4 w-full">Row of Cards</h2>
+<div class="flex flex-col md:flex-row">
+<article class="w-1/3">
+<img class="" src="" />
+<a class="" href="https://budget.ny.gov">
+<h3 class="">First Card</h3>
+</a>
+<p class="">A sentence or two of text that gives the general idea of what this link goes to or the topic of the page.</p>
+</article>
+<article class="w-1/3">
+<img class="" src="" />
+<a class="" href="https://budget.ny.gov">
+<h3 class="">Second Card</h3>
+</a>
+<p class="">A sentence or two of text that gives the general idea of what this link goes to or the topic of the page.</p>
+</article>
+<article class="w-1/3">
+<img class="" src="" />
+<a class="" href="https://budget.ny.gov">
+<h3 class="">Third Card</h3>
+</a>
+<p class="">A sentence or two of text that gives the general idea of what this link goes to or the topic of the page.</p>
+</article>
+</div>
+</section>
+<section class="flex flex-col -mx-8 md:-mx-20 bg-admin-third my-14 py-8">
+<h2 class="nysds-text-36 font-extrabold text-center mb-4 w-full">Category Tiles</h2>
+<ul class="flex flex-row flex-wrap justify-center list-none mx-8 md:mx-0 2xl:w-2/3 2xl:self-center">
+<li class="m-1 md:m-2 lg:m-4 w-full md:w-1/3 lg:w-1/5"><a href="https://budget.ny.gov" class="flex items-center justify-center text-center h-20 md:h-28 lg:h-32 p-8 text-white tracking-wide text-md font-bold rounded-xl uppercase hover:underline hover:bg-white hover:text-black bg-admin-first focus:bg-white focus:text-black focus:underline">first tile </a></li>
+<li class="m-1 md:m-2 lg:m-4 w-full md:w-1/3 lg:w-1/5"><a href="https://budget.ny.gov" class="flex items-center justify-center text-center h-20 md:h-28 lg:h-32 p-8 text-white tracking-wide text-md font-bold rounded-xl uppercase hover:underline hover:bg-white hover:text-black bg-admin-first focus:bg-white focus:text-black focus:underline">second tile </a></li>
+<li class="m-1 md:m-2 lg:m-4 w-full md:w-1/3 lg:w-1/5"><a href="https://budget.ny.gov" class="flex items-center justify-center text-center h-20 md:h-28 lg:h-32 p-8 text-white tracking-wide text-md font-bold rounded-xl uppercase hover:underline hover:bg-white hover:text-black bg-admin-first focus:bg-white focus:text-black focus:underline">third tile </a></li>
+<li class="m-1 md:m-2 lg:m-4 w-full md:w-1/3 lg:w-1/5"><a href="https://budget.ny.gov" class="flex items-center justify-center text-center h-20 md:h-28 lg:h-32 p-8 text-white tracking-wide text-md font-bold rounded-xl uppercase hover:underline hover:bg-white hover:text-black bg-admin-first focus:bg-white focus:text-black focus:underline">fourth tile </a></li>
+<li class="m-1 md:m-2 lg:m-4 w-full md:w-1/3 lg:w-1/5"><a href="https://budget.ny.gov" class="flex items-center justify-center text-center h-20 md:h-28 lg:h-32 p-8 text-white tracking-wide text-md font-bold rounded-xl uppercase hover:underline hover:bg-white hover:text-black bg-admin-first focus:bg-white focus:text-black focus:underline">another tile with a long title that you might use </a></li>
+<li class="m-1 md:m-2 lg:m-4 w-full md:w-1/3 lg:w-1/5"><a href="https://budget.ny.gov" class="flex items-center justify-center text-center h-20 md:h-28 lg:h-32 p-8 text-white tracking-wide text-md font-bold rounded-xl uppercase hover:underline hover:bg-white hover:text-black bg-admin-first focus:bg-white focus:text-black focus:underline">one that has two lines of text </a></li>
 </ul>
 </section>
     </main>
