@@ -27,12 +27,13 @@ title: NYS Digital Services Components
 
 
 {{ bio({
-    title:"",
-    content:"",
-    link:"",
-    arialabel:"",
-    image:"",
-    imagealt:""
+    title:"This is the title area of the bio frame",
+    content:"A short paragraph of content that probably shouldn't exceed two really good and direct sentences. We're highlighting something, not telling the whole story here.",
+    link:"https://budget.ny.gov",
+    linktext:"See the Jobs",
+    arialabel:"Go to the New York State Division of the Budget Employment page to look at career opportunities",
+    image:"/img/office.jpg",
+    imagealt:"office workers collaborating in a conference room"
 })}}
 
 <!-- {{ card({ 
