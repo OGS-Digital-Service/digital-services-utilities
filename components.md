@@ -2,7 +2,7 @@
 layout: layout.njk
 title: NYS Digital Services Components
 ---
-{% from './_includes/_components.njk' import hero,categorytiles,card,bio  %}
+{% from './_includes/_components.njk' import hero,categorytiles,card,bio,textarea  %}
 
 
 {{ hero({ 
@@ -34,6 +34,11 @@ title: NYS Digital Services Components
     arialabel:"Go to the New York State Division of the Budget Employment page to look at career opportunities",
     image:"/img/office.jpg",
     imagealt:"office workers collaborating in a conference room"
+})}}
+
+{{ textarea({
+    title:"Title of the text area",
+    content:"Content of the text area"
 })}}
 
 <!-- {{ card({ 

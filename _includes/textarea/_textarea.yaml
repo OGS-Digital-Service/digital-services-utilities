@@ -1,0 +1,10 @@
+params:
+- name: title
+  type: string
+  required: false
+- name: content
+  type: string
+  required: true
+
+  
+

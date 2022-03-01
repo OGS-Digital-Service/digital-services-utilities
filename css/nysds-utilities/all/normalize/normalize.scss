@@ -9,6 +9,21 @@
     }
 }
 
+.nysds-link {
+  a:not(.nysds-exclude) {
+    text-decoration: underline;
+    color: #007AC2;
+
+    &:hover {
+      color:#154973;
+    }
+
+    &:focus {
+      color:#154973;
+    }
+  }
+}
+
 
 
 /*! tailwind preflight normalize. see https://tailwindcss.com/docs/preflight for info. We use everything here except the list resets for list style type. Mainly because not EVERYTHING is tailwind in this theme. It's nice to have some not baffling default behaviors.*/
