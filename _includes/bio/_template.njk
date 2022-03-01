@@ -1,19 +1,12 @@
 <article class="-mx-8 md:-mx-20 my-14 ">
-
 <div class="bg-ny-light w-full flex flex-col lg:flex-row">
-
 <section class="w-full flex justify-center lg:w-1/3">
 <img class="object-cover h-96 lg:pl-16" src="{{params.image}}" alt="{{params.imagealt}}" />
 </section>
-
-
 <section class="flex flex-col px-12 justify-center w-full lg:w-2/3 lg:pl-12">
 <h3 class="text-xl font-bold my-4">{{params.title}}</h3>
 <p class="mb-4">{{params.content}}</p>
-<a class="bg-admin-first hover:bg-black p-4 rounded-xl text-white font-bold text-center m-auto lg:m-0 w-1/2 md:w-1/3 lg:w-1/4" href="{{params.link}}">{{params.linktext}}</a>
+<a class="bg-admin-first hover:bg-black p-4 rounded-xl text-white font-bold text-center m-auto lg:m-0 w-1/2 md:w-1/3 lg:w-1/4" href="{{params.link}}" {% if params.arialabel %} aria-label="{{params.arialabel}}" {%endif%}>{{params.linktext}}</a>
 </section>
-
-
 </div>
-
 </article>
