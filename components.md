@@ -2,7 +2,7 @@
 layout: layout.njk
 title: NYS Digital Services Components
 ---
-{% from './_includes/_components.njk' import hero,categorytiles,card  %}
+{% from './_includes/_components.njk' import hero,categorytiles,card,bio  %}
 
 
 {{ hero({ 
@@ -25,7 +25,17 @@ title: NYS Digital Services Components
 
 })}}
 
-{{ card({ 
+
+{{ bio({
+    title:"",
+    content:"",
+    link:"",
+    arialabel:"",
+    image:"",
+    imagealt:""
+})}}
+
+<!-- {{ card({ 
     frametitle:"Row of Cards",
     cards: [
         {
@@ -53,7 +63,7 @@ title: NYS Digital Services Components
            imagealt:""
         }
     ]
-})}}
+})}} -->
 
 
 
