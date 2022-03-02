@@ -68,6 +68,66 @@
     border-bottom-width: 3px;
 }
 
+// regular scss where it's easier for formatting 
+
+.nysds-textarea {
+    a:not(.nysds-exclude) {
+      text-decoration: underline;
+      color: #007AC2;
+  
+      &:hover {
+        color:#154973;
+      }
+  
+      &:focus {
+        color:#154973;
+      }
+    }
+
+    ul {
+        margin-left: 2rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    h3  {
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    h4 {
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    h5 {
+        font-size: 22px;
+        font-weight: bold;
+    }
+  }
+
+
+
+.nysds-youtube-video {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    &::after {
+        display: block;
+        content: "";
+        padding-top: 56.25%;
+    }
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
 // icons
 .icon-long-arrow-right::before {
     content: "\F30B" !important;

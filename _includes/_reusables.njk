@@ -1,17 +1,28 @@
-{# Frame Heading #}
-<h2 class="nysds-text-36 font-extrabold text-center mb-4 w-full">Frame Title</h2>
-
-{# Button style link #}
-<a class="nysds-exclude bg-admin-first hover:bg-black hover:underline focus:bg-black focus:underline m-4 p-4 rounded-xl text-white font-bold text-center w-1/2 md:w-1/3 lg:w-1/4" href="{{params.link}}">Button in the text area</a>
+{# \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ GENERAL FORMATTING /////////////////////////////////////////////// #}
 
 {# NYSDS template offsets for full width #}
 -mx-8 md:-mx-20
 
+{# Frame Heading #}
+<h2 class="nysds-text-36 font-extrabold text-center mb-4 w-full">Frame Title</h2>
+
 {# Frame spacer #}
 my-14
 
-{# unordered lists in text areas#}
-<ul class="ml-8 py-2">
+
+
+{# \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ NYSDS TEXT AREA /////////////////////////////////////////////// #}
+
+{# Button style link #}
+<a class="nysds-exclude bg-admin-first hover:bg-black hover:underline focus:bg-black focus:underline m-4 p-4 rounded-xl text-white font-bold text-center w-1/2 md:w-1/3 lg:w-1/4" href="{{params.link}}">Button in the text area</a>
 
 {# exclude a link from textarea formatting #}
 nysds-exclude
+
+{# Textarea Headings only use h3 - h5 both for accessibility and document structure. Sizes are already defined, just use the utility class for the agency color. #}
+<h3 class="text-admin-first"> Heading Level 3 </h3>
+<h4 class="text-admin-first"> Heading Level 4 </h4>
+<h5 class="text-admin-first"> Heading Level 5 </h5> 
+
+{# Embed youtube video #}
+nysds-youtube-video
