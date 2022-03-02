@@ -41,7 +41,7 @@ title: NYS Digital Services Components
     content:"Content of the text area"
 })}}
 
-<!-- {{ card({ 
+{{ card({ 
     frametitle:"Row of Cards",
     cards: [
         {
@@ -49,7 +49,7 @@ title: NYS Digital Services Components
            content:"A sentence or two of text that gives the general idea of what this link goes to or the topic of the page.",
            link:"https://budget.ny.gov",
            arialabel:"",
-           image:"",
+           image:"/img/office.jpg",
            imagealt:""
         },
         {
@@ -57,19 +57,19 @@ title: NYS Digital Services Components
            content:"A sentence or two of text that gives the general idea of what this link goes to or the topic of the page.",
            link:"https://budget.ny.gov",
            arialabel:"",
-           image:"",
+           image:"/img/office.jpg",
            imagealt:""
         },
         {
            title:"Third Card",
-           content:"A sentence or two of text that gives the general idea of what this link goes to or the topic of the page.",
+           content:"A sentence or two of text that gives the general idea of what this link goes to or the topic of the page. This one is longer to show that the cards stretch to the height of the tallest card.",
            link:"https://budget.ny.gov",
            arialabel:"",
-           image:"",
+           image:"/img/office.jpg",
            imagealt:""
         }
     ]
-})}} -->
+})}}
 
 
 

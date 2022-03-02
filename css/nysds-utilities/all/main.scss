@@ -55,6 +55,10 @@
     min-height: 256px;
 }
 
+.nysds-w-360 {
+    width:360px;
+}
+
 // stuff tailwind doesn't have easily
 .hover\:nysds-border-b-3:hover {
     border-bottom-width: 3px;
