@@ -153,14 +153,16 @@
     background-color: #cf7954;
 
     a {
-        color: white;
-        border-color: white;
+        color: black;
+        border-color: black;
 
         &:hover {
+            color: white;
             background-color: rgba(0,0,0,0.5);
         }
 
         &:focus {
+            color:white;
             background-color: rgba(0,0,0,0.5);
         }
     }
