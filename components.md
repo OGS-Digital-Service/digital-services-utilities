@@ -50,7 +50,7 @@ title: NYS Digital Services Components
            link:"https://budget.ny.gov",
            arialabel:"",
            image:"/img/office.jpg",
-           imagealt:""
+           imagealt:"Office workers in a conference room having a collaborative working session"
         },
         {
            title:"Second Card",
@@ -58,7 +58,7 @@ title: NYS Digital Services Components
            link:"https://budget.ny.gov",
            arialabel:"",
            image:"/img/office.jpg",
-           imagealt:""
+           imagealt:"Office workers in a conference room having a collaborative working session"
         },
         {
            title:"Third Card",
@@ -66,7 +66,7 @@ title: NYS Digital Services Components
            link:"https://budget.ny.gov",
            arialabel:"",
            image:"/img/office.jpg",
-           imagealt:""
+           imagealt:"Office workers in a conference room having a collaborative working session"
         }
     ]
 })}}
