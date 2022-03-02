@@ -2,7 +2,7 @@
 layout: layout.njk
 title: NYS Digital Services Components
 ---
-{% from './_includes/_components.njk' import hero,categorytiles,card,bio,textarea  %}
+{% from './_includes/_components.njk' import hero,categorytiles,card,bio,textarea,highlight  %}
 
 
 {{ hero({ 
@@ -71,7 +71,21 @@ title: NYS Digital Services Components
     ]
 })}}
 
+{{  highlight({
+    title: "Highlight Frame in Gray",
+    content:"The vendors shown on this list have been approved by the Vendor Responsibility Group of the OGS Design & Construction Group (D&C) within the past year. The list was developed as a reference tool for government agencies, vendors and other organizations that need the assistance of construction services from qualified vendors, particularly in case of a disaster or other emergency declaration in New York State.",
+    link:"https://budget.ny.gov",
+    linktext:"Download the List",
+    framecolor:"gray"
+})}}
 
+{{  highlight({
+    title: "Highlight Frame in Secondary",
+    content:"The vendors shown on this list have been approved by the Vendor Responsibility Group of the OGS Design & Construction Group (D&C) within the past year. The list was developed as a reference tool for government agencies, vendors and other organizations that need the assistance of construction services from qualified vendors, particularly in case of a disaster or other emergency declaration in New York State.",
+    link:"https://budget.ny.gov",
+    linktext:"Download the List",
+    framecolor:"orange"
+})}}
 
 
 
