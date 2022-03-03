@@ -178,6 +178,19 @@
     font-family: "Font Awesome 5 Free" !important;
     font-weight: 900 !important;
   }
+
+.nysds-quotation-marks::before {
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 900 !important;
+    color: #cf7954;
+    opacity: 0.3;
+    content: "\201C";
+    font-size: 8em;
+    line-height: 0.1em;
+    margin-left: -0.2em;
+    position: relative;
+    top: 40px;
+}  
   
 
 // responsive not needed
