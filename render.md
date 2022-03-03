@@ -36,10 +36,7 @@ title: NYS Digital Services Components
     imagealt:"office workers collaborating in a conference room"
 })}}
 
-<!-- {{ textarea({
-    title:"Title of the text area",
-    content:"Content of the text area"
-})}} -->
+
 
 {{ card({ 
     frametitle:"Row of Cards",
