@@ -33,3 +33,7 @@ We have two major opinions here, so stop reading or using if they drive you into
 - more complicated to handle simple and repeated breakpoint changes for multiple elements
 - some things are still easier to think about or handle with traditional css, thus the blended approach. (don't @ us bro these are two hotly contested ways of building stuff for the web)
 - everyone hates every opinion about technology and web design, so pick one and keep a low profile. 
+
+## Some other considerations for performance
+- scale jpg images properly and keep file sizes less than 400kb if possible, even for heroes. (Can anyone tell the difference?)
+- youtube embeds require you to know the video ID so that you can include it in the template for lazy loading (load on action)
