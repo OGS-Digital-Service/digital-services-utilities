@@ -1,0 +1,30 @@
+params:
+- name: title
+  type: string
+  required: false
+  description: 
+- name: content
+  type: string
+  required: true
+  description: 
+- name: arialabel
+  type: string
+  required: false
+  description: 
+- name: linktext
+  type: string
+  required: false
+  description:
+- name: link
+  type: string
+  required: false
+  description:
+- name: image
+  type: string
+  required: false
+  description:
+- name: imagealt
+  type: string
+  required: false
+  description:  
+

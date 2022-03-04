@@ -1,5 +1,4 @@
 // text modifiers
-
 .nysds-text-36 {
     font-size: 36px;
 }
@@ -69,7 +68,6 @@
 }
 
 // regular scss where it's easier for formatting 
-
 .nysds-textarea {
     a:not(.nysds-exclude) {
       text-decoration: underline;
@@ -191,9 +189,25 @@
     position: relative;
     top: 40px;
 }  
+
+.nysds-play-button {
+
+    &:focus {
+        outline: 2px solid #FACE00
+    }
+
+    &::before{
+    content: "\f04b" !important;
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 900 !important;
+    font-size: 1.5em;
+    }
+}
+
+
   
 
-// responsive not needed
+// fonts
 .oswald {
     font-family: Oswald, Arial, sans-serif;
     }
