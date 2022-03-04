@@ -7,6 +7,8 @@ title: NYS Digital Services Components
 
 {{
     youtube ({
-        videoID:"g69w1fLnQ7A"
+        videoID:"g69w1fLnQ7A",
+        title:"",
+        description:"OGS Lunar New Year Celebration"
     })
 }}
