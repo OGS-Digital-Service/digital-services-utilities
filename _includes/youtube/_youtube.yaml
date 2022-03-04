@@ -3,7 +3,7 @@ params:
   type: string
   required: false
   description: 
-- name: content
+- name: youtubelink
   type: string
   required: true
   description: 

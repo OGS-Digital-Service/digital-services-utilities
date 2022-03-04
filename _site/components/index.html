@@ -112,12 +112,27 @@ This is an area for a brief, but really inspirational quote. Possibly a few sent
 <p class="my-2 italic"> This is a caption for the image </p>
 </section>
 <!-- youtube video in text area-->
-<article class="flex flex-col self-center text-center my-8 w-full md:w-2/3">
+<article class="flex flex-col self-center text-center my-8 w-full md:w-2/3 m-auto">
 <h3 class="nysds-text-32 font-bold text-admin-first my-4"> Video Heading</h3>
 <div class="nysds-youtube-video">
-<iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/g69w1fLnQ7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div id="video-area"></div>
+<div class="flex items-center justify-center w-full h-full absolute bg-black" id="placeholder-area">
+<button class="nysds-play-button bg-gray-200 border rounded-xl hover:bg-white w-24 h-16" id="video-play"><span class="sr-only"> Play this Youtube video </span></button>
+</div>
 </div>
 </article>
+<script>
+var videoarea = document.getElementById('video-area');
+var playbutton = document.getElementById('video-play');
+        if(playbutton){
+        playbutton.addEventListener("click", loadvideo);
+        function loadvideo () {
+        document.getElementById('placeholder-area').classList.add("hidden");
+        videoarea.insertAdjacentHTML('afterbegin','<iframe width="560" height="315" src="https://www.youtube.com/embed/g69w1fLnQ7A?&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+        }
+        }
+
+</script>
 </section><!-- end wrapper -->
 <section class="flex flex-col -mx-8 md:-mx-20 my-14">
 <h2 class="nysds-text-36 font-extrabold text-center mb-4 w-full">Row of Cards</h2>
