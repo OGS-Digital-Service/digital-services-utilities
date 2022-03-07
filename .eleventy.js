@@ -7,7 +7,8 @@ module.exports = function(eleventyConfig){
         "njk",
         "webp",
         "png",
-        "css"
+        "css",
+        "js"
       ]);
 
       eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));

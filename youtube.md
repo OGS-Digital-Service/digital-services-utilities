@@ -4,11 +4,21 @@ title: NYS Digital Services Components
 ---
 {% from './_includes/_components.njk' import hero,categorytiles,card,bio,textarea,highlight,youtube  %}
 
-
+<p class="text-xl" id="demo"></p>
+<p class="text-xl" id="demo2"></p>
 {{
     youtube ({
         videoID:"g69w1fLnQ7A",
         title:"",
         description:"OGS Lunar New Year Celebration"
+    })
+}}
+
+
+{{
+    youtube ({
+        videoID:"9DZ7EQa7B20",
+        title:"",
+        description:"Black History Month at the Plaza"
     })
 }}
