@@ -10,9 +10,14 @@ title: OGS Digital Services Utilities
     title:"Utility Index",
     items: [
         {
-            text:"Components for DOB",
+            text:"Our Components",
             link:"/components"
+        },
+        {
+            text:"Youtube Video Embeds",
+            link:"/youtube"
         }
+
     ]
 })}}
 
