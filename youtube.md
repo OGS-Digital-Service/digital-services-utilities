@@ -22,3 +22,11 @@ title: NYS Digital Services Components
         description:"Black History Month at the Plaza"
     })
 }}
+
+{{
+    youtube ({
+        videoID:"aee1LQsewMA",
+        title:"",
+        description:"Another Embed Test"
+    })
+}}
