@@ -1,5 +1,5 @@
 <section class="flex flex-col -mx-8 md:-mx-20 my-14">
-<h2 class="nysds-text-36 font-extrabold text-center mb-4 w-full">{{params.frametitle}}</h2>
+<h2 class="nysds-text-36 font-extrabold text-center text-black mb-4 w-full">{{params.frametitle}}</h2>
 <div class="self-center lg:justify-center flex flex-col lg:flex-row lg:flex-wrap">
 
 {% for card in params.cards %}
@@ -10,7 +10,7 @@
 </a>
 </div>
 <h3 class="font-bold text-xl mb-6 mt-10">
-<a class="hover:underline focus:underline text-ny-links mx-6" href="{{card.link}}">{{card.title}}</a>
+<a class="hover:!underline focus:!underline text-ny-links visited:text-ny-links mx-6" href="{{card.link}}">{{card.title}}</a>
 </h3>
 <p class="m-6">{{card.content}}</p>
 </article>

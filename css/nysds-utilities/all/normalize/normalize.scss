@@ -7,6 +7,14 @@
         outline-offset: 3px;
         border-radius: 3px;
     }
+    
+    // this is to undo some really old ways of applying color. We built an important utility to deal with the hover/focus states
+    a:link {
+      color: inherit;
+      text-decoration: inherit;
+    }
+    
+
 }
 
 /*! tailwind preflight normalize. see https://tailwindcss.com/docs/preflight for info. We use everything here except the list resets for list style type. Mainly because not EVERYTHING is tailwind in this theme. It's nice to have some not baffling default behaviors.*/
@@ -28,6 +36,7 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
   -moz-tab-size: 4; /* 3 */
   tab-size: 4; /* 3 */
+  color: inherit !important;
 }
 
 body {

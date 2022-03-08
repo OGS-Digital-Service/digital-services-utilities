@@ -69,6 +69,8 @@
 
 // regular scss where it's easier for formatting 
 .nysds-textarea {
+    color: #000;
+
     a:not(.nysds-exclude) {
       text-decoration: underline;
       color: #007AC2;
@@ -79,6 +81,10 @@
   
       &:focus {
         color:#154973;
+      }
+
+      &:visited {
+        color: #007AC2;
       }
     }
 
