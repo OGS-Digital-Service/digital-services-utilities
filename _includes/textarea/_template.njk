@@ -1,41 +1,8 @@
 <section class="nysds-textarea my-14 w-11/12 max-w-7xl flex flex-col justify-center m-auto">
 <!-- frame heading -->
 <h2 class="nysds-text-36 font-extrabold text-center mb-4 w-full text-black">{{params.title}}</h2>
-<!-- example of headings in text area -->
-<h3 class="text-admin-first"> Heading Level 3 </h3>
-<h4 class="text-admin-first"> Heading Level 4 </h4>
-<h5 class="text-admin-first"> Heading Level 5 </h5>
-<!-- paragraph in text area -->
-<p>The OGS Bureau of Commercial Management is the primary point of contact for all commercial lease activity in OGS-managed buildings. The Bureau:</p>
-<!-- unordered list in text area -->
-<ul>
-<li>Procures new tenants;</li>
-<li>Negotiates and writes lease agreements for state-owned space; and</li>
-<li>Manages lease agreements. </li>
-</ul>
-<p>Parties interested in leasing retail space should respond to Requests for Information posted below, or contact the Bureau of Commercial Management by email at <a href="#" >foodservice@ogs.ny.gov</a>.</p>
-<!-- blockquote -->
-<blockquote class="nysds-quotation-marks mt-12 mb-12 text-2xl w-3/4 flex flex-col self-center">
-This is an area for a brief, but really inspirational quote. Possibly a few sentences from a testimonial too.
-<span class="flex text-sm italic justify-end mt-2"> - The Person who said this </span>
-</blockquote>
-<!-- button link in text area -->
-<a class="nysds-exclude uppercase bg-admin-first visited:!text-white  !no-underline hover:bg-black hover:!underline focus:bg-black focus:!underline my-4 p-4 rounded-xl !text-white text-center w-2/3 md:w-1/3 lg:w-1/4" href="{{params.link}}">Button in the text area</a>
-<!-- image in text area -->
-<section class="flex flex-col justify-center text-center my-8">
-<h3 class="nysds-text-32 font-bold text-admin-first my-4"> Image Heading</h3>
-<img loading="lazy" class="m-auto w-full md:w-2/3 lg:w-1/2" src="/img/office.jpg" alt="put some descriptive alt text here" />
-<p class="my-2 italic"> This is a caption for the image </p>
-</section>
-<!-- youtube video in text area-->
-<article class="flex flex-col self-center text-center my-8 w-full md:w-2/3 m-auto">
-<h3 class="nysds-text-32 font-bold text-admin-first my-4"> Video Heading</h3>
-<div class="nysds-youtube-video">
-<div class="nysds-video-area hidden" data-video="g69w1fLnQ7A" data-video-embed="" data-video-description="OGS Lunar New Year Celebration"></div>
-<div class="flex items-center justify-center w-full h-full absolute bg-black nysds-placeholder-area">
-<img src="" alt="A youtube placeholder image" class="h-full absolute z-10 nysds-video-image"/>
-<button class="z-20 nysds-play-button bg-gray-200 border rounded-xl hover:bg-white w-24 h-16 nysds-video-play"><span class="sr-only"> Play a Youtube video about <span class="nysds-video-description"></span> </span></button>
-</div>
-</div>
-</article>
+
+{% include 'textarea-content/demo.njk'%}
+
+  
 </section><!-- end wrapper -->
