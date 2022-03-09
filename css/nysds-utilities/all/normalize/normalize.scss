@@ -7,15 +7,7 @@
         outline-offset: 3px;
         border-radius: 3px;
     }
-    
-    // this is to undo some really old ways of applying color. We built an important utility to deal with the hover/focus states
-    a:link {
-      color: inherit;
-      text-decoration: inherit;
-    }
 
-  
-    
 
 }
 
@@ -38,8 +30,6 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
   -moz-tab-size: 4; /* 3 */
   tab-size: 4; /* 3 */
-  color: inherit !important;
-  background-color: transparent !important;
 }
 
 body {
