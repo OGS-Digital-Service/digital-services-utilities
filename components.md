@@ -9,8 +9,7 @@ title: NYS Digital Services Components
     title:"This is the hero title",
     date: "February 16, 2022",
     image:"Hochul_WebsiteHero.jpg",
-    description:"A paragraph of text up to whatever the truncation limit is. This is a longer one for demonstrating what it will look like and how to position it.",
-    buttons: [
+    description:"A paragraph of text up to whatever the truncation limit is. This is a longer one for demonstrating what it will look like and how to position it.", buttons: [
         {
             text:"First Button",
             link:"google.com",
@@ -22,6 +21,7 @@ title: NYS Digital Services Components
             arialabel:""
         }
     ]
+   
 
 })}}
 

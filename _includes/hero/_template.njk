@@ -17,11 +17,10 @@
 <h2 class="font-extrabold nysds-text-36 mb-4 text-white">{{params.title}}</h2>
 <p class="mb-8"> {{params.description }} </p>
 <div class="flex flex-col md:flex-row">
-{% for button in params.buttons%}
+{% if params.buttons %}{% for button in params.buttons%}
 <div class="w-full md:w-auto last-of-type:mt-8 md:last-of-type:mt-0">
 <a class="!no-underline !text-white mr-1 uppercase text-sm visited:!text-white font-bold border-b border-white focus:nysds-border-b-3 hover:nysds-border-b-3 hover:border-white" href="{{button.link}}">{{button.text}}</a><span class="icon-long-arrow-right mr-8" aria-hidden="true"></span>
-</div>
-{% endfor %}
+</div>{% endfor %}{%else%}{%endif%}
 </div>
 </section>
 </div>
