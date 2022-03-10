@@ -2,7 +2,7 @@
 layout: layout.njk
 title: NYS Digital Services Components
 ---
-{% from './_includes/_components.njk' import hero,categorytiles,card,bio,textarea,highlight  %}
+{% from './_includes/_components.njk' import hero,categorytiles,card,bio,textarea,highlight,iconframe  %}
 
 
 {{ hero({ 
@@ -41,7 +41,38 @@ title: NYS Digital Services Components
 })
 }}
 
+{{ iconframe({
+    title:"An Icon Frame",
+    color:"",
+    iconcards: [
+        {
+            icon:"nygov-logo.png",
+            iconalt:"an outline of the state of new york",
+            title: "Icon Title",
+            content:"One really good decriptive sentence that shouldn't be terribly long. "
+        },
+        {
+            icon:"nygov-logo.png",
+            iconalt:"an outline of the state of new york",
+            title: "Icon Title",
+            content:"One really good decriptive sentence that shouldn't be terribly long. "
+        },
+        {
+            icon:"nygov-logo.png",
+            iconalt:"an outline of the state of new york",
+            title: "Icon Title",
+            content:"One really good decriptive sentence that shouldn't be terribly long. "
+        },
+        {
+            icon:"nygov-logo.png",
+            iconalt:"an outline of the state of new york",
+            title: "Icon Title",
+            content:"One really good decriptive sentence that shouldn't be terribly long. "
+        }
 
+    ]
+})
+}}
 
 {{ card({ 
     frametitle:"Row of Cards",

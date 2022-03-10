@@ -4,12 +4,12 @@
 
 {% for card in params.cards %}
 <article class="nysds-w-360 mx-4 my-6 bg-ny-light rounded-3xl hover:outline-ny-mid hover:outline-1 hover:outline">
-<div class="h-56">
+<div class="">
 <a href="{{card.link}}" tabindex="-1" aria-hidden="true">
 <img class="rounded-3xl object-cover" src="{{card.image}}" alt="{{card.imagealt}}" />
 </a>
 </div>
-<h3 class="font-bold text-xl mb-6 mt-10">
+<h3 class="font-bold text-xl mb-6 mt-8">
 <a class="hover:!underline focus:!underline !no-underline !text-ny-links visited:!text-ny-links mx-6" href="{{card.link}}">{{card.title}}</a>
 </h3>
 <p class="m-6 !text-black">{{card.content}}</p>
