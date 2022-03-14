@@ -29,6 +29,7 @@ title: NYS Digital Services Components
 {{ bio({
     title:"This is the title area of the bio frame",
     content:"A short paragraph of content that probably shouldn't exceed two really good and direct sentences. We're highlighting something, not telling the whole story here.",
+    attribute:"Jacob, Budget Examiner",
     link:"https://budget.ny.gov",
     linktext:"See the Jobs",
     arialabel:"Go to the New York State Division of the Budget Employment page to look at career opportunities",
@@ -44,6 +45,7 @@ title: NYS Digital Services Components
 {{ iconframe({
     title:"An Icon Frame",
     color:"",
+    description:"This is an area for a description of a few sentences. Something that serves to compliment and introduce the series of icons used here.",
     iconcards: [
         {
             icon:"nygov-logo.png",
