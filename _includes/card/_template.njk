@@ -3,10 +3,10 @@
 <div class="self-center lg:justify-center flex flex-col lg:flex-row lg:flex-wrap">
 
 {% for card in params.cards %}
-<article class="nysds-w-360 mx-4 my-6 bg-ny-light rounded-3xl hover:outline-ny-mid hover:outline-1 hover:outline">
+<article class="nysds-w-360 mx-4 my-6 bg-ny-light rounded-3xl outline-ny-mid  hover:outline-ny-dark outline-1 outline">
 <div class="">
 <a href="{{card.link}}" tabindex="-1" aria-hidden="true">
-<img class="rounded-3xl object-cover" src="{{card.image}}" alt="{{card.imagealt}}" />
+<img class="rounded-3xl object-cover nysds-h-240" src="{{card.image}}" alt="{{card.imagealt}}" />
 </a>
 </div>
 <h3 class="font-bold text-xl mb-6 mt-8">
