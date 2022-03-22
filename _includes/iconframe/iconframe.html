@@ -1,0 +1,38 @@
+<section class="flex flex-col -mx-8 md:-mx-20 {{params.color}} my-14 py-8">
+    <h2 class="nysds-text-36 font-extrabold text-black text-center mb-4 w-full">{{params.title}}</h2>
+    <p class="text-black mx-8 md:mx-20 justify-center self-center mb-4 max-w-2xl text-center">{{params.description}}</p>
+    <div class="flex flex-row flex-wrap md:flex-nowrap justify-center"> <!-- icon wrapper -->
+
+        <div class="my-4 mx-8 flex flex-col p-2 w-2/3 md:w-64"><!-- each icon item-->
+            <div class="mb-8">
+                <img class="m-auto object-scale-down" src="/img/{{item.icon}}" alt="{{item.iconalt}}" />
+            </div>
+            <h3 class="font-bold text-xl text-center !text-black mb-2">{{item.title}}</h3>
+            <p class="!text-black text-center">{{item.content}}</p>
+        </div> <!-- each icon item-->
+
+        <div class="my-4 mx-8 flex flex-col p-2 w-2/3 md:w-64"><!-- each icon item-->
+            <div class="mb-8">
+                <img class="m-auto object-scale-down" src="/img/{{item.icon}}" alt="{{item.iconalt}}" />
+            </div>
+            <h3 class="font-bold text-xl text-center !text-black mb-2">{{item.title}}</h3>
+            <p class="!text-black text-center">{{item.content}}</p>
+        </div><!-- each icon item-->
+
+        <div class="my-4 mx-8 flex flex-col p-2 w-2/3 md:w-64"><!-- each icon item-->
+            <div class="mb-8">
+                <img class="m-auto object-scale-down" src="/img/{{item.icon}}" alt="{{item.iconalt}}" />
+            </div>
+            <h3 class="font-bold text-xl text-center !text-black mb-2">{{item.title}}</h3>
+            <p class="!text-black text-center">{{item.content}}</p>
+        </div> <!-- each icon item-->
+
+        <div class="my-4 mx-8 flex flex-col p-2 w-2/3 md:w-64"> <!-- each icon item-->
+            <div class="mb-8">
+                <img class="m-auto object-scale-down" src="/img/{{item.icon}}" alt="{{item.iconalt}}" />
+            </div>
+            <h3 class="font-bold text-xl text-center !text-black mb-2">{{item.title}}</h3>
+            <p class="!text-black text-center">{{item.content}}</p>
+        </div> <!-- each icon item-->
+    </div> <!-- end icon wrapper -->
+</section>
