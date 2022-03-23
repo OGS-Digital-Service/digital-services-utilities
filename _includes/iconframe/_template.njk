@@ -5,7 +5,7 @@
 {% for item in params.iconcards %}
 <div class="my-4 mx-8 flex flex-col p-2 w-2/3 md:w-64 ">
 <div class="mb-8">
-<img class="m-auto object-scale-down" src="/img/{{item.icon}}" alt="{{item.iconalt}}" />
+<img class="m-auto object-scale-down max-h-36" src="/img/{{item.icon}}" alt="{{item.iconalt}}" />
 </div>
 <h3 class="font-bold text-xl text-center !text-black mb-2">{{item.title}}</h3>
 <p class="!text-black text-center">{{item.content}}</p>
