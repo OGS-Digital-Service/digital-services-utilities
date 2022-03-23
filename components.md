@@ -1,6 +1,16 @@
 ---
 layout: layout.njk
 title: NYS Digital Services Components
+url: digital-services-utilities.dev/components
+facebook:
+    title:  NYS Digital Services Components
+    description: The NYS Digital Service Component Index
+    image: nygov-logo.png
+twitter:
+    title: NYS Digital Services Components
+    description: The NYS Digital Service Component Index
+    image: nygov-logo.png
+
 ---
 {% from './_includes/_components.njk' import hero,categorytiles,card,bio,textarea,highlight,iconframe  %}
 
