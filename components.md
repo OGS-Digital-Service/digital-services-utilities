@@ -11,10 +11,8 @@ twitter:
     title: NYS Digital Services Components
     description: The NYS Digital Service Component Index
     image: nygov-logo.png
-
 ---
 {% from './_includes/_components.njk' import hero,categorytiles,card,bio,textarea,highlight,iconframe  %}
-
 
 {{ hero({ 
     title:"This is the hero title",
