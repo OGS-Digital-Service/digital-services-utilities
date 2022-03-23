@@ -2,6 +2,7 @@
 layout: layout.njk
 title: NYS Digital Services Components
 url: digital-services-utilities.dev/components
+domain: digital-services-utilities.dev
 facebook:
     title:  NYS Digital Services Components
     description: The NYS Digital Service Component Index
