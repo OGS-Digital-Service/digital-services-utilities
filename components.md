@@ -12,7 +12,7 @@ twitter:
     description: The NYS Digital Service Component Index
     image: nygov-logo.png
 ---
-{% from './_includes/_components.njk' import hero,categorytiles,card,bio,textarea,highlight,iconframe  %}
+{% from './_includes/_components.njk' import hero,categorytiles,card,bio,textarea,highlight,iconframe,quicklinks  %}
 
 {{ hero({ 
     title:"This is the hero title",
@@ -157,6 +157,54 @@ twitter:
         {
             text:"one that has two lines of text",
             link:"https://budget.ny.gov"
+        }
+    ]
+})}}
+
+{{ quicklinks({ 
+    frametitle:"Quick Links",
+    colleft: [
+        {
+            title:"first tile",
+            link:"https://budget.ny.gov",
+            image:"/img/office.jpg"
+        },
+        {
+            title:"second tile",
+            link:"https://budget.ny.gov",
+            image:"/img/office.jpg"
+        },
+        {
+            title:"third tile",
+            link:"https://budget.ny.gov",
+            image:"/img/office.jpg"
+        },
+        {
+            title:"fourth tile",
+            link:"https://budget.ny.gov",
+            image:"/img/office.jpg"
+        }
+    ],
+    colright: [
+        {
+            title:"first tile",
+            link:"https://budget.ny.gov",
+            image:"/img/office.jpg"
+        },
+        {
+            title:"second tile",
+            link:"https://budget.ny.gov",
+            image:"/img/office.jpg"
+        },
+        {
+            title:"third tile",
+            link:"https://budget.ny.gov",
+            image:"/img/office.jpg"
+        },
+        {
+            title:"fourth tile",
+            link:"https://budget.ny.gov",
+            image:"/img/office.jpg"
         }
     ]
 })}}

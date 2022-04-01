@@ -1,0 +1,42 @@
+<section class="flex flex-col items-center -mx-8 md:-mx-20 my-14">
+<h2 class="nysds-text-36 font-extrabold text-center text-black mb-4 w-full">{{params.frametitle}}</h2>
+<div class="flex flex-col md:flex-row max-w-7xl w-full flex-wrap items-center md:items-start ">
+
+{% if params.colleft %}
+<div class="w-full md:w-1/2">
+{% for link in params.colleft %}
+<article class="h-28 bg-ny-light rounded-3xl border-ny-mid  border-1 border flex flex-row m-2">
+<div >
+<a href="{{card.link}}" tabindex="-1" aria-hidden="true">
+<img class="w-28  h-28 rounded-3xl object-cover" src="{{link.image}}" alt="{{link.imagealt}}" />
+</a>
+</div>
+<h3 class="font-bold text-xl mb-6 mt-8">
+<a class="hover:!underline focus:!underline !no-underline !text-ny-links visited:!text-ny-links mx-6" href="{{link.link}}">{{link.title}}</a>
+</h3>
+<p class="m-6 !text-black">{{link.content}}</p>
+</article>
+{% endfor %}
+</div>
+{% else %}{% endif %}
+
+{% if params.colright %}
+<div class="w-full md:w-1/2">
+{% for link in params.colright %}
+<article class="h-28 bg-ny-light rounded-3xl border-ny-mid  border-1 border flex flex-row m-2">
+<div >
+<a href="{{card.link}}" tabindex="-1" aria-hidden="true">
+<img class="w-28  h-28 rounded-3xl object-cover" src="{{link.image}}" alt="{{link.imagealt}}" />
+</a>
+</div>
+<h3 class="font-bold text-xl mb-6 mt-8">
+<a class="hover:!underline focus:!underline !no-underline !text-ny-links visited:!text-ny-links mx-6" href="{{link.link}}">{{link.title}}</a>
+</h3>
+<p class="m-6 !text-black">{{link.content}}</p>
+</article>
+{% endfor %}
+</div>
+{% else %}{% endif %}
+
+</div>
+</section>
