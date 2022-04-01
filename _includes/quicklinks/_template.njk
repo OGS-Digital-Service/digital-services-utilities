@@ -18,7 +18,8 @@
 </article>
 {% endfor %}
 </div>
-{% else %}{% endif %}
+{% else %}
+{% endif %}
 
 {% if params.colright %}
 <div class="w-full md:w-1/2">
@@ -36,7 +37,8 @@
 </article>
 {% endfor %}
 </div>
+{% else %}
+{% endif %}{% if params.ctalink %}<a href="{{params.ctalink}}" class="border border-black bg-white hover:bg-black hover:underline focus:bg-black focus:text-white focus:underline m-4 p-4 rounded-xl text-black hover:text-white font-bold text-center w-1/2 md:w-1/3 lg:w-1/4">{{params.ctatitle}}</a>
 {% else %}{% endif %}
-
 </div>
 </section>

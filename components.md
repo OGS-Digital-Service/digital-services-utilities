@@ -163,6 +163,8 @@ twitter:
 
 {{ quicklinks({ 
     frametitle:"Quick Links",
+    ctalink:"ny.gov",
+    ctatitle:"A link to something",
     colleft: [
         {
             title:"first tile",
