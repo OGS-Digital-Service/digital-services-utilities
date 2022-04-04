@@ -218,11 +218,6 @@ twitter:
             title:"third tile",
             link:"https://budget.ny.gov",
             image:"/img/office.jpg"
-        },
-        {
-            title:"fourth tile",
-            link:"https://budget.ny.gov",
-            image:"/img/office.jpg"
         }
     ]
 })}}
