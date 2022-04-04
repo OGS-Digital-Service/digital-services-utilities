@@ -169,21 +169,25 @@ twitter:
         {
             title:"first tile",
             link:"https://budget.ny.gov",
+            content:"A sentence or two of text that gives the general idea of what this link goes to or the topic of the page. This one is longer to show the truncation.",
             image:"/img/office.jpg"
         },
         {
             title:"second tile",
             link:"https://budget.ny.gov",
+            content:"A sentence or two of text that gives the general idea of what this link goes to or the topic of the page. ",
             image:"/img/office.jpg"
         },
         {
             title:"third tile",
             link:"https://budget.ny.gov",
+            content:"A sentence or two of text that gives the general idea of what this link goes to or the topic of the page. ",
             image:"/img/office.jpg"
         },
         {
             title:"fourth tile",
             link:"https://budget.ny.gov",
+            content:"A sentence or two of text that gives the general idea of what this link goes to or the topic of the page. ",
             image:"/img/office.jpg"
         }
     ],
@@ -191,11 +195,13 @@ twitter:
         {
             title:"first tile",
             link:"https://budget.ny.gov",
+            content:"A sentence or two of text that gives the general idea of what this link goes to or the topic of the page. ",
             image:"/img/office.jpg"
         },
         {
             title:"second tile",
             link:"https://budget.ny.gov",
+            content:"A sentence or two of text that gives the general idea of what this link goes to or the topic of the page. ",
             image:"/img/office.jpg"
         },
         {
