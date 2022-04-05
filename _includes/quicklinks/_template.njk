@@ -22,7 +22,7 @@
 {% if params.ctaleft %}
 {% for left in params.ctaleft %}
 <div class=" w-full flex justify-center md:justify-end">
-    <a href="{{left.link}}" class="border border-black bg-white hover:bg-black hover:underline focus:bg-black focus:text-white focus:underline my-4 mx-2 p-4 rounded-xl text-black hover:text-white font-bold text-center  w-2/3 md:w-1/2">{{left.title}}</a>
+    <a href="{{left.link}}" class="border border-black bg-white hover:bg-black hover:!underline focus:bg-black focus:!text-white focus:!underline !no-underline my-4 mx-2 p-4 rounded-xl !text-black visited:!text-black hover:!text-white font-bold text-center  w-2/3 md:w-1/2">{{left.title}}</a>
 </div>
 {% endfor %}
 {% else %}{% endif %}
@@ -50,7 +50,7 @@
 {% if params.ctaright %}
 {% for right in params.ctaright %}
 <div class=" w-full flex justify-center md:justify-end">
-    <a href="{{right.link}}" class="border border-black bg-white hover:bg-black hover:underline focus:bg-black focus:text-white focus:underline my-4 mx-2 p-4 rounded-xl text-black hover:text-white font-bold text-center w-2/3 md:w-1/2">{{right.title}}</a>
+    <a href="{{right.link}}" class="border border-black bg-white hover:bg-black hover:!underline focus:bg-black focus:!text-white focus:!underline !no-underline my-4 mx-2 p-4 rounded-xl !text-black visited:!text-black hover:!text-white font-bold text-center  w-2/3 md:w-1/2">{{right.title}}</a>
 </div>
 {% endfor %}
 {% else %}{% endif %}
