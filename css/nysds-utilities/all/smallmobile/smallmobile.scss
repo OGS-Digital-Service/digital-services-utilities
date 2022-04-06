@@ -1,62 +1,62 @@
-@media (min-width: 640px) {
-.sm\:nysds-text-36 {
+@media (max-width: 550px) {
+.xs\:nysds-text-36 {
     font-size: 36px;
 }
 
-.sm\:nysds-text-32 {
+.xs\:nysds-text-32 {
     font-size: 32px;
 }
 
-.sm\:nysds-text-28 {
+.xs\:nysds-text-28 {
     font-size: 28px;
 }
 
-.sm\:nysds-text-22 {
+.xs\:nysds-text-22 {
     font-size: 22px;
 }
 
-.sm\:nysds-text-18 {
+.xs\:nysds-text-18 {
     font-size: 18px;
 }
 
-.sm\:nysds-min-h-512 {
+.xs\:nysds-min-h-512 {
     min-height: 512px;
 }
 
-.sm\:nysds-min-h-300 {
+.xs\:nysds-min-h-300 {
     min-height: 300px;
 }
 
-.sm\:nysds-min-h-256 {
+.xs\:nysds-min-h-256 {
     min-height: 256px;
 }
 
-.sm\:nysds-w-360 {
+.xs\:nysds-w-360 {
     width:360px;
 }
 
-.sm\:nysds-line-clamp-1 {
+.xs\:nysds-line-clamp-1 {
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-.sm\:nysds-line-clamp-2 {
+.xs\:nysds-line-clamp-2 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-.sm\:nysds-line-clamp-3 {
+.xs\:nysds-line-clamp-3 {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
 
-.sm\:nysds-line-clamp-4 {
+.xs\:nysds-line-clamp-4 {
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
