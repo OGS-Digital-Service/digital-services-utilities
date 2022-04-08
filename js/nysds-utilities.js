@@ -32,10 +32,40 @@ for (let i = 0; i < videoarr.length, i < playarr.length, i < imagearr.length, i 
         videoarr[i].insertAdjacentHTML("afterbegin", videodata);
     }
 }
+//end video lazy load
 
-})
-// end anon function for pageload
 
- 
 
- 
+
+// Global Nav Menu Interactions
+const mobilemenu = document.getElementById('nysds-mobile-menu');
+const menu = document.getElementById('nysds-list-menu');
+const submenubutton = document.getElementsByClassName('nysds-submenu-button');
+const submenu = document.getElementsByClassName('nysds-submenu');
+const submenuarr = Array.from(submenu);
+const submenubuttonarr = Array.from(submenubutton);
+
+mobilemenu.addEventListener("click", mobilemenutrigger) //mobile menu show hide
+function mobilemenutrigger (){
+    if (menu.classList.contains("hidden")) {
+        menu.classList.remove("hidden");
+    }
+    else {
+        menu.classList.add("hidden");
+    }
+}
+
+for (let i = 0; i < submenuarr.length, i < submenubuttonarr.length ; i++) {
+    submenubuttonarr[i].addEventListener("click", submenutrigger) //submenu show hides
+        function submenutrigger (){
+            if (submenuarr[i].classList.contains("hidden")) {
+                submenuarr[i].classList.remove("hidden");
+            }
+            else {
+                submenuarr[i].classList.add("hidden");
+            }
+        }
+}
+
+
+})// end anon function for pageload
