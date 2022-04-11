@@ -39,15 +39,23 @@
       <span class="sr-only">Mobile Navigation Menu</span>
     </button>
   <h1 class="dsari nysds-text-22 text-white mx-0 lg:ml-16 lg:mr-6 flex items-center"><a href="/" class="focus:!outline-white">OGS Digital Services Utilities</a></h1>
-    <ul class="list-none hidden lg:flex lg:flex-row lg:items-center text-white captialize font-bold" id="nysds-list-menu">
+    <ul class="list-none hidden lg:flex lg:flex-row lg:items-center text-white captialize font-bold" id="nysds-list-menu"> <!-- this is first level -->
     
       <li class="">
           
             <button class="nysds-submenu-button captialize font-bold p-1 m-2 focus:!outline-white" aria-controls="nysds-submenu-1" aria-expanded="false">First Menu Link</button>
-              <ul class="list-none nysds-submenu hidden" id="nysds-submenu-1">
+              <ul class="list-none nysds-submenu hidden absolute bg-bg-admin-first" id="nysds-submenu-1"> <!-- this is second level -->
                 
                 <li class="">
                   <a href="ny.gov" class="p-2 m-1 focus:!outline-white">First Sub item</a>
+                </li>
+                
+                <li class="">
+                  <a href="ny.gov" class="p-2 m-1 focus:!outline-white">second Sub item</a>
+                </li>
+                
+                <li class="">
+                  <a href="ny.gov" class="p-2 m-1 focus:!outline-white">third Sub item</a>
                 </li>
                 
               </ul>
@@ -57,7 +65,7 @@
       <li class="">
           
             <button class="nysds-submenu-button captialize font-bold p-1 m-2 focus:!outline-white" aria-controls="nysds-submenu-2" aria-expanded="false">Second Menu Link</button>
-              <ul class="list-none nysds-submenu hidden" id="nysds-submenu-2">
+              <ul class="list-none nysds-submenu hidden absolute bg-bg-admin-first" id="nysds-submenu-2"> <!-- this is second level -->
                 
                 <li class="">
                   <a href="ny.gov" class="p-2 m-1 focus:!outline-white">First Sub item</a>
