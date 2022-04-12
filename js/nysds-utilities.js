@@ -45,27 +45,44 @@ const submenu = document.getElementsByClassName('nysds-submenu');
 const submenuarr = Array.from(submenu);
 const submenubuttonarr = Array.from(submenubutton);
 
-mobilemenu.addEventListener("click", mobilemenutrigger) //mobile menu show hide
-function mobilemenutrigger (){
+mobilemenu.addEventListener("click", mobilemenutriggers) //mobile menu show hide and aria-expanded
+function mobilemenutriggers () {
     if (menu.classList.contains("hidden")) {
         menu.classList.remove("hidden");
     }
     else {
         menu.classList.add("hidden");
     }
+    var mobileariaexpanded = mobilemenu.getAttribute("aria-expanded");
+            if (mobileariaexpanded == "false" ){
+                mobileariaexpanded = "true" 
+            }
+            else {
+                mobileariaexpanded = "false" 
+            }
+            mobilemenu.setAttribute("aria-expanded", mobileariaexpanded);
 }
 
 for (let i = 0; i < submenuarr.length, i < submenubuttonarr.length ; i++) {
-    submenubuttonarr[i].addEventListener("click", submenutrigger) //submenu show hides
-        function submenutrigger (){
+    submenubuttonarr[i].addEventListener("click", subtriggers) //submenu show hides and aria expanded
+        function subtriggers (){
             if (submenuarr[i].classList.contains("hidden")) {
                 submenuarr[i].classList.remove("hidden");
             }
             else {
                 submenuarr[i].classList.add("hidden");
             }
+            var subariaexpanded = submenubuttonarr[i].getAttribute("aria-expanded");
+            if (subariaexpanded == "false" ){
+                subariaexpanded = "true" 
+            }
+            else {
+                subariaexpanded = "false" 
+            }
+            submenubuttonarr[i].setAttribute("aria-expanded", subariaexpanded);
         }
 }
+
 
 
 })// end anon function for pageload
