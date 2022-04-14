@@ -35,14 +35,18 @@
 <section class="flex ">
   <nav class="flex w-full" aria-label="Primary Site Navigation">
     <div class="relative h-20 flex items-center -ml-2 lg:ml-0">
-    <h1 class="dsari nysds-text-22 text-white ml-20 lg:ml-16 mr-6 flex items-center"><a href="/" class="focus:!outline-white">OGS Digital Services Utilities</a></h1>
-      <button class="block absolute left-0 top-0 h-20 w-16  py-3 lg:hidden focus:!outline-white nysds-menu-icon nysds-mobile-button" id="nysds-mobile-menu" aria-controls="nysds-list-menu" aria-expanded="false">
-        <span class="sr-only">Mobile Navigation Menu</span>
-      </button>
+      <h1 class="dsari nysds-text-22 text-white ml-20 lg:ml-16 mr-6 flex items-center">
+        <a href="/" class="focus:!outline-white">OGS Digital Services Utilities</a>
+      </h1>
+      <div class="h-20 absolute left-0 top-0 flex items-center">
+        <button class="block w-16 py-3 lg:hidden focus:!outline-white nysds-menu-icon nysds-mobile-button" id="nysds-mobile-menu" aria-controls="nysds-list-menu" aria-expanded="false">
+          <span class="sr-only">Mobile Navigation Menu</span>
+        </button>
+      </div>
      </div>
-    <ul class="list-none left-0 absolute hidden lg:static mt-16 lg:mt-0 lg:flex lg:flex-row lg:items-center text-white captialize font-bold bg-admin-first" id="nysds-list-menu" > <!-- this is first level -->
+    <ul class="list-none left-0 absolute z-50 hidden lg:static mt-20 lg:mt-0 lg:flex lg:flex-row lg:items-center text-white captialize font-bold bg-admin-first" id="nysds-list-menu" > <!-- this is first level -->
     
-      <li class="">
+      <li>
           
             <button class="nysds-submenu-button captialize font-bold p-2 m-2 focus:!outline-white nysds-mobile-button" aria-controls="nysds-submenu-1" aria-expanded="false">First Menu Link</button>
               <ul class="list-none nysds-submenu absolute hidden bg-admin-first " id="nysds-submenu-1"> <!-- this is second level -->
@@ -63,7 +67,7 @@
           
       </li>
     
-      <li class="">
+      <li>
           
             <button class="nysds-submenu-button captialize font-bold p-2 m-2 focus:!outline-white nysds-mobile-button" aria-controls="nysds-submenu-2" aria-expanded="false">Second Menu Link</button>
               <ul class="list-none nysds-submenu absolute hidden bg-admin-first " id="nysds-submenu-2"> <!-- this is second level -->
@@ -76,7 +80,7 @@
           
       </li>
     
-      <li class="">
+      <li>
           
           
           <a href="nysds.dev" class="p-3 m-1 focus:!outline-white">Third Menu Link</a>
