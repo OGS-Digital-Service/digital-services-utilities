@@ -41,43 +41,44 @@ const submenubutton = document.getElementsByClassName('nysds-submenu-button');
 const submenu = document.getElementsByClassName('nysds-submenu');
 const submenuarr = Array.from(submenu);
 const submenubuttonarr = Array.from(submenubutton);
-mobilemenu.addEventListener("click", mobilemenutriggers) //mobile menu show hide and aria-expanded
-function mobilemenutriggers () {
+
+mobilemenu.addEventListener("click", mobiletoggle) //mobile menu show hide and aria-expanded
+function mobiletoggle () {
     if (menu.classList.contains("hidden")) {
-        menu.classList.remove("hidden");
+        menu.classList.toggle("hidden")
+        mobilemenu.setAttribute('aria-expanded', true)
     }
     else {
-        menu.classList.add("hidden");
-    }
-    var mobileariaexpanded = mobilemenu.getAttribute("aria-expanded");
-            if (mobileariaexpanded == "false" ){
-                mobileariaexpanded = "true" 
-            }
-            else {
-                mobileariaexpanded = "false" 
-            }
-            mobilemenu.setAttribute("aria-expanded", mobileariaexpanded);
-}
-for (let i = 0; i < submenuarr.length, i < submenubuttonarr.length ; i++) {
-    submenubuttonarr[i].addEventListener("click", subtriggers) //submenu show hides and aria expanded
-        function subtriggers (){
-            if (submenuarr[i].classList.contains("hidden")) {
-                submenuarr[i].classList.remove("hidden");
-            }
-            else {
-                submenuarr[i].classList.add("hidden");
-            }
-            var subariaexpanded = submenubuttonarr[i].getAttribute("aria-expanded");
-            if (subariaexpanded == "false" ){
-                subariaexpanded = "true" 
-            }
-            else {
-                subariaexpanded = "false" 
-            }
-            submenubuttonarr[i].setAttribute("aria-expanded", subariaexpanded);
-        }
+        menu.classList.toggle("hidden")
+        mobilemenu.setAttribute('aria-expanded', false)
+    } 
 }
 
+
+for (let i = 0; i < submenuarr.length, i < submenubuttonarr.length ; i++) {
+   submenubuttonarr[i].addEventListener("click", subtoggle ) //submenu show hides and aria expanded
+
+    function subtoggle() {
+        if (submenuarr[i].classList.contains("hidden")) {
+            submenuarr[i].classList.toggle("hidden");
+            submenubuttonarr[i].setAttribute('aria-expanded', true)
+        }
+        else {
+            submenuarr[i].classList.toggle("hidden");
+            submenubuttonarr[i].setAttribute('aria-expanded', false)
+        }
+        }
+
+        document.addEventListener('click', function(e) {
+            if (e.target === submenubuttonarr[i]) {
+            } else {
+              submenuarr[i].classList.add("hidden");
+            }
+            e.stopPropagation();
+          });
+
+}
 
 
 })// end anon function for pageload
+

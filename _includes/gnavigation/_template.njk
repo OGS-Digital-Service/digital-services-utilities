@@ -6,20 +6,21 @@
       <span class="sr-only">Mobile Navigation Menu</span>
     </button>
   <h1 class="dsari nysds-text-22 text-white mx-0 lg:ml-16 lg:mr-6 flex items-center"><a href="{{ params.link }}" class="focus:!outline-white">{{ params.agencyname }}</a></h1>
-    <ul class="list-none z-10 left-0 absolute hidden lg:static mt-16 lg:mt-0 lg:flex lg:flex-row lg:items-center text-white captialize font-bold {{params.color}}" id="nysds-list-menu" > <!-- this is first level -->
+    <ul class="list-none left-0 absolute hidden lg:static mt-16 lg:mt-0 lg:flex lg:flex-row lg:items-center text-white captialize font-bold {{params.color}}" id="nysds-list-menu" > <!-- this is first level -->
     {% for links in params.items %}
       <li class="">
           {% if links.subitems %}
-            <button class="nysds-submenu-button captialize font-bold p-1 m-2 focus:!outline-white" aria-controls="nysds-submenu-{{links.number}}" aria-expanded="false">{{links.title}}</button>
-              <ul class="list-none nysds-submenu hidden absolute {{params.color}}" id="nysds-submenu-{{links.number}}"> <!-- this is second level -->
+            <button class="nysds-submenu-button captialize font-bold p-2 m-2 focus:!outline-white" aria-controls="nysds-submenu-{{links.number}}" aria-expanded="false">{{links.title}}</button>
+              <ul class="list-none nysds-submenu absolute hidden {{params.color}}" id="nysds-submenu-{{links.number}}"> <!-- this is second level -->
                 {% for sublinks in links.subitems %}
-                <li class="pl-0 py-4 pr-4 first:mt-4">
-                  <a href="{{sublinks.link}}" class="p-2 m-1 focus:!outline-white">{{sublinks.title}}</a>
+                <li class="p-4 first:mt-3">
+                  <a href="{{sublinks.link}}" class="p-4 focus:!outline-white">{{sublinks.title}}</a>
                 </li>
                 {% endfor %}
               </ul>
           {% else %}
-          <a href="{{links.link}}" class="p-2 m-1 focus:!outline-white">{{links.title}}</a>
+          
+          <a href="{{links.link}}" class="p-3 m-1 focus:!outline-white">{{links.title}}</a>
           {% endif %}
       </li>
     {% endfor %}
