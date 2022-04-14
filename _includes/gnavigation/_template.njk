@@ -2,7 +2,7 @@
 <section class="flex ">
   <nav class="flex w-full" aria-label="Primary Site Navigation">
     <div class="relative h-20 flex items-center -ml-2 lg:ml-0">
-      <h1 class="dsari nysds-text-22 text-white ml-20 lg:ml-16 mr-6 flex items-center">
+      <h1 class="dsari nysds-text-22 text-white ml-18 lg:ml-16 mr-6 flex items-center">
         <a href="{{ params.link }}" class="focus:!outline-white">{{ params.agencyname }}</a>
       </h1>
       <div class="h-20 absolute left-0 top-0 flex items-center">
@@ -13,19 +13,18 @@
      </div>
     <ul class="list-none left-0 absolute z-50 hidden lg:static mt-20 lg:mt-0 lg:flex lg:flex-row lg:items-center text-white captialize font-bold {{params.color}}" id="nysds-list-menu" > <!-- this is first level -->
     {% for links in params.items %}
-      <li>
+      <li class="block w-72 lg:w-auto mx-4 lg:mx-auto lg:ml-6 lg:first:ml-2">
           {% if links.subitems %}
-            <button class="nysds-submenu-button captialize font-bold p-2 m-2 focus:!outline-white nysds-mobile-button" aria-controls="nysds-submenu-{{links.number}}" aria-expanded="false">{{links.title}}</button>
-              <ul class="list-none nysds-submenu absolute hidden {{params.color}} " id="nysds-submenu-{{links.number}}"> <!-- this is second level -->
+            <button class="nysds-submenu-button captialize text-left w-72 lg:w-auto font-bold px-4 py-4 lg:px-0 lg:py-4 focus:!outline-white nysds-mobile-button" aria-controls="nysds-submenu-{{links.number}}" aria-expanded="false">{{links.title}}</button> <!-- button if there is a submenu -->
+              <ul class="list-none nysds-submenu absolute hidden {{params.color}} w-72" id="nysds-submenu-{{links.number}}"> <!-- this is second level -->
                 {% for sublinks in links.subitems %}
-                <li class="p-4 first:mt-3">
-                  <a href="{{sublinks.link}}" class="p-4 focus:!outline-white">{{sublinks.title}}</a>
+                <li class="p-4 first:mt-3 flex">
+                  <a href="{{sublinks.link}}" class=" w-72 focus:!outline-white">{{sublinks.title}} </a>
                 </li>
                 {% endfor %}
               </ul>
           {% else %}
-          
-          <a href="{{links.link}}" class="p-3 m-1 focus:!outline-white">{{links.title}}</a>
+          <a href="{{links.link}}" class=" focus:!outline-white flex w-72 lg:w-auto py-4 ml-4 ">{{links.title}}</a><!-- link if no sub menu -->
           {% endif %}
       </li>
     {% endfor %}

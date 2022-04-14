@@ -69,6 +69,10 @@
     height: 240px;
 }
 
+.ml-18 {
+    margin-left: 4.5rem;
+}
+
 // stuff tailwind doesn't have easily
 .hover\:nysds-border-b-3:hover {
     border-bottom-width: 3px;
@@ -213,6 +217,13 @@
     font-weight: 900 !important;
     color: #fff;
     font-size: 1.25rem;
+}
+
+.nysds-caret-right::before {
+    content: "\f105" !important;
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 900 !important;
+    color: #fff;
 }
 
 .nysds-play-button {
