@@ -37,3 +37,8 @@ We have two major opinions here, so stop reading or using if they drive you into
 ## Some other considerations for performance
 - scale jpg images properly and keep file sizes less than 400kb if possible, even for heroes. (Can anyone tell the difference?)
 - youtube embeds require you to know the video ID so that you can include it in the template for lazy loading (load on action)
+
+
+## Some dependencies 
+- fontawesome 5 free
+- nys fonts including: dsari bold, oswald, and proxima nova

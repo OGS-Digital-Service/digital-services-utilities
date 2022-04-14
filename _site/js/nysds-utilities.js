@@ -32,8 +32,6 @@ for (let i = 0; i < videoarr.length, i < playarr.length, i < imagearr.length, i 
 //end video lazy load
 
 
-
-
 // Global Nav Menu Interactions
 const mobilemenu = document.getElementById('nysds-mobile-menu');
 const menu = document.getElementById('nysds-list-menu');
@@ -53,11 +51,22 @@ function mobiletoggle () {
         mobilemenu.setAttribute('aria-expanded', false)
     } 
 }
+document.addEventListener('click', function(e) {
+    if (e.target === mobilemenu) {
+    }
+    else {
+    menu.classList.add("hidden");
+    mobilemenu.setAttribute('aria-expanded', false);
+    console.log('click anywhere else')
+    }
+    e.stopPropagation();
+});
+
+
 
 
 for (let i = 0; i < submenuarr.length, i < submenubuttonarr.length ; i++) {
    submenubuttonarr[i].addEventListener("click", subtoggle ) //submenu show hides and aria expanded
-
     function subtoggle() {
         if (submenuarr[i].classList.contains("hidden")) {
             submenuarr[i].classList.toggle("hidden");
@@ -73,9 +82,12 @@ for (let i = 0; i < submenuarr.length, i < submenubuttonarr.length ; i++) {
             if (e.target === submenubuttonarr[i]) {
             } else {
               submenuarr[i].classList.add("hidden");
+              submenubuttonarr[i].setAttribute('aria-expanded', false);
             }
             e.stopPropagation();
           });
+
+          
 
 }
 
