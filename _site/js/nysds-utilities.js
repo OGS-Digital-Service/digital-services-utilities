@@ -52,12 +52,11 @@ function mobiletoggle () {
     } 
 }
 document.addEventListener('click', function(e) {
-    if (e.target === mobilemenu) {
+    if (e.target.classList.contains("nysds-mobile-button")) {
     }
     else {
     menu.classList.add("hidden");
     mobilemenu.setAttribute('aria-expanded', false);
-    console.log('click anywhere else')
     }
     e.stopPropagation();
 });
