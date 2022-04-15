@@ -37,7 +37,6 @@ const mobilemenu = document.getElementById('nysds-mobile-menu');
 const menu = document.getElementById('nysds-list-menu');
 const submenubutton = document.getElementsByClassName('nysds-submenu-button');
 const submenu = document.getElementsByClassName('nysds-submenu');
-
 const submenuarr = Array.from(submenu);
 const submenubuttonarr = Array.from(submenubutton);
 
@@ -69,9 +68,9 @@ document.addEventListener('click', function(e) {
 
 for (let i = 0; i < submenuarr.length, i < submenubuttonarr.length ; i++) {
    submenubuttonarr[i].addEventListener("click", subtoggle ); //submenu show hides and aria expanded
-   const sublist = submenuarr[i]
-   const lastli = sublist.lastElementChild
-   lastli.addEventListener("focusout", subtoggle)
+   const sublist = submenuarr[i];
+   const lastli = sublist.lastElementChild;
+   lastli.addEventListener("focusout", subtoggle) // last list item on focusout closes menu
     function subtoggle() {
         if (submenuarr[i].classList.contains("hidden")) {
             submenuarr[i].classList.toggle("hidden");
@@ -83,6 +82,7 @@ for (let i = 0; i < submenuarr.length, i < submenubuttonarr.length ; i++) {
         }
         }
 
+        // click anywhere else closes menus
         document.addEventListener('click', function(e) {
             if (e.target === submenubuttonarr[i]) {
             } else {
@@ -92,7 +92,20 @@ for (let i = 0; i < submenuarr.length, i < submenubuttonarr.length ; i++) {
             e.stopPropagation();
           });
 
-}
+        // mobile only menu hides 
+        submenubuttonarr[i].addEventListener("click", mobiletoggle );
+        function mobiletoggle() {
+            if (window.innerWidth < 1024) {
+                submenubuttonarr[i].classList.toggle("hidden")
+                console.log('this is mobile')
+
+
+            }
+            else {
+                console.log('this is def not mobile')
+            }
+        }     
+}// end giant for loop for menus
 
 
 })// end anon function for pageload

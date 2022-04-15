@@ -226,6 +226,13 @@
     color: #fff;
 }
 
+.nysds-close-x::before {
+    content: "\f410" !important;
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 900 !important;
+    color: #fff;
+}
+
 .nysds-play-button {
 
     &:focus {
