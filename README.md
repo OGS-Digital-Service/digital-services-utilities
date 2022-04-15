@@ -42,3 +42,7 @@ We have two major opinions here, so stop reading or using if they drive you into
 ## Some dependencies 
 - fontawesome 5 free
 - nys fonts including: dsari bold, oswald, and proxima nova
+
+
+## General Concept for this utility system
+- class=" (Positioning attributes) (display and layout attributes) (visual enhancements) (colors fonts borders) (actual other classes) 

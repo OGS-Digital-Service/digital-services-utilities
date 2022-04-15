@@ -1,30 +1,30 @@
-<header class="{{ params.color }} p-4 h-20 flex items-center w-full ">
-<section class="flex ">
+<header class="flex items-center w-full p-4 h-20 {{ params.color }} ">
+<section class="flex">
   <nav class="flex w-full" aria-label="Primary Site Navigation">
-    <div class="relative h-20 flex items-center -ml-2 lg:ml-0">
-      <h1 class="dsari nysds-text-22 text-white ml-18 lg:ml-16 mr-6 flex items-center">
+    <div class="relative flex items-center h-20 -ml-2 lg:ml-0">
+      <h1 class="flex items-center ml-18 lg:ml-16 mr-6 text-white dsari nysds-text-22">
         <a href="{{ params.link }}" class="focus:!outline-white">{{ params.agencyname }}</a>
       </h1>
-      <div class="h-20 absolute left-0 top-0 flex items-center">
-        <button class="block w-16 py-3 lg:hidden focus:!outline-white nysds-menu-icon nysds-mobile-button" id="nysds-mobile-menu" aria-controls="nysds-list-menu" aria-expanded="false">
+      <div class="absolute left-0 top-0 flex items-center h-20">
+        <button class="block lg:hidden w-16 py-3 focus:!outline-white nysds-menu-icon nysds-mobile-button" id="nysds-mobile-menu" aria-controls="nysds-list-menu" aria-expanded="false">
           <span class="sr-only">Mobile Navigation Menu</span>
         </button>
       </div>
      </div>
-    <ul class="list-none left-0 absolute z-50 hidden lg:static mt-20 lg:mt-0 lg:flex lg:flex-row lg:items-center text-white captialize font-bold {{params.color}}" id="nysds-list-menu" > <!-- this is first level -->
+    <ul class="absolute left-0 z-50 hidden lg:static lg:flex lg:flex-row lg:items-center mt-20 lg:mt-0 text-white captialize font-bold {{params.color}} list-none" id="nysds-list-menu" > <!-- this is first level -->
     {% for links in params.items %}
-      <li class="block w-72 lg:w-auto mx-4 lg:mx-auto lg:ml-6 lg:first:ml-2">
+      <li class="w-72 lg:w-auto mx-4 lg:mx-auto lg:ml-6 lg:first:ml-2">
           {% if links.subitems %}
-            <button class="nysds-submenu-button captialize text-left w-72 lg:w-auto font-bold px-4 py-4 lg:px-0 lg:py-4 focus:!outline-white nysds-mobile-button" aria-controls="nysds-submenu-{{links.number}}" aria-expanded="false">{{links.title}}</button> <!-- button if there is a submenu -->
-              <ul class="list-none nysds-submenu absolute hidden {{params.color}} w-72" id="nysds-submenu-{{links.number}}"> <!-- this is second level -->
+            <button class="w-full lg:w-auto px-4 py-4 lg:px-0 lg:py-4 focus:!outline-white captialize text-left nysds-mobile-button nysds-submenu-button font-bold" aria-controls="nysds-submenu-{{links.number}}" aria-expanded="false">{{links.title}}</button> <!-- button if there is a submenu -->
+              <ul class="absolute hidden w-72 list-none {{params.color}} nysds-submenu" id="nysds-submenu-{{links.number}}"> <!-- this is second level -->
                 {% for sublinks in links.subitems %}
-                <li class="p-4 first:mt-3 flex">
-                  <a href="{{sublinks.link}}" class=" w-72 focus:!outline-white">{{sublinks.title}} </a>
+                <li class="flex p-4 first:mt-3">
+                  <a href="{{sublinks.link}}" class="w-72 focus:!outline-white">{{sublinks.title}} </a>
                 </li>
                 {% endfor %}
               </ul>
           {% else %}
-          <a href="{{links.link}}" class=" focus:!outline-white flex w-72 lg:w-auto py-4 ml-4 ">{{links.title}}</a><!-- link if no sub menu -->
+          <a href="{{links.link}}" class="w-72 lg:w-auto py-4 ml-4 focus:!outline-white">{{links.title}}</a><!-- link if no sub menu -->
           {% endif %}
       </li>
     {% endfor %}
