@@ -36,9 +36,12 @@ for (let i = 0; i < videoarr.length, i < playarr.length, i < imagearr.length, i 
 const mobilemenu = document.getElementById('nysds-mobile-menu');
 const menu = document.getElementById('nysds-list-menu');
 const submenubutton = document.getElementsByClassName('nysds-submenu-button');
+const submenulink = document.getElementsByClassName('nysds-submenu-link');
 const submenu = document.getElementsByClassName('nysds-submenu');
 const submenuarr = Array.from(submenu);
 const submenubuttonarr = Array.from(submenubutton);
+const submenulinkarr = Array.from(submenulink);
+
 
 
 
@@ -66,10 +69,11 @@ document.addEventListener('click', function(e) {
 
 
 
-for (let i = 0; i < submenuarr.length, i < submenubuttonarr.length ; i++) {
+for (let i = 0; i < submenuarr.length, i < submenubuttonarr.length  ; i++) {
    submenubuttonarr[i].addEventListener("click", subtoggle ); //submenu show hides and aria expanded
    const sublist = submenuarr[i];
    const lastli = sublist.lastElementChild;
+   console.log(lastli)
    lastli.addEventListener("focusout", subtoggle) // last list item on focusout closes menu
     function subtoggle() {
         if (submenuarr[i].classList.contains("hidden")) {
@@ -93,10 +97,10 @@ for (let i = 0; i < submenuarr.length, i < submenubuttonarr.length ; i++) {
           });
 
         // mobile only menu hides 
-        submenubuttonarr[i].addEventListener("click", mobiletoggle );
+        submenubuttonarr[i].addEventListener("click", mobiletoggle);
         function mobiletoggle() {
             if (window.innerWidth < 1024) {
-                submenubuttonarr[i].classList.toggle("hidden")
+                
                 console.log('this is mobile')
 
 
