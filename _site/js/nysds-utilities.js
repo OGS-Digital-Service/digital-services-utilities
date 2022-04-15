@@ -37,8 +37,11 @@ const mobilemenu = document.getElementById('nysds-mobile-menu');
 const menu = document.getElementById('nysds-list-menu');
 const submenubutton = document.getElementsByClassName('nysds-submenu-button');
 const submenu = document.getElementsByClassName('nysds-submenu');
+
 const submenuarr = Array.from(submenu);
 const submenubuttonarr = Array.from(submenubutton);
+
+
 
 mobilemenu.addEventListener("click", mobiletoggle) //mobile menu show hide and aria-expanded
 function mobiletoggle () {
@@ -65,7 +68,10 @@ document.addEventListener('click', function(e) {
 
 
 for (let i = 0; i < submenuarr.length, i < submenubuttonarr.length ; i++) {
-   submenubuttonarr[i].addEventListener("click", subtoggle ) //submenu show hides and aria expanded
+   submenubuttonarr[i].addEventListener("click", subtoggle ); //submenu show hides and aria expanded
+   const sublist = submenuarr[i]
+   const lastli = sublist.lastElementChild
+   lastli.addEventListener("focusout", subtoggle)
     function subtoggle() {
         if (submenuarr[i].classList.contains("hidden")) {
             submenuarr[i].classList.toggle("hidden");
@@ -85,8 +91,6 @@ for (let i = 0; i < submenuarr.length, i < submenubuttonarr.length ; i++) {
             }
             e.stopPropagation();
           });
-
-          
 
 }
 
