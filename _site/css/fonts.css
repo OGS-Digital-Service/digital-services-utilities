@@ -10,6 +10,7 @@
   url(../fonts/proximanova/proximanova-regular.woff) format("woff"), 
   url(../fonts/proximanova/proximanova-regular.woff2) format("woff2"),  
   url(../fonts/proximanova/proximanova-regular.ttf) format("truetype");
+  font-display: swap;
 }
 
 @font-face {
@@ -21,6 +22,7 @@
   url(../fonts/proximanova/proximanova-semibold.woff) format("woff"), 
   url(../fonts/proximanova/proximanova-semibold.woff2) format("woff2"), 
   url(../fonts/proximanova/proximanova-semibold.ttf) format("truetype");
+  font-display: swap;
 }
 
 @font-face {
@@ -32,6 +34,7 @@
   url(../fonts/proximanova/proximanova-bold.woff) format("woff"), 
   url(../fonts/proximanova/proximanova-bold.woff2) format("woff2"), 
   url(../fonts/proximanova/proximanova-bold.ttf) format("truetype");
+  font-display: swap;
 }
 
 
@@ -44,6 +47,7 @@
   url(../fonts/proximanova/proximanova-extrabold.woff) format("woff"), 
   url(../fonts/proximanova/proximanova-extrabold.woff2) format("woff2"), 
   url(../fonts/proximanova/proximanova-extrabold.ttf) format("truetype");
+  font-display: swap;
 }
 
 @font-face {
@@ -55,6 +59,7 @@
   url(../fonts/dsaribold/DSari_Bold-webfont.woff) format("woff"), 
   url(../fonts/dsaribold/DSari_Bold-webfont.woff2) format("woff2"), 
   url(../fonts/dsaribold/DSari_Bold-webfont.ttf) format("truetype");
+  font-display: swap;
 }
 
 
@@ -68,6 +73,7 @@
   url(../fonts/oswald/oswald-light-webfont.woff) format("woff"), 
   url(../fonts/oswald/oswald-light-webfont.woff2) format("woff2"), 
   url(../fonts/oswald/oswald-light-webfont.ttf) format("truetype");
+  font-display: swap;
 }
 
 @font-face {
@@ -79,6 +85,7 @@
   url(../fonts/oswald/oswald-bold-webfont.woff) format("woff"), 
   url(../fonts/oswald/oswald-bold-webfont.woff2) format("woff2"), 
   url(../fonts/oswald/oswald-bold-webfont.ttf) format("truetype");
+  font-display: swap;
 }
 
 @font-face {
@@ -90,6 +97,7 @@
   url(../fonts/oswald/oswald-regular-webfont.woff) format("woff"), 
   url(../fonts/oswald/oswald-regular-webfont.woff2) format("woff2"), 
   url(../fonts/oswald/oswald-regular-webfont.ttf) format("truetype");
+  font-display: swap;
 }
 
 @font-face {
@@ -98,7 +106,8 @@
   font-weight: 400;
   font-display: auto;
   src: url("../fonts/fontawesome/fa-regular-400.eot");
-  src: url("../fonts/fontawesome/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome/fa-regular-400.woff2") format("woff2"), url("../fonts/fontawesome/fa-regular-400.woff") format("woff"), url("../fonts/fontawesome/fa-regular-400.ttf") format("truetype"), url("../fonts/fontawesome/fa-regular-400.svg#fontawesome") format("svg"); }
+  src: url("../fonts/fontawesome/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome/fa-regular-400.woff2") format("woff2"), url("../fonts/fontawesome/fa-regular-400.woff") format("woff"), url("../fonts/fontawesome/fa-regular-400.ttf") format("truetype"), url("../fonts/fontawesome/fa-regular-400.svg#fontawesome") format("svg");
+  font-display: swap; }
 
   @font-face {
     font-family: 'Font Awesome 5 Free';
@@ -106,4 +115,5 @@
     font-weight: 900;
     font-display: auto;
     src: url("../fonts/fontawesome/fa-solid-900.eot");
-    src: url("../fonts/fontawesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome/fa-solid-900.woff2") format("woff2"), url("../fonts/fontawesome/fa-solid-900.woff") format("woff"), url("../fonts/fontawesome/fa-solid-900.ttf") format("truetype"), url("../fonts/fontawesome/fa-solid-900.svg#fontawesome") format("svg"); }
+    src: url("../fonts/fontawesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome/fa-solid-900.woff2") format("woff2"), url("../fonts/fontawesome/fa-solid-900.woff") format("woff"), url("../fonts/fontawesome/fa-solid-900.ttf") format("truetype"), url("../fonts/fontawesome/fa-solid-900.svg#fontawesome") format("svg"); 
+    font-display: swap;}

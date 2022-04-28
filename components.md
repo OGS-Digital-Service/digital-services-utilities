@@ -36,6 +36,19 @@ twitter:
 
 
 {{ bio({
+    direction: "left",
+    title:"This is the title area of the bio frame",
+    content:"A short paragraph of content that probably shouldn't exceed two really good and direct sentences. We're highlighting something, not telling the whole story here.",
+    attribute:"Jacob, Budget Examiner",
+    link:"https://budget.ny.gov",
+    linktext:"See the Jobs",
+    arialabel:"Go to the New York State Division of the Budget Employment page to look at career opportunities",
+    image:"/img/office.jpg",
+    imagealt:"office workers collaborating in a conference room"
+})}}
+
+{{ bio({
+    direction: "right",
     title:"This is the title area of the bio frame",
     content:"A short paragraph of content that probably shouldn't exceed two really good and direct sentences. We're highlighting something, not telling the whole story here.",
     attribute:"Jacob, Budget Examiner",
