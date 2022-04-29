@@ -37,6 +37,7 @@ twitter:
 
 {{ bio({
     direction: "left",
+    frametitle:"A frame title for the whole thing",
     title:"This is the title area of the bio frame",
     content:"A short paragraph of content that probably shouldn't exceed two really good and direct sentences. We're highlighting something, not telling the whole story here.",
     attribute:"Jacob, Budget Examiner",
@@ -49,6 +50,7 @@ twitter:
 
 {{ bio({
     direction: "right",
+    frametitle:"",
     title:"This is the title area of the bio frame",
     content:"A short paragraph of content that probably shouldn't exceed two really good and direct sentences. We're highlighting something, not telling the whole story here.",
     attribute:"Jacob, Budget Examiner",
