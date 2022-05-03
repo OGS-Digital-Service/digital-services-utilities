@@ -7,12 +7,22 @@
 <div class="mb-8 text-center">
 <img class="m-auto object-scale-down max-h-36" src="/img/{{item.icon}}" alt="{{item.iconalt}}" />
 </div>
-<h3 class="font-bold text-xl text-center !text-black mb-2">{{item.title}}</h3>
+{%if item.titlelink%} 
+<h3 class="font-bold text-xl text-center mb-2">
+    <a href="{{item.titlelink}}" class="!text-ny-links !no-underline hover:!underline">{{item.title}}</a>
+</h3>
+{% else %}
+<h3 class="font-bold text-xl text-center !text-black mb-2">
+{{item.title}}
+</h3>
+{%endif%}
+</h3>
 <p class="!text-black text-center">{{item.content}}</p>
 </div>
 {% endfor %}
 </div>
 <div class="flex justify-center mt-8">
-<a class="bg-admin-first !text-white visited:!text-white uppercase !no-underline hover:bg-black hover:!underline focus:bg-black focus:!underline mb-8 p-4 rounded-xl  font-bold text-center m-auto lg:m-0 w-1/2 md:w-1/3 lg:w-1/4" href="{{params.ctalink}}" {%if params.ctaaria%} aria-label="{{params.ctaaria}}"{%endif%}>{{params.cta}}</a>
+{% if params.ctalink%}
+<a class="bg-admin-first !text-white visited:!text-white uppercase !no-underline hover:bg-black hover:!underline focus:bg-black focus:!underline mb-8 p-4 rounded-xl  font-bold text-center m-auto lg:m-0 w-1/2 md:w-1/3 lg:w-1/4" href="{{params.ctalink}}" {%if params.ctaaria%} aria-label="{{params.ctaaria}}"{%endif%}>{{params.cta}}</a>{%endif%}
 </div>
 </section>
