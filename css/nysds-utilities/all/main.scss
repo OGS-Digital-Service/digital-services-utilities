@@ -73,6 +73,10 @@
     margin-left: 4.5rem;
 }
 
+.nysds-box-shadow {
+    box-shadow: 2px 2px 10px rgb(133, 132, 132);
+}
+
 // stuff tailwind doesn't have easily
 .hover\:nysds-border-b-3:hover {
     border-bottom-width: 3px;
@@ -81,6 +85,8 @@
 .focus\:nysds-border-b-3:focus {
     border-bottom-width: 3px;
 }
+
+
 
 // regular scss where it's easier for formatting 
 .nysds-textarea {

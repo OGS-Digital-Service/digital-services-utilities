@@ -1,15 +1,15 @@
-<section class="flex flex-col -mx-8 md:-mx-20 {{params.color}} my-14 py-8">
+<section class="flex flex-col -mx-8 md:-mx-20 {{params.color}} my-14 py-8 ">
 <h2 class="nysds-text-36 font-extrabold text-black text-center mb-4 w-full">{{params.title}}</h2>
 <p class="text-black mx-8 md:mx-20 justify-center self-center mb-4 max-w-2xl text-center">{{params.description}}</p>
-<div class="flex flex-wrap justify-center items-end m-auto max-w-6xl">
+<div class="flex flex-wrap justify-center items-end m-auto max-w-6xl lg:nysds-box-shadow lg:rounded-xl">
 {% for item in params.items %}
-<article class="my-4 mx-8 flex flex-col p-2 w-1/2 md:w-48">
+<article class="my-4 mx-8 flex flex-col p-2 w-1/2 md:w-48 ">
 {%if item.link%}
 <a href="{{item.link}}" class="!text-ny-links !no-underline hover:!underline"> 
-<div class="mb-8 text-center">
-<img class="m-auto object-scale-down max-h-36" src="/img/{{item.img}}" alt="{{item.alt}}" />
+<div class="mb-8 text-center ">
+<img class="m-auto object-scale-down max-h-36 " src="/img/{{item.img}}" alt="{{item.alt}}" />
 </div>
-<h3 class="font-bold text-lg text-center mb-2">
+<h3 class="font-bold text-lg text-center mb-2 ">
     {{item.title}}
 </h3>
 </a>
