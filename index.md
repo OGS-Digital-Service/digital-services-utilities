@@ -16,6 +16,10 @@ title: OGS Digital Services Utilities
         {
             text:"Youtube Video Embeds",
             link:"/youtube"
+        },
+        {
+            text:"Sponsor Logos",
+            link:"/sponsors"
         }
 
     ]

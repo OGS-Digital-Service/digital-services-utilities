@@ -1,0 +1,82 @@
+---
+layout: layout.njk
+title: NYSDS Sponsors Frame
+url: digital-services-utilities.dev/sponsors
+domain: digital-services-utilities.dev
+facebook:
+    title:  NYSDS Sponsors Frame
+    description: NYSDS Sponsors Frame 
+    image: nygov-logo.png
+twitter:
+    title: NYSDS Sponsors Frame
+    description: NYSDS Sponsors Frame
+    image: nygov-logo.png
+---
+{% from './_includes/_components.njk' import hero,categorytiles,card,bio,textarea,highlight,iconframe,quicklinks,sponsor  %}
+
+
+{{ sponsor ({
+    title:"Thank You to Our Sponsors",
+    description:"Thank you to our sponsors and a whole bunch of other text that can go here because it's a paragraph!",
+    cta:"Become a Sponsor",
+    ctalink:"/sponsors",
+    ctaaria:"",
+    items: [
+        {
+            title:"MVP Healthcare",
+            link:"google.com",
+            img:"esp/mvp.png",
+            alt:"MVP logo"
+        },
+        {
+            title:"Saranac Brewery",
+            link:"google.com",
+            img:"esp/saranac.png",
+            alt:"saranac logo"
+        },
+        {
+            title:"NYS of Health",
+            link:"google.com",
+            img:"esp/NYSoH.png",
+            alt:"new york state of health"
+        },
+        {
+            title:"NY 529",
+            link:"google.com",
+            img:"esp/ny529.png",
+            alt:"529 logo"
+        },
+        {
+            title:"NYS Lottery",
+            link:"google.com",
+            img:"esp/nys-lottery.png",
+            alt:"lottery logo"
+        },
+        {
+            title:"Miller Lite",
+            link:"google.com",
+            img:"esp/miller-lite.jpg",
+            alt:"miller lite logo"
+        },
+        {
+            title:"Price Chopper Market 32",
+            link:"google.com",
+            img:"esp/pc-mk32.png",
+            alt:"MVP logo"
+        },
+        {
+            title:"Allstate",
+            link:"google.com",
+            img:"esp/allstate.png",
+            alt:"allstate logo"
+        },
+        {
+            title:"Druthers",
+            link:"google.com",
+            img:"esp/druthers.jpg",
+            alt:"druthers logo"
+        }
+        
+    ]
+
+})}}
