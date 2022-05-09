@@ -8,6 +8,7 @@ permalink: /render-components/bsc-iconframe.html
 {{ iconframe({
     title:"An Icon Frame",
     color:"",
+    process:"true",
     description:"This is an area for a description of a few sentences. Something that serves to compliment and introduce the series of icons used here.",
     cta:"A CTA Link",
     ctalink:"",

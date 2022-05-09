@@ -2,6 +2,8 @@
 <h2 class="nysds-text-36 font-extrabold text-black text-center mb-4 w-full">{{params.title}}</h2>
 <p class="text-black mx-8 md:mx-20 justify-center self-center mb-4 max-w-2xl text-center">{{params.description}}</p>
 <div class="flex flex-wrap justify-center items-end m-auto max-w-6xl lg:nysds-box-shadow lg:rounded-xl">
+{% if params.titlesponsor%}
+{%endif%}
 {% for item in params.items %}
 <article class="my-4 mx-8 flex flex-col p-2 w-1/2 md:w-48 ">
 {%if item.link%}
