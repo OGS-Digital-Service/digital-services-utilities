@@ -76,28 +76,28 @@ twitter:
     ctaaria:"",
     iconcards: [
         {
-            icon:"nygov-logo.png",
+            icon:"/img/nygov-logo.png",
             iconalt:"an outline of the state of new york",
             title: "Icon Title That's a Link",
             titlelink:"google.com",
             content:"One really good decriptive sentence that shouldn't be terribly long. "
         },
         {
-            icon:"nygov-logo.png",
+            icon:"/img/nygov-logo.png",
             iconalt:"an outline of the state of new york",
             title: "Icon Title",
             titlelink:"",
             content:"One really good decriptive sentence that shouldn't be terribly long. "
         },
         {
-            icon:"nygov-logo.png",
+            icon:"/img/nygov-logo.png",
             iconalt:"an outline of the state of new york",
             title: "Icon Title",
             titlelink:"",
             content:"One really good decriptive sentence that shouldn't be terribly long. "
         },
         {
-            icon:"nygov-logo.png",
+            icon:"/img/nygov-logo.png",
             iconalt:"an outline of the state of new york",
             title: "Icon Title",
             titlelink:"",
