@@ -19,7 +19,9 @@
 </h3>
 <p class="!text-black text-center">{{item.content}}</p>
 </div>
+{% if params.process %}
 <div class="nysds-arrow-right "><span class="sr-only"> An arrow pointing to the right indicating the next step in this process </span></div>
+{% endif %}
 {% endfor %}
 </div>
 <div class="flex justify-center mt-8">

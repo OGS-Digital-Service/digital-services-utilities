@@ -69,6 +69,7 @@ twitter:
 {{ iconframe({
     title:"An Icon Frame",
     color:"",
+    process:"yes",
     description:"This is an area for a description of a few sentences. Something that serves to compliment and introduce the series of icons used here.",
     cta:"A CTA Link",
     ctalink:"google.com",
