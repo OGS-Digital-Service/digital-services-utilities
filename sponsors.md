@@ -21,59 +21,67 @@ twitter:
     cta:"Become a Sponsor",
     ctalink:"/sponsors",
     ctaaria:"",
+    titlesponsor: [
+        {
+           title:"MVP Healthcare",
+            link:"google.com",
+            img:"/img/esp/mvp.png",
+            alt:"MVP logo" 
+        }
+    ],
     items: [
         {
             title:"MVP Healthcare",
             link:"google.com",
-            img:"esp/mvp.png",
+            img:"/img/esp/mvp.png",
             alt:"MVP logo"
         },
         {
             title:"Saranac Brewery",
             link:"google.com",
-            img:"esp/saranac.png",
+            img:"/img/esp/saranac.png",
             alt:"saranac logo"
         },
         {
             title:"NYS of Health",
             link:"google.com",
-            img:"esp/NYSoH.png",
+            img:"/img/esp/NYSoH.png",
             alt:"new york state of health"
         },
         {
             title:"NY 529",
             link:"google.com",
-            img:"esp/ny529.png",
+            img:"/img/esp/ny529.png",
             alt:"529 logo"
         },
         {
             title:"NYS Lottery",
             link:"google.com",
-            img:"esp/nys-lottery.png",
+            img:"/img/esp/nys-lottery.png",
             alt:"lottery logo"
         },
         {
             title:"Miller Lite",
             link:"google.com",
-            img:"esp/miller-lite.jpg",
+            img:"/img/esp/miller-lite.jpg",
             alt:"miller lite logo"
         },
         {
             title:"Price Chopper Market 32",
             link:"google.com",
-            img:"esp/pc-mk32.png",
+            img:"/img/esp/pc-mk32.png",
             alt:"MVP logo"
         },
         {
             title:"Allstate",
             link:"google.com",
-            img:"esp/allstate.png",
+            img:"/img/esp/allstate.png",
             alt:"allstate logo"
         },
         {
             title:"Druthers",
             link:"google.com",
-            img:"esp/druthers.jpg",
+            img:"/img/esp/druthers.jpg",
             alt:"druthers logo"
         }
         

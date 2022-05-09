@@ -85,18 +85,6 @@
         link:"nysds.dev",
         number:"5",
         subitems:""
-      },
-      {
-        title:"Just a link",
-        link:"nysds.dev",
-        number:"6",
-        subitems:""
-      },
-      {
-        title:"Just a link",
-        link:"nysds.dev",
-        number:"7",
-        subitems:""
       }
     ]
       })}}
