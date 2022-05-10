@@ -46,3 +46,15 @@ We have two major opinions here, so stop reading or using if they drive you into
 
 ## General Concept for this utility system
 - class=" (Positioning attributes) (display and layout attributes) (visual enhancements) (colors fonts borders) (actual other classes) 
+
+
+## What browsers do we support?
+- ![Google Chrome](https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white) and all chromium browsers 
+- ![Firefox](https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white)
+- ![Safari](https://img.shields.io/badge/Safari-000000?style=for-the-badge&logo=Safari&logoColor=white)
+
+
+## What do we not support?
+- ![IE](https://img.shields.io/badge/Internet%20Explorer-0076D6?style=for-the-badge&logo=Internet%20Explorer&logoColor=white) There's some really minor fallbacks for basic stuff like background color. 
+- ![Opera](https://img.shields.io/badge/Opera-FF1B2D?style=for-the-badge&logo=Opera&logoColor=white) before it was chromium.
+- web3 
