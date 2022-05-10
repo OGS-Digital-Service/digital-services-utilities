@@ -1,5 +1,6 @@
 # digital-services-utilities
 Digital assets and utilities helper repo for support to enterprise sites.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a7412bea-c62d-4933-9c11-e074fb4f856e/deploy-status)](https://app.netlify.com/sites/eloquent-dijkstra-000cc5/deploys)
 
 ## Opinions
 We have two major opinions here, so stop reading or using if they drive you into a rage:
