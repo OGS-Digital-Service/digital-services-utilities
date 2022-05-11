@@ -24,5 +24,3 @@ title: OGS Digital Services Utilities
 
     ]
 })}}
-
-<div class="block bg-fallback bg-admin-first  h-1/2 w-1/2"> Something with a fallback color </div>
