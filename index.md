@@ -2,17 +2,29 @@
 layout: layout.njk
 title: OGS Digital Services Utilities
 ---
-{% from './_includes/_components.njk' import hero, categorytiles  %}
+{% from './_includes/_components.njk' import hero,categorytiles,card,bio,textarea,highlight,iconframe,quicklinks  %}
 
-<h1 class="nysds-text-36 font-extrabold"> {{title}} </h2>
+{{
+    hero({
+        title:"OGS Digital Services Utilities",
+        date: "",
+        image:"plaza-lights2.jpg",
+        description:"A simple, functional, and portable set of components for your NYS website or application. ", 
+        buttons: [
+        {
+            text:"View the Component Index",
+            link:"/components",
+            arialabel:""
+        }
+    ]
+    })
+}}
+
+<p class="text-2xl font-bold my-8 text-center"> We're still in beta so please forgive any component testing in the open! </p>
 
 {{ categorytiles({ 
-    title:"Utility Index",
+    title:"Some More Components",
     items: [
-        {
-            text:"Our Components",
-            link:"/components"
-        },
         {
             text:"Youtube Video Embeds",
             link:"/youtube"
