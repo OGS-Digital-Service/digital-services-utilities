@@ -1,0 +1,36 @@
+<style>
+
+.red:not([data-thingy="nowbroke"]) {
+    background-color: red;
+}
+</style>
+
+
+<div data-thingy="works">
+    <div>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <div class="red"> This is red </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div data-thingy="works">
+    <div>
+        <div>
+            <div data-thingy="nowbroke">
+                <div>
+                    <div>
+                        <div class="red"> This is def not red </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
