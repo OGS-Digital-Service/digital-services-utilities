@@ -36,7 +36,6 @@ for (let i = 0; i < videoarr.length, i < playarr.length, i < imagearr.length, i 
 const mobilemenu = document.getElementById('nysds-mobile-menu');
 const menu = document.getElementById('nysds-list-menu');
 const submenubutton = document.getElementsByClassName('nysds-submenu-button');
-const submenulink = document.getElementsByClassName('nysds-submenu-link');
 const submenu = document.getElementsByClassName('nysds-submenu');
 
 mobilemenu.addEventListener("click", mobiletoggle) //mobile menu show hide and aria-expanded
@@ -50,20 +49,44 @@ function mobiletoggle () {
         mobilemenu.setAttribute('aria-expanded', false)
     } 
 }
+
+// for click ouside the mobile menu hide menu
 document.addEventListener('click', function(e) {
     if (e.target.classList.contains("nysds-mobile-button")) {
+    }
+    else if (e.target.classList.contains("nysds-menu-back"))  {
     }
     else {
     menu.classList.add("hidden");
     mobilemenu.setAttribute('aria-expanded', false);
-    }
+        for (let i = 0; i < submenubutton.length; i++) {
+            submenubutton[i].classList.remove("hidden")
+        }
+        }
     e.stopPropagation();
 });
 
+// hiding the submenu only at mobile and back button opens the menu again
+menu.addEventListener('click', hidesubmenu)
+    function hidesubmenu(event) { 
+        if (window.innerWidth < 1024){
+            if (event.target.classList.contains("nysds-submenu-button")) {
+                for (let i = 0; i < submenubutton.length; i++) {
+                    submenubutton[i].classList.add("hidden")
+                }
+            }
+            if (event.target.classList.contains("nysds-menu-back")){
+                for (let i = 0; i < submenubutton.length; i++) {
+                    submenubutton[i].classList.remove("hidden");
+                }
+                menu.classList.remove("hidden")
+                mobilemenu.setAttribute('aria-expanded', true)
+            }
+        }
+    }
+   
 
-
-
-for (let i = 0; i < submenu.length, i < submenubutton.length  ; i++) {
+for (let i = 0; i < submenu.length, i < submenubutton.length; i++) {
    submenubutton[i].addEventListener("click", subtoggle ); //submenu show hides and aria expanded
    const sublist = submenu[i];
    const lastli = sublist.lastElementChild;
@@ -71,39 +94,28 @@ for (let i = 0; i < submenu.length, i < submenubutton.length  ; i++) {
     function subtoggle() {
         if (submenu[i].classList.contains("hidden")) {
             submenu[i].classList.toggle("hidden");
-            submenubutton[i].setAttribute('aria-expanded', true)
+            submenubutton[i].setAttribute('aria-expanded', true);
         }
         else {
             submenu[i].classList.toggle("hidden");
-            submenubutton[i].setAttribute('aria-expanded', false)
+            submenubutton[i].setAttribute('aria-expanded', false);
         }
         }
-
         // click anywhere else closes menus
         document.addEventListener('click', function(e) {
             if (e.target === submenubutton[i]) {
-            } else {
+            }
+            
+            else {
               submenu[i].classList.add("hidden");
               submenubutton[i].setAttribute('aria-expanded', false);
             }
             e.stopPropagation();
           });
 
-        // mobile only menu hides 
-        submenubutton[i].addEventListener("click", mobiletoggle);
-        function mobiletoggle() {
-            if (window.innerWidth < 1024) {
-                
-                console.log('this is mobile')
-
-
-            }
-            else {
-                console.log('this is def not mobile')
-            }
-        }     
+         
 }// end giant for loop for menus
-
-
+ 
 })// end anon function for pageload
+
 
