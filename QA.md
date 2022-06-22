@@ -25,9 +25,11 @@ twitter:
 </div>
 
 <div class="w-full mt-4 border-2 border-admin-second">
+<!-- google form option -->
 <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfzkI-5cgApHbpLD1vGpGvbm6SD2KFGDxHQ3WotJpOWsBKZhA/viewform?embedded=true" width="100%" frameborder="0" marginheight="0" marginwidth="0" 
 class="h-[600px] md:h-[500px]"
 >Loading…</iframe> -->
+<!-- microsoft forms embed -->
 <iframe width="100%" height="800px" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=6rhs9AB5EE2M64Dowcge554wJLZRZTNBk1sUffpo0ctUOEI5U1VXUDQzNDY5SlUxQTdQVU1GWEZSWC4u&embed=true" frameborder= "0" marginwidth= "0" marginheight= "0"  allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
 </div>
 </section>
