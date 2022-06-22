@@ -14,7 +14,7 @@ twitter:
 ---
 {% from './_includes/_components.njk' import hero,categorytiles,card,bio,textarea,highlight,iconframe,quicklinks,sponsor  %}
 
-<section class="flex flex-col items-center w-full border-admin-first border rounded-xl my-4 ">
+<section class="flex flex-col items-center w-full my-4 ">
 <div class="w-full flex justify-center"> 
 <span class="sr-only"> Embedded Video </span>
 <iframe src="https://players.brightcove.net/2886492229001/default_default/index.html?videoId=6193806616001"
