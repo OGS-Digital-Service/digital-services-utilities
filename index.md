@@ -32,6 +32,10 @@ title: OGS Digital Services Utilities
         {
             text:"Sponsor Logos",
             link:"/sponsors"
+        },
+         {
+            text:"Question and Answer Tool",
+            link:"/qa"
         }
 
     ]
