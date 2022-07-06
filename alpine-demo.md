@@ -21,7 +21,7 @@ twitter:
 
 
 
-<div x-data="{ q1: '', q2: '', q3: ''}" class="flex flex-col items-center m-auto"> <!-- data wrap -->
+<section x-data="{ q1: '', q2: '', q3: ''}" class="flex flex-col items-center m-auto"> <!-- data wrap -->
     <span class="text-sm oswald uppercase tracking-widest"> Step 1 of 3 </span>
     <h2 class="font-bold text-2xl my-4">Tell us about yourself</h2>
         <fieldset class="w-full md:w-2/3">
@@ -74,6 +74,6 @@ twitter:
             </div>
         </template>
     </div>
-</div>
+</section>
 
 
