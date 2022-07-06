@@ -66,6 +66,7 @@ twitter:
             <div class="">
                 <span x-text="q1"></span>
                 <span x-text="q2"></span>
+                <span x-text="q3"></span>
             </div>
         </template>
     </div>
