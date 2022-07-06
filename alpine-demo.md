@@ -21,15 +21,13 @@ twitter:
 
 
 
-
-
-
-<div x-data="{ q1: '', q2: '', q3: ''}" class="flex flex-col items-center m-auto">
+<div x-data="{ q1: '', q2: '', q3: ''}" class="flex flex-col items-center m-auto"> <!-- data wrap -->
     <div class="my-4 w-full md:w-2/3">
     <span class="text-sm oswald uppercase tracking-widest"> Step 1 of 3 </span>
     <h2 class="font-bold text-2xl my-4">Tell us about yourself</h2>
-        <p>Are you unemployed, furloughed, or working reduced hours?</p>
-        <div class=" flex flex-row items-center border border-admin-second my-2 pl-4 rounded-xl">
+        <fieldset>
+        <legend>Are you unemployed, furloughed, or working reduced hours?</legend>
+        <div class=" flex flex-row items-center border border-admin-second my-2 pl-4 rounded-xl" @click="$el.classList.add('bg-admin-first')" @click.outside="$el.classList.remove('bg-admin-first')">
             <input type="radio" value="yes" x-model="q1" id="q1-yes" >
             <label for="q1-yes" class="w-full p-4">Yes</label>
         </div>
@@ -37,7 +35,7 @@ twitter:
             <input type="radio" value="no" x-model="q1" id="q1-no">
             <label for="q1-no" class="w-full p-4">No</label>
         </div>
-    </div>
+        </fieldset>
     <div class="my-4 w-full md:w-2/3">
         <p>Are you having trouble paying for your rent, mortgage, or home maintenance fees?</p>
         <div class=" flex flex-row items-center border border-admin-second my-2 pl-4 rounded-xl">
@@ -59,6 +57,13 @@ twitter:
             <input type="radio" value="no" x-model="q3" id="q3-no">
             <label for="q3-no" class="w-full p-4">No</label>
         </div>
+    </div>
+    <div x-data="{ open: false }">
+        <button @click="open = ! open" class="nysds-exclude bg-admin-first hover:bg-black hover:underline focus:bg-black focus:underline m-4 p-4 rounded-xl text-white font-bold text-center ">Continue to Step 2</button>
+        <template x-if="open">
+            <div class="">
+            </div>
+        </template>
     </div>
     <div x-data="{ open: false }">
         <button @click="open = ! open" class="nysds-exclude bg-admin-first hover:bg-black hover:underline focus:bg-black focus:underline m-4 p-4 rounded-xl text-white font-bold text-center ">See Results</button>
