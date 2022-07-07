@@ -13,52 +13,44 @@ twitter:
     image: nygov-logo.png
 ---
 <section class="flex flex-col bg-blue-600 -mx-8 md:-mx-20">
-    <div class="flex flex-col md:flex-row flex-wrap lg:flex-nowrap items-center md:justify-center">
+    <div class="">
+    <div class="flex flex-col md:flex-row flex-wrap lg:flex-nowrap items-center md:justify-center md:items-start">
         <div class="m-2 flex flex-col p-2 w-1/2 sm:w-1/3 lg:w-1/6">
-            <div class="lg:h-24 text-center">
-                <img class="m-auto object-scale-down lg:max-h-20" src="https://www.ny.gov/sites/default/files/2022-07/Briefcase.png" alt="briefcase" />
+            <div class="lg:h-24 text-center flex items-end">
+                <img class="mx-auto object-scale-down max-h-36 lg:max-h-20" src="https://www.ny.gov/sites/default/files/2022-07/Briefcase.png" alt="briefcase" />
             </div>
-            <h3 class="font-bold text-xl text-center mb-2"> TEXT
-            </h3>
+            <h3 class="font-bold text-base text-center my-4 text-white uppercase"> Start at any experience level and advance in the high tech sector</h3>
         </div>
         <div class="m-2 flex flex-col p-2 w-1/2 sm:w-1/3 lg:w-1/6">
-            <div class="lg:h-24 text-center">
-                <img class="m-auto object-scale-down lg:max-h-20" src="https://www.ny.gov/sites/default/files/2022-07/Tracks.png" alt="map waypoint icons with a dotted line between" />
+            <div class="lg:h-24 text-center flex items-end">
+                <img class="mx-auto object-scale-down max-h-36 lg:max-h-20" src="https://www.ny.gov/sites/default/files/2022-07/Tracks.png" alt="map waypoint icons with a dotted line between" />
             </div>
-            <h3 class="font-bold text-xl text-center mb-2"> TEXT
-            </h3>
+            <h3 class="font-bold text-base text-center my-4 text-white uppercase"> Train as you work in a range of career tracks</h3>
         </div>
         <div class="m-2 flex flex-col p-2 w-1/2 sm:w-1/3 lg:w-1/6">
-            <div class="lg:h-24 text-center">
-                <img class="m-auto object-scale-down lg:max-h-20" src="https://www.ny.gov/sites/default/files/2022-07/76.png" alt="76 thousand dollars" />
+            <div class="lg:h-24 text-center flex items-end">
+                <img class="mx-auto object-scale-down max-h-36 lg:max-h-20" src="https://www.ny.gov/sites/default/files/2022-07/76.png" alt="76 thousand dollars" />
             </div>
-            <h3 class="font-bold text-xl text-center mb-2"> TEXT
-            </h3>
+            <h3 class="font-bold text-base text-center my-4 text-white uppercase"> Median industry salary</h3>
         </div>
         <div class="m-2 flex flex-col p-2 w-1/2 sm:w-1/3 lg:w-1/6">
-            <div class="lg:h-24 text-center">
-                <img class="m-auto object-scale-down lg:max-h-20" src="https://www.ny.gov/sites/default/files/2022-07/20_HR.png" alt="20 dollars per hour" />
+            <div class="lg:h-24 text-center flex items-end">
+                <img class="mx-auto object-scale-down max-h-36 lg:max-h-20" src="https://www.ny.gov/sites/default/files/2022-07/20_HR.png" alt="20 dollars per hour" />
             </div>
-            <h3 class="font-bold text-xl text-center mb-2">
-                TEXT
-            </h3>
+            <h3 class="font-bold text-base text-center my-4 text-white uppercase"> Starting pay with good benefits</h3>
         </div>
         <div class="m-2 flex flex-col p-2 w-1/2 sm:w-1/3 lg:w-1/6">
-            <div class="lg:h-24 text-center">
-                <img class="m-auto object-scale-down lg:max-h-20" src="https://www.ny.gov/sites/default/files/2022-07/degree.png" alt="graduation cap" />
+            <div class="lg:h-24 text-center flex items-end">
+                <img class="mx-auto object-scale-down max-h-36 lg:max-h-20" src="https://www.ny.gov/sites/default/files/2022-07/degree.png" alt="graduation cap" />
             </div>
-            <h3 class="font-bold text-xl text-center mb-2">
-                TEXT
-            </h3>
+            <h3 class="font-bold text-base text-center my-4 text-white uppercase"> No advanced degree required</h3>
         </div>
         <div class="m-2 flex flex-col p-2 w-1/2 sm:w-1/3 lg:w-1/6">
-            <div class="lg:h-24 text-center">
-                <img class="m-auto object-scale-down lg:max-h-20" src="https://www.ny.gov/sites/default/files/2022-07/flexible.png" alt="person working at a laptop with a clock behind" />
+            <div class="lg:h-24 text-center flex items-end">
+                <img class="mx-auto object-scale-down max-h-36 lg:max-h-20" src="https://www.ny.gov/sites/default/files/2022-07/flexible.png" alt="person working at a laptop with a clock behind" />
             </div>
-            <h3 class="font-bold text-xl text-center mb-2">
-               TEXT
-            </h3>
+            <h3 class="font-bold text-base text-center my-4 text-white uppercase"> Flexible work schedules</h3>
         </div>
     </div>
-    <div class="flex justify-center mt-8"></div>
+    </div>
 </section>
