@@ -12,48 +12,48 @@ twitter:
     description: NSTC Icon Frame
     image: nygov-logo.png
 ---
-<section class="flex flex-col bg-blue-600">
-    <div class="flex flex-col lg:flex-row flex-wrap lg:flex-nowrap items-center lg:justify-center">
-        <div class="my-4 mx-8 flex flex-col p-2 w-2/3 md:w-64">
-            <div class="mb-8 text-center">
-                <img class="m-auto object-scale-down max-h-36" src="/sites/g/files/oee986/files/media/2022/05/purchasing-web-icons_createrequisition.png" alt="a document" />
+<section class="flex flex-col bg-blue-600 -mx-8 md:-mx-20">
+    <div class="flex flex-col md:flex-row flex-wrap lg:flex-nowrap items-center md:justify-center">
+        <div class="m-2 flex flex-col p-2 w-1/2 sm:w-1/3 lg:w-1/6">
+            <div class="lg:h-24 text-center">
+                <img class="m-auto object-scale-down lg:max-h-20" src="https://www.ny.gov/sites/default/files/2022-07/Briefcase.png" alt="briefcase" />
             </div>
             <h3 class="font-bold text-xl text-center mb-2"> TEXT
             </h3>
         </div>
-        <div class="my-4 mx-8 flex flex-col p-2 w-2/3 md:w-64">
-            <div class="mb-8 text-center">
-                <img class="m-auto object-scale-down max-h-36" src="/sites/g/files/oee986/files/media/2022/05/purchasing-web-icons_createrequisition.png" alt="a document" />
+        <div class="m-2 flex flex-col p-2 w-1/2 sm:w-1/3 lg:w-1/6">
+            <div class="lg:h-24 text-center">
+                <img class="m-auto object-scale-down lg:max-h-20" src="https://www.ny.gov/sites/default/files/2022-07/Tracks.png" alt="map waypoint icons with a dotted line between" />
             </div>
             <h3 class="font-bold text-xl text-center mb-2"> TEXT
             </h3>
         </div>
-        <div class="my-4 mx-8 flex flex-col p-2 w-2/3 md:w-64">
-            <div class="mb-8 text-center">
-                <img class="m-auto object-scale-down max-h-36" src="/sites/g/files/oee986/files/media/2022/05/purchasing-web-icons_createrequisition.png" alt="a document" />
+        <div class="m-2 flex flex-col p-2 w-1/2 sm:w-1/3 lg:w-1/6">
+            <div class="lg:h-24 text-center">
+                <img class="m-auto object-scale-down lg:max-h-20" src="https://www.ny.gov/sites/default/files/2022-07/76.png" alt="76 thousand dollars" />
             </div>
             <h3 class="font-bold text-xl text-center mb-2"> TEXT
             </h3>
         </div>
-        <div class="my-4 mx-8 flex flex-col p-2 w-2/3 md:w-64">
-            <div class="mb-8 text-center">
-                <img class="m-auto object-scale-down max-h-36" src="/sites/g/files/oee986/files/media/2022/05/purchasing-web-icons_planpurchase.png" alt="hand with money symbol" />
+        <div class="m-2 flex flex-col p-2 w-1/2 sm:w-1/3 lg:w-1/6">
+            <div class="lg:h-24 text-center">
+                <img class="m-auto object-scale-down lg:max-h-20" src="https://www.ny.gov/sites/default/files/2022-07/20_HR.png" alt="20 dollars per hour" />
             </div>
             <h3 class="font-bold text-xl text-center mb-2">
                 TEXT
             </h3>
         </div>
-        <div class="my-4 mx-8 flex flex-col p-2 w-2/3 md:w-64">
-            <div class="mb-8 text-center">
-                <img class="m-auto object-scale-down max-h-36" src="/sites/g/files/oee986/files/media/2022/05/purchasing-web-icons_generatepo.png" alt="computer with text and money symbol on screen" />
+        <div class="m-2 flex flex-col p-2 w-1/2 sm:w-1/3 lg:w-1/6">
+            <div class="lg:h-24 text-center">
+                <img class="m-auto object-scale-down lg:max-h-20" src="https://www.ny.gov/sites/default/files/2022-07/degree.png" alt="graduation cap" />
             </div>
             <h3 class="font-bold text-xl text-center mb-2">
                 TEXT
             </h3>
         </div>
-        <div class="my-4 mx-8 flex flex-col p-2 w-2/3 md:w-64">
-            <div class="mb-8 text-center">
-                <img class="m-auto object-scale-down max-h-36" src="/sites/g/files/oee986/files/media/2022/05/purchasing-web-icons_changenotices.png" alt="money with arrows" />
+        <div class="m-2 flex flex-col p-2 w-1/2 sm:w-1/3 lg:w-1/6">
+            <div class="lg:h-24 text-center">
+                <img class="m-auto object-scale-down lg:max-h-20" src="https://www.ny.gov/sites/default/files/2022-07/flexible.png" alt="person working at a laptop with a clock behind" />
             </div>
             <h3 class="font-bold text-xl text-center mb-2">
                TEXT
