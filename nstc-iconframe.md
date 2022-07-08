@@ -12,7 +12,7 @@ twitter:
     description: NSTC Icon Frame
     image: nygov-logo.png
 ---
-<section class="flex flex-col bg-gradient-to-r from-ny-blue to-ny-blue-second">
+<section class="flex flex-col bg-gradient-to-r from-ny-blue to-ny-blue-second -mx-8 md:-mx-20">
     <h2 class="uppercase text-ny-gold font-bold text-center pt-8 text-lg">Why work in the semiconductor industry? </h2>
     <div class="flex flex-col md:flex-row flex-wrap lg:flex-nowrap items-center md:justify-center md:items-start">
         <div class="m-2 flex flex-col p-2 w-1/2 sm:w-1/3 lg:w-1/6">
