@@ -40,11 +40,3 @@ title: OGS Digital Services Utilities
 
     ]
 })}}
-
-<div class="w-full h-24 p-8 bg-[#D0D0CE]">
-<a class="font-[16px] text-[#004DD1]" href="https://ny.gov">A link that we are testing for contrast not bold</a>
-</div>
-
-<div class="w-full h-24 p-8 bg-[#D0D0CE]">
-<a class="font-[16px] text-[#004DD1] font-bold" href="https://ny.gov">A link that we are testing for contrast BOLD</a>
-</div>
