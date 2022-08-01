@@ -37,6 +37,7 @@ const mobilemenu = document.getElementById('nysds-mobile-menu');
 const menu = document.getElementById('nysds-list-menu');
 const submenubutton = document.getElementsByClassName('nysds-submenu-button');
 const submenu = document.getElementsByClassName('nysds-submenu');
+const sublink = document.getElementsByClassName('nysds-submenu-link');
 
 mobilemenu.addEventListener("click", mobiletoggle) //mobile menu show hide and aria-expanded
 function mobiletoggle () {
@@ -66,7 +67,7 @@ document.addEventListener('click', function(e) {
     e.stopPropagation();
 });
 
-// hiding the submenu only at mobile and back button opens the menu again
+// hiding the submenu only at mobile and back button opens the menu again --SUBMENU
 menu.addEventListener('click', hidesubmenu)
     function hidesubmenu(event) { 
         if (window.innerWidth < 1024){
@@ -74,13 +75,20 @@ menu.addEventListener('click', hidesubmenu)
                 for (let i = 0; i < submenubutton.length; i++) {
                     submenubutton[i].classList.add("hidden")
                 }
+                for (let i = 0; i < sublink.length; i++) {
+                    sublink[i].classList.add("hidden")
+                }
+                menu.classList.add("nysds-h-0")
             }
             if (event.target.classList.contains("nysds-menu-back")){
                 for (let i = 0; i < submenubutton.length; i++) {
                     submenubutton[i].classList.remove("hidden");
                 }
-                menu.classList.remove("hidden")
+                for (let i = 0; i < sublink.length; i++) {
+                    sublink[i].classList.remove("hidden")
+                }
                 mobilemenu.setAttribute('aria-expanded', true)
+                menu.classList.remove("nysds-h-0")
             }
         }
     }
