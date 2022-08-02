@@ -56,24 +56,26 @@ twitter:
                 <input type="radio" value="no" x-model="q3" id="q3-no">
                 <label for="q3-no" class="w-full p-4">No</label>
             </div>
-        </fieldset> 
-    <div x-data="{ open: false }">
-        <button @click="open = ! open" class="nysds-exclude bg-admin-first hover:bg-black hover:underline focus:bg-black focus:underline m-4 p-4 rounded-xl text-white font-bold text-center ">Continue to Step 2</button>
-        <template x-if="open">
-            <div class="">
-            </div>
-        </template>
-    </div>
+        </fieldset>
     <div x-data="{ open: false }">
         <button @click="open = ! open" class="nysds-exclude bg-admin-first hover:bg-black hover:underline focus:bg-black focus:underline m-4 p-4 rounded-xl text-white font-bold text-center ">See Results</button>
         <template x-if="open">
-            <div class="">
-                <span x-text="q1"></span>
-                <span x-text="q2"></span>
-                <span x-text="q3"></span>
-            </div>
+        <div>
+        <template x-if="q1 == 'yes'">
+                <div>Service 1 is for you </div>
+        </template>
+        <template x-if="q2 == 'yes'">
+                <div>Service 2 is for you </div>
+        </template>
+        <template x-if="q3 == 'yes'">
+                <div>Service 3 is for you </div>
+        </template>
+        </div>
         </template>
     </div>
+    
+    
+    
 </section>
 
 
