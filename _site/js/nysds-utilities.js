@@ -117,6 +117,10 @@ for (let i = 0; i < submenu.length, i < submenubutton.length; i++) {
             else {
               submenu[i].classList.add("hidden");
               submenubutton[i].setAttribute('aria-expanded', false);
+              menu.classList.remove("nysds-h-0")
+              for (let i = 0; i < sublink.length; i++) {
+                sublink[i].classList.remove("hidden")
+                }
             }
             e.stopPropagation();
           });
