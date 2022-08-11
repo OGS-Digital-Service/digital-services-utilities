@@ -15,6 +15,11 @@ title: OGS Digital Services Utilities
             text:"View the Component Index",
             link:"/components",
             arialabel:""
+        },
+        {
+            text:"second link",
+            link:"/components",
+            arialabel:""
         }
     ]
     })
