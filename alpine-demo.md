@@ -13,7 +13,7 @@ twitter:
     image: nygov-logo.png
 ---
 {% from './_includes/_components.njk' import hero,categorytiles,card,bio,textarea,highlight,iconframe,quicklinks,sponsor  %}
-<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
 
 <h1 class="nysds-text-36 font-extrabold mb-4 w-full">Find Services</h1>
 

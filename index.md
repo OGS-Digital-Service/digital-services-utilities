@@ -1,6 +1,16 @@
 ---
 layout: layout.njk
 title: OGS Digital Services Utilities
+url: digital-services-utilities.dev
+domain: digital-services-utilities.dev
+facebook:
+    title:  OGS Digital Services Utilities
+    description: OGS Digital Services Utilities
+    image: nygov-logo.png
+twitter:
+    title: OGS Digital Services Utilities
+    description: OGS Digital Services Utilities
+    image: nygov-logo.png
 ---
 {% from './_includes/_components.njk' import hero,categorytiles,card,bio,textarea,highlight,iconframe,quicklinks  %}
 
@@ -38,9 +48,13 @@ title: OGS Digital Services Utilities
             text:"Sponsor Logos",
             link:"/sponsors"
         },
-         {
+        {
             text:"Question and Answer Tool",
             link:"/qa"
+        },
+        {
+            text:"FOIL Dropdown",
+            link:"/dropdown"
         }
 
     ]

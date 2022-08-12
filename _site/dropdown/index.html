@@ -3,27 +3,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Accessibility Statement">
+    <meta name="description" content="NYSDS FOIL Dropdown">
     <meta name="generator" content="11ty/eleventy">    
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://">
+    <meta property="og:url" content="https://digital-services-utilities.dev/dropdown">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="https:///img/">
+    <meta property="og:title" content="NYSDS FOIL Dropdown">
+    <meta property="og:description" content="NYSDS FOIL Dropdown">
+    <meta property="og:image" content="https://digital-services-utilities.dev/img/nygov-logo.png">
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://">
-    <meta name="twitter:title" content="">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="https:///img/">
+    <meta property="twitter:url" content="https://digital-services-utilities.dev/dropdown">
+    <meta name="twitter:title" content="NYSDS FOIL Dropdown">
+    <meta name="twitter:description" content="NYSDS FOIL Dropdown">
+    <meta name="twitter:image" content="https://digital-services-utilities.dev/img/nygov-logo.png">
     <link href="/css/nysds-utilities.css" rel="stylesheet">
 <link href="/css/tailwind.css" rel="stylesheet">
 <link href="/css/fonts.css" rel="stylesheet">
 
     <script src="/js/nysds-utilities.js"></script>
 <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <title>Accessibility Statement</title>
+    <title>NYSDS FOIL Dropdown</title>
   </head>
   <body class="nysds-normalize">
   <a href="#main-site-content-for-skiplink" class="sr-only focus:not-sr-only text-blue-700 underline">Skip to Main Content</a>
@@ -139,15 +139,55 @@
 
 
     <main class="mx-8 md:mx-20" id="main-site-content-for-skiplink">
-    <h1>Accessibility Statement</h1>
-<h2>Overview</h2>
-<p><strong>At a minimum this site is required to meet WCAG 2.0 AA.</strong> We believe that it does much better than that as all components that end up here are tested against as many automated tools, manual checks, screen readers, and validators as we have available to us. Tell us if we're wrong at <a href="mailto:digital.services@ogs.ny.gov">digital.services@ogs.ny.gov</a> or by submitting a pull request or open an issue for this website on our <a href="https://github.com/OGS-Digital-Service/ogs-digital-service.github.io">github repository.</a></p>
-<h2>Accessibility isn't easy</h2>
-<p>Anything that is clearly marked as &quot;Demo&quot; or something like &quot;For Demonstrations Only&quot; are still in progress and likely we are testing these components for functionality and accessibility, so please give us the space and time to do that. Testing components on real websites, in real browsers, with real content, served from real servers, and checked by real people is the best way for us to determine if something is worthy of inclusion into the design system or use anywhere on NYS websites.</p>
-<p>We are trying to bake in accessibility review as early as possible in the design and build process. It is always part of the code review process prior to inclusion even on this testing environment.</p>
-<p>When in doubt we try to just use <strong>semantic html elements</strong> with minimal styling and as little javascript as possible.</p>
-<h2>More Reading</h2>
-<p>For more information see the <a href="https://its.ny.gov/document/accessibility-web-based-information-and-applications-compliance-reporting">NYS ITS Accessibility Policy</a></p>
+    <style>
+    .nysds-linklist {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    .nysds-linklist_label {
+        font-weight: bold;
+        margin: 0.5rem;
+    }
+    .nysds-linklist_select {
+        border: 1px solid #62666a;
+        padding: 0.5rem;
+        margin: 1rem;
+    }
+    .nysds-linklist_button{
+        background: #154973;
+        padding: 20px;
+        font-family: "Proxima Nova", sans-serif;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 15px;
+        letter-spacing: 2px;
+        color: #ffffff;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 15px;
+    }
+</style>    
+<section class="nysds-linklist">
+        <label class="nysds-linklist_label " for="foil-list">Agency Freedom of Information Law (FOIL) Request Link List</label>
+            <select 
+            class="nysds-linklist_select" 
+            name="Agency Freedom of Information Request Link List" 
+            id="foil-list">
+                <option disabled selected>Please Choose an Agency</option>
+                <option value="https://ogs.ny.gov">Office of General Services </option>
+                <option value="https://dol.ny.gov">Department of Labor </option>
+                <option value="https://health.ny.gov">Department of Health</option>
+            </select>
+            <button class="nysds-linklist_button" type="button" id="foil-submit">Go to Agency FOIL Page</button>
+</section>
+<script> 
+    var foilList = document.getElementById("foil-list");
+    var foilSubmit = document.getElementById("foil-submit");
+    foilSubmit.onclick = function(){
+        window.location = foilList.value;
+    }
+</script>
 
     </main>
     <footer class="bg-admin-third px-4 py-8 flex flex-col md:flex-row md:items-center items-baseline mt-12">
