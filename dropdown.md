@@ -40,6 +40,13 @@ twitter:
         text-transform: uppercase;
         text-decoration: none;
         border-radius: 15px;
+        border: none;
+    }
+    .nysds-linklist_button:hover {
+        background: #000;
+    }
+    .nysds-linklist_button:focus {
+        background: #000;
     }
 </style>    
 <section class="nysds-linklist">
@@ -53,7 +60,7 @@ twitter:
                 <option value="https://dol.ny.gov">Department of Labor </option>
                 <option value="https://health.ny.gov">Department of Health</option>
             </select>
-            <button class="nysds-linklist_button" type="button" id="foil-submit">Go to Agency FOIL Page</button>
+            <input class="nysds-linklist_button" type="button" id="foil-submit" value="Go To Agency FOIL Page">
 </section>
 <script> 
     var foilList = document.getElementById("foil-list");
