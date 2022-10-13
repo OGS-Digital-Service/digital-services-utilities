@@ -6,6 +6,16 @@
     font-weight: 900 !important;
   }
 
+.nysds-plus::before {
+    content:"+";
+    margin-right: 0.5rem;
+    }
+
+ .nysds-minus::before {
+    content:"-";
+    margin-right: 0.5rem;
+    }  
+    
 .nysds-quotation-marks::before {
     font-family: "Font Awesome 5 Free" !important;
     font-weight: 900 !important;
