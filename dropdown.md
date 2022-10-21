@@ -3,6 +3,7 @@ layout: layout.njk
 title: NYSDS FOIL Dropdown
 url: digital-services-utilities.dev/dropdown
 domain: digital-services-utilities.dev
+data: openfoil
 facebook:
     title:  NYSDS FOIL Dropdown
     description: NYSDS FOIL Dropdown
@@ -12,7 +13,7 @@ twitter:
     description: NYSDS FOIL Dropdown
     image: nygov-logo.png
 ---
-{% from './_includes/_components.njk' import hero,categorytiles,card,bio,textarea,highlight,iconframe,quicklinks,sponsor  %}
+
 <style>
     .nysds-linklist {
         display: flex;
@@ -27,6 +28,7 @@ twitter:
         border: 1px solid #62666a;
         padding: 0.5rem;
         margin: 1rem;
+        max-width:90%;
     }
     .nysds-linklist_button{
         background: #154973;
@@ -56,9 +58,7 @@ twitter:
             name="Agency Freedom of Information Request Link List" 
             id="foil-list">
                 <option disabled selected>Please Choose an Agency</option>
-                <option value="https://ogs.ny.gov">Office of General Services </option>
-                <option value="https://dol.ny.gov">Department of Labor </option>
-                <option value="https://health.ny.gov">Department of Health</option>
+                {% for agency in openfoil %}<option value="{{agency.link}}" class="">{{agency.Agency}}</option>{% endfor %}
             </select>
             <input class="nysds-linklist_button" type="button" id="foil-submit" value="Go To Agency FOIL Page">
 </section>
