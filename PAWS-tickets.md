@@ -47,7 +47,7 @@ title: PAWS Ticket review
 {{ ticket({
     title:"Set minimum heights for page templates",
     type:"bug",
-    content:"Some page templates do not have a minimu height set and as a result when there is little content on a page or subpage the left navigation or page content is overlapped in a non-ideal way. Pages should be relatively uniform in size to allow for ease of navigation. ",
+    content:"Some page templates do not have a minimum height set and as a result when there is little content on a page or subpage the left navigation or page content is overlapped in a non-ideal way. Pages should be relatively uniform in size to allow for ease of navigation. ",
     image:"height.png",
     imagealt:"page showing weird overlap of footer" 
 })
@@ -55,7 +55,7 @@ title: PAWS Ticket review
 {{ ticket({
     title:"Format Breadcrumbs",
     type:"style",
-    content:"Breadcrumbs are not styled correctly and need several style and functionality improvements to better align with user experience guidelines. We'd like to remove some levels of breadcrumb (back to previous page only) in favor of a more prominent title on the contractor information page as well as style the breadcrumb to be smaller and less obtrusive to the page content. In the screenshot below, this would result in a larger title for 1st Run Computer Services Inc and a smaller breadcrumb with arrow allowing the user to return to the contractor information table. The other breadcrumbs pictured here are unecessary and confusing.",
+    content:"Breadcrumbs are not styled correctly and need several style and functionality improvements to better align with user experience guidelines. We'd like to remove some levels of breadcrumb (back to previous page only) in favor of a more prominent title on the contractor information page as well as style the breadcrumb to be smaller and less obtrusive to the page content. In the screenshot below, this would result in a larger title for 1st Run Computer Services Inc and a smaller breadcrumb with arrow allowing the user to return to the contractor information table. The other breadcrumbs pictured here are unnecessary and confusing.",
     image:"breadcrumb.png",
     imagealt:"breadcrumbs formatting" 
 })
