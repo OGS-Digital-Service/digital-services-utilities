@@ -21,6 +21,7 @@ Thumbs.db
 /.vscode
 
 /_site/render-components/
+/_site/img/render/
 
 # User-specific files
 *.rsuser
