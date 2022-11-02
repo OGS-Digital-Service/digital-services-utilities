@@ -3,27 +3,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NYSDS alpinejs demo">
+    <meta name="description" content="NYSDS Quick Escape Test">
     <meta name="generator" content="11ty/eleventy">    
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://digital-services-utilities.dev/alpine-demo">
+    <meta property="og:url" content="https://digital-services-utilities.dev/escape-test">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="NYSDS alpinejs demo">
-    <meta property="og:description" content="alpine">
-    <meta property="og:image" content="https://digital-services-utilities.dev/img/nygov-logo.png">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://digital-services-utilities.dev/img/">
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://digital-services-utilities.dev/alpine-demo">
-    <meta name="twitter:title" content="NYSDS alpinejs demo">
-    <meta name="twitter:description" content="alpine">
-    <meta name="twitter:image" content="https://digital-services-utilities.dev/img/nygov-logo.png">
+    <meta property="twitter:url" content="https://digital-services-utilities.dev/escape-test">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https://digital-services-utilities.dev/img/">
     <link href="/css/nysds-utilities.css" rel="stylesheet">
 <link href="/css/tailwind.css" rel="stylesheet">
 <link href="/css/fonts.css" rel="stylesheet">
 
     <script src="/js/nysds-utilities.js"></script>
 <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <title>NYSDS alpinejs demo</title>
+    <title>NYSDS Quick Escape Test</title>
   </head>
   <body class="nysds-normalize">
   <a href="#main-site-content-for-skiplink" class="sr-only focus:not-sr-only text-blue-700 underline">Skip to Main Content</a>
@@ -139,60 +139,22 @@
 
 
     <main class="mx-8 md:mx-20" id="main-site-content-for-skiplink">
-    <h1 class="nysds-text-36 font-extrabold mb-4 w-full">Find Services</h1>
-<section x-data="{ q1: '', q2: '', q3: ''}" class="flex flex-col items-center m-auto"> <!-- data wrap -->
-    <span class="text-sm oswald uppercase tracking-widest"> Step 1 of 3 </span>
-    <h2 class="font-bold text-2xl my-4">Tell us about yourself</h2>
-        <fieldset class="w-full md:w-2/3">
-            <legend>Are you unemployed, furloughed, or working reduced hours?</legend>
-            <div class=" flex flex-row items-center border border-admin-second my-2 pl-4 rounded-xl" @click="$refs.q1no.classList.remove('bg-admin-third');$el.classList.add('bg-admin-third')" x-ref="q1yes">
-                <input type="radio" value="yes" x-model="q1" id="q1-yes" >
-                <label for="q1-yes" class="w-full p-4">Yes</label>
-            </div>
-            <div class="flex flex-row items-center border border-admin-second my-2 pl-4 rounded-xl" @click="$refs.q1yes.classList.remove('bg-admin-third');$el.classList.add('bg-admin-third')" x-ref="q1no">
-                <input type="radio" value="no" x-model="q1" id="q1-no">
-                <label for="q1-no" class="w-full p-4">No</label>
-            </div>
-        </fieldset>
-        <fieldset class="w-full md:w-2/3">
-            <legend>Are you having trouble paying for your rent, mortgage, or home maintenance fees?</legend>
-            <div class=" flex flex-row items-center border border-admin-second my-2 pl-4 rounded-xl">
-                <input type="radio" value="yes" x-model="q2" id="q2-yes" >
-                <label for="q2-yes" class="w-full p-4">Yes</label>
-            </div>
-            <div class="flex flex-row items-center border border-admin-second my-2 pl-4 rounded-xl">
-                <input type="radio" value="no" x-model="q2" id="q2-no">
-                <label for="q2-no" class="w-full p-4">No</label>
-            </div>
-        </fieldset>
-        <fieldset class="w-full md:w-2/3">
-            <legend>Are you having trouble purchasing enough food to feed yourself or your family?</legend>
-            <div class=" flex flex-row items-center border border-admin-second my-2 pl-4  rounded-xl">
-                <input type="radio" value="yes" x-model="q3" id="q3-yes" >
-                <label for="q3-yes" class="w-full p-4">Yes</label>
-            </div>
-            <div class="flex flex-row items-center border border-admin-second my-2 pl-4 rounded-xl">
-                <input type="radio" value="no" x-model="q3" id="q3-no">
-                <label for="q3-no" class="w-full p-4">No</label>
-            </div>
-        </fieldset>
-    <div x-data="{ open: false }">
-        <button @click="open = ! open" class="nysds-exclude bg-admin-first hover:bg-black hover:underline focus:bg-black focus:underline m-4 p-4 rounded-xl text-white font-bold text-center ">See Results</button>
-        <template x-if="open">
-        <div>
-        <template x-if="q1 == 'yes'">
-                <div>Service 1 is for you </div>
-        </template>
-        <template x-if="q2 == 'yes'">
-                <div>Service 2 is for you </div>
-        </template>
-        <template x-if="q3 == 'yes'">
-                <div>Service 3 is for you </div>
-        </template>
-        </div>
-        </template>
-    </div>
+    <section class="flex justify-between text-center m-8">
+<button type="button" class="bg-gray-200 p-4 m-4 hover:underline" id="escapebutton">This is a quick escape BUTTON element </button>
+<a href="" class="bg-gray-200 p-4 m-4 hover:underline" id="escapeanchor">This is a quick escape ANCHOR element</a>
 </section>
+<p class="">
+Both of these use javascript and the window location replace method to replace urls in browser history. I think the problem that is going to happen is that it can only manipulate the most recent page in history or that it doesn't have the intended functionality or violates accessibility principles.
+</p>
+<script>
+  var button = document.getElementById('escapebutton')
+  var link = document.getElementById('escapeanchor')
+  button.addEventListener("click", replace)
+  link.addEventListener("click", replace)
+  function replace () {
+    window.location.replace('https://apple.com')
+  }
+</script>
 
     </main>
     <footer class="bg-admin-third px-4 py-8 flex flex-col md:flex-row md:items-center items-baseline mt-12">
