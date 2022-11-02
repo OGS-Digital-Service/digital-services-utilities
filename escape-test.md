@@ -34,7 +34,7 @@ button.addEventListener("click", replacebutton)
 <h2 class="font-bold text-xl"> 2. Use an Anchor (link) </h2>
 <div class="flex flex-col lg:flex-row items-center bg-yellow-200 p-4 justify-around">
 <a href="https://google.com" class="bg-white p-4 my-4 border-black border hover:underline w-80" id="escapeanchor">This is a quick escape ANCHOR element</a>
-<pre class="hidden lg:block>
+<pre class="hidden lg:block">
 <code class="w-1/2"> 
 var link = document.getElementById('escapeanchor')
 link.addEventListener("click", replacelink)
