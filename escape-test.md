@@ -10,7 +10,7 @@ domain: digital-services-utilities.dev
 
 <h2 class="font-bold text-xl"> 1. Use a Button </h2>
 <div class="flex flex-col lg:flex-row items-center bg-slate-200 p-4 justify-around">
-<button type="button" class="bg-white p-4 my-4 border-black border hover:underline w-80" id="escapebutton">This is a quick escape BUTTON element </button>
+<button type="button" class="bg-white p-4 my-4 border-black border hover:underline lg:w-80" id="escapebutton">This is a quick escape BUTTON element </button>
 <pre class="hidden lg:block">
 <code class="w-1/2">
 var button = document.getElementById('escapebutton')
@@ -33,7 +33,7 @@ button.addEventListener("click", replacebutton)
 
 <h2 class="font-bold text-xl"> 2. Use an Anchor (link) </h2>
 <div class="flex flex-col lg:flex-row items-center bg-yellow-200 p-4 justify-around">
-<a href="https://google.com" class="bg-white p-4 my-4 border-black border hover:underline w-80" id="escapeanchor">This is a quick escape ANCHOR element</a>
+<a href="https://google.com" class="bg-white p-4 my-4 border-black border hover:underline lg:w-80" id="escapeanchor">This is a quick escape ANCHOR element</a>
 <pre class="hidden lg:block">
 <code class="w-1/2"> 
 var link = document.getElementById('escapeanchor')
