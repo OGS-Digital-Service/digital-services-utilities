@@ -19,6 +19,12 @@
     font-size: 18px;
 }
 
+code {
+    font-weight: bold;
+    padding: 1px 2px 3px;
+    background:rgb(215, 215, 215);
+}
+
 .nysds-line-clamp-1 {
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -113,9 +119,6 @@
         color:#154973;
       }
 
-      &:visited {
-        color: #007AC2;
-      }
     }
 
     ul {

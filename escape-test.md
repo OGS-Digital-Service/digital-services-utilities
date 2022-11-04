@@ -12,13 +12,11 @@ domain: digital-services-utilities.dev
 <div class="flex flex-col lg:flex-row items-center bg-slate-200 p-4 justify-around">
 <button type="button" class="bg-white p-4 my-4 border-black border hover:underline lg:w-80" id="escapebutton">This is a quick escape BUTTON element </button>
 <pre class="hidden lg:block">
-<code class="w-1/2">
-var button = document.getElementById('escapebutton')
+<code class="w-1/2">var button = document.getElementById('escapebutton')
 button.addEventListener("click", replacebutton)
   function replacebutton () {
     window.location.replace('https://apple.com')
-  }
-</code>
+  }</code>
 </pre>
 </div>
 
@@ -35,14 +33,12 @@ button.addEventListener("click", replacebutton)
 <div class="flex flex-col lg:flex-row items-center bg-yellow-200 p-4 justify-around">
 <a href="https://google.com" class="bg-white p-4 my-4 border-black border hover:underline lg:w-80" id="escapeanchor">This is a quick escape ANCHOR element</a>
 <pre class="hidden lg:block">
-<code class="w-1/2"> 
-var link = document.getElementById('escapeanchor')
+<code class="w-1/2"> var link = document.getElementById('escapeanchor')
 link.addEventListener("click", replacelink)
   function replacelink (e) {
     e.preventDefault();
     window.location.replace('https://apple.com')
-  }
-</code>
+  }</code>
 </pre> 
 </div>
 <h3 class="font-bold text-xl"> What are the problems specific to the ANCHOR approach?</h3>
@@ -60,8 +56,15 @@ link.addEventListener("click", replacelink)
 <p class="mt-2"> We can't reliably know how many pages a user has clicked on within the website and be able to remove, rename, or re-assign those pages to other locations, except for the current page. Browsers have some powerful history modification API tools available - think <code> history.pushState()</code> or <code> history.replaceState()</code> - however they aren't really useful without knowing where, when, and how much of the history to modify based on user action. We can't easily know that. </p>
 </div>
 
-<h2 class="font-bold text-xl mt-4"> OGS Digital Services Recommendation </h2>
+<h2 class="font-bold text-xl mt-4 text-admin-first"> OGS Digital Services Recommendation </h2>
 <p class="lg:mx-8"> Given the accessibility and functionality drawbacks of both approaches, it might be just as effective to keep the current solution in place. Of the two options above, we'd recommend using the ANCHOR link method despite the iffy technical implications of doing so as it has a native fallback without javascript. Removing a single layer of history could benefit some users, so the drawbacks may be worthwhile.</p>
+<h3 class="font-bold text-xl mt-4">Suggested Supplemental Reading </h3>
+<div class="nysds-textarea">
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/accesskey#accessibility_concerns">MDN Analysis of the <code>accesskey</code> attributes accessibility concerns</a></li>
+<li><a href="https://www.w3.org/TR/WCAG20-TECHS/H33.html">WCAG 2.0: Supplementing link text with the title attribute</a></li>
+</ul>
+</div>
 </section>
 <script>
   var button = document.getElementById('escapebutton')
