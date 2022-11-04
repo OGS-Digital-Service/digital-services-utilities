@@ -3,6 +3,8 @@ layout: layout.njk
 title: Accessibility Statement
 permalink: "/accessibility/"
 ---
+<section class="nysds-textarea">
+
 # {{title}}
 
 ## Overview
@@ -19,6 +21,6 @@ When in doubt we try to just use **semantic html elements** with minimal styling
 ## More Reading
 
 For more information see the [NYS ITS Accessibility Policy](https://its.ny.gov/document/accessibility-web-based-information-and-applications-compliance-reporting)
-
+</section>
 
 
