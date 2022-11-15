@@ -63,6 +63,9 @@ link.addEventListener("click", replacelink)
 <ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/accesskey#accessibility_concerns">MDN Analysis of the <code>accesskey</code> attributes accessibility concerns</a></li>
 <li><a href="https://www.w3.org/TR/WCAG20-TECHS/H33.html">WCAG 2.0: Supplementing link text with the title attribute</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/history">MDN History Object</a></li>
+
+
 </ul>
 </div>
 </section>
