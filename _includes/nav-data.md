@@ -1,7 +1,7 @@
 {{ nav({ 
-    agencyname: "OGS Digital Services Utilities",
+    agencyname: "NYS Digital Services",
     link: "/",
-    arialabel: "New York State OGS Digital Services Utilities",
+    arialabel: "New York State Digital Services",
     color: "bg-admin-first",
     items: [
       {
