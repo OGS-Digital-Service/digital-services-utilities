@@ -8,7 +8,11 @@
 <article class="h-28 bg-ny-light rounded-3xl border-ny-mid  border-1 border flex flex-row md:mx-2 mx-6 my-3">
 <div >
 <a href="{{card.link}}" tabindex="-1" aria-hidden="true">
+{% if params.image %}    
 <img class="w-28  h-28 rounded-3xl object-cover" src="{{link.image}}" alt="{{link.imagealt}}" />
+{% else %}
+<div class="w-28  h-28 rounded-3xl bg-admin-third"></div>
+{% endif %}
 </a>
 </div>
 <section class="flex flex-col w-2/3 mx-6">
@@ -36,7 +40,12 @@
 <article class="h-28 bg-ny-light rounded-3xl border-ny-mid  border-1 border flex flex-row md:mx-2 mx-6 my-3">
 <div >
 <a href="{{card.link}}" tabindex="-1" aria-hidden="true">
+{% if params.image %}    
 <img class="w-28  h-28 rounded-3xl object-cover" src="{{link.image}}" alt="{{link.imagealt}}" />
+{% else %}
+<div class="w-28  h-28 rounded-3xl bg-admin-third"></div>
+{% endif %}
+</a>
 </a>
 </div>
 <section class="flex flex-col w-2/3 mx-6">
@@ -57,6 +66,5 @@
 </div>
 {% else %}
 {% endif %}
-
 </div>
 </section>

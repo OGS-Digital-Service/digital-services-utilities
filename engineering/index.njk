@@ -17,36 +17,33 @@ twitter:
 {{ hero({ 
     title:"NYSDS Engingeering Practices Guide",
     description:"Check out some of our recommendations."
-   
-
 })}}
 
-{{ card({ 
+
+{{ quicklinks({ 
     frametitle:"Standards Guides",
-    cards: [
+    colleft: [
         {
-           title:"HTML Guide",
-           content:"A sentence or two of text that gives the general idea of what this link goes to or the topic of the page.",
-           link:"https://budget.ny.gov",
-           arialabel:"",
-           image:"/img/office.jpg",
-           imagealt:"Office workers in a conference room having a collaborative working session"
+            title:"HTML Guide",
+            link:"/engineering/html",
+            content:"HTML is awesome and we like to use it correctly."
         },
         {
-           title:"CSS Techniques",
-           content:"A sentence or two of text that gives the general idea of what this link goes to or the topic of the page.",
-           link:"https://budget.ny.gov",
-           arialabel:"",
-           image:"/img/office.jpg",
-           imagealt:"Office workers in a conference room having a collaborative working session"
+            title:"second tile",
+            link:"https://budget.ny.gov",
+            content:"A sentence or two of text that gives the general idea of what this link goes to or the topic of the page. "
+        }
+    ],
+    colright: [
+        {
+            title:"first tile",
+            link:"https://budget.ny.gov",
+            content:"A sentence or two of text that gives the general idea of what this link goes to or the topic of the page. "
         },
         {
-           title:"Javascript",
-           content:"A sentence or two of text that gives the general idea of what this link goes to or the topic of the page. This one is longer to show that the cards stretch to the height of the tallest card.",
-           link:"https://budget.ny.gov",
-           arialabel:"",
-           image:"/img/office.jpg",
-           imagealt:"Office workers in a conference room having a collaborative working session"
+            title:"second tile that is longer fix this",
+            link:"https://budget.ny.gov",
+            content:"A sentence or two of text that gives the general idea of what this link goes to or the topic of the page. "
         }
     ]
 })}}
