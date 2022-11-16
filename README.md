@@ -3,9 +3,6 @@ Digital assets and utilities helper repo for support to enterprise sites.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a7412bea-c62d-4933-9c11-e074fb4f856e/deploy-status)](https://app.netlify.com/sites/eloquent-dijkstra-000cc5/deploys)
 
-  [![JSDelivr CDN](https://data.jsdelivr.com/v1/package/gh/OGS-Digital-Service/digital-services-utilities/badge?style=rounded)](https://cdn.jsdelivr.net/gh/OGS-Digital-Service/digital-services-utilities@main/_site/css/tailwind.css) - NYSDS Tailwind Backbone 
-  
-   [![JSDelivr CDN](https://data.jsdelivr.com/v1/package/gh/OGS-Digital-Service/digital-services-utilities/badge?style=rounded)](https://cdn.jsdelivr.net/gh/OGS-Digital-Service/digital-services-utilities@main/_site/css/nysds-utilities.css) - NYSDS Utilities 
 
 ## Opinions
 We have two major opinions here, so stop reading or using if they drive you into a rage:
@@ -14,7 +11,7 @@ We have two major opinions here, so stop reading or using if they drive you into
 
 ### Also some minor opinons:
 1. Nunjucks as a templating language.
-2. markdown for page building.
+2. markdown and nunjucks for page building.
 3. as little js as possible in production.
 
 ## Some setup considerations for this theme
