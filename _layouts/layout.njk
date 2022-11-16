@@ -24,11 +24,11 @@
   <body class="nysds-normalize">
   <a href="#main-site-content-for-skiplink" class="sr-only focus:not-sr-only text-blue-700 underline">Skip to Main Content</a>
     {% from '../_includes/_components.njk' import unav,nav,footer  %}
-    {% include 'unav-data.md' %}
-     {% include 'nav-data.md' %}
+    {% include 'unav-data.njk' %}
+     {% include 'nav-data.njk' %}
     <main class="mx-8 md:mx-20" id="main-site-content-for-skiplink">
     {{ content | safe }}
     </main>
-    {% include 'footer-data.md' %}
+    {% include 'footer-data.njk' %}
   </body>
 </html>
