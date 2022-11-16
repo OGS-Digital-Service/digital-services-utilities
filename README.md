@@ -13,6 +13,7 @@ We have two major opinions here, so stop reading or using if they drive you into
 1. Nunjucks as a templating language.
 2. markdown and nunjucks for page building.
 3. as little js as possible in production.
+4. Alpinejs instead of any other helper libraries or frameworks.
 
 ## Some setup considerations for this theme
 - This theme mainly uses tailwind utilities + some extensions/customizations
