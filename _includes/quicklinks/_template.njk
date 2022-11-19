@@ -17,16 +17,16 @@
 </div>
 <section class="flex flex-col w-2/3 mx-6">
 <h3 class="font-bold text-xl mt-3">
-<a class="hover:!underline focus:!underline !no-underline !text-ny-links visited:!text-ny-links " href="{{link.link}}">{{link.title}}</a>
+<a class="hover:underline focus:underline no-underline text-ny-links visited:text-ny-links " href="{{link.link}}">{{link.title}}</a>
 </h3>
-<p class="!text-black xs:nysds-line-clamp-1 nysds-line-clamp-2 md:nysds-line-clamp-1 lg:nysds-line-clamp-2">{{link.content}}</p>
+<p class="text-black xs:nysds-line-clamp-1 nysds-line-clamp-2 md:nysds-line-clamp-1 lg:nysds-line-clamp-2">{{link.content}}</p>
 </section>
 </article>
 {% endfor %}
 {% if params.ctaleft %}
 {% for left in params.ctaleft %}
 <div class=" w-full flex justify-center md:justify-end">
-    <a href="{{left.link}}" class="border border-black bg-white hover:bg-black hover:!underline focus:bg-black focus:!text-white focus:!underline !no-underline my-4 mx-2 p-4 rounded-xl !text-black visited:!text-black hover:!text-white font-bold text-center  w-2/3 md:w-1/2">{{left.title}}</a>
+    <a href="{{left.link}}" class="border border-black bg-white hover:bg-black hover:underline focus:bg-black focus:text-white focus:underline no-underline my-4 mx-2 p-4 rounded-xl text-black visited:text-black hover:text-white font-bold text-center  w-2/3 md:w-1/2">{{left.title}}</a>
 </div>
 {% endfor %}
 {% else %}{% endif %}
@@ -50,16 +50,16 @@
 </div>
 <section class="flex flex-col w-2/3 mx-6">
 <h3 class="font-bold text-xl mt-3">
-<a class="hover:!underline focus:!underline !no-underline !text-ny-links visited:!text-ny-links" href="{{link.link}}">{{link.title}}</a>
+<a class="hover:underline focus:underline no-underline text-ny-links visited:text-ny-links" href="{{link.link}}">{{link.title}}</a>
 </h3>
-<p class=" !text-black xs:nysds-line-clamp-1 nysds-line-clamp-2 md:nysds-line-clamp-1 lg:nysds-line-clamp-2">{{link.content}}</p>
+<p class=" text-black xs:nysds-line-clamp-1 nysds-line-clamp-2 md:nysds-line-clamp-1 lg:nysds-line-clamp-2">{{link.content}}</p>
 </section>
 </article>
 {% endfor %}
 {% if params.ctaright %}
 {% for right in params.ctaright %}
 <div class=" w-full flex justify-center md:justify-end">
-    <a href="{{right.link}}" class="border border-black bg-white hover:bg-black hover:!underline focus:bg-black focus:!text-white focus:!underline !no-underline my-4 mx-2 p-4 rounded-xl !text-black visited:!text-black hover:!text-white font-bold text-center  w-2/3 md:w-1/2">{{right.title}}</a>
+    <a href="{{right.link}}" class="border border-black bg-white hover:bg-black hover:underline focus:bg-black focus:text-white focus:underline no-underline my-4 mx-2 p-4 rounded-xl text-black visited:text-black hover:text-white font-bold text-center  w-2/3 md:w-1/2">{{right.title}}</a>
 </div>
 {% endfor %}
 {% else %}{% endif %}
