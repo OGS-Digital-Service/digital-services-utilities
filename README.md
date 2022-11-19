@@ -5,15 +5,16 @@ Digital assets and utilities helper repo for support to enterprise sites.
 
 
 ## Opinions
-We have two major opinions here, so stop reading or using if they drive you into a rage:
+We have three major opinions here, so stop reading or using if they drive you into a rage:
 1. Eleventy for static site generation and general theme management.
 2. Utility-first css with tailwindcss as the backbone.
+3. Trunk-based Development Process
 
 ### Also some minor opinons:
 1. Nunjucks as a templating language.
 2. markdown and nunjucks for page building.
 3. as little js as possible in production.
-4. Alpinejs instead of any other helper libraries or frameworks.
+4. Alpinejs instead of any other helper js libraries or frameworks.
 
 ## Some setup considerations for this theme
 - This theme mainly uses tailwind utilities + some extensions/customizations
