@@ -47,6 +47,7 @@ We have three major opinions here, so stop reading or using if they drive you in
 ## Some dependencies 
 - fontawesome 5 free
 - nys fonts including: dsari bold, oswald, and proxima nova
+- pa11y-ci
 
 
 ## General Concept for this utility system
@@ -63,3 +64,10 @@ We have three major opinions here, so stop reading or using if they drive you in
 - ![IE](https://img.shields.io/badge/Internet%20Explorer-0076D6?style=for-the-badge&logo=Internet%20Explorer&logoColor=white) There's some really minor fallbacks for basic stuff like background color. 
 - ![Opera](https://img.shields.io/badge/Opera-FF1B2D?style=for-the-badge&logo=Opera&logoColor=white) before it was chromium.
 - web3 
+
+## Running Pa11y Locally (macos)
+- npm run start your local eleventy build
+- ctrl+z to suspend the process watch
+- npm run test to start pa11y on localhost 
+- define all urls for testing in the .pa11yci file
+- this is a work in process and will be automated further!
