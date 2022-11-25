@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "start": "eleventy --serve & npx tailwindcss -i tailwind-setup.css -o css/tailwind.css --minify --watch"
+    "start": "eleventy --serve & npx tailwindcss -i tailwind-setup.css -o css/tailwind.css --minify --watch",
+    "test":"pa11y-ci"
   },
   "dependencies": {
     "js-yaml": "^4.1.0"
