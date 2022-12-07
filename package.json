@@ -1,13 +1,11 @@
 {
   "scripts": {
     "start": "eleventy --serve & npx tailwindcss -i tailwind-setup.css -o css/tailwind.css --minify --watch",
-    "test":"pa11y-ci"
-  },
-  "dependencies": {
-    "js-yaml": "^4.1.0"
+    "test": "pa11y-ci"
   },
   "devDependencies": {
-    "tailwindcss": "^3.0.23",
-    "@11ty/eleventy": "^1.0.0"
+    "@11ty/eleventy": "^1.0.0",
+    "js-yaml": "^4.1.0",
+    "tailwindcss": "^3.0.23"
   }
 }
