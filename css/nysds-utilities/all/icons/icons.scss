@@ -51,6 +51,12 @@
     color: #fff;
 }
 
+.nysds-external-link::before {
+    content: "\f35d" !important;
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 900 !important;
+}
+
 .nysds-play-button {
 
     &:focus {
