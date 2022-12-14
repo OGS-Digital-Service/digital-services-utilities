@@ -1,6 +1,11 @@
 {
-    "urls": [
-        "http://localhost:8080",
-        "http://localhost:8080/components"
-    ]
-}
+    "defaults": {
+      "reporters": [
+        [
+          "pa11y-ci-reporter-html",
+          { "destination": "./reports", "includeZeroIssues": true }
+        ]
+      ]
+    },
+    "urls": ["https://ny.gov", "https://governor.ny.gov", "https://its.ny.gov"]
+  }

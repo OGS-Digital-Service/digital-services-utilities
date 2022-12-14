@@ -15,7 +15,7 @@ ehthumbs.db
 Thumbs.db
 .cache
 /cache
-
+/reports
 /node_modules
 
 /.vscode
