@@ -57,6 +57,12 @@
     font-weight: 900 !important;
 }
 
+.nysds-globe::before {
+    content: '\f0ac' !important;
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 900 !important;
+}
+
 .nysds-play-button {
 
     &:focus {
