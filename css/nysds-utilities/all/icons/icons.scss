@@ -63,6 +63,18 @@
     font-weight: 900 !important;
 }
 
+.nysds-caret-up::before {
+    content: '\f106' !important;
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 900 !important;
+}
+
+.nysds-caret-down::before {
+    content: '\f107' !important;
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 900 !important;
+}
+
 .nysds-play-button {
 
     &:focus {
