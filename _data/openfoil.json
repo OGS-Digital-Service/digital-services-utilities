@@ -1,7 +1,7 @@
 [
   {
     "Agency": "Adirondack Park Agency",
-    "link": "https://openfoil.ny.gov/#/newfoilrequest"
+    "link": "https://apany.govqa.us/WEBAPP/_rs/"
   },
   {
     "Agency": "Canal Corporation",
@@ -21,7 +21,7 @@
   },
   {
     "Agency": "Department of Agriculture and Markets",
-    "link": "https://openfoil.ny.gov/#/newfoilrequest"
+    "link": "https://agricultureny.govqa.us/WEBAPP/_rs/"
   },
   {
     "Agency": "Department of Civil Service",
@@ -101,7 +101,7 @@
   },
   {
     "Agency": "Empire State Development Corporation",
-    "link": "https://openfoil.ny.gov/#/newfoilrequest"
+    "link": "https://esdny.govqa.us/WEBAPP/_rs/"
   },
   {
     "Agency": "Environmental Facilities Corporation",
@@ -113,7 +113,7 @@
   },
   {
     "Agency": "Gaming Commission",
-    "link": "https://openfoil.ny.gov/#/newfoilrequest"
+    "link": "https://gamingny.govqa.us/WEBAPP/_rs/"
   },
   {
     "Agency": "Governor’s Office of Storm Recovery",
@@ -197,7 +197,7 @@
   },
   {
     "Agency": "Office of General Services",
-    "link": "https://openfoil.ny.gov/#/newfoilrequest"
+    "link": "https://ogsny.govqa.us/WEBAPP/_rs/"
   },
   {
     "Agency": "Office of Information Technology Services",
@@ -225,7 +225,7 @@
   },
   {
     "Agency": "Public Service Commission / Department of Public Service",
-    "link": "https://openfoil.ny.gov/#/newfoilrequest"
+    "link": "https://dpsny.govqa.us/WEBAPP/_rs/"
   },
   {
     "Agency": "Roosevelt Island Operating Corporation",
@@ -244,7 +244,7 @@
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Workers' Compensation Board",
-    "link": "https://openfoil.ny.gov/#/newfoilrequest"
+    "Agency": "Workers’ Compensation Board",
+    "link": "https://wcbny.govqa.us/WEBAPP/_rs/"
   }
 ]
