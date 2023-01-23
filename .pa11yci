@@ -5,7 +5,11 @@
           "pa11y-ci-reporter-html",
           { "destination": "./_site/pa11y-reports", "includeZeroIssues": true }
         ]
-      ]
+      ],
+      "runners": ["axe", "htmlcs"],
+      "includeNotices": false,
+    "includeWarnings": true,
+    "standard": "WCAG2AA"
     },
     "urls": ["https://nysds.dev/", "https://nysds.dev/components/", "https://ny.gov", "https://governor.ny.gov", "https://www.governor.ny.gov/news", "https://www.governor.ny.gov/news/governor-hochul-signs-legislation-allowing-individuals-become-one-day-marriage-officiants", "https://www.governor.ny.gov/programs/fight-womens-rights-new-york-state-0", "https://www.ny.gov/services", "https://www.ny.gov/services/get-your-first-driver-license-learner-permit", "https://www.ny.gov/agencies"]
   }
