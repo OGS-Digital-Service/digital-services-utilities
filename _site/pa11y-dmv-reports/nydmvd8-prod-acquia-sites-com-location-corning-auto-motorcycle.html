@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>
+		Pa11y results for "https://nydmvd8.prod.acquia-sites.com/location/corning-auto-motorcycle"
+	</title>
+	<style>
+		html,
+		body {
+			background-color: #ffffff;
+			color: #333333;
+			font-family: 'Segoe UI', Roboto, 'Noto Sans', Ubuntu, Cantarell,
+				'Helvetica Neue', sans-serif;
+			font-size: 16px;
+			line-height: 1.3rem;
+			margin: 0;
+			padding: 0;
+		}
+
+		main {
+			margin: 0 auto;
+			max-width: 900px;
+			padding: 1.25rem;
+		}
+
+		h1 {
+			font-size: 1.5rem;
+			line-height: 1.5rem;
+			margin: 0;
+			margin-bottom: 0.5rem;
+		}
+
+		h2,
+		h3 {
+			font-size: 1.15rem;
+			font-weight: normal;
+			margin: 0;
+			padding-bottom: 0.5rem;
+		}
+
+		h3 {
+			padding-bottom: 0;
+		}
+
+		p {
+			margin: 0;
+		}
+
+		.error {
+			background-color: #f8d7da;
+			color: #67191f;
+		}
+
+		.error a {
+			color: #842029;
+		}
+
+		.warning {
+			background-color: #fff3cd;
+			color: #544003;
+		}
+
+		.warning a {
+			color: #664d03;
+		}
+
+		.notice {
+			background-color: #cfe2ff;
+			color: #062c65;
+		}
+
+		.notice a {
+			color: #074197;
+		}
+
+		.error .left-bar {
+			background-color: #d53447;
+		}
+
+		.error .body {
+			border-color: #f2bbc1;
+		}
+
+		.warning .left-bar {
+			background-color: #c79500;
+		}
+
+		.warning .body {
+			border-color: #ffd761;
+		}
+
+		.notice .left-bar {
+			background-color: #015cda;
+		}
+
+		.notice .body {
+			border-color: #a9cefe;
+		}
+
+		.filter {
+			display: inline-grid;
+			grid-template-columns: 8.5rem 1fr 1fr 1fr;
+			margin-top: 1rem;
+		}
+
+		.filter .label {
+			font-size: 1.15rem;
+			padding: 0.45rem 0;
+		}
+
+		.count {
+			border-radius: 0;
+			border-width: 0;
+			box-shadow: 0.1rem 0.25rem 0.5rem rgba(0 0 0 / 15%);
+			cursor: pointer;
+			display: inline-grid;
+			font-size: 1.15rem;
+			grid-template-columns: 0.35rem 1fr;
+			margin-right: 0.75rem;
+			min-width: 80px;
+		}
+
+		.count .body {
+			border-style: solid;
+			border-width: 1px 1px 1px 0;
+			overflow-x: hidden;
+			padding: 0.35rem 0.7rem;
+			text-align: center;
+		}
+
+		.count.hidden {
+			background-color: #f4f4f4;
+			color: #323232;
+		}
+
+		.count.hidden .left-bar {
+			background-color: #b6b6b6;
+		}
+
+		.count.hidden .body {
+			border-color: #e9e9e9;
+		}
+
+		.issues {
+			list-style: none;
+			margin: 0;
+			margin-top: 1.5rem;
+			padding-left: 0;
+		}
+
+		.issue {
+			border-radius: 0;
+			border-width: 0;
+			box-shadow: 0.1rem 0.25rem 0.5rem rgba(0 0 0 / 15%);
+			display: grid;
+			grid-template-columns: 0.5rem 1fr;
+			margin: 0;
+			margin-bottom: 1.5rem;
+			padding: 0;
+		}
+
+		.issue p:not(:last-child) {
+			padding-bottom: 0.1rem;
+		}
+
+		.issue.hidden {
+			display: none;
+		}
+
+		/* stylelint-disable-next-line no-descending-specificity -- different parent elements */
+		.issue .body {
+			border-style: solid;
+			border-width: 1px 1px 1px 0;
+			overflow-x: hidden;
+			padding: 0.5rem;
+		}
+
+		.issue .body h3 {
+			padding-bottom: 0.25rem;
+		}
+
+		.code {
+			font-family: monospace;
+			font-size: 0.95rem;
+			padding-top: 0.1rem;
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+		<h1>Pa11y results for "https://nydmvd8.prod.acquia-sites.com/location/corning-auto-motorcycle"</h1>
+		<h2>Generated at: Mon Jan 23 2023 15:32:19 GMT-0500 (Eastern Standard Time)</h2>
+		<h2>Runners (with issues): axe, htmlcs</h2>
+
+		<p class="filter">
+			<span class="label">Toggle by type</span>
+			<span class="count error" id="error-count">
+				<span class="left-bar" aria-hidden="true"></span>
+				<span class="body">6 errors</span>
+			</span>
+			<span class="count warning" id="warning-count">
+				<span class="left-bar" aria-hidden="true"></span>
+				<span class="body">10 warnings</span>
+			</span>
+			<span class="count notice" id="notice-count">
+				<span class="left-bar" aria-hidden="true"></span>
+				<span class="body">0 notices</span>
+			</span>
+		</p>
+		<ul class="issues">
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Frames must have an accessible name</h3><p>Ensures &lt;iframe&gt; and &lt;frame&gt; elements have an accessible name</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/frame-title?application&#x3D;axeAPI">axe: frame-title</a></p><p class="code">&lt;iframe width&#x3D;&quot;100%&quot; frameborder&#x3D;&quot;0&quot; scrolling&#x3D;&quot;no&quot; marginheight&#x3D;&quot;0&quot; marginwidth&#x3D;&quot;0&quot; src&#x3D;&quot;https://www.google.com/maps/embed/v1/place?key&#x3D;AIzaSyAHqDGPgJgoFEk3hsVF-kD79c9zFL33LaU&amp;amp;q&#x3D;42.14811111,-77.05088889&amp;amp;zoom&#x3D;12&quot;&gt;
+        &lt;/iframe&gt;</p><p class="code">(selector "html &gt; body &gt; div:nth-child(4) &gt; div:nth-child(1) &gt; div:nth-child(3) &gt; div &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; iframe")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: Document should have one main landmark</h3><p>Ensures the document has a main landmark</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/landmark-one-main?application&#x3D;axeAPI">axe: landmark-one-main</a></p><p class="code">&lt;html lang&#x3D;&quot;en&quot; dir&#x3D;&quot;ltr&quot; prefix&#x3D;&quot;og: https://ogp.me/ns#&quot; class&#x3D;&quot; js&quot;&gt;&lt;head&gt;&lt;style&gt;body {transition: ...&lt;/html&gt;</p><p class="code">(selector "html")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: Ensures landmarks are unique</h3><p>Landmarks should have a unique role or role/label/title (i.e. accessible name) combination</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/landmark-unique?application&#x3D;axeAPI">axe: landmark-unique</a></p><p class="code">&lt;nav id&#x3D;&quot;block-global-footer-menu&quot; class&#x3D;&quot;footer-menu footer-vertical&quot;&gt;
+            
+              &lt;ul...&lt;/nav&gt;</p><p class="code">(selector "#block-global-footer-menu")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;article class&#x3D;&quot;dmv-location&quot; id&#x3D;&quot;main-content&quot;&gt;
+  
+  &lt;div class&#x3D;&quot;dmv-location_...&lt;/article&gt;</p><p class="code">(selector "#main-content")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;div class&#x3D;&quot;dmv-location__props&quot;&gt;
+
+      
+          &lt;div class&#x3D;&quot;...&lt;/div&gt;</p><p class="code">(selector "html &gt; body &gt; div:nth-child(4) &gt; div:nth-child(1) &gt; div:nth-child(3) &gt; div &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;div id&#x3D;&quot;block-sitebranding&quot;&gt;
+            &lt;div class&#x3D;&quot;agency...&lt;/div&gt;</p><p class="code">(selector "#block-sitebranding")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;div class&#x3D;&quot;webny-global-footer wgf-cta&quot;&gt;
+        &lt;div class&#x3D;&quot;footercta-...&lt;/div&gt;</p><p class="code">(selector "html &gt; body &gt; div:nth-child(4) &gt; div:nth-child(2) &gt; div &gt; div:nth-child(2)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Elements must have sufficient color contrast</h3><p>Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/color-contrast?application&#x3D;axeAPI">axe: color-contrast</a></p><p class="code">&lt;a href&#x3D;&quot;/dmv-website-accessibility-practices-and-procedures&quot; data-drupal-link-system-path&#x3D;&quot;node/9211&quot;&gt;Website Accessability Practices...&lt;/a&gt;</p><p class="code">(selector "#block-global-footer-menu &gt; ul &gt; li:nth-child(1) &gt; ul &gt; li:nth-child(1) &gt; a")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Elements must have sufficient color contrast</h3><p>Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/color-contrast?application&#x3D;axeAPI">axe: color-contrast</a></p><p class="code">&lt;a href&#x3D;&quot;/forms-and-publications&quot; data-drupal-link-system-path&#x3D;&quot;node/906&quot;&gt;Forms and Publications&lt;/a&gt;</p><p class="code">(selector "#block-global-footer-menu &gt; ul &gt; li:nth-child(3) &gt; ul &gt; li:nth-child(2) &gt; a")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Elements must have sufficient color contrast</h3><p>Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/color-contrast?application&#x3D;axeAPI">axe: color-contrast</a></p><p class="code">&lt;a href&#x3D;&quot;https://nydmvd8.prod.acquia-sites.com/freedom-information-law-foil&quot;&gt;Freedom of Information Law (FOI...&lt;/a&gt;</p><p class="code">(selector "#block-global-footer-menu &gt; ul &gt; li:nth-child(5) &gt; ul &gt; li:nth-child(2) &gt; a")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Critical</strong>: Frames should be tested with axe-core</h3><p>Ensures &lt;iframe&gt; and &lt;frame&gt; elements contain the axe-core script</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/frame-tested?application&#x3D;axeAPI">axe: frame-tested</a></p><p class="code">&lt;iframe width&#x3D;&quot;100%&quot; frameborder&#x3D;&quot;0&quot; scrolling&#x3D;&quot;no&quot; marginheight&#x3D;&quot;0&quot; marginwidth&#x3D;&quot;0&quot; src&#x3D;&quot;https://www.google.com/maps/embed/v1/place?key&#x3D;AIzaSyAHqDGPgJgoFEk3hsVF-kD79c9zFL33LaU&amp;amp;q&#x3D;42.14811111,-77.05088889&amp;amp;zoom&#x3D;12&quot;&gt;
+        &lt;/iframe&gt;</p><p class="code">(selector "html &gt; body &gt; div:nth-child(4) &gt; div:nth-child(1) &gt; div:nth-child(3) &gt; div &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; iframe")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Abs</a></p><p class="code">&lt;a class&#x3D;&quot;visually-hidden focusable skip-to-main&quot; href&#x3D;&quot;#main-content&quot;&gt;
+      Skip to main content
+   ...&lt;/a&gt;</p><p class="code">(selector "html &gt; body &gt; a")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: The heading structure is not logically nested. This h2 element appears to be the primary document heading, so should be an h1 element.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_3_1">htmlcs: WCAG2AA.Principle1.Guideline1_3.1_3_1_A.G141</a></p><p class="code">&lt;h2 class&#x3D;&quot;mobile-title&quot;&gt;Services&lt;/h2&gt;</p><p class="code">(selector "#ny-drop-menu-services &gt; h2")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: The heading structure is not logically nested. This h2 element should be an h1 to be properly nested.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_3_1">htmlcs: WCAG2AA.Principle1.Guideline1_3.1_3_1_A.G141</a></p><p class="code">&lt;h2 class&#x3D;&quot;mobile-title&quot;&gt;Services&lt;/h2&gt;</p><p class="code">(selector "#ny-drop-menu-services &gt; h2")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: Iframe element requires a non-empty title attribute that identifies the frame.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc2_4_1">htmlcs: WCAG2AA.Principle2.Guideline2_4.2_4_1.H64.1</a></p><p class="code">&lt;iframe width&#x3D;&quot;100%&quot; frameborder&#x3D;&quot;0&quot; scrolling&#x3D;&quot;no&quot; marginheight&#x3D;&quot;0&quot; marginwidth&#x3D;&quot;0&quot; src&#x3D;&quot;https://www.google.com/maps/embed/v1/place?key&#x3D;AIzaSyAHqDGPgJgoFEk3hsVF-kD79c9zFL33LaU&amp;amp;q&#x3D;42.14811111,-77.05088889&amp;amp;zoom&#x3D;12&quot;&gt;
+        &lt;/iframe&gt;</p><p class="code">(selector "html &gt; body &gt; div:nth-child(4) &gt; div:nth-child(1) &gt; div:nth-child(3) &gt; div &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; iframe")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc2_5_3">htmlcs: WCAG2AA.Principle2.Guideline2_5.2_5_3.F96</a></p><p class="code">&lt;a href&#x3D;&quot;https://donatelife.ny.gov/register/&quot; class&#x3D;&quot;footercta-button buttonBase button ext&quot; title&#x3D;&quot;Become an Organ Donor&quot; aria-label&#x3D;&quot;Become an Organ Donor&quot; data-extlink&#x3D;&quot;&quot; target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;noopener&quot;&gt;Become an Organ Donor&lt;svg focus...&lt;/a&gt;</p><p class="code">(selector "html &gt; body &gt; div:nth-child(4) &gt; div:nth-child(2) &gt; div &gt; div:nth-child(2) &gt; div &gt; div &gt; div:nth-child(2) &gt; a")</p></div>
+			</li>
+		</ul>
+	</main>
+	<script>
+		const toggleIssues = (btn, pageQuery) => {
+			const className = 'hidden';
+			document.getElementById(btn).classList.toggle(className);
+			document.querySelectorAll(pageQuery).forEach((page) => {
+				page.classList.toggle(className);
+			});
+		};
+
+		document
+			.getElementById('error-count')
+			.addEventListener('click', () =>
+				toggleIssues('error-count', '.issues .issue.error')
+			);
+		document
+			.getElementById('warning-count')
+			.addEventListener('click', () =>
+				toggleIssues('warning-count', '.issues .issue.warning')
+			);
+		document
+			.getElementById('notice-count')
+			.addEventListener('click', () =>
+				toggleIssues('notice-count', '.issues .issue.notice')
+			);
+	</script>
+</body>
+
+</html>

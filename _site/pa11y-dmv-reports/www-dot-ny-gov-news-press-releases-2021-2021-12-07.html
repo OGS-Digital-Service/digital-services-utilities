@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>
+		Pa11y results for "https://www.dot.ny.gov/news/press-releases/2021/2021-12-07"
+	</title>
+	<style>
+		html,
+		body {
+			background-color: #ffffff;
+			color: #333333;
+			font-family: 'Segoe UI', Roboto, 'Noto Sans', Ubuntu, Cantarell,
+				'Helvetica Neue', sans-serif;
+			font-size: 16px;
+			line-height: 1.3rem;
+			margin: 0;
+			padding: 0;
+		}
+
+		main {
+			margin: 0 auto;
+			max-width: 900px;
+			padding: 1.25rem;
+		}
+
+		h1 {
+			font-size: 1.5rem;
+			line-height: 1.5rem;
+			margin: 0;
+			margin-bottom: 0.5rem;
+		}
+
+		h2,
+		h3 {
+			font-size: 1.15rem;
+			font-weight: normal;
+			margin: 0;
+			padding-bottom: 0.5rem;
+		}
+
+		h3 {
+			padding-bottom: 0;
+		}
+
+		p {
+			margin: 0;
+		}
+
+		.error {
+			background-color: #f8d7da;
+			color: #67191f;
+		}
+
+		.error a {
+			color: #842029;
+		}
+
+		.warning {
+			background-color: #fff3cd;
+			color: #544003;
+		}
+
+		.warning a {
+			color: #664d03;
+		}
+
+		.notice {
+			background-color: #cfe2ff;
+			color: #062c65;
+		}
+
+		.notice a {
+			color: #074197;
+		}
+
+		.error .left-bar {
+			background-color: #d53447;
+		}
+
+		.error .body {
+			border-color: #f2bbc1;
+		}
+
+		.warning .left-bar {
+			background-color: #c79500;
+		}
+
+		.warning .body {
+			border-color: #ffd761;
+		}
+
+		.notice .left-bar {
+			background-color: #015cda;
+		}
+
+		.notice .body {
+			border-color: #a9cefe;
+		}
+
+		.filter {
+			display: inline-grid;
+			grid-template-columns: 8.5rem 1fr 1fr 1fr;
+			margin-top: 1rem;
+		}
+
+		.filter .label {
+			font-size: 1.15rem;
+			padding: 0.45rem 0;
+		}
+
+		.count {
+			border-radius: 0;
+			border-width: 0;
+			box-shadow: 0.1rem 0.25rem 0.5rem rgba(0 0 0 / 15%);
+			cursor: pointer;
+			display: inline-grid;
+			font-size: 1.15rem;
+			grid-template-columns: 0.35rem 1fr;
+			margin-right: 0.75rem;
+			min-width: 80px;
+		}
+
+		.count .body {
+			border-style: solid;
+			border-width: 1px 1px 1px 0;
+			overflow-x: hidden;
+			padding: 0.35rem 0.7rem;
+			text-align: center;
+		}
+
+		.count.hidden {
+			background-color: #f4f4f4;
+			color: #323232;
+		}
+
+		.count.hidden .left-bar {
+			background-color: #b6b6b6;
+		}
+
+		.count.hidden .body {
+			border-color: #e9e9e9;
+		}
+
+		.issues {
+			list-style: none;
+			margin: 0;
+			margin-top: 1.5rem;
+			padding-left: 0;
+		}
+
+		.issue {
+			border-radius: 0;
+			border-width: 0;
+			box-shadow: 0.1rem 0.25rem 0.5rem rgba(0 0 0 / 15%);
+			display: grid;
+			grid-template-columns: 0.5rem 1fr;
+			margin: 0;
+			margin-bottom: 1.5rem;
+			padding: 0;
+		}
+
+		.issue p:not(:last-child) {
+			padding-bottom: 0.1rem;
+		}
+
+		.issue.hidden {
+			display: none;
+		}
+
+		/* stylelint-disable-next-line no-descending-specificity -- different parent elements */
+		.issue .body {
+			border-style: solid;
+			border-width: 1px 1px 1px 0;
+			overflow-x: hidden;
+			padding: 0.5rem;
+		}
+
+		.issue .body h3 {
+			padding-bottom: 0.25rem;
+		}
+
+		.code {
+			font-family: monospace;
+			font-size: 0.95rem;
+			padding-top: 0.1rem;
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+		<h1>Pa11y results for "https://www.dot.ny.gov/news/press-releases/2021/2021-12-07"</h1>
+		<h2>Generated at: Mon Jan 23 2023 15:32:19 GMT-0500 (Eastern Standard Time)</h2>
+		<h2>Runners (with issues): axe, htmlcs</h2>
+
+		<p class="filter">
+			<span class="label">Toggle by type</span>
+			<span class="count error" id="error-count">
+				<span class="left-bar" aria-hidden="true"></span>
+				<span class="body">32 errors</span>
+			</span>
+			<span class="count warning" id="warning-count">
+				<span class="left-bar" aria-hidden="true"></span>
+				<span class="body">80 warnings</span>
+			</span>
+			<span class="count notice" id="notice-count">
+				<span class="left-bar" aria-hidden="true"></span>
+				<span class="body">0 notices</span>
+			</span>
+		</p>
+		<ul class="issues">
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Critical</strong>: IDs used in ARIA and labels must be unique</h3><p>Ensures every id attribute value used in ARIA and in labels is unique</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/duplicate-id-aria?application&#x3D;axeAPI">axe: duplicate-id-aria</a></p><p class="code">&lt;span class&#x3D;&quot;smt-lang&quot; id&#x3D;&quot;langnav&quot;&gt;Translate&lt;/span&gt;</p><p class="code">(selector "#langnav")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Frames must have an accessible name</h3><p>Ensures &lt;iframe&gt; and &lt;frame&gt; elements have an accessible name</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/frame-title?application&#x3D;axeAPI">axe: frame-title</a></p><p class="code">&lt;iframe id&#x3D;&quot;portalIFrame&quot; title&#x3D;&quot;&quot; frameborder&#x3D;&quot;0&quot; width&#x3D;&quot;0&quot; height&#x3D;&quot;0&quot; src&#x3D;&quot;/images/pobtrans.gif&quot;&gt;&lt;/iframe&gt;</p><p class="code">(selector "#portalIFrame")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: Heading levels should only increase by one</h3><p>Ensures the order of headings is semantically correct</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/heading-order?application&#x3D;axeAPI">axe: heading-order</a></p><p class="code">&lt;h5 style&#x3D;&quot;text-align:center;&quot; class&#x3D;&quot;uc&quot;&gt;New York State To Implement Fed...&lt;/h5&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; h5")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: Document should have one main landmark</h3><p>Ensures the document has a main landmark</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/landmark-one-main?application&#x3D;axeAPI">axe: landmark-one-main</a></p><p class="code">&lt;html lang&#x3D;&quot;en-US&quot;&gt;&lt;head&gt;
+&lt;title&gt;2021-12-07&lt;/title...&lt;/html&gt;</p><p class="code">(selector "html")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: Ensures landmarks are unique</h3><p>Landmarks should have a unique role or role/label/title (i.e. accessible name) combination</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/landmark-unique?application&#x3D;axeAPI">axe: landmark-unique</a></p><p class="code">&lt;nav aria-labelledby&#x3D;&quot;langnav&quot;&gt;
+                &lt;ul class&#x3D;&quot;smt...&lt;/nav&gt;</p><p class="code">(selector "#translate-wrap &gt; div &gt; div &gt; nav")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;h1&gt;&lt;a href&#x3D;&quot;/index&quot;&gt;&lt;span&gt;Departme...&lt;/h1&gt;</p><p class="code">(selector "html &gt; body &gt; div:nth-child(13) &gt; h1")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;a href&#x3D;&quot;#&quot;&gt;Travel&lt;/a&gt;</p><p class="code">(selector "#nys-global-nav &gt; li:nth-child(1) &gt; a")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;a href&#x3D;&quot;#&quot;&gt;Business&lt;/a&gt;</p><p class="code">(selector "#nys-global-nav &gt; li:nth-child(2) &gt; a")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;li&gt;&lt;a href&#x3D;&quot;/projects&quot;&gt;Projects&lt;/a...&lt;/li&gt;</p><p class="code">(selector "#nys-global-nav &gt; li:nth-child(3)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;li&gt;&lt;a href&#x3D;&quot;https://www.ny.gov/pro...&lt;/li&gt;</p><p class="code">(selector "#nys-global-nav &gt; li:nth-child(4)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;a href&#x3D;&quot;#&quot;&gt;About&lt;/a&gt;</p><p class="code">(selector "#nys-global-nav &gt; li:nth-child(5) &gt; a")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;a href&#x3D;&quot;JavaScript: onclick&#x3D;window.print()&quot; title&#x3D;&quot;Print this Page&quot;&gt;Print &lt;img src&#x3D;&quot;/portal/page/po...&lt;/a&gt;</p><p class="code">(selector "#iconnav &gt; a:nth-child(1)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;a href&#x3D;&quot;/main/feedback-form?p_url&#x3D;https://www.dot.ny.gov/news/press-releases/2021/2021-12-07&quot;&gt; Feedback &lt;img src&#x3D;&quot;/portal/pag...&lt;/a&gt;</p><p class="code">(selector "#iconnav &gt; a:nth-child(3)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;a href&#x3D;&quot;javascript:ts(&#x27;contentbody&#x27;)&quot;&gt; Font &lt;img src&#x3D;&quot;/portal/page/po...&lt;/a&gt;</p><p class="code">(selector "#iconnav &gt; a:nth-child(4)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;table border&#x3D;&quot;0&quot; cellspacing&#x3D;&quot;0&quot; cellpadding&#x3D;&quot;0&quot; width&#x3D;&quot;100%&quot; summary&#x3D;&quot;&quot;&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td valign&#x3D;&quot;top&quot; s...&lt;/table&gt;</p><p class="code">(selector "#contentbody &gt; div:nth-child(3) &gt; table")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;h3&gt;Department of Transportation&lt;/h3&gt;</p><p class="code">(selector "html &gt; body &gt; div:nth-child(16) &gt; div &gt; h3")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;div class&#x3D;&quot;footer-col&quot;&gt;
+          &lt;h4&gt;Information&lt;/h4&gt;...&lt;/div&gt;</p><p class="code">(selector "html &gt; body &gt; div:nth-child(16) &gt; div &gt; div:nth-child(2)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;div class&#x3D;&quot;footer-col&quot;&gt;
+        &lt;h4&gt;Design/Constructio...&lt;/div&gt;</p><p class="code">(selector "html &gt; body &gt; div:nth-child(16) &gt; div &gt; div:nth-child(3)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;h4&gt;Web&lt;/h4&gt;</p><p class="code">(selector "html &gt; body &gt; div:nth-child(16) &gt; div &gt; div:nth-child(4) &gt; h4")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;li&gt;&lt;a href&#x3D;&quot;/site-index&quot;&gt;A-Z Index...&lt;/li&gt;</p><p class="code">(selector "html &gt; body &gt; div:nth-child(16) &gt; div &gt; div:nth-child(4) &gt; ul &gt; li:nth-child(1)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;li&gt;&lt;a href&#x3D;&quot;/main/legal-disclaimer...&lt;/li&gt;</p><p class="code">(selector "html &gt; body &gt; div:nth-child(16) &gt; div &gt; div:nth-child(4) &gt; ul &gt; li:nth-child(2)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;li&gt;&lt;a href&#x3D;&quot;/main/privacy-policy&quot;&gt;...&lt;/li&gt;</p><p class="code">(selector "html &gt; body &gt; div:nth-child(16) &gt; div &gt; div:nth-child(4) &gt; ul &gt; li:nth-child(3)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;li&gt;&lt;a href&#x3D;&quot;/main/accessibility&quot;&gt;W...&lt;/li&gt;</p><p class="code">(selector "html &gt; body &gt; div:nth-child(16) &gt; div &gt; div:nth-child(4) &gt; ul &gt; li:nth-child(4)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;li&gt;&lt;a href&#x3D;&quot;/portal/pls/portal/POR...&lt;/li&gt;</p><p class="code">(selector "html &gt; body &gt; div:nth-child(16) &gt; div &gt; div:nth-child(4) &gt; ul &gt; li:nth-child(6)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;li&gt;&lt;a href&#x3D;&quot;https://www.dot.ny.gov...&lt;/li&gt;</p><p class="code">(selector "html &gt; body &gt; div:nth-child(16) &gt; div &gt; div:nth-child(4) &gt; ul &gt; li:nth-child(7)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;div class&#x3D;&quot;footer-col&quot;&gt;
+        &lt;h4&gt;Language Assistanc...&lt;/div&gt;</p><p class="code">(selector "html &gt; body &gt; div:nth-child(16) &gt; div &gt; div:nth-child(5)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;div class&#x3D;&quot;footer-col&quot;&gt;
+        &lt;h4&gt;Contact&lt;/h4&gt;
+     ...&lt;/div&gt;</p><p class="code">(selector "html &gt; body &gt; div:nth-child(16) &gt; div &gt; div:nth-child(6)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;div class&#x3D;&quot;social-media&quot;&gt;
+        &lt;div class&#x3D;&quot;social-med...&lt;/div&gt;</p><p class="code">(selector "html &gt; body &gt; div:nth-child(16) &gt; div &gt; div:nth-child(7)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;div class&#x3D;&quot;social-media&quot;&gt;
+      &lt;div class&#x3D;&quot;social-media...&lt;/div&gt;</p><p class="code">(selector "html &gt; body &gt; div:nth-child(16) &gt; div &gt; div:nth-child(9)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;h3&gt;&lt;a href&#x3D;&quot;https://www.ny.gov/web...&lt;/h3&gt;</p><p class="code">(selector "#footer-translate &gt; div &gt; h3")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;p&gt;This page is available in other...&lt;/p&gt;</p><p class="code">(selector "#footer-translate &gt; div &gt; p")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Elements must have sufficient color contrast</h3><p>Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/color-contrast?application&#x3D;axeAPI">axe: color-contrast</a></p><p class="code">&lt;a href&#x3D;&quot;/news-events&quot;&gt;NEWS &amp;amp; EVENTS&lt;/a&gt;</p><p class="code">(selector "#sidenavigation &gt; div &gt; ul &gt; li:nth-child(1) &gt; a:nth-child(2)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Elements must have sufficient color contrast</h3><p>Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/color-contrast?application&#x3D;axeAPI">axe: color-contrast</a></p><p class="code">&lt;a href&#x3D;&quot;/news/traveler-advisories/2019&quot;&gt;Traveler Advisories&lt;/a&gt;</p><p class="code">(selector "#sidenavigation &gt; div &gt; ul &gt; li:nth-child(3) &gt; a")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Elements must have sufficient color contrast</h3><p>Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/color-contrast?application&#x3D;axeAPI">axe: color-contrast</a></p><p class="code">&lt;a href&#x3D;&quot;/programs/brochures&quot;&gt;Downloadable Brochures&lt;/a&gt;</p><p class="code">(selector "#sidenavigation &gt; div &gt; ul &gt; li:nth-child(4) &gt; a")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Elements must have sufficient color contrast</h3><p>Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/color-contrast?application&#x3D;axeAPI">axe: color-contrast</a></p><p class="code">&lt;a href&#x3D;&quot;/programs/video-library&quot;&gt;Video Library&lt;/a&gt;</p><p class="code">(selector "#sidenavigation &gt; div &gt; ul &gt; li:nth-child(5) &gt; a")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Elements must have sufficient color contrast</h3><p>Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/color-contrast?application&#x3D;axeAPI">axe: color-contrast</a></p><p class="code">&lt;a href&#x3D;&quot;/webcast&quot;&gt;Webcasts&lt;/a&gt;</p><p class="code">(selector "#sidenavigation &gt; div &gt; ul &gt; li:nth-child(6) &gt; a")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Elements must have sufficient color contrast</h3><p>Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/color-contrast?application&#x3D;axeAPI">axe: color-contrast</a></p><p class="code">&lt;a href&#x3D;&quot;https://www.dot.ny.gov/news/press-releases/2021/2021-12-07?_piref685_15881113_685_15881108_15881108.portlet_edit&#x3D;1&quot; class&#x3D;&quot;PortletSubHeaderLink&quot;&gt;Edit&lt;/a&gt;</p><p class="code">(selector "#pcnt685_15881113_685_15881108_15881108 &gt; div &gt; table:nth-child(1) &gt; tbody &gt; tr &gt; td:nth-child(3) &gt; a")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Elements must have sufficient color contrast</h3><p>Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/color-contrast?application&#x3D;axeAPI">axe: color-contrast</a></p><p class="code">&lt;div style&#x3D;&quot;padding:0.5em;
+&quot;&gt;Press Releases&lt;/div&gt;</p><p class="code">(selector "#pcnt685_15881113_685_15881108_15881108-685_15881546_685_15881545_15881545 &gt; div:nth-child(1) &gt; div &gt; div")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Elements must have sufficient color contrast</h3><p>Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/color-contrast?application&#x3D;axeAPI">axe: color-contrast</a></p><p class="code">&lt;td valign&#x3D;&quot;top&quot; style&#x3D;&quot;padding:10px 10px 0px 10px;width:100%;&quot;&gt;
+Contact: Office of Communicati...&lt;/td&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Elements must have sufficient color contrast</h3><p>Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/color-contrast?application&#x3D;axeAPI">axe: color-contrast</a></p><p class="code">&lt;h5 style&#x3D;&quot;text-align:center;&quot; class&#x3D;&quot;uc&quot;&gt;New York State To Implement Fed...&lt;/h5&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; h5")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Elements must have sufficient color contrast</h3><p>Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/color-contrast?application&#x3D;axeAPI">axe: color-contrast</a></p><p class="code">&lt;strong&gt;High Occupancy Vehicle Lane Acc...&lt;/strong&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; div &gt; strong")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Elements must have sufficient color contrast</h3><p>Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/color-contrast?application&#x3D;axeAPI">axe: color-contrast</a></p><p class="code">&lt;p&gt;The New York State Departments ...&lt;/p&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(4)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Elements must have sufficient color contrast</h3><p>Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/color-contrast?application&#x3D;axeAPI">axe: color-contrast</a></p><p class="code">&lt;p&gt;To facilitate this federally-ma...&lt;/p&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(5)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Elements must have sufficient color contrast</h3><p>Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/color-contrast?application&#x3D;axeAPI">axe: color-contrast</a></p><p class="code">&lt;p&gt;&lt;strong&gt;State Department of Tra...&lt;/p&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(6)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Elements must have sufficient color contrast</h3><p>Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/color-contrast?application&#x3D;axeAPI">axe: color-contrast</a></p><p class="code">&lt;strong&gt;State Department of Transportat...&lt;/strong&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(6) &gt; strong")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Elements must have sufficient color contrast</h3><p>Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/color-contrast?application&#x3D;axeAPI">axe: color-contrast</a></p><p class="code">&lt;p&gt;&lt;strong&gt;Department of Motor Veh...&lt;/p&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(7)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Elements must have sufficient color contrast</h3><p>Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/color-contrast?application&#x3D;axeAPI">axe: color-contrast</a></p><p class="code">&lt;strong&gt;Department of Motor Vehicles Co...&lt;/strong&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(7) &gt; strong")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Elements must have sufficient color contrast</h3><p>Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/color-contrast?application&#x3D;axeAPI">axe: color-contrast</a></p><p class="code">&lt;p&gt;&lt;strong&gt;DEC Commissioner Basil ...&lt;/p&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(8)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Elements must have sufficient color contrast</h3><p>Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/color-contrast?application&#x3D;axeAPI">axe: color-contrast</a></p><p class="code">&lt;strong&gt;DEC Commissioner Basil Seggos s...&lt;/strong&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(8) &gt; strong")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Elements must have sufficient color contrast</h3><p>Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/color-contrast?application&#x3D;axeAPI">axe: color-contrast</a></p><p class="code">&lt;p&gt;&lt;strong&gt;Doreen M. Harris, Presi...&lt;/p&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(9)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Elements must have sufficient color contrast</h3><p>Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/color-contrast?application&#x3D;axeAPI">axe: color-contrast</a></p><p class="code">&lt;strong&gt;Doreen M. Harris, President and...&lt;/strong&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(9) &gt; strong")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Elements must have sufficient color contrast</h3><p>Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/color-contrast?application&#x3D;axeAPI">axe: color-contrast</a></p><p class="code">&lt;p&gt;New York’s Clean Pass program w...&lt;/p&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(10)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Elements must have sufficient color contrast</h3><p>Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/color-contrast?application&#x3D;axeAPI">axe: color-contrast</a></p><p class="code">&lt;p&gt;New Clean Pass stickers will be...&lt;/p&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(11)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Elements must have sufficient color contrast</h3><p>Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/color-contrast?application&#x3D;axeAPI">axe: color-contrast</a></p><p class="code">&lt;a href&#x3D;&quot;https://dmv.ny.gov/more-info/clean-pass-stickers-high-occupancy-vehicle-lanes-long-island-expressway&quot;&gt;online&lt;/a&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(11) &gt; a")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Elements must have sufficient color contrast</h3><p>Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/color-contrast?application&#x3D;axeAPI">axe: color-contrast</a></p><p class="code">&lt;p&gt;For more information about the ...&lt;/p&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(12)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Elements must have sufficient color contrast</h3><p>Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/color-contrast?application&#x3D;axeAPI">axe: color-contrast</a></p><p class="code">&lt;a href&#x3D;&quot;https://www.dot.ny.gov/portal/p...&quot;&gt;https://www.dot.ny.gov/portal/page/portal/programs/clean-pass&lt;/a&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(12) &gt; a")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Critical</strong>: Frames should be tested with axe-core</h3><p>Ensures &lt;iframe&gt; and &lt;frame&gt; elements contain the axe-core script</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/frame-tested?application&#x3D;axeAPI">axe: frame-tested</a></p><p class="code">&lt;iframe id&#x3D;&quot;portalIFrame&quot; title&#x3D;&quot;&quot; frameborder&#x3D;&quot;0&quot; width&#x3D;&quot;0&quot; height&#x3D;&quot;0&quot; src&#x3D;&quot;/images/pobtrans.gif&quot;&gt;&lt;/iframe&gt;</p><p class="code">(selector "#portalIFrame")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Links must be distinguishable without relying on color</h3><p>Ensure links are distinguished from surrounding text in a way that does not rely on color</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/link-in-text-block?application&#x3D;axeAPI">axe: link-in-text-block</a></p><p class="code">&lt;a href&#x3D;&quot;https://dmv.ny.gov/more-info/clean-pass-stickers-high-occupancy-vehicle-lanes-long-island-expressway&quot;&gt;online&lt;/a&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(11) &gt; a")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error/Serious</strong>: Links must be distinguishable without relying on color</h3><p>Ensure links are distinguished from surrounding text in a way that does not rely on color</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/link-in-text-block?application&#x3D;axeAPI">axe: link-in-text-block</a></p><p class="code">&lt;a href&#x3D;&quot;https://www.dot.ny.gov/portal/p...&quot;&gt;https://www.dot.ny.gov/portal/page/portal/programs/clean-pass&lt;/a&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(12) &gt; a")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Anchor element found with link content, but no href, ID or name attribute has been supplied.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc4_1_2">htmlcs: WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder</a></p><p class="code">&lt;a class&#x3D;&quot;smt-trigger-link&quot; tabindex&#x3D;&quot;0&quot;&gt;
+                            &lt;s...&lt;/a&gt;</p><p class="code">(selector "#translate-wrap &gt; div &gt; div &gt; nav &gt; ul &gt; li &gt; a")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: The heading structure is not logically nested. This h2 element appears to be the primary document heading, so should be an h1 element.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_3_1">htmlcs: WCAG2AA.Principle1.Guideline1_3.1_3_1_A.G141</a></p><p class="code">&lt;h2 class&#x3D;&quot;mobile-title&quot;&gt;Services&lt;/h2&gt;</p><p class="code">(selector "#ny-drop-menu-services &gt; h2")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: The heading structure is not logically nested. This h2 element should be an h1 to be properly nested.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_3_1">htmlcs: WCAG2AA.Principle1.Guideline1_3.1_3_1_A.G141</a></p><p class="code">&lt;h2 class&#x3D;&quot;mobile-title&quot;&gt;Services&lt;/h2&gt;</p><p class="code">(selector "#ny-drop-menu-services &gt; h2")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: If this element contains a navigation section, it is recommended that it be marked up as a list.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_3_1">htmlcs: WCAG2AA.Principle1.Guideline1_3.1_3_1.H48</a></p><p class="code">&lt;div id&#x3D;&quot;iconnav&quot;&gt;
+&lt;a href&#x3D;&quot;JavaScript: onclick&#x3D;w...&lt;/div&gt;</p><p class="code">(selector "#iconnav")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Anchor element found with a name attribute but without a href or link text. Consider moving the name attribute to become an ID of a parent or nearby element.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc4_1_2">htmlcs: WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.EmptyWithName</a></p><p class="code">&lt;a name&#x3D;&quot;content&quot;&gt;&lt;/a&gt;</p><p class="code">(selector "#contentbody &gt; a")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: Iframe element requires a non-empty title attribute that identifies the frame.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc2_4_1">htmlcs: WCAG2AA.Principle2.Guideline2_4.2_4_1.H64.1</a></p><p class="code">&lt;iframe id&#x3D;&quot;portalIFrame&quot; title&#x3D;&quot;&quot; frameborder&#x3D;&quot;0&quot; width&#x3D;&quot;0&quot; height&#x3D;&quot;0&quot; src&#x3D;&quot;/images/pobtrans.gif&quot;&gt;&lt;/iframe&gt;</p><p class="code">(selector "#portalIFrame")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_3_1">htmlcs: WCAG2AA.Principle1.Guideline1_3.1_3_1.H49.AlignAttr</a></p><p class="code">&lt;tr align&#x3D;&quot;LEFT&quot;&gt;
+&lt;td valign&#x3D;&quot;top&quot; style&#x3D;&quot;paddin...&lt;/tr&gt;</p><p class="code">(selector "#rg137622 &gt; tbody &gt; tr:nth-child(1)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</a></p><p class="code">&lt;a href&#x3D;&quot;/news-events&quot;&gt;NEWS &amp;amp; EVENTS&lt;/a&gt;</p><p class="code">(selector "#sidenavigation &gt; div &gt; ul &gt; li:nth-child(1) &gt; a:nth-child(2)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</a></p><p class="code">&lt;a href&#x3D;&quot;/news/traveler-advisories/2019&quot;&gt;Traveler Advisories&lt;/a&gt;</p><p class="code">(selector "#sidenavigation &gt; div &gt; ul &gt; li:nth-child(3) &gt; a")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</a></p><p class="code">&lt;a href&#x3D;&quot;/programs/brochures&quot;&gt;Downloadable Brochures&lt;/a&gt;</p><p class="code">(selector "#sidenavigation &gt; div &gt; ul &gt; li:nth-child(4) &gt; a")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</a></p><p class="code">&lt;a href&#x3D;&quot;/programs/video-library&quot;&gt;Video Library&lt;/a&gt;</p><p class="code">(selector "#sidenavigation &gt; div &gt; ul &gt; li:nth-child(5) &gt; a")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</a></p><p class="code">&lt;a href&#x3D;&quot;/webcast&quot;&gt;Webcasts&lt;/a&gt;</p><p class="code">(selector "#sidenavigation &gt; div &gt; ul &gt; li:nth-child(6) &gt; a")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_3_1">htmlcs: WCAG2AA.Principle1.Guideline1_3.1_3_1.H49.AlignAttr</a></p><p class="code">&lt;tr align&#x3D;&quot;LEFT&quot;&gt;
+&lt;td valign&#x3D;&quot;top&quot; style&#x3D;&quot;paddin...&lt;/tr&gt;</p><p class="code">(selector "#rg137622 &gt; tbody &gt; tr:nth-child(2)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_3_1">htmlcs: WCAG2AA.Principle1.Guideline1_3.1_3_1.H49.AlignAttr</a></p><p class="code">&lt;tr align&#x3D;&quot;LEFT&quot;&gt;
+&lt;td valign&#x3D;&quot;top&quot; style&#x3D;&quot;paddin...&lt;/tr&gt;</p><p class="code">(selector "#rg151621 &gt; tbody &gt; tr")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_3_1">htmlcs: WCAG2AA.Principle1.Guideline1_3.1_3_1.H49.AlignAttr</a></p><p class="code">&lt;tr align&#x3D;&quot;LEFT&quot;&gt;
+&lt;td valign&#x3D;&quot;top&quot; style&#x3D;&quot;paddin...&lt;/tr&gt;</p><p class="code">(selector "#rg137625 &gt; tbody &gt; tr")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Img element is marked so that it is ignored by Assistive Technology.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_1_1">htmlcs: WCAG2AA.Principle1.Guideline1_1.1_1_1.H67.2</a></p><p class="code">&lt;img src&#x3D;&quot;/images/pobtrans.gif&quot; height&#x3D;&quot;1&quot; width&#x3D;&quot;10&quot; alt&#x3D;&quot;&quot; style&#x3D;&quot;display:block&quot;&gt;</p><p class="code">(selector "#pcnt685_15881113_685_15881108_15881108 &gt; div &gt; table:nth-child(1) &gt; tbody &gt; tr &gt; td:nth-child(1) &gt; img")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_3_1">htmlcs: WCAG2AA.Principle1.Guideline1_3.1_3_1.H49.AlignAttr</a></p><p class="code">&lt;td align&#x3D;&quot;RIGHT&quot; style&#x3D;&quot;white-space:nowrap;width:100%&quot;&gt;
+&amp;nbsp;&amp;nbsp;&lt;a href&#x3D;&quot;https://w...&lt;/td&gt;</p><p class="code">(selector "#pcnt685_15881113_685_15881108_15881108 &gt; div &gt; table:nth-child(1) &gt; tbody &gt; tr &gt; td:nth-child(3)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</a></p><p class="code">&lt;a href&#x3D;&quot;https://www.dot.ny.gov/news/press-releases/2021/2021-12-07?_piref685_15881113_685_15881108_15881108.portlet_edit&#x3D;1&quot; class&#x3D;&quot;PortletSubHeaderLink&quot;&gt;Edit&lt;/a&gt;</p><p class="code">(selector "#pcnt685_15881113_685_15881108_15881108 &gt; div &gt; table:nth-child(1) &gt; tbody &gt; tr &gt; td:nth-child(3) &gt; a")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Img element is marked so that it is ignored by Assistive Technology.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_1_1">htmlcs: WCAG2AA.Principle1.Guideline1_1.1_1_1.H67.2</a></p><p class="code">&lt;img src&#x3D;&quot;/images/pobtrans.gif&quot; height&#x3D;&quot;1&quot; width&#x3D;&quot;10&quot; alt&#x3D;&quot;&quot; style&#x3D;&quot;display:block&quot;&gt;</p><p class="code">(selector "#pcnt685_15881113_685_15881108_15881108 &gt; div &gt; table:nth-child(1) &gt; tbody &gt; tr &gt; td:nth-child(4) &gt; img")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_3_1">htmlcs: WCAG2AA.Principle1.Guideline1_3.1_3_1.H49.AlignAttr</a></p><p class="code">&lt;tr align&#x3D;&quot;LEFT&quot;&gt;
+&lt;td valign&#x3D;&quot;top&quot; style&#x3D;&quot;paddin...&lt;/tr&gt;</p><p class="code">(selector "#rg137669 &gt; tbody &gt; tr:nth-child(1)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.</h3><p>htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3_F24.F24.FGColour</p><p class="code">&lt;div style&#x3D;&quot;background-image:url(/design/b-plan.jpg);
+width:100%;
+height: 50px;
+background-repeat:no-repeat;
+background-position:right;
+font-family:arial;
+font-size:24px;
+font-weight:bold;
+color:#FFFFFF;&quot;&gt;
+    &lt;div style&#x3D;&quot;padding:0.5em;...&lt;/div&gt;</p><p class="code">(selector "#pcnt685_15881113_685_15881108_15881108-685_15881546_685_15881545_15881545 &gt; div:nth-child(1) &gt; div")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 3:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.BgImage</a></p><p class="code">&lt;div style&#x3D;&quot;padding:0.5em;
+&quot;&gt;Press Releases&lt;/div&gt;</p><p class="code">(selector "#pcnt685_15881113_685_15881108_15881108-685_15881546_685_15881545_15881545 &gt; div:nth-child(1) &gt; div &gt; div")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: If this element contains a navigation section, it is recommended that it be marked up as a list.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_3_1">htmlcs: WCAG2AA.Principle1.Guideline1_3.1_3_1.H48</a></p><p class="code">&lt;div class&#x3D;&quot;news-header&quot; style&#x3D;&quot;padding-right:5px;&quot;&gt;
+News Releases:
+&lt;span class&#x3D;&quot;sp...&lt;/div&gt;</p><p class="code">(selector "#pcnt685_15881113_685_15881108_15881108-685_15881546_685_15881545_15881545 &gt; div:nth-child(3)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Img element is marked so that it is ignored by Assistive Technology.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_1_1">htmlcs: WCAG2AA.Principle1.Guideline1_1.1_1_1.H67.2</a></p><p class="code">&lt;img src&#x3D;&quot;/images/pobtrans.gif&quot; height&#x3D;&quot;10&quot; width&#x3D;&quot;1&quot; alt&#x3D;&quot;&quot; style&#x3D;&quot;display:block&quot;&gt;</p><p class="code">(selector "#rg137669 &gt; tbody &gt; tr:nth-child(2) &gt; td &gt; img")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_3_1">htmlcs: WCAG2AA.Principle1.Guideline1_3.1_3_1.H49.AlignAttr</a></p><p class="code">&lt;tr align&#x3D;&quot;LEFT&quot;&gt;
+&lt;td valign&#x3D;&quot;top&quot; style&#x3D;&quot;paddin...&lt;/tr&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</a></p><p class="code">&lt;td valign&#x3D;&quot;top&quot; style&#x3D;&quot;padding:10px 10px 0px 10px;width:100%;&quot;&gt;
+Contact: Office of Communicati...&lt;/td&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: The heading structure is not logically nested. This h5 element should be an h2 to be properly nested.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_3_1">htmlcs: WCAG2AA.Principle1.Guideline1_3.1_3_1_A.G141</a></p><p class="code">&lt;h5 style&#x3D;&quot;text-align:center;&quot; class&#x3D;&quot;uc&quot;&gt;New York State To Implement Fed...&lt;/h5&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; h5")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</a></p><p class="code">&lt;h5 style&#x3D;&quot;text-align:center;&quot; class&#x3D;&quot;uc&quot;&gt;New York State To Implement Fed...&lt;/h5&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; h5")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Heading markup should be used if this content is intended as a heading.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_3_1">htmlcs: WCAG2AA.Principle1.Guideline1_3.1_3_1.H42</a></p><p class="code">&lt;div style&#x3D;&quot;text-align:center;&quot;&gt;&lt;strong&gt;High Occupancy Vehicle ...&lt;/div&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; div")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</a></p><p class="code">&lt;strong&gt;High Occupancy Vehicle Lane Acc...&lt;/strong&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; div &gt; strong")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</a></p><p class="code">&lt;p&gt;The New York State Departments ...&lt;/p&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(4)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</a></p><p class="code">&lt;p&gt;To facilitate this federally-ma...&lt;/p&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(5)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</a></p><p class="code">&lt;p&gt;&lt;strong&gt;State Department of Tra...&lt;/p&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(6)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</a></p><p class="code">&lt;strong&gt;State Department of Transportat...&lt;/strong&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(6) &gt; strong")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</a></p><p class="code">&lt;p&gt;&lt;strong&gt;Department of Motor Veh...&lt;/p&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(7)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</a></p><p class="code">&lt;strong&gt;Department of Motor Vehicles Co...&lt;/strong&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(7) &gt; strong")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</a></p><p class="code">&lt;p&gt;&lt;strong&gt;DEC Commissioner Basil ...&lt;/p&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(8)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</a></p><p class="code">&lt;strong&gt;DEC Commissioner Basil Seggos s...&lt;/strong&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(8) &gt; strong")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</a></p><p class="code">&lt;p&gt;&lt;strong&gt;Doreen M. Harris, Presi...&lt;/p&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(9)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</a></p><p class="code">&lt;strong&gt;Doreen M. Harris, President and...&lt;/strong&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(9) &gt; strong")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</a></p><p class="code">&lt;p&gt;New York’s Clean Pass program w...&lt;/p&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(10)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</a></p><p class="code">&lt;p&gt;New Clean Pass stickers will be...&lt;/p&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(11)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</a></p><p class="code">&lt;a href&#x3D;&quot;https://dmv.ny.gov/more-info/clean-pass-stickers-high-occupancy-vehicle-lanes-long-island-expressway&quot;&gt;online&lt;/a&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(11) &gt; a")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</a></p><p class="code">&lt;p&gt;For more information about the ...&lt;/p&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(12)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</a></p><p class="code">&lt;a href&#x3D;&quot;https://www.dot.ny.gov/portal/p...&quot;&gt;https://www.dot.ny.gov/portal/page/portal/programs/clean-pass&lt;/a&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(12) &gt; a")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Semantic markup should be used to mark emphasised or special text so that it can be programmatically determined.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_3_1">htmlcs: WCAG2AA.Principle1.Guideline1_3.1_3_1.H49.AlignAttr</a></p><p class="code">&lt;p align&#x3D;&quot;center&quot;&gt;###&lt;/p&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(13)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</a></p><p class="code">&lt;p align&#x3D;&quot;center&quot;&gt;###&lt;/p&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(1) &gt; td &gt; p:nth-child(13)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Img element is marked so that it is ignored by Assistive Technology.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_1_1">htmlcs: WCAG2AA.Principle1.Guideline1_1.1_1_1.H67.2</a></p><p class="code">&lt;img src&#x3D;&quot;/images/pobtrans.gif&quot; height&#x3D;&quot;10&quot; width&#x3D;&quot;1&quot; alt&#x3D;&quot;&quot; style&#x3D;&quot;display:block&quot;&gt;</p><p class="code">(selector "#rg137624 &gt; tbody &gt; tr:nth-child(2) &gt; td &gt; img")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.</h3><p>htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3_F24.F24.FGColour</p><p class="code">&lt;a href&#x3D;&quot;http://www.ny.gov/services/register-vote&quot; style&#x3D;&quot;background-color:#4b6576; color:white; padding:5px 10px; display:inline-block;&quot;&gt; REGISTER NOW&lt;/a&gt;</p><p class="code">(selector "html &gt; body &gt; div:nth-child(16) &gt; div &gt; div:nth-child(9) &gt; div:nth-child(2) &gt; ul &gt; li &gt; a")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Anchor element found with link content, but no href, ID or name attribute has been supplied.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc4_1_2">htmlcs: WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder</a></p><p class="code">&lt;a class&#x3D;&quot;smt-trigger-link&quot; tabindex&#x3D;&quot;0&quot;&gt;
+                            &lt;s...&lt;/a&gt;</p><p class="code">(selector "#translation-menu &gt; div &gt; div &gt; nav &gt; ul &gt; li &gt; a")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: Duplicate id attribute value &quot;langnav&quot; found on the web page.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc4_1_1">htmlcs: WCAG2AA.Principle4.Guideline4_1.4_1_1.F77</a></p><p class="code">&lt;span class&#x3D;&quot;smt-lang&quot; id&#x3D;&quot;langnav&quot;&gt;Translate&lt;/span&gt;</p><p class="code">(selector "#langnav")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This select element does not have a value available to an accessibility API.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc4_1_2">htmlcs: WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Select.Value</a></p><p class="code">&lt;select id&#x3D;&quot;footertranslate&quot; name&#x3D;&quot;footertranslate&quot;&gt;&lt;option value&#x3D;&quot;&quot; disabled&#x3D;&quot;&quot; hi...&lt;/select&gt;</p><p class="code">(selector "#footertranslate")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: If this selection list contains groups of related options, they should be grouped with optgroup.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_3_1">htmlcs: WCAG2AA.Principle1.Guideline1_3.1_3_1.H85.2</a></p><p class="code">&lt;select id&#x3D;&quot;footertranslate&quot; name&#x3D;&quot;footertranslate&quot;&gt;&lt;option value&#x3D;&quot;&quot; disabled&#x3D;&quot;&quot; hi...&lt;/select&gt;</p><p class="code">(selector "#footertranslate")</p></div>
+			</li>
+		</ul>
+	</main>
+	<script>
+		const toggleIssues = (btn, pageQuery) => {
+			const className = 'hidden';
+			document.getElementById(btn).classList.toggle(className);
+			document.querySelectorAll(pageQuery).forEach((page) => {
+				page.classList.toggle(className);
+			});
+		};
+
+		document
+			.getElementById('error-count')
+			.addEventListener('click', () =>
+				toggleIssues('error-count', '.issues .issue.error')
+			);
+		document
+			.getElementById('warning-count')
+			.addEventListener('click', () =>
+				toggleIssues('warning-count', '.issues .issue.warning')
+			);
+		document
+			.getElementById('notice-count')
+			.addEventListener('click', () =>
+				toggleIssues('notice-count', '.issues .issue.notice')
+			);
+	</script>
+</body>
+
+</html>

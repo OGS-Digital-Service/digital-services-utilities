@@ -4,12 +4,13 @@
         [
           "pa11y-ci-reporter-html",
           { "destination": "./_site/pa11y-reports", "includeZeroIssues": true }
-        ]
+        ],
+        "cli"
       ],
       "runners": ["axe", "htmlcs"],
       "includeNotices": false,
-    "includeWarnings": true,
-    "standard": "WCAG2AA"
+      "includeWarnings": true,
+      "standard": "WCAG2AA"
     },
     "urls": ["https://nysds.dev/", "https://nysds.dev/components/", "https://ny.gov", "https://governor.ny.gov"]
   }

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>
+		Pa11y results for "https://nydmvd8.prod.acquia-sites.com/press-releases"
+	</title>
+	<style>
+		html,
+		body {
+			background-color: #ffffff;
+			color: #333333;
+			font-family: 'Segoe UI', Roboto, 'Noto Sans', Ubuntu, Cantarell,
+				'Helvetica Neue', sans-serif;
+			font-size: 16px;
+			line-height: 1.3rem;
+			margin: 0;
+			padding: 0;
+		}
+
+		main {
+			margin: 0 auto;
+			max-width: 900px;
+			padding: 1.25rem;
+		}
+
+		h1 {
+			font-size: 1.5rem;
+			line-height: 1.5rem;
+			margin: 0;
+			margin-bottom: 0.5rem;
+		}
+
+		h2,
+		h3 {
+			font-size: 1.15rem;
+			font-weight: normal;
+			margin: 0;
+			padding-bottom: 0.5rem;
+		}
+
+		h3 {
+			padding-bottom: 0;
+		}
+
+		p {
+			margin: 0;
+		}
+
+		.error {
+			background-color: #f8d7da;
+			color: #67191f;
+		}
+
+		.error a {
+			color: #842029;
+		}
+
+		.warning {
+			background-color: #fff3cd;
+			color: #544003;
+		}
+
+		.warning a {
+			color: #664d03;
+		}
+
+		.notice {
+			background-color: #cfe2ff;
+			color: #062c65;
+		}
+
+		.notice a {
+			color: #074197;
+		}
+
+		.error .left-bar {
+			background-color: #d53447;
+		}
+
+		.error .body {
+			border-color: #f2bbc1;
+		}
+
+		.warning .left-bar {
+			background-color: #c79500;
+		}
+
+		.warning .body {
+			border-color: #ffd761;
+		}
+
+		.notice .left-bar {
+			background-color: #015cda;
+		}
+
+		.notice .body {
+			border-color: #a9cefe;
+		}
+
+		.filter {
+			display: inline-grid;
+			grid-template-columns: 8.5rem 1fr 1fr 1fr;
+			margin-top: 1rem;
+		}
+
+		.filter .label {
+			font-size: 1.15rem;
+			padding: 0.45rem 0;
+		}
+
+		.count {
+			border-radius: 0;
+			border-width: 0;
+			box-shadow: 0.1rem 0.25rem 0.5rem rgba(0 0 0 / 15%);
+			cursor: pointer;
+			display: inline-grid;
+			font-size: 1.15rem;
+			grid-template-columns: 0.35rem 1fr;
+			margin-right: 0.75rem;
+			min-width: 80px;
+		}
+
+		.count .body {
+			border-style: solid;
+			border-width: 1px 1px 1px 0;
+			overflow-x: hidden;
+			padding: 0.35rem 0.7rem;
+			text-align: center;
+		}
+
+		.count.hidden {
+			background-color: #f4f4f4;
+			color: #323232;
+		}
+
+		.count.hidden .left-bar {
+			background-color: #b6b6b6;
+		}
+
+		.count.hidden .body {
+			border-color: #e9e9e9;
+		}
+
+		.issues {
+			list-style: none;
+			margin: 0;
+			margin-top: 1.5rem;
+			padding-left: 0;
+		}
+
+		.issue {
+			border-radius: 0;
+			border-width: 0;
+			box-shadow: 0.1rem 0.25rem 0.5rem rgba(0 0 0 / 15%);
+			display: grid;
+			grid-template-columns: 0.5rem 1fr;
+			margin: 0;
+			margin-bottom: 1.5rem;
+			padding: 0;
+		}
+
+		.issue p:not(:last-child) {
+			padding-bottom: 0.1rem;
+		}
+
+		.issue.hidden {
+			display: none;
+		}
+
+		/* stylelint-disable-next-line no-descending-specificity -- different parent elements */
+		.issue .body {
+			border-style: solid;
+			border-width: 1px 1px 1px 0;
+			overflow-x: hidden;
+			padding: 0.5rem;
+		}
+
+		.issue .body h3 {
+			padding-bottom: 0.25rem;
+		}
+
+		.code {
+			font-family: monospace;
+			font-size: 0.95rem;
+			padding-top: 0.1rem;
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+		<h1>Pa11y results for "https://nydmvd8.prod.acquia-sites.com/press-releases"</h1>
+		<h2>Generated at: Mon Jan 23 2023 15:32:19 GMT-0500 (Eastern Standard Time)</h2>
+		<h2>Runners (with issues): axe, htmlcs</h2>
+
+		<p class="filter">
+			<span class="label">Toggle by type</span>
+			<span class="count error" id="error-count">
+				<span class="left-bar" aria-hidden="true"></span>
+				<span class="body">0 errors</span>
+			</span>
+			<span class="count warning" id="warning-count">
+				<span class="left-bar" aria-hidden="true"></span>
+				<span class="body">36 warnings</span>
+			</span>
+			<span class="count notice" id="notice-count">
+				<span class="left-bar" aria-hidden="true"></span>
+				<span class="body">0 notices</span>
+			</span>
+		</p>
+		<ul class="issues">
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: Document should have one main landmark</h3><p>Ensures the document has a main landmark</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/landmark-one-main?application&#x3D;axeAPI">axe: landmark-one-main</a></p><p class="code">&lt;html lang&#x3D;&quot;en&quot; dir&#x3D;&quot;ltr&quot; prefix&#x3D;&quot;og: https://ogp.me/ns#&quot; class&#x3D;&quot; js&quot;&gt;&lt;head&gt;&lt;style&gt;body {transition: ...&lt;/html&gt;</p><p class="code">(selector "html")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: Ensures landmarks are unique</h3><p>Landmarks should have a unique role or role/label/title (i.e. accessible name) combination</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/landmark-unique?application&#x3D;axeAPI">axe: landmark-unique</a></p><p class="code">&lt;nav id&#x3D;&quot;block-global-footer-menu&quot; class&#x3D;&quot;footer-menu footer-vertical&quot;&gt;
+            
+              &lt;ul...&lt;/nav&gt;</p><p class="code">(selector "#block-global-footer-menu")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;div class&#x3D;&quot;header bg__secondary-color svelte-1i4cl4o&quot;&gt;&lt;div class&#x3D;&quot;header__label svelt...&lt;/div&gt;</p><p class="code">(selector "#nygov_filter &gt; div &gt; div:nth-child(1)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;legend id&#x3D;&quot;search&quot; class&#x3D;&quot;svelte-k6hr89&quot;&gt;Search&lt;/legend&gt;</p><p class="code">(selector "#search")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;input type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Keyword(s)&quot; aria-label&#x3D;&quot;Search keywords&quot; class&#x3D;&quot; svelte-1rnt3rf&quot;&gt;</p><p class="code">(selector "#nygov_filter &gt; div &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div &gt; div:nth-child(1) &gt; fieldset &gt; div &gt; div &gt; input")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;div class&#x3D;&quot;filter__item svelte-1jnijwo&quot;&gt;&lt;fieldset class&#x3D;&quot;svelte-1jnijwo...&lt;/div&gt;</p><p class="code">(selector "#nygov_filter &gt; div &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div &gt; div:nth-child(3)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;input id&#x3D;&quot;pagination-lite__input&quot; min&#x3D;&quot;1&quot; aria-label&#x3D;&quot;Page Number Input&quot; title&#x3D;&quot;Page Number Input&quot; type&#x3D;&quot;number&quot; class&#x3D;&quot;svelte-m80lf8&quot; style&#x3D;&quot;width: 50px;&quot;&gt;</p><p class="code">(selector "#pagination-lite__input")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;span class&#x3D;&quot;pagination-lite__pages svelte-m80lf8&quot;&gt;of 35&lt;/span&gt;</p><p class="code">(selector "#nygov_filter &gt; div &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; span")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;section class&#x3D;&quot;contentDisplay__item  first  svelte-m55gzv&quot;&gt;&lt;section class&#x3D;&quot;filter-result -...&lt;/section&gt;</p><p class="code">(selector "#nygov_filter &gt; div &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; section:nth-child(2)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;section class&#x3D;&quot;contentDisplay__item    svelte-m55gzv&quot;&gt;&lt;section class&#x3D;&quot;filter-result -...&lt;/section&gt;</p><p class="code">(selector "#nygov_filter &gt; div &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; section:nth-child(3)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;section class&#x3D;&quot;contentDisplay__item    svelte-m55gzv&quot;&gt;&lt;section class&#x3D;&quot;filter-result -...&lt;/section&gt;</p><p class="code">(selector "#nygov_filter &gt; div &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; section:nth-child(4)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;section class&#x3D;&quot;contentDisplay__item    svelte-m55gzv&quot;&gt;&lt;section class&#x3D;&quot;filter-result -...&lt;/section&gt;</p><p class="code">(selector "#nygov_filter &gt; div &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; section:nth-child(5)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;section class&#x3D;&quot;contentDisplay__item    svelte-m55gzv&quot;&gt;&lt;section class&#x3D;&quot;filter-result -...&lt;/section&gt;</p><p class="code">(selector "#nygov_filter &gt; div &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; section:nth-child(6)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;section class&#x3D;&quot;contentDisplay__item    svelte-m55gzv&quot;&gt;&lt;section class&#x3D;&quot;filter-result -...&lt;/section&gt;</p><p class="code">(selector "#nygov_filter &gt; div &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; section:nth-child(7)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;section class&#x3D;&quot;contentDisplay__item    svelte-m55gzv&quot;&gt;&lt;section class&#x3D;&quot;filter-result -...&lt;/section&gt;</p><p class="code">(selector "#nygov_filter &gt; div &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; section:nth-child(8)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;section class&#x3D;&quot;contentDisplay__item    svelte-m55gzv&quot;&gt;&lt;section class&#x3D;&quot;filter-result -...&lt;/section&gt;</p><p class="code">(selector "#nygov_filter &gt; div &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; section:nth-child(9)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;section class&#x3D;&quot;contentDisplay__item    svelte-m55gzv&quot;&gt;&lt;section class&#x3D;&quot;filter-result -...&lt;/section&gt;</p><p class="code">(selector "#nygov_filter &gt; div &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; section:nth-child(10)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;section class&#x3D;&quot;contentDisplay__item  last  svelte-m55gzv&quot;&gt;&lt;section class&#x3D;&quot;filter-result -...&lt;/section&gt;</p><p class="code">(selector "#nygov_filter &gt; div &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; section:nth-child(11)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;div class&#x3D;&quot;filterDisplayingResults svelte-23w18k&quot;&gt;&lt;div class&#x3D;&quot;text-proxima text-b...&lt;/div&gt;</p><p class="code">(selector "#nygov_filter &gt; div &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(12) &gt; div:nth-child(1)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;div class&#x3D;&quot;view-results svelte-zc748k&quot;&gt;&lt;div class&#x3D;&quot;label svelte-zc748k...&lt;/div&gt;</p><p class="code">(selector "#nygov_filter &gt; div &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(12) &gt; div:nth-child(3)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;div id&#x3D;&quot;block-sitebranding&quot;&gt;
+            &lt;div class&#x3D;&quot;agency...&lt;/div&gt;</p><p class="code">(selector "#block-sitebranding")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning/Moderate</strong>: All page content should be contained by landmarks</h3><p>Ensures all page content is contained by landmarks</p><p><a href="https://dequeuniversity.com/rules/axe/4.6/region?application&#x3D;axeAPI">axe: region</a></p><p class="code">&lt;div class&#x3D;&quot;webny-global-footer wgf-cta&quot;&gt;
+        &lt;div class&#x3D;&quot;footercta-...&lt;/div&gt;</p><p class="code">(selector "html &gt; body &gt; div:nth-child(4) &gt; div:nth-child(2) &gt; div &gt; div:nth-child(2)")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_4_3">htmlcs: WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Abs</a></p><p class="code">&lt;a class&#x3D;&quot;visually-hidden focusable skip-to-main&quot; href&#x3D;&quot;#main-content&quot;&gt;
+      Skip to main content
+   ...&lt;/a&gt;</p><p class="code">(selector "html &gt; body &gt; a")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: The heading structure is not logically nested. This h2 element appears to be the primary document heading, so should be an h1 element.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_3_1">htmlcs: WCAG2AA.Principle1.Guideline1_3.1_3_1_A.G141</a></p><p class="code">&lt;h2 class&#x3D;&quot;mobile-title&quot;&gt;Services&lt;/h2&gt;</p><p class="code">(selector "#ny-drop-menu-services &gt; h2")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: The heading structure is not logically nested. This h2 element should be an h1 to be properly nested.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_3_1">htmlcs: WCAG2AA.Principle1.Guideline1_3.1_3_1_A.G141</a></p><p class="code">&lt;h2 class&#x3D;&quot;mobile-title&quot;&gt;Services&lt;/h2&gt;</p><p class="code">(selector "#ny-drop-menu-services &gt; h2")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc2_5_3">htmlcs: WCAG2AA.Principle2.Guideline2_5.2_5_3.F96</a></p><p class="code">&lt;a href&#x3D;&quot;/news/governors-traffic-safety-committee-announces-free-car-seat-inspections-and-assistance-11&quot; aria-label&#x3D;&quot;Read the press release titled Governor&#x27;s Traffic Safety Committee Announces Free Car Seat Inspections and Assistance in Suffolk Count...</p><p class="code">(selector "#nygov_filter &gt; div &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; section:nth-child(2) &gt; section &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; a")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc2_5_3">htmlcs: WCAG2AA.Principle2.Guideline2_5.2_5_3.F96</a></p><p class="code">&lt;a href&#x3D;&quot;/news/dmv-receives-national-award-driver-license-security&quot; aria-label&#x3D;&quot;Read the press release titled DMV Receives National Award for Driver License Security&quot; class&#x3D;&quot;filter-card__footerLink svelte-1snzz5o&quot;&gt;&lt;i class&#x3D;&quot;fas fa-share text-pri...&lt;/...</p><p class="code">(selector "#nygov_filter &gt; div &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; section:nth-child(3) &gt; section &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; a")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc2_5_3">htmlcs: WCAG2AA.Principle2.Guideline2_5.2_5_3.F96</a></p><p class="code">&lt;a href&#x3D;&quot;/news/governors-traffic-safety-committee-announces-free-car-seat-inspections-and-assistance-10&quot; aria-label&#x3D;&quot;Read the press release titled Governor&#x27;s Traffic Safety Committee Announces Free Car Seat Inspections and Assistance in Suffolk Count...</p><p class="code">(selector "#nygov_filter &gt; div &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; section:nth-child(4) &gt; section &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; a")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc2_5_3">htmlcs: WCAG2AA.Principle2.Guideline2_5.2_5_3.F96</a></p><p class="code">&lt;a href&#x3D;&quot;/news/governors-traffic-safety-committee-announces-free-car-seat-inspections-and-assistance-oswego&quot; aria-label&#x3D;&quot;Read the press release titled Governor&#x27;s Traffic Safety Committee Announces Free Car Seat Inspections and Assistance in Oswego Co...</p><p class="code">(selector "#nygov_filter &gt; div &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; section:nth-child(5) &gt; section &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; a")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc2_5_3">htmlcs: WCAG2AA.Principle2.Guideline2_5.2_5_3.F96</a></p><p class="code">&lt;a href&#x3D;&quot;/news/dmv-opens-pop-licensing-center-empire-state-plaza&quot; aria-label&#x3D;&quot;Read the press release titled DMV Opens Pop-Up Licensing Center on Empire State Plaza&quot; class&#x3D;&quot;filter-card__footerLink svelte-1snzz5o&quot;&gt;&lt;i class&#x3D;&quot;fas fa-share text-pri...&lt;/a&gt;</p><p class="code">(selector "#nygov_filter &gt; div &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; section:nth-child(6) &gt; section &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; a")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc2_5_3">htmlcs: WCAG2AA.Principle2.Guideline2_5.2_5_3.F96</a></p><p class="code">&lt;a href&#x3D;&quot;/news/governor-hochul-announces-plan-help-government-work-better-new-yorkers&quot; aria-label&#x3D;&quot;Read the press release titled Governor Hochul Announces Plan to Help Government Work Better for New Yorkers&quot; class&#x3D;&quot;filter-card__footerLink svelte-1snz...</p><p class="code">(selector "#nygov_filter &gt; div &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; section:nth-child(7) &gt; section &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; a")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc2_5_3">htmlcs: WCAG2AA.Principle2.Guideline2_5.2_5_3.F96</a></p><p class="code">&lt;a href&#x3D;&quot;/news/nys-dmv-arrests-two-separate-cases-illegally-registered-stretched-limousines&quot; aria-label&#x3D;&quot;Read the press release titled NYS DMV Arrests Two in Separate Cases of Illegally Registered Stretched Limousines&quot; class&#x3D;&quot;filter-card__footerLink ...</p><p class="code">(selector "#nygov_filter &gt; div &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; section:nth-child(8) &gt; section &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; a")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc2_5_3">htmlcs: WCAG2AA.Principle2.Guideline2_5.2_5_3.F96</a></p><p class="code">&lt;a href&#x3D;&quot;/news/governors-traffic-safety-committee-announces-free-car-seat-inspections-and-assistance-erie-0&quot; aria-label&#x3D;&quot;Read the press release titled Governor&#x27;s Traffic Safety Committee Announces Free Car Seat Inspections and Assistance in Erie and ...</p><p class="code">(selector "#nygov_filter &gt; div &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; section:nth-child(9) &gt; section &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; a")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc2_5_3">htmlcs: WCAG2AA.Principle2.Guideline2_5.2_5_3.F96</a></p><p class="code">&lt;a href&#x3D;&quot;/news/governors-traffic-safety-committee-announces-record-number-drug-recognition-experts-new-york&quot; aria-label&#x3D;&quot;Read the press release titled Governor’s Traffic Safety Committee Announces Record Number Of Drug Recognition Experts In New York...</p><p class="code">(selector "#nygov_filter &gt; div &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; section:nth-child(10) &gt; section &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; a")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc2_5_3">htmlcs: WCAG2AA.Principle2.Guideline2_5.2_5_3.F96</a></p><p class="code">&lt;a href&#x3D;&quot;/news/dmv-extends-validity-commercial-learner-permit&quot; aria-label&#x3D;&quot;Read the press release titled DMV Extends Validity of Commercial Learner Permit&quot; class&#x3D;&quot;filter-card__footerLink svelte-1snzz5o&quot;&gt;&lt;i class&#x3D;&quot;fas fa-share text-pri...&lt;/a&gt;</p><p class="code">(selector "#nygov_filter &gt; div &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; section:nth-child(11) &gt; section &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; a")</p></div>
+			</li>
+			<li class="issue warning">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Warning</strong>: Accessible name for this element does not contain the visible label text. Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc2_5_3">htmlcs: WCAG2AA.Principle2.Guideline2_5.2_5_3.F96</a></p><p class="code">&lt;a href&#x3D;&quot;https://donatelife.ny.gov/register/&quot; class&#x3D;&quot;footercta-button buttonBase button ext&quot; title&#x3D;&quot;Become an Organ Donor&quot; aria-label&#x3D;&quot;Become an Organ Donor&quot; data-extlink&#x3D;&quot;&quot; target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;noopener&quot;&gt;Become an Organ Donor&lt;svg focus...&lt;/a&gt;</p><p class="code">(selector "html &gt; body &gt; div:nth-child(4) &gt; div:nth-child(2) &gt; div &gt; div:nth-child(2) &gt; div &gt; div &gt; div:nth-child(2) &gt; a")</p></div>
+			</li>
+		</ul>
+	</main>
+	<script>
+		const toggleIssues = (btn, pageQuery) => {
+			const className = 'hidden';
+			document.getElementById(btn).classList.toggle(className);
+			document.querySelectorAll(pageQuery).forEach((page) => {
+				page.classList.toggle(className);
+			});
+		};
+
+		document
+			.getElementById('error-count')
+			.addEventListener('click', () =>
+				toggleIssues('error-count', '.issues .issue.error')
+			);
+		document
+			.getElementById('warning-count')
+			.addEventListener('click', () =>
+				toggleIssues('warning-count', '.issues .issue.warning')
+			);
+		document
+			.getElementById('notice-count')
+			.addEventListener('click', () =>
+				toggleIssues('notice-count', '.issues .issue.notice')
+			);
+	</script>
+</body>
+
+</html>
