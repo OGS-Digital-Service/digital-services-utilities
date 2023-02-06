@@ -4,6 +4,10 @@
     "link": "https://apany.govqa.us/WEBAPP/_rs/"
   },
   {
+    "Agency": "Bridge Authority",
+    "link": "https://nysbany.govqa.us/WEBAPP/_rs/"
+  },
+  {
     "Agency": "Canal Corporation",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
@@ -148,8 +152,16 @@
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
+    "Agency": "New York Job Developmemt Authority",
+    "link": "https://esdny.govqa.us/WEBAPP/_rs/"
+  },
+  {
     "Agency": "New York Power Authority",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
+  },
+  {
+    "Agency": "New York State Convention Center Operating Corporation",
+    "link": "https://esdny.govqa.us/WEBAPP/_rs/"
   },
   {
     "Agency": "New York State Energy Research and Development Authority",
@@ -170,6 +182,10 @@
   {
     "Agency": "NYS Office of Cannabis Management",
     "link": "https://cannabisny.govqa.us/WEBAPP/_rs/"
+  },
+  {
+    "Agency": "NY Wine/Grape Foundation",
+    "link": "https://esdny.govqa.us/WEBAPP/_rs/"
   },
   {
     "Agency": "Office for People With Developmental Disabilities",
