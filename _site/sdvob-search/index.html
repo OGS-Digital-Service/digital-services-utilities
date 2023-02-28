@@ -105,7 +105,7 @@
 
     <main class="mx-8 md:mx-20" id="main-site-content-for-skiplink">
     <h2 class="text-xl font-bold my-4"> Progressive Disclosure Filter Example </h2>
-<div class="m-4 flex flex-col w-1/2" x-data="{ choice: '',  }">
+<div class="m-4 flex flex-col md:w-1/2" x-data="{ choice: '',  }">
     <label class="" for="first-menu">
         Filter By
     </label>
@@ -124,6 +124,8 @@
           <option value="option" >Option List</option>
     </select>
 
+    
+
 
     <template x-if="choice == 'text'">
 
@@ -137,9 +139,10 @@
 
 
     <template x-if="choice == 'option'">
-      <label for="second-menu"> Label </label>
+      <div class="flex flex-col">
+      <label for="second-menu" class="sr-only"> Title of second criteria</label>
       <select 
-        class="m-4 p-4 border border-solid border-black" 
+        class="m-4 p-4 border border-solid border-black " 
         id="second-menu" 
         name="second" 
         autocomplete="off"
@@ -152,13 +155,16 @@
             <option value="5" >Option 5</option>
             <option value="6" >Option 6</option>
       </select>
+      </div>
     </template>
 
 
     <template x-if="choice">
-      <button class="bg-admin-first w-48 p-2 font-bold m-4 text-white"> Apply Filter </button>
+      <button class="bg-admin-first w-48 p-2 font-bold m-4 text-white hover:bg-black focus:bg-black"> Apply Filter </button>
     </template>
 </div>
+
+<div class="h-48"></div>
     </main>
     <footer class="bg-admin-third px-4 py-8 flex flex-col md:flex-row md:items-center items-baseline mt-12">
 <h2 class="dsari nysds-text-22 text-black ml-8 md:ml-16 mr-4 border-solid border-b border-black md:border-none pr-16 md:pr-0"><a href="/" aria-label="NYS Digital Services" class="">NYS Digital Services</a></h2>
