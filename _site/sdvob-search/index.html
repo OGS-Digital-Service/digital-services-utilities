@@ -128,13 +128,15 @@
 
 
     <template x-if="choice == 'text'">
-
+      <div class="flex flex-col">
+      <label for="text-input" class="sr-only"> Text input example </label>
       <input 
-            class="m-4 p-4 border border-solid border-black" 
+          class="m-4 p-4 border border-solid border-black" 
           type="text"
-            id=""
-           
+          id="text-input"
+          placeholder="Text input example"
              />
+      </div>
     </template>
 
 
