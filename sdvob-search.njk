@@ -15,7 +15,7 @@ domain: nysds.dev
       name="languages" 
       autocomplete="off"
       x-model="choice">
-          <option  value="" disabled selected hidden>Select one</option>
+          <option  value="" disabled selected >Select one</option>
           <option  
           value="text"
            >
@@ -47,7 +47,7 @@ domain: nysds.dev
         name="second" 
         autocomplete="off"
       >
-            <option  value="" disabled selected hidden>Select a second criteria</option>
+            <option  value="" disabled selected >Select a second criteria</option>
             <option value="1" >Option 1</option>
             <option value="2" >Option 2</option>
             <option value="3" >Option 3</option>
@@ -60,7 +60,12 @@ domain: nysds.dev
 
 
     <template x-if="choice">
+      <div class="flex">
       <button class="bg-admin-first w-48 p-2 font-bold m-4 text-white hover:bg-black focus:bg-black"> Apply Filter </button>
+      <button 
+      @click="choice = ! choice"
+      class="bg-admin-first w-48 p-2 font-bold m-4 text-white hover:bg-black focus:bg-black"> Reset Filter </button>
+      </div>
     </template>
 </div>
 
