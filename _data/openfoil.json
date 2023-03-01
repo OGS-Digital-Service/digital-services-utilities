@@ -1,266 +1,266 @@
 [
   {
-    "Agency": "Adirondack Park Agency",
+    "agency": "Adirondack Park Agency",
     "link": "https://apany.govqa.us/WEBAPP/_rs/"
   },
   {
-    "Agency": "Bridge Authority",
+    "agency": "Bridge Authority",
     "link": "https://nysbany.govqa.us/WEBAPP/_rs/"
   },
   {
-    "Agency": "Canal Corporation",
+    "agency": "Canal Corporation",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Council on Children and Families",
+    "agency": "Council on Children and Families",
     "link": "https://ccfny.govqa.us/WEBAPP/_rs/"
   },
   {
-    "Agency": "Council on the Arts",
+    "agency": "Council on the Arts",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Committee on Open Government",
+    "agency": "Committee on Open Government",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Department of Agriculture and Markets",
+    "agency": "Department of Agriculture and Markets",
     "link": "https://agricultureny.govqa.us/WEBAPP/_rs/"
   },
   {
-    "Agency": "Department of Civil Service",
+    "agency": "Department of Civil Service",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Department of Corrections and Community Supervision",
+    "agency": "Department of Corrections and Community Supervision",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Department of Environmental Conservation",
+    "agency": "Department of Environmental Conservation",
     "link": "https://newyorkdec.govqa.us/WEBAPP/_rs/"
   },
   {
-    "Agency": "Department of Financial Services",
+    "agency": "Department of Financial Services",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Department of Health",
+    "agency": "Department of Health",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Department of Labor",
+    "agency": "Department of Labor",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Department of Motor Vehicles",
+    "agency": "Department of Motor Vehicles",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Department of State",
+    "agency": "Department of State",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Department of Taxation and Finance",
+    "agency": "Department of Taxation and Finance",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Department of Transportation",
+    "agency": "Department of Transportation",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Developmental Disabilities Planning Council",
+    "agency": "Developmental Disabilities Planning Council",
     "link": "https://ddpcny.govqa.us/WEBAPP/_rs/"
   },
   {
-    "Agency": "Division of Criminal Justice Services",
+    "agency": "Division of Criminal Justice Services",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Division of Homeland Security and Emergency Services",
+    "agency": "Division of Homeland Security and Emergency Services",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Division of Human Rights",
+    "agency": "Division of Human Rights",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Division of Military and Naval Affairs",
+    "agency": "Division of Military and Naval Affairs",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Division of Tax Appeals",
+    "agency": "Division of Tax Appeals",
     "link": "https://dtany.govqa.us/WEBAPP/_rs/"
   },
   {
-    "Agency": "Division of the Budget",
+    "agency": "Division of the Budget",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Division of Veterans’ Services",
+    "agency": "Division of Veterans’ Services",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Dormitory Authority of the State of New York",
+    "agency": "Dormitory Authority of the State of New York",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Empire State Development Corporation",
+    "agency": "Empire State Development Corporation",
     "link": "https://esdny.govqa.us/WEBAPP/_rs/"
   },
   {
-    "Agency": "Environmental Facilities Corporation",
+    "agency": "Environmental Facilities Corporation",
     "link": "https://efcny.govqa.us/WEBAPP/_rs/"
   },
   {
-    "Agency": "Executive Chamber",
+    "agency": "Executive Chamber",
     "link": "https://governorny.govqa.us/WEBAPP/_rs/"
   },
   {
-    "Agency": "Gaming Commission",
+    "agency": "Gaming Commission",
     "link": "https://gamingny.govqa.us/WEBAPP/_rs/"
   },
   {
-    "Agency": "Governor’s Office of Storm Recovery",
+    "agency": "Governor’s Office of Storm Recovery",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Higher Education Services Corporation",
+    "agency": "Higher Education Services Corporation",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Homes and Community Renewal",
+    "agency": "Homes and Community Renewal",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Hudson River Park Trust",
-    "link": "https://openfoil.ny.gov/#/newfoilrequest"
-  },
-  {
-    "Agency": "Hudson River Valley Greenway",
-    "link": "https://hudsongreenwayny.govqa.us/WEBAPP/_rs/"
-  },
-  {
-    "Agency": "Industrial Board of Appeals",
-    "link": "https://openfoil.ny.gov/#/newfoilrequest"
-  },
-  {
-    "Agency": "Justice Center for the Protection of People with Special Needs",
-    "link": "https://justicecenterny.govqa.us/WEBAPP/_rs/"
-  },
-  {
-    "Agency": "Long Island Power Authority",
-    "link": "https://openfoil.ny.gov/#/newfoilrequest"
-  },
-  {
-    "Agency": "New York Job Developmemt Authority",
-    "link": "https://esdny.govqa.us/WEBAPP/_rs/"
-  },
-  {
-    "Agency": "New York Power Authority",
-    "link": "https://openfoil.ny.gov/#/newfoilrequest"
-  },
-  {
-    "Agency": "New York State Convention Center Operating Corporation",
-    "link": "https://esdny.govqa.us/WEBAPP/_rs/"
-  },
-  {
-    "Agency": "New York State Energy Research and Development Authority",
-    "link": "https://nyserda.govqa.us/WEBAPP/_rs/"
-  },
-  {
-    "Agency": "New York State Insurance Fund",
-    "link": "https://openfoil.ny.gov/#/newfoilrequest"
-  },
-  {
-    "Agency": "New York State Police",
-    "link": "https://openfoil.ny.gov/#/newfoilrequest"
-  },
-  {
-    "Agency": "NYS Public Employment Relations Board",
-    "link": "https://openfoil.ny.gov/#/newfoilrequest"
-  },
-  {
-    "Agency": "NYS Office of Cannabis Management",
-    "link": "https://cannabisny.govqa.us/WEBAPP/_rs/"
-  },
-  {
-    "Agency": "NY Wine/Grape Foundation",
-    "link": "https://esdny.govqa.us/WEBAPP/_rs/"
-  },
-  {
-    "Agency": "Office for People With Developmental Disabilities",
-    "link": "https://openfoil.ny.gov/#/newfoilrequest"
-  },
-  {
-    "Agency": "Office for the Aging",
+    "agency": "Hudson River Park Trust",
     "link": "https://hudsonriverpark.govqa.us/WEBAPP/_rs/"
   },
   {
-    "Agency": "Office for the Prevention of Domestic Violence",
+    "agency": "Hudson River Valley Greenway",
+    "link": "https://hudsongreenwayny.govqa.us/WEBAPP/_rs/"
+  },
+  {
+    "agency": "Industrial Board of Appeals",
+    "link": "https://openfoil.ny.gov/#/newfoilrequest"
+  },
+  {
+    "agency": "Justice Center for the Protection of People with Special Needs",
+    "link": "https://justicecenterny.govqa.us/WEBAPP/_rs/"
+  },
+  {
+    "agency": "Long Island Power Authority",
+    "link": "https://openfoil.ny.gov/#/newfoilrequest"
+  },
+  {
+    "agency": "New York Job Developmemt Authority",
+    "link": "https://esdny.govqa.us/WEBAPP/_rs/"
+  },
+  {
+    "agency": "New York Power Authority",
+    "link": "https://openfoil.ny.gov/#/newfoilrequest"
+  },
+  {
+    "agency": "New York State Convention Center Operating Corporation",
+    "link": "https://esdny.govqa.us/WEBAPP/_rs/"
+  },
+  {
+    "agency": "New York State Energy Research and Development Authority",
+    "link": "https://nyserda.govqa.us/WEBAPP/_rs/"
+  },
+  {
+    "agency": "New York State Insurance Fund",
+    "link": "https://openfoil.ny.gov/#/newfoilrequest"
+  },
+  {
+    "agency": "New York State Police",
+    "link": "https://openfoil.ny.gov/#/newfoilrequest"
+  },
+  {
+    "agency": "NYS Public Employment Relations Board",
+    "link": "https://openfoil.ny.gov/#/newfoilrequest"
+  },
+  {
+    "agency": "NYS Office of Cannabis Management",
+    "link": "https://cannabisny.govqa.us/WEBAPP/_rs/"
+  },
+  {
+    "agency": "NY Wine/Grape Foundation",
+    "link": "https://esdny.govqa.us/WEBAPP/_rs/"
+  },
+  {
+    "agency": "Office for People With Developmental Disabilities",
+    "link": "https://openfoil.ny.gov/#/newfoilrequest"
+  },
+  {
+    "agency": "Office for the Aging",
+    "link": "https://agingny.govqa.us/WEBAPP/_rs/"
+  },
+  {
+    "agency": "Office for the Prevention of Domestic Violence",
     "link": "https://opdvny.govqa.us/WEBAPP/_rs/"
   },
   {
-    "Agency": "Office of Addiction Services and Support",
+    "agency": "Office of Addiction Services and Support",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Office of Children and Family Services",
+    "agency": "Office of Children and Family Services",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Office of Employee Relations",
+    "agency": "Office of Employee Relations",
     "link": "https://oerny.govqa.us/WEBAPP/_rs/"
   },
   {
-    "Agency": "Office of General Services",
+    "agency": "Office of General Services",
     "link": "https://ogsny.govqa.us/WEBAPP/_rs/"
   },
   {
-    "Agency": "Office of Information Technology Services",
+    "agency": "Office of Information Technology Services",
     "link": "https://itsny.govqa.us/WEBAPP/_rs/"
   },
   {
-    "Agency": "Office of Mental Health",
+    "agency": "Office of Mental Health",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Office of Parks, Recreation and Historic Preservation",
+    "agency": "Office of Parks, Recreation and Historic Preservation",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Office of Temporary and Disability Assistance",
+    "agency": "Office of Temporary and Disability Assistance",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Office of Victim Services",
+    "agency": "Office of Victim Services",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Olympic Regional Development Authority",
+    "agency": "Olympic Regional Development Authority",
     "link": "https://ordany.govqa.us/WEBAPP/_rs/"
   },
   {
-    "Agency": "Public Service Commission / Department of Public Service",
+    "agency": "Public Service Commission / Department of Public Service",
     "link": "https://dpsny.govqa.us/WEBAPP/_rs/"
   },
   {
-    "Agency": "Roosevelt Island Operating Corporation",
+    "agency": "Roosevelt Island Operating Corporation",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "State Commission of Correction",
+    "agency": "State Commission of Correction",
     "link": "https://scocny.govqa.us/WEBAPP/_rs/"
   },
   {
-    "Agency": "State Liquor Authority",
+    "agency": "State Liquor Authority",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Thruway Authority",
+    "agency": "Thruway Authority",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "Agency": "Workers’ Compensation Board",
+    "agency": "Workers’ Compensation Board",
     "link": "https://wcbny.govqa.us/WEBAPP/_rs/"
   }
 ]

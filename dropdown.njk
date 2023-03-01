@@ -58,7 +58,7 @@ twitter:
             name="Agency Freedom of Information Request Link List" 
             id="foil-list">
                 <option disabled selected>Please Choose an Agency</option>
-                {% for agency in openfoil %}<option value="{{agency.link}}" class="">{{agency.Agency}}</option>{% endfor %}
+                {% for agency in openfoil %}<option value="{{agency.link}}" class="">{{agency.agency}}</option>{% endfor %}
             </select>
             <input class="nysds-linklist_button" type="button" id="foil-submit" value="Go To Agency FOIL Page">
 </section>
