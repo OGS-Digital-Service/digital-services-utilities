@@ -49,7 +49,7 @@
   },
   {
     "agency": "Department of Labor",
-    "link": "https://openfoil.ny.gov/#/newfoilrequest"
+    "link": "https://dolny.govqa.us/WEBAPP/_rs/"
   },
   {
     "agency": "Department of Motor Vehicles",
@@ -260,7 +260,7 @@
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "agency": "Workers’ Compensation Board",
+    "agency": "Workers' Compensation Board",
     "link": "https://wcbny.govqa.us/WEBAPP/_rs/"
   }
 ]
