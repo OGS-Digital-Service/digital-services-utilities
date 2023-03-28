@@ -121,7 +121,7 @@
   },
   {
     "agency": "Governor’s Office of Storm Recovery",
-    "link": "https://openfoil.ny.gov/#/newfoilrequest"
+    "link": "https://hcrny.govqa.us/WEBAPP/home/"
   },
   {
     "agency": "Higher Education Services Corporation",
@@ -129,7 +129,11 @@
   },
   {
     "agency": "Homes and Community Renewal",
-    "link": "https://openfoil.ny.gov/#/newfoilrequest"
+    "link": "https://hcrny.govqa.us/WEBAPP/home/"
+  },
+  {
+    "agency": "Housing Trust Fund Corporation",
+    "link": "https://hcrny.govqa.us/WEBAPP/home/"
   },
   {
     "agency": "Hudson River Park Trust",
@@ -160,12 +164,20 @@
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
+    "agency": "New York State Affordable Housing Corporation",
+    "link": "https://hcrny.govqa.us/WEBAPP/home/"
+  },
+  {
     "agency": "New York State Convention Center Operating Corporation",
     "link": "https://esdny.govqa.us/WEBAPP/_rs/"
   },
   {
     "agency": "New York State Energy Research and Development Authority",
     "link": "https://nyserda.govqa.us/WEBAPP/_rs/"
+  },
+  {
+    "agency": "New York State Housing Finance Agency",
+    "link": "https://hcrny.govqa.us/WEBAPP/home/"
   },
   {
     "agency": "New York State Insurance Fund",
@@ -256,11 +268,23 @@
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
+    "agency": "State of New York Mortgage Agency",
+    "link": "https://hcrny.govqa.us/WEBAPP/home/"
+  },
+  {
+    "agency": "State of New York Municipal Bond Bank Agency",
+    "link": "https://hcrny.govqa.us/WEBAPP/home/"
+  },
+  {
     "agency": "Thruway Authority",
     "link": "https://openfoil.ny.gov/#/newfoilrequest"
   },
   {
-    "agency": "Workers' Compensation Board",
+    "agency": "Tobacco Settlement Financing Corporation",
+    "link": "https://hcrny.govqa.us/WEBAPP/home/"
+  },
+  {
+    "agency": "Workers’ Compensation Board",
     "link": "https://wcbny.govqa.us/WEBAPP/_rs/"
   }
 ]
