@@ -1,0 +1,74 @@
+---
+layout: render.njk
+title: NY.gov budget table checklist
+url: nysds.dev/table-checklist
+domain: nysds.dev
+facebook:
+    title:  Demo of a budget table checklist
+    description: Demo of a budget table checklist
+    image: nygov-logo.png
+twitter:
+    title: Demo of a budget table checklist
+    description: Demo of a budget table checklist
+    image: nygov-logo.png
+---
+{% from './_includes/_components.njk' import tablechecklist  %}
+<style>{% include './_includes/table-checklist/_table-checklist.css'  %}</style>
+
+
+
+
+
+{{
+    tablechecklist({
+        heading:"Fiscal Responsibility",
+        cells:[
+            {
+                data:"No income tax increases"
+            },
+            {
+                data:"Reserves at 15%"
+            }
+            
+        ]
+    })
+}}
+
+{{
+    tablechecklist({
+        heading:"Housing",
+        cells:[
+            {
+                data:"485-x incentive"
+            },
+            {
+                data:"Extend 421-a"
+            },
+            {
+                data:"Office conversions"
+            },
+            {
+                data:"Lift FAR 12 cap"
+            },
+            {
+                data:"Unlock vacant units"
+            },
+            {
+                data:"Anti-price gouging"
+            },
+            {
+                data:"Statewide incentives"
+            },
+            {
+                data:"Pro-Housing communities"
+            },
+            {
+                data:"Build on State-owned sites"
+            },
+            {
+                data:"Stop deed theft"
+            }
+            
+        ]
+    })
+}}

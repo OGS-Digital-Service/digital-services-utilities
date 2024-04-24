@@ -1,0 +1,25 @@
+
+    <table class="">
+        <caption class="sr-only">{{params.heading}}
+            </caption>
+        <thead>
+            <tr class="">
+                
+                <th  scope="col" class="">{{params.heading}}</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+        {% for cell in params.cells %}
+            <tr class="">
+               
+                <td>
+                    {{cell.data}}
+                </td>
+                
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+
