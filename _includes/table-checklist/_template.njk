@@ -1,25 +1,21 @@
-
-    <table class="">
+<article class="table-checklist-container">
+    <table class="table-checklist">
         <caption class="sr-only">{{params.heading}}
             </caption>
         <thead>
-            <tr class="">
-                
-                <th  scope="col" class="">{{params.heading}}</th>
-                
+            <tr class="table-checklist-header-row">
+                <th scope="col" class="table-checklist-header">{{params.heading}}</th>
             </tr>
         </thead>
         <tbody>
         {% for cell in params.cells %}
-            <tr class="">
-               
-                <td>
-                    {{cell.data}}
+            <tr class="table-checklist-table-row">
+                <td class="table-checklist-table-cell">
+                    <span>{{cell.data}}</span>
+                    <span aria-hidden="true" class="table-checklist-checkmark"></span>
                 </td>
-                
             </tr>
         {% endfor %}
         </tbody>
     </table>
-</div>
-
+</article>
