@@ -10,18 +10,25 @@
     border-width:0
 }
 
+.budget-checklist-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .table-checklist-container {
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    padding: 5px;
     margin: 5px;
     width: max-content;
-    background: #fff;
+    border: 2px solid #154973;
+    
 }
 .table-checklist {
     background: #154973;
     color: #fff;
+    
 }
 
 .table-checklist-header-row {
@@ -34,13 +41,12 @@
     text-transform: uppercase;
     font-weight: bold;
     background-color: #fff !important;
-    font-size: 1.1em;
+    font-size: 1.2em;
     text-align: center !important;
 }
 
 .table-checklist-table-row {
     border: 2px solid #fff !important;
-
 }
 
 .table-checklist-table-cell {
@@ -59,4 +65,31 @@
     width: 24px;
     display: block;
     filter: invert(85%) sepia(35%) saturate(4425%) hue-rotate(5deg) brightness(102%) contrast(106%);
+}
+
+@media (min-width: 768px) {
+    .budget-checklist-container {
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 1240px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .budget-checklist-container {
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 790px;
+    }
+
+}
+
+@media (min-width: 1280px) {
+    .budget-checklist-container {
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 650px;
+    }
+
 }

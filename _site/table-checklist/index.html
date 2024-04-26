@@ -12,18 +12,25 @@
     border-width:0
 }
 
+.budget-checklist-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .table-checklist-container {
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    padding: 5px;
     margin: 5px;
     width: max-content;
-    background: #fff;
+    border: 2px solid #154973;
+    
 }
 .table-checklist {
     background: #154973;
     color: #fff;
+    
 }
 
 .table-checklist-header-row {
@@ -36,13 +43,12 @@
     text-transform: uppercase;
     font-weight: bold;
     background-color: #fff !important;
-    font-size: 1.1em;
+    font-size: 1.2em;
     text-align: center !important;
 }
 
 .table-checklist-table-row {
     border: 2px solid #fff !important;
-
 }
 
 .table-checklist-table-cell {
@@ -61,11 +67,38 @@
     width: 24px;
     display: block;
     filter: invert(85%) sepia(35%) saturate(4425%) hue-rotate(5deg) brightness(102%) contrast(106%);
+}
+
+@media (min-width: 768px) {
+    .budget-checklist-container {
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 1240px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .budget-checklist-container {
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 790px;
+    }
+
+}
+
+@media (min-width: 1280px) {
+    .budget-checklist-container {
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 650px;
+    }
+
 }</style>
 
 
 
-
+<section class="budget-checklist-container">
 
 <article class="table-checklist-container">
     <table class="table-checklist">
@@ -180,3 +213,306 @@
         </tbody>
     </table>
 </article>
+
+
+<article class="table-checklist-container">
+    <table class="table-checklist">
+        <caption class="sr-only">Public Safety
+            </caption>
+        <thead>
+            <tr class="table-checklist-header-row">
+                <th scope="col" class="table-checklist-header">Public Safety</th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr class="table-checklist-table-row">
+                <td class="table-checklist-table-cell">
+                    <span>Retail theft</span>
+                    <span aria-hidden="true" class="table-checklist-checkmark"></span>
+                </td>
+            </tr>
+        
+            <tr class="table-checklist-table-row">
+                <td class="table-checklist-table-cell">
+                    <span>Unlicensed cannabis</span>
+                    <span aria-hidden="true" class="table-checklist-checkmark"></span>
+                </td>
+            </tr>
+        
+            <tr class="table-checklist-table-row">
+                <td class="table-checklist-table-cell">
+                    <span>Sammy’s Law</span>
+                    <span aria-hidden="true" class="table-checklist-checkmark"></span>
+                </td>
+            </tr>
+        
+            <tr class="table-checklist-table-row">
+                <td class="table-checklist-table-cell">
+                    <span>Gun violence</span>
+                    <span aria-hidden="true" class="table-checklist-checkmark"></span>
+                </td>
+            </tr>
+        
+            <tr class="table-checklist-table-row">
+                <td class="table-checklist-table-cell">
+                    <span>Hate Crimes</span>
+                    <span aria-hidden="true" class="table-checklist-checkmark"></span>
+                </td>
+            </tr>
+        
+            <tr class="table-checklist-table-row">
+                <td class="table-checklist-table-cell">
+                    <span>Domestic Violence</span>
+                    <span aria-hidden="true" class="table-checklist-checkmark"></span>
+                </td>
+            </tr>
+        
+            <tr class="table-checklist-table-row">
+                <td class="table-checklist-table-cell">
+                    <span>Ghost Cars</span>
+                    <span aria-hidden="true" class="table-checklist-checkmark"></span>
+                </td>
+            </tr>
+        
+        </tbody>
+    </table>
+</article>
+
+<article class="table-checklist-container">
+    <table class="table-checklist">
+        <caption class="sr-only">Education
+            </caption>
+        <thead>
+            <tr class="table-checklist-header-row">
+                <th scope="col" class="table-checklist-header">Education</th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr class="table-checklist-table-row">
+                <td class="table-checklist-table-cell">
+                    <span>Back to Basics reading</span>
+                    <span aria-hidden="true" class="table-checklist-checkmark"></span>
+                </td>
+            </tr>
+        
+            <tr class="table-checklist-table-row">
+                <td class="table-checklist-table-cell">
+                    <span>Record School Aid</span>
+                    <span aria-hidden="true" class="table-checklist-checkmark"></span>
+                </td>
+            </tr>
+        
+            <tr class="table-checklist-table-row">
+                <td class="table-checklist-table-cell">
+                    <span>Update funding formula</span>
+                    <span aria-hidden="true" class="table-checklist-checkmark"></span>
+                </td>
+            </tr>
+        
+            <tr class="table-checklist-table-row">
+                <td class="table-checklist-table-cell">
+                    <span>TAP increases</span>
+                    <span aria-hidden="true" class="table-checklist-checkmark"></span>
+                </td>
+            </tr>
+        
+            <tr class="table-checklist-table-row">
+                <td class="table-checklist-table-cell">
+                    <span>Mayoral control</span>
+                    <span aria-hidden="true" class="table-checklist-checkmark"></span>
+                </td>
+            </tr>
+        
+        </tbody>
+    </table>
+</article>
+
+<article class="table-checklist-container">
+    <table class="table-checklist">
+        <caption class="sr-only">Mental Health
+            </caption>
+        <thead>
+            <tr class="table-checklist-header-row">
+                <th scope="col" class="table-checklist-header">Mental Health</th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr class="table-checklist-table-row">
+                <td class="table-checklist-table-cell">
+                    <span>School-based clinics</span>
+                    <span aria-hidden="true" class="table-checklist-checkmark"></span>
+                </td>
+            </tr>
+        
+            <tr class="table-checklist-table-row">
+                <td class="table-checklist-table-cell">
+                    <span>200 new inpatient beds</span>
+                    <span aria-hidden="true" class="table-checklist-checkmark"></span>
+                </td>
+            </tr>
+        
+            <tr class="table-checklist-table-row">
+                <td class="table-checklist-table-cell">
+                    <span>Mental health courts</span>
+                    <span aria-hidden="true" class="table-checklist-checkmark"></span>
+                </td>
+            </tr>
+        
+        </tbody>
+    </table>
+</article>
+
+<article class="table-checklist-container">
+    <table class="table-checklist">
+        <caption class="sr-only">Healthcare
+            </caption>
+        <thead>
+            <tr class="table-checklist-header-row">
+                <th scope="col" class="table-checklist-header">Healthcare</th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr class="table-checklist-table-row">
+                <td class="table-checklist-table-cell">
+                    <span>Modernize hospitals</span>
+                    <span aria-hidden="true" class="table-checklist-checkmark"></span>
+                </td>
+            </tr>
+        
+            <tr class="table-checklist-table-row">
+                <td class="table-checklist-table-cell">
+                    <span>Pre-natal leave</span>
+                    <span aria-hidden="true" class="table-checklist-checkmark"></span>
+                </td>
+            </tr>
+        
+            <tr class="table-checklist-table-row">
+                <td class="table-checklist-table-cell">
+                    <span>Maternal care</span>
+                    <span aria-hidden="true" class="table-checklist-checkmark"></span>
+                </td>
+            </tr>
+        
+            <tr class="table-checklist-table-row">
+                <td class="table-checklist-table-cell">
+                    <span>Medicaid funding</span>
+                    <span aria-hidden="true" class="table-checklist-checkmark"></span>
+                </td>
+            </tr>
+        
+            <tr class="table-checklist-table-row">
+                <td class="table-checklist-table-cell">
+                    <span>NY SWIMS</span>
+                    <span aria-hidden="true" class="table-checklist-checkmark"></span>
+                </td>
+            </tr>
+        
+            <tr class="table-checklist-table-row">
+                <td class="table-checklist-table-cell">
+                    <span>Reduce costs</span>
+                    <span aria-hidden="true" class="table-checklist-checkmark"></span>
+                </td>
+            </tr>
+        
+        </tbody>
+    </table>
+</article>
+
+<article class="table-checklist-container">
+    <table class="table-checklist">
+        <caption class="sr-only">Cost of Living
+            </caption>
+        <thead>
+            <tr class="table-checklist-header-row">
+                <th scope="col" class="table-checklist-header">Cost of Living</th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr class="table-checklist-table-row">
+                <td class="table-checklist-table-cell">
+                    <span>Ban insulin co-pays</span>
+                    <span aria-hidden="true" class="table-checklist-checkmark"></span>
+                </td>
+            </tr>
+        
+            <tr class="table-checklist-table-row">
+                <td class="table-checklist-table-cell">
+                    <span>Medical debt protections</span>
+                    <span aria-hidden="true" class="table-checklist-checkmark"></span>
+                </td>
+            </tr>
+        
+            <tr class="table-checklist-table-row">
+                <td class="table-checklist-table-cell">
+                    <span>Property tax relief</span>
+                    <span aria-hidden="true" class="table-checklist-checkmark"></span>
+                </td>
+            </tr>
+        
+        </tbody>
+    </table>
+</article>
+
+<article class="table-checklist-container">
+    <table class="table-checklist">
+        <caption class="sr-only">Sustainaibility
+            </caption>
+        <thead>
+            <tr class="table-checklist-header-row">
+                <th scope="col" class="table-checklist-header">Sustainaibility</th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr class="table-checklist-table-row">
+                <td class="table-checklist-table-cell">
+                    <span>25 million trees</span>
+                    <span aria-hidden="true" class="table-checklist-checkmark"></span>
+                </td>
+            </tr>
+        
+            <tr class="table-checklist-table-row">
+                <td class="table-checklist-table-cell">
+                    <span>Clean Water</span>
+                    <span aria-hidden="true" class="table-checklist-checkmark"></span>
+                </td>
+            </tr>
+        
+        </tbody>
+    </table>
+</article>
+
+<article class="table-checklist-container">
+    <table class="table-checklist">
+        <caption class="sr-only">Innovation
+            </caption>
+        <thead>
+            <tr class="table-checklist-header-row">
+                <th scope="col" class="table-checklist-header">Innovation</th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr class="table-checklist-table-row">
+                <td class="table-checklist-table-cell">
+                    <span>Empire AI</span>
+                    <span aria-hidden="true" class="table-checklist-checkmark"></span>
+                </td>
+            </tr>
+        
+            <tr class="table-checklist-table-row">
+                <td class="table-checklist-table-cell">
+                    <span>ON-RAMP</span>
+                    <span aria-hidden="true" class="table-checklist-checkmark"></span>
+                </td>
+            </tr>
+        
+        </tbody>
+    </table>
+</article>
+</section>
