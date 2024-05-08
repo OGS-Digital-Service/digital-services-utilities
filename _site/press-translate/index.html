@@ -109,26 +109,28 @@
     .nysds-linklist {
         display: flex;
         flex-direction: column;
-        align-items:center;
+        align-items:flex-start;
         justify-content: center;
         margin:15px 0px 35px;
     }
     .nysds-linklist_label {
         font-weight: bold;
-        margin: 0.5rem;
+    }
+    .nysds-linklist-row {
+        margin: 20px 0;
     }
     .nysds-linklist_select {
         border: 1px solid #62666a;
         padding: 15px;
-        margin: 1rem;
-        width: 150px;
+        margin-right: 30px;
+        width: 90%;
         background: #fff;
         border-radius: 10px;
         border: 2px solid #62666a;
         appearance: none;
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='18' viewBox='0 0 448 512'%3E%3C!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z'/%3E%3C/svg%3E");
         background-repeat: no-repeat;
-        background-position: right 5% center;
+        background-position: right 7% center;
     }
     .nysds-linklist_button {
         background: #154973;
@@ -143,6 +145,8 @@
         text-decoration: none;
         border-radius: 15px;
         border: none;
+        width: 90%;
+        margin-top: 30px;
     }
 
      .nysds-linklist_button:disabled {
@@ -158,15 +162,39 @@
         background: #000;
     }
 
+    
+
+    @media (min-width: 460px) {
+         
+         .nysds-linklist_button {
+            width: 350px;
+         }
+
+         .nysds-linklist_select {
+            width: 350px;
+         }
+    
+    } 
+
     @media (min-width: 768px) {
-         .nysds-linklist {
-            flex-direction: row
+         
+         .nysds-linklist_button {
+            width: fit-content;
+            margin-top: 0;
+         }
+
+         .nysds-linklist_select {
+            width: 200px;
+            
          }
     
     } 
 </style>    
 <section class="nysds-linklist">
-        <label class="nysds-linklist_label " for="nysds-translate-list">This page is available in other languages <span class="sr-only">Select a language from the list below to translate  </span></label>
+        <div>
+            <label class="nysds-linklist_label " for="nysds-translate-list">This page is available in other languages <span class="sr-only">Select a language from the list below to translate  </span></label>
+        </div>
+        <div class="nysds-linklist-row">
             <select 
             class="nysds-linklist_select" 
             name="Translate this press release" 
@@ -187,7 +215,11 @@
                 <option class="nysds-translate-option" value="fr" translate="no" lang="fr">Français</option>
                 <option class="nysds-translate-option" value="ur" translate="no" lang="ur">اردو</option>
             </select>
+        
             <button class="nysds-linklist_button" id="nysds-translate-submit" disabled> Select a Language from the list </button>
+        
+        </div>
+
 </section>
 <script> 
     var translateOptions = document.getElementsByClassName("nysds-translate-option");
@@ -198,13 +230,15 @@
     var translateList = document.getElementById("nysds-translate-list");
     translateList.addEventListener("change", () => {
                 translateSubmit.removeAttribute('disabled');
-                translateSubmit.innerText = "View the Translated Press Release"
+                translateSubmit.innerText = "Translate this Press Release"
             });
     var translateSubmit = document.getElementById("nysds-translate-submit");
     translateSubmit.onclick = function(){
         window.location = translateList.value;
     }
 </script>
+
+
 
 
 

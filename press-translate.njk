@@ -18,26 +18,28 @@ twitter:
     .nysds-linklist {
         display: flex;
         flex-direction: column;
-        align-items:center;
+        align-items:flex-start;
         justify-content: center;
         margin:15px 0px 35px;
     }
     .nysds-linklist_label {
         font-weight: bold;
-        margin: 0.5rem;
+    }
+    .nysds-linklist-row {
+        margin: 20px 0;
     }
     .nysds-linklist_select {
         border: 1px solid #62666a;
         padding: 15px;
-        margin: 1rem;
-        width: 150px;
+        margin-right: 30px;
+        width: 90%;
         background: #fff;
         border-radius: 10px;
         border: 2px solid #62666a;
         appearance: none;
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='18' viewBox='0 0 448 512'%3E%3C!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z'/%3E%3C/svg%3E");
         background-repeat: no-repeat;
-        background-position: right 5% center;
+        background-position: right 7% center;
     }
     .nysds-linklist_button {
         background: #154973;
@@ -52,6 +54,8 @@ twitter:
         text-decoration: none;
         border-radius: 15px;
         border: none;
+        width: 90%;
+        margin-top: 30px;
     }
 
      .nysds-linklist_button:disabled {
@@ -67,15 +71,39 @@ twitter:
         background: #000;
     }
 
+    
+
+    @media (min-width: 460px) {
+         
+         .nysds-linklist_button {
+            width: 350px;
+         }
+
+         .nysds-linklist_select {
+            width: 350px;
+         }
+    
+    } 
+
     @media (min-width: 768px) {
-         .nysds-linklist {
-            flex-direction: row
+         
+         .nysds-linklist_button {
+            width: fit-content;
+            margin-top: 0;
+         }
+
+         .nysds-linklist_select {
+            width: 200px;
+            
          }
     
     } 
 </style>    
 <section class="nysds-linklist">
-        <label class="nysds-linklist_label " for="nysds-translate-list">This page is available in other languages <span class="sr-only">Select a language from the list below to translate  </span></label>
+        <div>
+            <label class="nysds-linklist_label " for="nysds-translate-list">This page is available in other languages <span class="sr-only">Select a language from the list below to translate  </span></label>
+        </div>
+        <div class="nysds-linklist-row">
             <select 
             class="nysds-linklist_select" 
             name="Translate this press release" 
@@ -96,7 +124,11 @@ twitter:
                 <option class="nysds-translate-option" value="fr" translate="no" lang="fr">Français</option>
                 <option class="nysds-translate-option" value="ur" translate="no" lang="ur">اردو</option>
             </select>
+        
             <button class="nysds-linklist_button" id="nysds-translate-submit" disabled> Select a Language from the list </button>
+        
+        </div>
+
 </section>
 <script> 
     var translateOptions = document.getElementsByClassName("nysds-translate-option");
@@ -107,7 +139,7 @@ twitter:
     var translateList = document.getElementById("nysds-translate-list");
     translateList.addEventListener("change", () => {
                 translateSubmit.removeAttribute('disabled');
-                translateSubmit.innerText = "View the Translated Press Release"
+                translateSubmit.innerText = "Translate this Press Release"
             });
     var translateSubmit = document.getElementById("nysds-translate-submit");
     translateSubmit.onclick = function(){
@@ -116,3 +148,33 @@ twitter:
 </script>
 
 
+
+
+{# 
+
+<div class="nygov-search -wrapper unav-section__container">
+    <form action="https://search.ny.gov/search/" method="get" class="nygov-search__form" role="search" accept-charset="utf-8">
+      <label class="sr-only" for="nygov-unav-search">Search</label>
+      <input class="nygov-search__input" id="nygov-unav-search" placeholder="Search" size="8" type="search" title="search" aria-label="search" aria-expanded="false" name="q" enterkeyhint="search" data-once="unavSearchBehavior">
+      <button class="nygov-search__reset-btn" aria-hidden="true" id="nygov-search-reset">
+        <span class="nygov-search__reset-icon fas fa-circle-xmark" aria-hidden="true"></span>
+        <span class="sr-only">Clear search input</span>
+      </button>
+      <button type="submit" class="nygov-search__submit-btn">
+        <span class="nygov-search__submit-icon fa-solid fa-magnifying-glass" aria-hidden="true"></span>
+        <span class="sr-only">search ny.gov</span>
+      </button>
+      <input type="hidden" name="as_sitesearch" value="www.governor.ny.gov">
+      <input type="hidden" name="output" value="xml_no_dtd">
+      <input type="hidden" name="wc" value="200">
+      <input type="hidden" name="wc_mc" value="1">
+      <input type="hidden" name="oe" value="ISO-8859-1">
+      <input type="hidden" name="ie" value="ISO-8859-1">
+      <input type="hidden" name="ud" value="1">
+      <input type="hidden" name="site" value="default_collection">
+    </form>
+  </div>
+
+https://search.ny.gov/search/search.html?q=something&as_sitesearch=www.ny.gov&output=xml_no_dtd&wc=200&wc_mc=1&oe=ISO-8859-1&ie=ISO-8859-1&ud=1&site=default_collection
+  https://search.ny.gov/search/search.html?q=something&as_sitesearch=https%3A%2F%2Fwww.ny.gov%2F&output=xml_no_dtd&wc=200&wc_mc=1&oe=ISO-8859-1&ie=ISO-8859-1&ud=1
+  https://search.its.ny.gov/search/search.html?as_sitesearch=www.governor.ny.gov&btnG=Search&client=default_frontend&output=xml_no_dtd&proxystylesheet=default_frontend&ulang=en&sort=date%3AD%3AL%3Ad1&entqr=3&entqrm=0&wc=200&wc_mc=1&oe=UTF-8&ie=UTF-8&ud=1&site=default_collection&q=something #}
