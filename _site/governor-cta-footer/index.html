@@ -25,12 +25,9 @@
     flex-direction: column;
 }
 
-.nygov-logo-container {
-    margin-right: 50px;
-}
-
 .nygov-footer-links {
     display: flex;
+    justify-content: center;
 }
 
 .nygov-footer-link-list {
@@ -38,10 +35,13 @@
     list-style-type: "";
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px 30px;
+    margin: 10px 0 25px 0;
 }
 
 .nygov-footer-link-list li {
-    min-width: 125px;
+    
 }
 
 .nygov-footer-link-list a:hover {
@@ -58,12 +58,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 .nygov-cta-text {
     color: #fff;
     font-size: 14px;
-    margin-left: 25px;
+    line-height: 1.15em;
+    margin-top: 15px;
+    max-width: 50%;
+    text-align: center;
 }
 
 .nygov-footer-cta-link {
@@ -73,8 +77,7 @@
     border-radius: 15px;
     display: flex;
     align-items: center;
-    border-radius: 15px;
-    border-color: black;
+    justify-content: center;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -92,24 +95,8 @@
 }
 
 .nygov-footer-cta-link:focus {
-    transition: 150ms ease-in-out;
     background-color: #face00;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -123,8 +110,8 @@
 
 .nygov-footer-logo {
     display: block;
-    height: 110px;
-    width: 120px;
+    height: 90px;
+    width: 105px;
     background-size: 100% 100%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -139,23 +126,70 @@
 @media (min-width: 768px) {
     .nygov-footer {
         flex-direction: row;
+        padding: 10px 45px;
+    }
+    .nygov-footer-links {
+        justify-content:left;
     }
     .nygov-footer-cta {
         flex-direction: row;
+    }
+    .nygov-footer-logo {
+        display: block;
+        height: 110px;
+        width: 130px;
+    }
+    .nygov-logo-container {
+        margin-right: 50px;
+    }
+    .nygov-footer-link-list {
+        gap: 15px 45px;
+        margin: 20px 0 20px 0;
+        justify-content: left;
+    }
+    .nygov-cta-text {
+        margin-top: 0;
+        margin-left: 40px;
+        text-align: left;
+        max-width:300px;
     }
 }
 
 
 /* desktop */
 @media (min-width: 1280px) {
+    .nygov-footer {
+        padding: 10px 60px;
+    }
+    .nygov-footer-link-list {
+        gap: 15px 50px;
+        margin: 10px 0 10px 0;
+    }
     .nygov-footer-link-and-cta {
         flex-direction: row;
     }
+    .nygov-footer-cta {
+        margin-bottom: 0;
+        width:60%;
+        margin-left: 5%;
+    }
+    .nygov-cta-text {
+        margin-left: 25px;
+        max-width: 200px;
+    }
+    .nygov-logo-container {
+        margin-right: 75px;
+    }
+   
 }
 </style>
 
 <div style="height:68px"> </div>
 <p style="text-align: center; margin: 22px;"> governor unav footer with cta </p>
+
+
+
+
 
 
 <footer>
@@ -191,7 +225,7 @@
             </div>
 
             <div class="nygov-footer-cta">
-                <a class="nygov-footer-cta-link"> Register to Vote </a>
+                <a class="nygov-footer-cta-link" href="#"> Register to Vote </a>
                 <div class="nygov-cta-text">
                     <p> Sign up online or download and mail in your application </p>
                 </div>
@@ -202,6 +236,53 @@
     </div>
 </footer>
 
+
+
+<div style="height:68px"> </div>
+
+<footer>
+    <div class="nygov-footer">
+
+        <div class="nygov-logo-container">
+            <a class="nygov-footer-logo" href="#"><span class="sr-only">Homepage</span> </a>
+        </div>
+
+        <div class="nygov-footer-link-and-cta">
+
+            <div class="nygov-footer-links">
+                <ul class="nygov-footer-link-list">
+                    <li>
+                        <a href="https://www.ny.gov/agencies" data-once="nygovExitModal">Agencies</a>
+                    </li>
+                    <li>
+                        <a href="https://www.ny.gov/mobileapps" data-once="nygovExitModal">App Directory</a>
+                    </li>
+                    <li>
+                        <a href="https://www.ny.gov/counties" data-once="nygovExitModal">Counties</a>
+                    </li>
+                    <li>
+                        <a href="https://www.ny.gov/events" data-once="nygovExitModal">Events</a>
+                    </li>
+                    <li>
+                        <a href="https://www.ny.gov/programs" data-once="nygovExitModal">Programs</a>
+                    </li>
+                    <li>
+                        <a href="https://www.ny.gov/services" data-once="nygovExitModal">Services</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nygov-footer-cta">
+                <a class="nygov-footer-cta-link" href="#"> Find COVID-19 Testing</a>
+                <div class="nygov-cta-text">
+                    <p> Go to our easy testing center finder app and I just need some longer text here to show what it would look like. </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</footer>
 
 
 <div style="height:80px">  </div>
@@ -245,45 +326,5 @@
 </footer>
 
 
-
-
-<div style="height:80px">  </div>
-<p style="text-align: center; margin: 22px;"> ny.gov footer NO cta </p>
-
-<footer>
-    <div class="nygov-footer">
-
-        <div class="nygov-logo-container">
-            <a class="nygov-footer-logo" href="#"><span class="sr-only">Homepage</span> </a>
-        </div>
-
-        <div class="nygov-footer-links">
-            <ul class="nygov-footer-link-list">
-                <li>
-                    <a href="https://www.ny.gov/agencies" data-once="nygovExitModal">Agencies</a>
-                </li>
-                <li>
-                    <a href="https://www.ny.gov/mobileapps" data-once="nygovExitModal">App Directory</a>
-                </li>
-                <li>
-                    <a href="https://www.ny.gov/counties" data-once="nygovExitModal">Counties</a>
-                </li>
-                <li>
-                    <a href="https://www.ny.gov/events" data-once="nygovExitModal">Events</a>
-                </li>
-                <li>
-                    <a href="https://www.ny.gov/programs" data-once="nygovExitModal">Programs</a>
-                </li>
-                <li>
-                    <a href="https://www.ny.gov/services" data-once="nygovExitModal">Services</a>
-                </li>
-            </ul>
-        </div>
-        
-    </div>
-</footer>
-
-
-<div style="height:120px">  </div>
 </body>
 </html>

@@ -13,12 +13,9 @@
     flex-direction: column;
 }
 
-.nygov-logo-container {
-    margin-right: 50px;
-}
-
 .nygov-footer-links {
     display: flex;
+    justify-content: center;
 }
 
 .nygov-footer-link-list {
@@ -26,10 +23,13 @@
     list-style-type: "";
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px 30px;
+    margin: 10px 0 25px 0;
 }
 
 .nygov-footer-link-list li {
-    min-width: 125px;
+    
 }
 
 .nygov-footer-link-list a:hover {
@@ -46,12 +46,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 .nygov-cta-text {
     color: #fff;
     font-size: 14px;
-    margin-left: 25px;
+    line-height: 1.15em;
+    margin-top: 15px;
+    max-width: 50%;
+    text-align: center;
 }
 
 .nygov-footer-cta-link {
@@ -61,8 +65,7 @@
     border-radius: 15px;
     display: flex;
     align-items: center;
-    border-radius: 15px;
-    border-color: black;
+    justify-content: center;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -80,24 +83,8 @@
 }
 
 .nygov-footer-cta-link:focus {
-    transition: 150ms ease-in-out;
     background-color: #face00;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -111,8 +98,8 @@
 
 .nygov-footer-logo {
     display: block;
-    height: 110px;
-    width: 120px;
+    height: 90px;
+    width: 105px;
     background-size: 100% 100%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -127,16 +114,59 @@
 @media (min-width: 768px) {
     .nygov-footer {
         flex-direction: row;
+        padding: 10px 45px;
+    }
+    .nygov-footer-links {
+        justify-content:left;
     }
     .nygov-footer-cta {
         flex-direction: row;
+    }
+    .nygov-footer-logo {
+        display: block;
+        height: 110px;
+        width: 130px;
+    }
+    .nygov-logo-container {
+        margin-right: 50px;
+    }
+    .nygov-footer-link-list {
+        gap: 15px 45px;
+        margin: 20px 0 20px 0;
+        justify-content: left;
+    }
+    .nygov-cta-text {
+        margin-top: 0;
+        margin-left: 40px;
+        text-align: left;
+        max-width:300px;
     }
 }
 
 
 /* desktop */
 @media (min-width: 1280px) {
+    .nygov-footer {
+        padding: 10px 60px;
+    }
+    .nygov-footer-link-list {
+        gap: 15px 50px;
+        margin: 10px 0 10px 0;
+    }
     .nygov-footer-link-and-cta {
         flex-direction: row;
     }
+    .nygov-footer-cta {
+        margin-bottom: 0;
+        width:60%;
+        margin-left: 5%;
+    }
+    .nygov-cta-text {
+        margin-left: 25px;
+        max-width: 200px;
+    }
+    .nygov-logo-container {
+        margin-right: 75px;
+    }
+   
 }
