@@ -19,6 +19,7 @@ Thumbs.db
 /node_modules
 
 /.vscode
+/_site/css/nysds-utilities
 
 /_site/render-components/
 /_site/img/render/
