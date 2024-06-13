@@ -116,6 +116,17 @@
     .nysds-linklist_label {
         font-weight: bold;
     }
+
+    .nysds-linklist_label::before {
+        content: '\f0ac';
+        font-weight: 600;
+        padding-left: 0em;
+        margin-right: 10px;
+        font-family: 'Font Awesome 6 Free';
+        color: #000;
+    }
+
+
     .nysds-linklist-row {
         margin: 20px 0;
     }
@@ -192,7 +203,7 @@
 </style>    
 <section class="nysds-linklist">
         <div>
-            <label class="nysds-linklist_label " for="nysds-translate-list">This page is available in other languages <span class="sr-only">Select a language from the list below to translate  </span></label>
+            <label class="nysds-linklist_label" for="nysds-translate-list">This page is available in other languages <span class="sr-only">Select a language from the list below to translate  </span></label>
         </div>
         <div class="nysds-linklist-row">
             <select 
@@ -230,14 +241,13 @@
     var translateList = document.getElementById("nysds-translate-list");
     translateList.addEventListener("change", () => {
                 translateSubmit.removeAttribute('disabled');
-                translateSubmit.innerText = "Translate this Press Release"
+                translateSubmit.innerText = "Translate this Page"
             });
     var translateSubmit = document.getElementById("nysds-translate-submit");
     translateSubmit.onclick = function(){
         window.location = translateList.value;
     }
 </script>
-
 
 
 
