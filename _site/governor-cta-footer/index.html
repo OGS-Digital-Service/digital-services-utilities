@@ -44,9 +44,6 @@
     margin: 10px 0 25px 0;
 }
 
-.nygov-footer-link-list li {
-    
-}
 
 .nygov-footer-link-list a:hover {
     color: #FACE00;
@@ -200,15 +197,17 @@
 
 
 <footer>
-    <div class="nygov-footer">
+    <div class="nygov-footer"> <!-- footer container that has no 1160px restriction. relies on flex, justify, and align to center vertical and horizontal -->
 
-        <div class="nygov-logo-container">
+
+        <div class="nygov-logo-container"> <!-- container for the link / svg logo. I find that enclosing the interactive element helps with spacing/sizing in relation to other elements around it. -->
             <a class="nygov-footer-logo" href="#"><span class="sr-only">Homepage</span> </a>
         </div>
 
-        <div class="nygov-footer-link-and-cta">
 
-            <div class="nygov-footer-links">
+        <div class="nygov-footer-link-and-cta"> <!--  container for the footer links and the cta if it exists. this allows you to control flex properties within this container to have the list and the cta change direction and align in respect to each other vs. anything else.-->
+
+            <div class="nygov-footer-links"> <!-- container for the list. again, enclosing the ul in a div seems to more uniformly apply block level properties -->
                 <ul class="nygov-footer-link-list">
                     <li>
                         <a href="https://www.ny.gov/agencies" data-once="nygovExitModal">Agencies</a>
@@ -231,9 +230,9 @@
                 </ul>
             </div>
 
-            <div class="nygov-footer-cta">
+            <div class="nygov-footer-cta"> <!-- container for the cta. this is where the logic would go to display/not display this based  -->
                 <a class="nygov-footer-cta-link" href="#"> Register to Vote </a>
-                <div class="nygov-cta-text">
+                <div class="nygov-cta-text"> <!-- again, using an enclosing div might not be needed, this is for the cta text.  -->
                     <p> Sign up online or download and mail in your application </p>
                 </div>
             </div>
@@ -241,6 +240,7 @@
         </div>
 
     </div>
+    
 </footer>
 
 
