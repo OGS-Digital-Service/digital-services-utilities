@@ -116,7 +116,7 @@
 }
 
 .nysds-feedback-heading {
-    font-size: 1.25rem;
+    font-size: 18px !important;
     font-weight: bold;
     color: #154973;
     margin: 0 30px;
@@ -147,13 +147,14 @@
 
 .nysds-feedback-transform {
     transform: scaleY(-1);
-    margin-top: 3px;
+    /* margin-top: 3px; */
 
 }
 
 .nysds-feedback-link {
     background-color: #154973;
-    color: #fff;
+    color: #fff !important;
+    text-decoration: none !important;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 0.8rem;
@@ -167,10 +168,12 @@
 
 .nysds-feedback-link:hover {
     background-color: #000;
+    text-decoration: underline;
 }
 
 .nysds-feedback-link:focus {
     background-color: #000;
+    text-decoration: underline;
 }
 
 /* desktop */
@@ -182,10 +185,6 @@
 }
 </style>
 
-<script>
-
-</script>
-
 <section class="nysds-feedback">
     <h3 class="nysds-feedback-heading" id="nysds-feedback-helpful">Did you find this page helpful?</h3>
     <div class="nysds-feedback-options" id="nysds-feedback-options-area">
@@ -193,6 +192,7 @@
             class="nysds-feedback-link" 
             data-feedback="yes"
             aria-label="Yes this page was helpful"
+            target="_blank"
             >
             <span class="nysds-feedback-thumbs" aria-hidden="true"></span>
             Yes
@@ -201,12 +201,30 @@
             class="nysds-feedback-link" 
             data-feedback="no"
             aria-label="No this page was not helpful"
+            target="_blank"
             >
             <span class="nysds-feedback-thumbs nysds-feedback-transform" aria-hidden="true"></span>
             No
         </a>
     </div>
 </section>
+
+<script>
+const feedbackText = document.getElementById('nysds-feedback-helpful');
+const feedbackArea = document.getElementById('nysds-feedback-options-area');
+const feedbackLink = document.getElementsByClassName('nysds-feedback-link');
+const linkArr = Array.from(feedbackLink);
+
+
+for (let i = 0; i < linkArr.length; i++) {
+    linkArr[i].addEventListener("click", feedbackChange) // change area on click
+        function feedbackChange () {
+            feedbackArea.setAttribute("style", "display:none;");
+            feedbackText.innerText = "Thank you for your feedback!"
+        }
+}
+
+</script>
     </main>
     <footer class="bg-admin-third px-4 py-8 flex flex-col md:flex-row md:items-center items-baseline mt-12">
 <h2 class="dsari nysds-text-22 text-black ml-8 md:ml-16 mr-4 border-solid border-b border-black md:border-none pr-16 md:pr-0"><a href="/" aria-label="NYS Digital Services" class="">NYS Digital Services</a></h2>

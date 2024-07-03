@@ -6,10 +6,6 @@ title: NYSDS Feedback Component
 {% include './css/feedback.css' %}
 </style>
 
-<script>
-{% include './js/feedback.js' %}
-</script>
-
 <section class="nysds-feedback">
     <h3 class="nysds-feedback-heading" id="nysds-feedback-helpful">Did you find this page helpful?</h3>
     <div class="nysds-feedback-options" id="nysds-feedback-options-area">
@@ -17,6 +13,7 @@ title: NYSDS Feedback Component
             class="nysds-feedback-link" 
             data-feedback="yes"
             aria-label="Yes this page was helpful"
+            target="_blank"
             >
             <span class="nysds-feedback-thumbs" aria-hidden="true"></span>
             Yes
@@ -25,9 +22,14 @@ title: NYSDS Feedback Component
             class="nysds-feedback-link" 
             data-feedback="no"
             aria-label="No this page was not helpful"
+            target="_blank"
             >
             <span class="nysds-feedback-thumbs nysds-feedback-transform" aria-hidden="true"></span>
             No
         </a>
     </div>
 </section>
+
+<script>
+{% include './js/feedback.js' %}
+</script>

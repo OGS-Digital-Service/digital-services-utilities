@@ -9,7 +9,7 @@
 }
 
 .nysds-feedback-heading {
-    font-size: 1.25rem;
+    font-size: 18px !important;
     font-weight: bold;
     color: #154973;
     margin: 0 30px;
@@ -40,13 +40,14 @@
 
 .nysds-feedback-transform {
     transform: scaleY(-1);
-    margin-top: 3px;
+    /* margin-top: 3px; */
 
 }
 
 .nysds-feedback-link {
     background-color: #154973;
-    color: #fff;
+    color: #fff !important;
+    text-decoration: none !important;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 0.8rem;
@@ -60,10 +61,12 @@
 
 .nysds-feedback-link:hover {
     background-color: #000;
+    text-decoration: underline;
 }
 
 .nysds-feedback-link:focus {
     background-color: #000;
+    text-decoration: underline;
 }
 
 /* desktop */
