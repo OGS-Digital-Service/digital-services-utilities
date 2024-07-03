@@ -1,0 +1,23 @@
+.nysds-feedback {
+    display: flex;
+    flex-direction: column;
+    background-color:#EFF6FB;
+    padding: 30px;
+    
+    border-radius: 15px;
+    margin: 30px 0;
+}
+
+.nysds-feedback-heading {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #154973;
+    margin: 0 30px;
+}
+
+/* desktop */
+@media (min-width: 1280px) {
+    .nysds-feedback {
+        flex-direction: row;
+    }
+}

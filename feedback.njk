@@ -1,0 +1,29 @@
+---
+layout: layout.njk
+title: NYSDS Feedback Component
+---
+<style>
+{% include './css/feedback.css' %}
+</style>
+
+<script>
+{% include './js/feedback.js' %}
+</script>
+
+<section class="nysds-feedback">
+    <h3 class="nysds-feedback-heading" id="nysds-feedback-helpful">Did you find this page helpful?</h3>
+    <div class="nysds-feedback-options">
+        <a  href="https://forms.ny.gov/s3/Customer-Experience-Survey" 
+            class="nysds-feedback-link" 
+            data-feedback="yes"
+            aria-label="Yes this page was helpful"
+            >Yes
+        </a>
+        <a  href="https://forms.ny.gov/s3/Customer-Experience-Survey" 
+            class="nysds-feedback-link" 
+            data-feedback="no"
+            aria-label="No this page was not helpful"
+            >No
+        </a>
+    </div>
+</section>
