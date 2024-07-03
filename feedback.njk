@@ -12,18 +12,22 @@ title: NYSDS Feedback Component
 
 <section class="nysds-feedback">
     <h3 class="nysds-feedback-heading" id="nysds-feedback-helpful">Did you find this page helpful?</h3>
-    <div class="nysds-feedback-options">
+    <div class="nysds-feedback-options" id="nysds-feedback-options-area">
         <a  href="https://forms.ny.gov/s3/Customer-Experience-Survey" 
             class="nysds-feedback-link" 
             data-feedback="yes"
             aria-label="Yes this page was helpful"
-            >Yes
+            >
+            <span class="nysds-feedback-thumbs" aria-hidden="true"></span>
+            Yes
         </a>
         <a  href="https://forms.ny.gov/s3/Customer-Experience-Survey" 
             class="nysds-feedback-link" 
             data-feedback="no"
             aria-label="No this page was not helpful"
-            >No
+            >
+            <span class="nysds-feedback-thumbs nysds-feedback-transform" aria-hidden="true"></span>
+            No
         </a>
     </div>
 </section>
