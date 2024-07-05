@@ -23,6 +23,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 10px;
 }
 
 .nysds-feedback-thumbs {
@@ -52,7 +53,7 @@
     font-size: 0.8rem;
     padding: 15px;
     border-radius: 15px;
-    margin: 10px;
+    margin: 0 10px;
     min-width: 100px;
     display: flex;
     justify-content: center;
@@ -72,6 +73,9 @@
 @media (min-width: 1280px) {
     .nysds-feedback {
         flex-direction: row;
+    }
+    .nysds-feedback-options {
+        margin-top: 0;
     }
    
 }
