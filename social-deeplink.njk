@@ -14,13 +14,15 @@ domain: nysds.dev
 
 <h2 class="mt-4"> mobile deeplinks </h2>
 <ul>
-    <li><a class="hover:underline text-blue-700" href="fb://page/?id=100044179581914" data-ios="" data-android="">Facebook</a></li>
+    <li><a class="hover:underline text-blue-700" href="fb://profile/?id=100044179581914" data-ios="" data-android="">Facebook</a></li>
+    <li><a class="hover:underline text-blue-700" href="fb://profile/id=100044179581914" data-ios="" data-android="">Facebook 1</a></li>
+    <li><a class="hover:underline text-blue-700" href="fb://profile/100044179581914" data-ios="" data-android="">Facebook 2</a></li>
     <li><a class="hover:underline text-blue-700" href="instagram://user?username=govkathyhochul" data-ios="" data-android="">Instagram</a></li>
     <li><a class="hover:underline text-blue-700" href="youtube://channel/UCQJp4eSJgbFroNySGthEiqA" data-ios="" data-android="">Youtube</a></li>
 </ul>
 
 <button onclick="isMobile()"> check mobile </button>
-<div> whatever </div>
+
 <script>
 function isMobile() {
   console.log (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
