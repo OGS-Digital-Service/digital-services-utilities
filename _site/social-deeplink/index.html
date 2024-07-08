@@ -108,15 +108,21 @@
 <h2> detect links </h2>
 
 
-<h2 class="mt-4"> mobile deeplinks </h2>
+<h2 class="mt-4"> ios mobile deeplinks</h2>
 <ul>
-    <li><a class="hover:underline text-blue-700" href="fb://profile/?id=100044179581914" data-ios="" data-android="">Facebook</a></li>
-
-    <li><a class="hover:underline text-blue-700" href="fb://profile/100044179581914" data-ios="" data-android="">Facebook alternate</a></li>
+    <li><a class="hover:underline text-blue-700" href="fb://profile/100044179581914" data-ios="" data-android="">Facebook</a></li>
     <li><a class="hover:underline text-blue-700" href="instagram://user?username=govkathyhochul" data-ios="" data-android="">Instagram</a></li>
-    <li><a class="hover:underline text-blue-700" href="youtube://channel/UCQJp4eSJgbFroNySGthEiqA" data-ios="" data-android="">Youtube</a></li>
-     <li><a class="hover:underline text-blue-700" href="vnd.youtube://www.youtube.com/GovernorKathyHochul" data-ios="" data-android="">Youtube alternate</a></li>
-    <li><a class="hover:underline text-blue-700" href="twitter://user?screen_name=GovKathyHochul" data-ios="" data-android="">twitter</a></li>
+    <li><a class="hover:underline text-blue-700" href="vnd.youtube://www.youtube.com/GovernorKathyHochul" data-ios="" data-android="">Youtube</a></li>
+    <li><a class="hover:underline text-blue-700" href="twitter://user?screen_name=GovKathyHochul" data-ios="" data-android="">twitter/X</a></li>
+</ul>
+
+
+<h2 class="mt-4"> android mobile deeplinks</h2>
+<ul>
+    <li><a class="hover:underline text-blue-700" href="intent://profile/100044179581914#Intent;package=com.facebook.katana;scheme=fb;end" data-ios="" data-android="">Facebook</a></li>
+    <li><a class="hover:underline text-blue-700" href="intent://www.instagram.com/govkathyhochul/#Intent;package=com.instagram.android;scheme=https;end" data-ios="" data-android="">Instagram</a></li>
+    <li><a class="hover:underline text-blue-700" href="intent://www.youtube.com/GovernorKathyHochul#Intent;package=com.google.android.youtube;scheme=https;end" data-ios="" data-android="">Youtube</a></li>
+    <li><a class="hover:underline text-blue-700" href="intent://twitter.com/GovKathyHochul#Intent;package=com.twitter.android;scheme=https;end" data-ios="" data-android="">twitter/X</a></li>
 </ul>
 
 <button onclick="isMobile()"> check mobile </button>
