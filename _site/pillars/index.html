@@ -4,17 +4,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Social Deep Linking">
+    <meta name="description" content="NY.gov CX Pillars">
     <meta name="generator" content="11ty/eleventy">    
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://nysds.dev/social-deeplink">
+    <meta property="og:url" content="https://nysds.dev/table-checklist">
     <meta property="og:type" content="website">
     <meta property="og:title" content="">
     <meta property="og:description" content="">
     <meta property="og:image" content="https://nysds.dev/img/">
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://nysds.dev/social-deeplink">
+    <meta property="twitter:url" content="https://nysds.dev/table-checklist">
     <meta name="twitter:title" content="">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://nysds.dev/img/">
@@ -24,7 +24,7 @@
 
     <script src="/js/nysds-utilities.js"></script>
 <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <title>Social Deep Linking</title>
+    <title>NY.gov CX Pillars</title>
   </head>
   <body class="nysds-normalize">
   <a href="#main-site-content-for-skiplink" class="sr-only focus:not-sr-only text-blue-700 underline">Skip to Main Content</a>
@@ -105,38 +105,103 @@
 
     <main class="mx-8 md:mx-20" id="main-site-content-for-skiplink">
     
-<h2> detect links </h2>
-<style>
-  .nysds-detect-link {
-    text-decoration: underline;
-    color: blue;
-  }
-  </style>
+<style>.sr-only {
+    position:absolute;
+    width:1px;
+    height:1px;
+    padding:0;
+    margin:-1px;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+    white-space:nowrap;
+    border-width:0
+}
 
-<h2 class="mt-4"> ios mobile deeplinks</h2>
-<ul>
-    <li><a class="nysds-detect-link" href="fb://profile/100044179581914" data-ios="" data-android="">Facebook</a></li>
-    <li><a class="nysds-detect-link" href="instagram://user?username=govkathyhochul" data-ios="" data-android="">Instagram</a></li>
-    <li><a class="nysds-detect-link" href="vnd.youtube://www.youtube.com/GovernorKathyHochul" data-ios="" data-android="">Youtube</a></li>
-    <li><a class="nysds-detect-link" href="twitter://user?screen_name=GovKathyHochul" data-ios="" data-android="">twitter/X</a></li>
-</ul>
+.budget-checklist-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table-checklist-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 5px;
+    width: max-content;
+    border: 2px solid #154973;
+    
+}
+.table-checklist {
+    background: #154973;
+    color: #fff;
+    
+}
+
+.table-checklist-header-row {
+    border: 2px solid #fff;
+    background-color: #fff;
+}
+
+.table-checklist-header {
+    color: #154973 !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #fff !important;
+    font-size: 1.2em;
+    text-align: center !important;
+}
+
+.table-checklist-table-row {
+    border: 2px solid #fff !important;
+}
+
+.table-checklist-table-cell {
+    display: flex;
+    justify-content: space-between;
+    min-width: 250px;
+    border: 1px solid #fff;
+    align-items: center;
+    padding: 5px !important;
+}
+
+.table-checklist-checkmark {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+    display: block;
+    filter: invert(85%) sepia(35%) saturate(4425%) hue-rotate(5deg) brightness(102%) contrast(106%);
+}
+
+@media (min-width: 768px) {
+    .budget-checklist-container {
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 1240px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .budget-checklist-container {
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 790px;
+    }
+
+}
+
+@media (min-width: 1280px) {
+    .budget-checklist-container {
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 650px;
+    }
+
+}</style>
 
 
-<h2 class="mt-4"> android mobile deeplinks</h2>
-<ul>
-    <li><a class="nysds-detect-link" href="intent://profile/100044179581914#Intent;package=com.facebook.katana;scheme=fb;end" data-ios="" data-android="">Facebook</a></li>
-    <li><a class="nysds-detect-link" href="intent://www.instagram.com/govkathyhochul/#Intent;package=com.instagram.android;scheme=https;end" data-ios="" data-android="">Instagram</a></li>
-    <li><a class="nysds-detect-link" href="intent://www.youtube.com/GovernorKathyHochul#Intent;package=com.google.android.youtube;scheme=https;end" data-ios="" data-android="">Youtube</a></li>
-    <li><a class="nysds-detect-link" href="intent://twitter.com/GovKathyHochul#Intent;package=com.twitter.android;scheme=https;end" data-ios="" data-android="">twitter/X</a></li>
-</ul>
-
-
-
-
-
-
-
-<button onclick="isMobile()"> check mobile </button>
 
     </main>
     <footer class="bg-admin-third px-4 py-8 flex flex-col md:flex-row md:items-center items-baseline mt-12">

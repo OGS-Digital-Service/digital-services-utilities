@@ -1,0 +1,25 @@
+---
+layout: layout.njk
+title: NY.gov CX Pillars
+url: nysds.dev/table-checklist
+domain: nysds.dev
+
+---
+{% from './_includes/_components.njk' import pillars  %}
+<style>{% include './_includes/pillars/_pillars.css'  %}</style>
+
+
+{{
+    pillars({
+        heading:"Innovation",
+        cells:[
+            {
+                data:"Empire AI"
+            },
+            {
+                data:"ON-RAMP"
+            }
+
+        ]
+    })
+}}
