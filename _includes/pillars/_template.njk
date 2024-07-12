@@ -1,0 +1,29 @@
+<section class="nysds-pillars">
+{% if type == 'hollow'%}
+
+    {% for card in params.pillarCards %}
+    {% endfor %}
+
+{% else %}
+    
+    {% for card in params.pillarCards %}
+    <article class="nysds-pillars-cards">
+        <div class="nysds-pillars-icon" aria-hidden="true">
+            {{card.icon}}
+        </div>
+        <h2 class="nysds-pillars-title">
+            {{card.title}}
+        </h2>
+        <ul class="nysds-pillars-card-list">
+            {%for check in card.checklist%}
+            <li> {{check.text}}</li>
+            {% endfor %}
+        </ul>
+        <div class="nysds-pillars-arrow-icon" aria-hidden="true">
+        </div>
+    </article>
+
+    {% endfor %}
+   
+{% endif %}
+</section>
