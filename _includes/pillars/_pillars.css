@@ -1,95 +1,106 @@
-.sr-only {
-    position:absolute;
-    width:1px;
-    height:1px;
-    padding:0;
-    margin:-1px;
-    overflow:hidden;
-    clip:rect(0,0,0,0);
-    white-space:nowrap;
-    border-width:0
-}
-
-.budget-checklist-container {
+.nysds-pillars {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-}
-
-.table-checklist-container {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    margin: 5px;
-    width: max-content;
-    border: 2px solid #154973;
-    
-}
-.table-checklist {
-    background: #154973;
-    color: #fff;
     
 }
 
-.table-checklist-header-row {
-    border: 2px solid #fff;
-    background-color: #fff;
-}
 
-.table-checklist-header {
-    color: #154973 !important;
-    text-transform: uppercase;
-    font-weight: bold;
-    background-color: #fff !important;
-    font-size: 1.2em;
-    text-align: center !important;
-}
-
-.table-checklist-table-row {
-    border: 2px solid #fff !important;
-}
-
-.table-checklist-table-cell {
-    display: flex;
-    justify-content: space-between;
-    min-width: 250px;
-    border: 1px solid #fff;
-    align-items: center;
-    padding: 5px !important;
-}
-
-.table-checklist-checkmark {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z'/%3E%3C/svg%3E");
+.nysds-pillars-check {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
-    height: 24px;
-    width: 24px;
+    height: 18px;
+    width: 16px;
     display: block;
-    filter: invert(85%) sepia(35%) saturate(4425%) hue-rotate(5deg) brightness(102%) contrast(106%);
+    margin-right: 8px;
+    margin-top: 4px;
+    flex-shrink: 0;
+    filter: invert(100%) sepia(99%) saturate(2%) hue-rotate(21deg) brightness(104%) contrast(101%);
+}
+
+.nysds-pillars-arrow {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    display: block;
+    margin-top: auto;
+    flex-shrink: 0;
+    filter: invert(100%) sepia(99%) saturate(2%) hue-rotate(21deg) brightness(104%) contrast(101%);
+}
+
+.nysds-pillars-cards {
+    background-color: #154973;
+    margin: 20px;
+    border-radius: 15px;
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 325px;
+    height: 400px;
+    text-decoration: none !important;
+}
+
+.nysds-pillars-cards:hover {
+    background-color:#000 ;
+    font-weight: normal !important;
+}
+
+.nysds-pillars-cards:hover h2 {
+    text-decoration: underline;
+}
+
+.nysds-pillars-cards:focus {
+    background-color:#000 ;
+    outline: 4px solid #FACE00; 
+    font-weight: normal !important;
+}
+
+.nysds-pillars-cards:focus-visible h2 {
+    text-decoration: underline;
+}
+
+
+.nysds-pillars-title {
+    font-size: 24px;
+    color: #FACE00;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+.nysds-pillars-list-container {
+    width: 90%;
+}
+
+.nysds-pillars-card-list {
+    display: flex;
+    flex-direction: column;
+    color: #fff !important;
+}
+
+.nysds-pillars-card-list li {
+    list-style-type: "";
+    display: flex;
 }
 
 @media (min-width: 768px) {
-    .budget-checklist-container {
-        display: flex;
-        flex-wrap: wrap;
-        max-height: 1240px;
+    .nysds-pillars {
+        flex-direction: row;
     }
 
 }
 
 @media (min-width: 1024px) {
-    .budget-checklist-container {
-        display: flex;
-        flex-wrap: wrap;
-        max-height: 790px;
-    }
+   
 
 }
 
 @media (min-width: 1280px) {
-    .budget-checklist-container {
-        display: flex;
-        flex-wrap: wrap;
-        max-height: 650px;
-    }
+   
 
 }
