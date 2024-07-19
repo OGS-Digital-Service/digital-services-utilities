@@ -1,4 +1,4 @@
-<section class="nysds-pillars">
+<section class="nysds-pillars" id="nysds-pillar-id">
 {% if type == 'hollow'%}
 
     {% for card in params.pillarCards %}
@@ -6,6 +6,8 @@
 
 {% else %}
     
+    <div class="nysds-pillars-headline"> {{params.headline}} </div>
+
     {% for card in params.pillarCards %}
     <a href="{{card.link}}" class="nysds-pillars-cards">
         <div class="nysds-pillars-icon" aria-hidden="true">
@@ -32,3 +34,6 @@
    
 {% endif %}
 </section>
+<script>
+    {% include './_pillars.js'  %}
+</script>

@@ -4,7 +4,14 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
+}
+
+
+
+.nysds-pillars-headline {
+    background-color: #154973;
+    width: 20%;
+    border-right: 6px solid #457AA5;
 }
 
 
@@ -95,10 +102,6 @@
 
 }
 
-@media (min-width: 1024px) {
-   
-
-}
 
 @media (min-width: 1280px) {
    

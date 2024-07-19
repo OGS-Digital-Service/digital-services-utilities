@@ -1,0 +1,63 @@
+---
+layout: render.njk
+title: NY.gov CX Pillars
+url: nysds.dev/table-checklist
+domain: nysds.dev
+
+---
+{% from './_includes/_components.njk' import pillars  %}
+<style>{% include './_includes/pillars/_pillars.css'  %}</style>
+
+
+
+
+{{
+    pillars({
+        type:"",
+        headline:"3 Pillars of Customer Experience Strategy",
+        pillarCards:[
+            {
+                icon:"",
+                title:"Innovative Solutions",
+                link:"",
+                checklist:[
+                    {
+                        text:"Drive innovation and continuous improvement"
+                    },
+                    {
+                        text:"Improve service efficiency and effectiveness"
+                    }
+                ]
+            },
+            {
+                icon:"",
+                title:"Customer Centric Design",
+                link:"",
+                checklist:[
+                    {
+                        text:"Personalize and humanize government interactions"
+                    },
+                    {
+                        text:"Increase trust and transparency "
+                    }
+                
+                ]
+            },
+            {
+                icon:"",
+                title:"Commitment to Excellence",
+                link:"",
+                checklist:[
+                    {
+                        text:"Build a culture of service excellence"
+                    },
+                    {
+                        text:"Ensure equity and inclusivity"
+                    }
+                ]
+            }
+
+        ]
+    })
+}}
+
