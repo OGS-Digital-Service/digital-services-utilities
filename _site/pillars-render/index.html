@@ -24,6 +24,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 30px;
+}
+
+.nysds-pillars-icon {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nysds-pillars-icon svg {
+    height: 85px;
+    filter: invert(18%) sepia(15%) saturate(7500%) hue-rotate(187deg) brightness(97%) contrast(84%);
 }
 
 
@@ -39,15 +50,39 @@
     filter: invert(100%) sepia(99%) saturate(2%) hue-rotate(21deg) brightness(104%) contrast(101%);
 }
 
-.nysds-pillars-arrow {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    height: 30px;
-    width: 30px;
-    display: block;
+.nysds-pillar-link {
+    color: #004DD1;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: #000;
+    text-decoration-thickness:1px ;
     margin-top: auto;
+}
+
+.nysds-pillar-link:focus {
+    text-decoration-thickness: 2px !important;
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(11deg) brightness(93%) contrast(502%);
+}
+
+.nysds-pillar-link:hover {
+    text-decoration-thickness: 2px !important;
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(11deg) brightness(93%) contrast(502%);
+}
+
+.nysds-pillars-arrow {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 18px;
+    display: block;
+    margin-left: 6px;
+    
     flex-shrink: 0;
-    filter: invert(100%) sepia(99%) saturate(2%) hue-rotate(21deg) brightness(104%) contrast(101%);
+    filter: invert(20%) sepia(63%) saturate(4292%) hue-rotate(215deg) brightness(87%) contrast(102%);
 }
 
 .nysds-pillars-cards {
@@ -55,8 +90,8 @@
     padding:30px;
     display: flex;
     flex-direction: column;
-    width: 325px;
-    height: 400px;
+    width: 90%;
+    height: auto;
 }
 
 
@@ -68,7 +103,10 @@
 }
 
 .nysds-pillars-list-container {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: auto;
 }
 
 .nysds-pillars-card-list {
@@ -86,7 +124,11 @@
 @media (min-width: 768px) {
     .nysds-pillars-container {
         flex-direction: row;
-        
+    }
+
+    .nysds-pillars-cards {
+        width: 325px;
+        height: 400px;
     }
 
 }
@@ -96,7 +138,10 @@
     .nysds-pillars {
         flex-direction: row;
     }
-
+    .nysds-pillars-container {
+        width: 80%;
+        justify-content: space-evenly;
+    }
     
 
     .nysds-pillars-headline {
@@ -104,6 +149,7 @@
         width: 20%;
         border-right: 12px solid #457AA5;
         border-bottom: none;
+        padding: 35px;
     }
 }</style>
 
@@ -138,9 +184,7 @@
                     
                 </ul>
             </div>
-            <a href="" aria-label=""></a>
-            <div class="nysds-pillars-arrow" aria-hidden="true">
-            </div>
+            <a class="nysds-pillar-link" href="" aria-label=""> <span class="nysds-pillars-arrow" aria-hidden="true"><span></a>
         </div>
     
         <div  class="nysds-pillars-cards">
@@ -165,9 +209,7 @@
                     
                 </ul>
             </div>
-            <a href="" aria-label=""></a>
-            <div class="nysds-pillars-arrow" aria-hidden="true">
-            </div>
+            <a class="nysds-pillar-link" href="" aria-label=""> <span class="nysds-pillars-arrow" aria-hidden="true"><span></a>
         </div>
     
         <div  class="nysds-pillars-cards">
@@ -192,9 +234,7 @@
                     
                 </ul>
             </div>
-            <a href="" aria-label=""></a>
-            <div class="nysds-pillars-arrow" aria-hidden="true">
-            </div>
+            <a class="nysds-pillar-link" href="" aria-label=""> <span class="nysds-pillars-arrow" aria-hidden="true"><span></a>
         </div>
     
     </div>

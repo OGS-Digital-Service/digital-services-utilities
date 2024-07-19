@@ -11,7 +11,7 @@
     {% for card in params.pillarCards %}
         <div  class="nysds-pillars-cards">
             <div class="nysds-pillars-icon" aria-hidden="true">
-                {{card.icon}}
+                {{card.icon | safe}}
             </div>
             <h2 class="nysds-pillars-title">
                 {{card.title}}
@@ -26,9 +26,7 @@
                     {% endfor %}
                 </ul>
             </div>
-            <a href="{{card.link}}" aria-label="{{card.ariaLabel}}">{{card.linkText}}</a>
-            <div class="nysds-pillars-arrow" aria-hidden="true">
-            </div>
+            <a class="nysds-pillar-link" href="{{card.link}}" aria-label="{{card.ariaLabel}}">{{card.linkText}} <span class="nysds-pillars-arrow" aria-hidden="true"><span></a>
         </div>
     {% endfor %}
     </div>
