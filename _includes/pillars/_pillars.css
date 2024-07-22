@@ -6,20 +6,18 @@
 .nysds-pillars-container {
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
+    align-items: center;
     background-color: #EDEDED;
 }
 
 .nysds-pillars-headline {
     background-color: #154973;
     border-bottom: 12px solid #457AA5;
-    height: 150px;
+    height: 175px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    padding: 30px 20px;
-    text-align: left;  
+    justify-content: center;
+    padding:20px;  
     color: #fff;
 }
 
@@ -35,6 +33,8 @@
     margin-top: 50px;
     margin-left: 20px;
     margin-right: 20px;
+    justify-content: center;
+    align-items:center;
 }
 
 .nysds-pillars-card:last-of-type {
@@ -44,7 +44,7 @@
 .nysds-pillars-card-title-link {
     font-size: 22px !important;
     font-weight: 800;
-    text-align: left;
+
     text-decoration: none !important;
     color: #154973 !important;
 }
@@ -57,6 +57,10 @@
 .nysds-pillars-card-title-link:focus {
     text-decoration: underline !important;
     color: #000 !important;
+}
+
+.nysds-pillars-card-title-link h3 {
+    margin: 20px 0;
 }
 
 .nysds-pillars-icon {
@@ -90,7 +94,8 @@
     text-decoration: underline;
     text-underline-offset: 2px;
     text-decoration-color: #000;
-    text-decoration-thickness:1px ;
+    text-decoration-thickness:1px;
+    width: max-content;
     margin-top: auto;
 }
 
@@ -137,14 +142,17 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: auto;
 }
 
 .nysds-pillars-card-list {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     color: #000;
     padding-left: 0 !important;
+    padding-bottom: 15px !important;
+    align-items: center;
+    text-align: center !important;
+
 }
 
 .nysds-pillars-card-list li {
@@ -162,7 +170,15 @@
 @media (min-width: 768px) {
     .nysds-pillars-container {
         flex-direction: row;
+        padding: 50px 0;
+        align-items: normal;
     }
+
+    .nysds-pillars-headline {
+        padding:35px;
+        height: 150px;
+    }
+    
     .nysds-pillars-headline h2 { 
         font-size: 32px;
     }
@@ -173,6 +189,22 @@
         margin-top: 0;
         margin-left: 35px;
         margin-right: 35px;
+        width: 33.3%;
+        justify-content: left;
+        align-items: flex-start;
+    }
+    .nysds-pillars-card:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .nysds-pillars-card-list {
+        padding-bottom: 25px !important;
+        text-align: left !important;
+        align-items: flex-start;
+    }
+
+    .nysds-pillars-card-title-link {
+        text-align: left;
     }
 
 }
@@ -191,16 +223,27 @@
         flex-direction: row;
     }
     .nysds-pillars-container {
-        width: 80%;
+        width: 75%;
         justify-content: space-evenly;
+        padding: 60px 0;
     }
     .nysds-pillars-headline {
         height: auto;
-        width: 20%;
+        width: 25%;
         border-right: 12px solid #457AA5;
         border-bottom: none;
-        padding: 35px;
+        padding:0 60px;
         justify-content: flex-start;
         text-align: left;
+    }
+    .nysds-pillars-headline h2 { 
+        font-size: 36px;
+    }
+    .nysds-pillars-card:first-of-type {
+        margin-left: 60px;
+    }
+    .nysds-pillars-card-title-link h3 {
+        font-size: 28px !important;
+       
     }
 }
