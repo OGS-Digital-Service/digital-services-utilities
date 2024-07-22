@@ -1,37 +1,64 @@
 <section class="nysds-pillars" id="nysds-pillar-id">
-{% if type == 'hollow'%}
 
-    {% for card in params.pillarCards %}
-    {% endfor %}
+{% if params.type === 'hollow'%}
 
-{% else %}
-    
-    <div class="nysds-pillars-headline"> {{params.headline}} </div>
+    <div class="nysds-pillars-headline"> <h2>{{params.headline}} </h2></div>
+
     <div class="nysds-pillars-container">
-    {% for card in params.pillarCards %}
-        <div  class="nysds-pillars-cards">
-            <div class="nysds-pillars-icon" aria-hidden="true">
-                {{card.icon | safe}}
+        {% for card in params.pillarCards %}
+            <div class="nysds-pillars-card">
+
+                <div class="nysds-pillars-icon" aria-hidden="true">
+                    {{card.icon | safe}}
+                </div>
+
+                {%if card.titleType === 'link' %}
+                <a href="{{card.link}}" class="nysds-pillars-card-title-link">
+                    <h3>
+                        {{card.title}}
+                    </h3>
+                </a>
+                {% else %}
+                <h3 class="nysds-pillars-title">
+                    {{card.title}}
+                </h3>
+                {% endif %}
+
+                <div class="nysds-pillars-list-container">
+                    <ul class="nysds-pillars-card-list">
+                        {%for check in card.checklist%}
+                            <li>
+                                {# <span class="nysds-pillars-check" aria-hidden="true"></span> #}
+                                <span>{{check.text}}</span>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                {% if card.cta === 'text'%}
+
+                    <a class="nysds-pillar-link" href="{{card.link}}" aria-label="{{card.ariaLabel}}">
+                        {{card.linkText}} 
+                        <span class="nysds-pillars-arrow" aria-hidden="true"><span>
+                    </a>
+
+                {% else %}
+
+                    <a class="nysds-pillar-link" href="{{card.link}}" aria-hidden="true" tabindex="-1">
+                        <span class="nysds-pillars-large-arrow" aria-hidden="true"></span>
+                        <span class="sr-only">{{card.title}}</span>
+                    </a>
+                    
+                {% endif %}
             </div>
-            <h2 class="nysds-pillars-title">
-                {{card.title}}
-            </h2>
-            <div class="nysds-pillars-list-container">
-                <ul class="nysds-pillars-card-list">
-                    {%for check in card.checklist%}
-                    <li>
-                        {# <span class="nysds-pillars-check" aria-hidden="true"></span> #}
-                        <span>{{check.text}}</span>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
-            <a class="nysds-pillar-link" href="{{card.link}}" aria-label="{{card.ariaLabel}}">{{card.linkText}} <span class="nysds-pillars-arrow" aria-hidden="true"><span></a>
-        </div>
-    {% endfor %}
+        {% endfor %}
+
     </div>
-   
+
+{% else %}  
+    {# for other variants #}
 {% endif %}
+
 </section>
 <script>
     {% include './_pillars.js'  %}

@@ -6,23 +6,57 @@
 .nysds-pillars-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     background-color: #EDEDED;
 }
 
 .nysds-pillars-headline {
     background-color: #154973;
     border-bottom: 12px solid #457AA5;
-    color: #fff;
-    font-size: 32px;
-    line-height: 1.15em;
-    font-weight: 800;
     height: 150px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 30px;
+    justify-content: flex-start;
+    padding: 30px 20px;
+    text-align: left;  
+    color: #fff;
+}
+
+.nysds-pillars-headline h2 { 
+    font-size: 28px;
+    line-height: 1.15em;
+    font-weight: 800;
+}
+
+.nysds-pillars-card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.nysds-pillars-card:last-of-type {
+    margin-bottom: 50px;
+}
+
+.nysds-pillars-card-title-link {
+    font-size: 22px !important;
+    font-weight: 800;
+    text-align: left;
+    text-decoration: none !important;
+    color: #154973 !important;
+}
+
+.nysds-pillars-card-title-link:hover {
+    text-decoration: underline !important;
+    color: #000 !important;
+}
+
+.nysds-pillars-card-title-link:focus {
+    text-decoration: underline !important;
+    color: #000 !important;
 }
 
 .nysds-pillars-icon {
@@ -34,7 +68,6 @@
     height: 85px;
     filter: invert(18%) sepia(15%) saturate(7500%) hue-rotate(187deg) brightness(97%) contrast(84%);
 }
-
 
 .nysds-pillars-check {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z'/%3E%3C/svg%3E");
@@ -78,26 +111,26 @@
     width: 18px;
     display: block;
     margin-left: 6px;
-    
     flex-shrink: 0;
     filter: invert(20%) sepia(63%) saturate(4292%) hue-rotate(215deg) brightness(87%) contrast(102%);
 }
 
-.nysds-pillars-cards {
-    margin: 20px;
-    padding:30px;
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    height: auto;
+.nysds-pillars-large-arrow {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    display: block;
+    margin-top: auto;
+    flex-shrink: 0;
+    filter: invert(20%) sepia(63%) saturate(4292%) hue-rotate(215deg) brightness(87%) contrast(102%);
 }
 
-
 .nysds-pillars-title {
-    font-size: 28px !important;
-    color: #154973;
+    font-size: 22px !important;
     font-weight: 800;
     text-align: left;
+    color: #154973;
 }
 
 .nysds-pillars-list-container {
@@ -119,19 +152,40 @@
     display: flex;
 }
 
+
+
+
+
+
+
+/* tablet */
 @media (min-width: 768px) {
     .nysds-pillars-container {
         flex-direction: row;
     }
-
-    .nysds-pillars-cards {
-        width: 325px;
-        height: 400px;
+    .nysds-pillars-headline h2 { 
+        font-size: 32px;
+    }
+    
+    .nysds-pillars-card {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        margin-left: 35px;
+        margin-right: 35px;
     }
 
 }
 
 
+
+
+
+
+
+
+
+/* desktop */
 @media (min-width: 1280px) {
     .nysds-pillars {
         flex-direction: row;
@@ -140,13 +194,13 @@
         width: 80%;
         justify-content: space-evenly;
     }
-    
-
     .nysds-pillars-headline {
         height: auto;
         width: 20%;
         border-right: 12px solid #457AA5;
         border-bottom: none;
         padding: 35px;
+        justify-content: flex-start;
+        text-align: left;
     }
 }
