@@ -1,0 +1,17 @@
+<section class="nysds-callout">
+
+
+    <div class="nysds-callout-icon" aria-hidden="true">
+        {{params.icon | safe}}
+    </div>
+
+    <div class="nysds-callout-content">
+        <h3 class="nysds-callout-title">{{params.title}}</h3>
+        <ul class="nysds-callout-list">
+            {% for item in params.list %}
+                <li> {{item.text}} </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+</section>

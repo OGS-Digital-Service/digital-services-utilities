@@ -1,0 +1,49 @@
+.nysds-callout {
+    display: flex;
+    align-items: center;
+    border: 2px solid #457AA5;
+    border-radius: 30px;
+    margin: 30px 0;
+    padding: 25px;
+}
+
+.nysds-callout-icon {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 30px;
+}
+
+.nysds-callout-icon svg {
+    height: 65px;
+    filter: invert(18%) sepia(15%) saturate(7500%) hue-rotate(187deg) brightness(97%) contrast(84%);
+}
+
+.nysds-callout-title {
+    color: #457AA5;
+    font-size: 24px !important;
+    margin: 15px 0;
+}
+
+
+
+
+
+
+
+/* tablet */
+@media (min-width: 768px) {
+  
+   
+
+}
+
+
+
+
+
+
+/* desktop */
+@media (min-width: 1280px) {
+
+
+}
