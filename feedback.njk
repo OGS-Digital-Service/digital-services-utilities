@@ -2,34 +2,40 @@
 layout: render.njk
 title: NYSDS Feedback Component
 ---
-<style>
-{% include './css/feedback.css' %}
-</style>
+{% from './_includes/_components.njk' import feedback  %}
+<style>{% include './_includes/feedback/_feedback.css'  %}</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const feedback = document.getElementById('nysds-feedback-id');
+    console.log(feedback)
+    if (feedback) {
+        const container = feedback.closest(".o-wysiwyg");
+        container.style.maxWidth = '100%';
+        container.style.padding = "0px";
+    }
+    else {
+        console.log("nOPE")
+    }
+    
+})
+</script>
+{# {{
+    feedback({
+        thumbsUp:"https://survey.alchemer.com/collab/7922876/Thank-you-for-your-Feedback?thumbs=Up",
+        thumbsDown:"https://survey.alchemer.com/collab/7922876/Thank-you-for-your-Feedback?thumbs=Down",
+        fullPage: false
+    })
+}} #}
 
-<section class="nysds-feedback">
-    <h3 class="nysds-feedback-heading" id="nysds-feedback-helpful">Did you find this page helpful?</h3>
-    <div class="nysds-feedback-options" id="nysds-feedback-options-area">
-        <a  href="https://forms.ny.gov/s3/Customer-Experience-Survey" 
-            class="nysds-feedback-link" 
-            data-feedback="yes"
-            aria-label="Yes this page was helpful"
-            target="_blank"
-            >
-            <span class="nysds-feedback-thumbs" aria-hidden="true"></span>
-            Yes
-        </a>
-        <a  href="https://forms.ny.gov/s3/Customer-Experience-Survey" 
-            class="nysds-feedback-link" 
-            data-feedback="no"
-            aria-label="No this page was not helpful"
-            target="_blank"
-            >
-            <span class="nysds-feedback-thumbs nysds-feedback-transform" aria-hidden="true"></span>
-            No
-        </a>
-    </div>
-</section>
+{{
+    feedback({
+        thumbsUp:"https://survey.alchemer.com/collab/7922876/Thank-you-for-your-Feedback?thumbs=Up",
+        thumbsDown:"https://survey.alchemer.com/collab/7922876/Thank-you-for-your-Feedback?thumbs=Down",
+        fullPage: true
+    })
+}}
+
 
 <script>
-{% include './js/feedback.js' %}
+{% include './_includes/feedback/_feedback.js'  %}
 </script>

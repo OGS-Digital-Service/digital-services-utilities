@@ -1,0 +1,23 @@
+<section class="nysds-feedback {% if params.fullPage %} nysds-feedback-landing {% endif %}" {% if params.fullPage %} id="nysds-feedback-id" {% endif %}>
+    <h3 class="nysds-feedback-heading" id="nysds-feedback-helpful">Did you find this page helpful?</h3>
+    <div class="nysds-feedback-options" id="nysds-feedback-options-area">
+        <a  href="{{params.thumbsUp}}" 
+            class="nysds-feedback-link" 
+            data-feedback="yes"
+            aria-label="Yes this page was helpful"
+            target="_blank"
+            >
+            <span class="nysds-feedback-thumbs" aria-hidden="true"></span>
+            Yes
+        </a>
+        <a  href="{{params.thumbsDown}}" 
+            class="nysds-feedback-link" 
+            data-feedback="no"
+            aria-label="No this page was not helpful"
+            target="_blank"
+            >
+            <span class="nysds-feedback-thumbs nysds-feedback-transform" aria-hidden="true"></span>
+            No
+        </a>
+    </div>
+</section>

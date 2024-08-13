@@ -11,3 +11,4 @@ for (let i = 0; i < linkArr.length; i++) {
             feedbackText.innerText = "Thank you for your feedback!"
         }
 }
+

@@ -16,6 +16,7 @@
 
 .nysds-feedback-landing {
     justify-content: center;
+    background-color: #fff !important;
 }
 
 .nysds-feedback-options {
@@ -40,8 +41,7 @@
 
 .nysds-feedback-transform {
     transform: scaleY(-1);
-    /* margin-top: 3px; */
-
+    margin-top: 2px;
 }
 
 .nysds-feedback-link {
