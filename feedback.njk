@@ -14,24 +14,16 @@ title: NYSDS Feedback Component
         container.style.padding = "0px";
     }
     else {
-        console.log("nOPE")
+        return;
     }
     
 })
 </script>
-{# {{
-    feedback({
-        thumbsUp:"https://survey.alchemer.com/collab/7922876/Thank-you-for-your-Feedback?thumbs=Up",
-        thumbsDown:"https://survey.alchemer.com/collab/7922876/Thank-you-for-your-Feedback?thumbs=Down",
-        fullPage: false
-    })
-}} #}
-
 {{
     feedback({
-        thumbsUp:"https://survey.alchemer.com/collab/7922876/Thank-you-for-your-Feedback?thumbs=Up",
-        thumbsDown:"https://survey.alchemer.com/collab/7922876/Thank-you-for-your-Feedback?thumbs=Down",
-        fullPage: true
+        thumbsUp:"https://forms.ny.gov/s3/Thank-you-for-your-Feedback?thumbs=Up",
+        thumbsDown:"https://forms.ny.gov/s3/Thank-you-for-your-Feedback?thumbs=Down",
+        fullPage: false
     })
 }}
 
@@ -39,3 +31,4 @@ title: NYSDS Feedback Component
 <script>
 {% include './_includes/feedback/_feedback.js'  %}
 </script>
+
