@@ -43,7 +43,6 @@
 
 .nysds-feedback-transform {
     transform: scaleY(-1);
-    margin-top: 2px;
 }
 
 .nysds-feedback-link {
@@ -55,7 +54,7 @@
     font-size: 0.8rem;
     padding: 15px;
     border-radius: 15px;
-    margin: 0 10px;
+    margin: 10px 10px;
     min-width: 100px;
     display: flex;
     justify-content: center;
@@ -81,22 +80,7 @@
     }
    
 }</style>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-    const feedback = document.getElementById('nysds-feedback-id');
-    console.log(feedback)
-    if (feedback) {
-        const container = feedback.closest(".o-wysiwyg");
-        container.style.maxWidth = '100%';
-        container.style.padding = "0px";
-    }
-    else {
-        return;
-    }
-    
-})
-</script>
-<section class="nysds-feedback " >
+<section class="nysds-feedback  nysds-feedback-landing "  id="nysds-feedback-id" >
     <h3 class="nysds-feedback-heading" id="nysds-feedback-helpful">Did you find this page helpful?</h3>
     <div class="nysds-feedback-options" id="nysds-feedback-options-area">
         <a  href="https://forms.ny.gov/s3/Thank-you-for-your-Feedback?thumbs=Up" 
@@ -119,14 +103,11 @@
         </a>
     </div>
 </section>
-
-
 <script>
 const feedbackText = document.getElementById('nysds-feedback-helpful');
 const feedbackArea = document.getElementById('nysds-feedback-options-area');
 const feedbackLink = document.getElementsByClassName('nysds-feedback-link');
 const linkArr = Array.from(feedbackLink);
-
 
 for (let i = 0; i < linkArr.length; i++) {
     linkArr[i].addEventListener("click", feedbackChange) // change area on click
@@ -136,7 +117,15 @@ for (let i = 0; i < linkArr.length; i++) {
         }
 }
 
-
+document.addEventListener('DOMContentLoaded', function() {
+    const feedback = document.getElementById('nysds-feedback-id');
+    if (feedback) {
+        const container = feedback.closest(".o-wysiwyg");
+        container.style.maxWidth = '100%';
+        container.style.padding = "0px";
+    }
+    else {
+        return;
+    }
+})
 </script>
-
-

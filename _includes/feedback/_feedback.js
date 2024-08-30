@@ -3,7 +3,6 @@ const feedbackArea = document.getElementById('nysds-feedback-options-area');
 const feedbackLink = document.getElementsByClassName('nysds-feedback-link');
 const linkArr = Array.from(feedbackLink);
 
-
 for (let i = 0; i < linkArr.length; i++) {
     linkArr[i].addEventListener("click", feedbackChange) // change area on click
         function feedbackChange () {
@@ -12,3 +11,14 @@ for (let i = 0; i < linkArr.length; i++) {
         }
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    const feedback = document.getElementById('nysds-feedback-id');
+    if (feedback) {
+        const container = feedback.closest(".o-wysiwyg");
+        container.style.maxWidth = '100%';
+        container.style.padding = "0px";
+    }
+    else {
+        return;
+    }
+})

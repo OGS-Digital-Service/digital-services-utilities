@@ -4,31 +4,13 @@ title: NYSDS Feedback Component
 ---
 {% from './_includes/_components.njk' import feedback  %}
 <style>{% include './_includes/feedback/_feedback.css'  %}</style>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-    const feedback = document.getElementById('nysds-feedback-id');
-    console.log(feedback)
-    if (feedback) {
-        const container = feedback.closest(".o-wysiwyg");
-        container.style.maxWidth = '100%';
-        container.style.padding = "0px";
-    }
-    else {
-        return;
-    }
-    
-})
-</script>
 {{
     feedback({
         thumbsUp:"https://forms.ny.gov/s3/Thank-you-for-your-Feedback?thumbs=Up",
         thumbsDown:"https://forms.ny.gov/s3/Thank-you-for-your-Feedback?thumbs=Down",
-        fullPage: false
+        fullPage: true
     })
 }}
-
-
 <script>
 {% include './_includes/feedback/_feedback.js'  %}
 </script>
-
