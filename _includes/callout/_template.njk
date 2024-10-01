@@ -6,9 +6,16 @@
     <div class="nysds-callout-content">
          
         <h3 class="nysds-callout-title"> <span class="nysds-callout-icon" aria-hidden="true">{{params.icon | safe}}</span> {{params.title}}</h3>
+        {% if params.description %}
+        <p class="nysds-callout-description"> {{params.description}}</p>
+        {% endif%}
         <ul class="nysds-callout-list">
             {% for item in params.list %}
+                {% if item.link %}
+                <li> <a href="{{item.link}}">{{item.text}}</a></li>
+                {% else %}
                 <li> {{item.text}} </li>
+                {%endif%}
             {% endfor %}
         </ul>
     </div>

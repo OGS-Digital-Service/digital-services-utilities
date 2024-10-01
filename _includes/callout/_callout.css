@@ -8,8 +8,15 @@
 }
 
 .nysds-callout-icon {
-    display: none;
+    display: flex;
+    justify-content: flex-start;
+    margin: -5px 15px 0 5px;
+}
 
+.nysds-callout-description {
+    padding-bottom:10px !important;
+    padding-left: 15px;
+    padding-right: 20px;
 }
 
 .nysds-callout-icon svg {
@@ -27,9 +34,21 @@
 .nysds-callout-list {
     display: grid;
     grid-auto-rows: auto;
-    grid-template-columns: 1fr;
+    grid-template-columns:auto;
     gap: 0 20px;
     padding-bottom: 10px !important;
+}
+
+.nysds-callout-list a:hover {
+    font-weight: normal !important;
+    text-decoration-thickness: 3px;
+    color:#154973 !important;
+}
+
+.nysds-callout-list a:focus {
+    font-weight: normal !important;
+    text-decoration-thickness: 3px;
+    color:#154973 !important;
 }
 
 
@@ -41,14 +60,10 @@
 /* tablet */
 @media (min-width: 768px) {
   
-    .nysds-callout-icon {
-        display: flex;
-        justify-content: flex-start;
-        margin: -5px 15px 0 5px;
-    }
+   
 
     .nysds-callout-list {
-     
+       
         grid-template-columns: 1fr 1fr;
         
     }
