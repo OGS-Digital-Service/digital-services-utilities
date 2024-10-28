@@ -3,6 +3,10 @@ const feedbackArea = document.getElementById('nysds-feedback-options-area');
 const feedbackLink = document.getElementsByClassName('nysds-feedback-link');
 const linkArr = Array.from(feedbackLink);
 
+
+var referrerURL = window.location;
+    console.log(referrerURL)
+
 for (let i = 0; i < linkArr.length; i++) {
     linkArr[i].addEventListener("click", feedbackChange) // change area on click
         function feedbackChange () {
@@ -21,4 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
     else {
         return;
     }
+    
+
 })

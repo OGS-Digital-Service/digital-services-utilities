@@ -174,6 +174,63 @@ This is a static website. In the traditional sense, it's "just a website." HTML,
 </ul>
 </section> 
 
+
+<section class="nysds-feedback  nysds-feedback-landing "  id="nysds-feedback-id" >
+    <h3 class="nysds-feedback-heading" id="nysds-feedback-helpful">Did you find this page helpful?</h3>
+    <div class="nysds-feedback-options" id="nysds-feedback-options-area">
+        <a  href="https://forms.ny.gov/s3/Thank-you-for-your-Feedback?thumbs=Up" 
+            class="nysds-feedback-link" 
+            data-feedback="yes"
+            aria-label="Yes this page was helpful"
+            target="_blank"
+            >
+            <span class="nysds-feedback-thumbs" aria-hidden="true"></span>
+            Yes
+        </a>
+        <a  href="https://forms.ny.gov/s3/Thank-you-for-your-Feedback?thumbs=Down" 
+            class="nysds-feedback-link" 
+            data-feedback="no"
+            aria-label="No this page was not helpful"
+            target="_blank"
+            >
+            <span class="nysds-feedback-thumbs nysds-feedback-transform" aria-hidden="true"></span>
+            No
+        </a>
+    </div>
+</section>
+<script>
+const feedbackText = document.getElementById('nysds-feedback-helpful');
+const feedbackArea = document.getElementById('nysds-feedback-options-area');
+const feedbackLink = document.getElementsByClassName('nysds-feedback-link');
+const linkArr = Array.from(feedbackLink);
+
+
+var referrerURL = window.location;
+    console.log(referrerURL)
+
+for (let i = 0; i < linkArr.length; i++) {
+    linkArr[i].addEventListener("click", feedbackChange) // change area on click
+        function feedbackChange () {
+            feedbackArea.setAttribute("style", "display:none;");
+            feedbackText.innerText = "Thank you for your feedback!"
+        }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const feedback = document.getElementById('nysds-feedback-id');
+    if (feedback) {
+        const container = feedback.closest(".o-wysiwyg");
+        container.style.maxWidth = '100%';
+        container.style.padding = "0px";
+    }
+    else {
+        return;
+    }
+    
+
+})
+</script>
+
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         var langdetect = navigator.language;

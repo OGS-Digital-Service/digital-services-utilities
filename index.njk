@@ -12,7 +12,7 @@ twitter:
     description: NYS Digital Services
     image: nygov-logo.png
 ---
-{% from './_includes/_components.njk' import hero,categorytiles,card,bio,textarea,highlight,iconframe,quicklinks  %}
+{% from './_includes/_components.njk' import hero,categorytiles,card,bio,textarea,highlight,iconframe,quicklinks,feedback  %}
 
 {{
     hero({
@@ -92,6 +92,18 @@ This is a static website. In the traditional sense, it's "just a website." HTML,
 
     ]
 })}} 
+
+
+{{
+    feedback({
+        thumbsUp:"https://forms.ny.gov/s3/Thank-you-for-your-Feedback?thumbs=Up",
+        thumbsDown:"https://forms.ny.gov/s3/Thank-you-for-your-Feedback?thumbs=Down",
+        fullPage: true
+    })
+}}
+<script>
+{% include './_includes/feedback/_feedback.js'  %}
+</script>
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
