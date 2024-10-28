@@ -175,7 +175,7 @@ This is a static website. In the traditional sense, it's "just a website." HTML,
 </section> 
 
 
-<section class="nysds-feedback  nysds-feedback-landing "  id="nysds-feedback-id" >
+<section class="nysds-feedback " >
     <h3 class="nysds-feedback-heading" id="nysds-feedback-helpful">Did you find this page helpful?</h3>
     <div class="nysds-feedback-options" id="nysds-feedback-options-area">
         <a  href="https://forms.ny.gov/s3/Thank-you-for-your-Feedback?thumbs=Up" 
@@ -183,6 +183,7 @@ This is a static website. In the traditional sense, it's "just a website." HTML,
             data-feedback="yes"
             aria-label="Yes this page was helpful"
             target="_blank"
+            id="nysds-feedback-yes"
             >
             <span class="nysds-feedback-thumbs" aria-hidden="true"></span>
             Yes
@@ -192,6 +193,7 @@ This is a static website. In the traditional sense, it's "just a website." HTML,
             data-feedback="no"
             aria-label="No this page was not helpful"
             target="_blank"
+            id="nysds-feedback-no"
             >
             <span class="nysds-feedback-thumbs nysds-feedback-transform" aria-hidden="true"></span>
             No
@@ -203,10 +205,14 @@ const feedbackText = document.getElementById('nysds-feedback-helpful');
 const feedbackArea = document.getElementById('nysds-feedback-options-area');
 const feedbackLink = document.getElementsByClassName('nysds-feedback-link');
 const linkArr = Array.from(feedbackLink);
-
-
-var referrerURL = window.location;
-    console.log(referrerURL)
+const referrerURL = window.location.href;
+const thumbsDown = document.getElementById('nysds-feedback-no');
+const thumbsUp = document.getElementById('nysds-feedback-yes');
+const feedbackForm = "https://forms.ny.gov/s3/Thank-you-for-your-Feedback"
+const fragmentUp = "?thumbs=Up?referrerUrl="
+const fragmentDown = "?thumbs=Down?referrerUrl="
+const urlUp = feedbackForm + fragmentUp + referrerURL
+const urlDown = feedbackForm + fragmentDown + referrerURL
 
 for (let i = 0; i < linkArr.length; i++) {
     linkArr[i].addEventListener("click", feedbackChange) // change area on click
@@ -216,19 +222,22 @@ for (let i = 0; i < linkArr.length; i++) {
         }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    const feedback = document.getElementById('nysds-feedback-id');
-    if (feedback) {
-        const container = feedback.closest(".o-wysiwyg");
+function fullPage () {
+    var feedbackId = document.getElementById('nysds-feedback-id');
+    if (feedbackId) {
+        const container = feedbackId.closest(".o-wysiwyg");
         container.style.maxWidth = '100%';
         container.style.padding = "0px";
     }
-    else {
-        return;
-    }
-    
+}    
 
-})
+function replaceUrl () {
+    thumbsUp.href = urlUp;
+    thumbsDown.href = urlDown;
+}
+
+document.addEventListener('DOMContentLoaded', fullPage)
+document.addEventListener('DOMContentLoaded', replaceUrl)
 </script>
 
 <script>
