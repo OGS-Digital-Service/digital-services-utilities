@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <!-- If you're reading this: help us obi-wan can-coder, you're our only hope. Apply today: ogs.ny.gov/employment -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NY.gov Services Search">
+    <meta name="generator" content="11ty/eleventy">    
+   <link rel="stylesheet" media="all" href="https://www.ny.gov/sites/default/files/css/css_RyBbcD_aYxQO4-iBggim80KgfWl4EEFElDc-Y_ijJaw.css?delta=0&amp;language=en&amp;theme=nygov_theme&amp;include=eJxVy0EOgzAMRNELBXKkypCRG8mOq0wApadHoqtuvt7mc3LA8yZE2k3I-WcHKQqmPTpyi-5i9YvUpsb5Gm84slpsYgvHtNo0nRUX89PVoxyG31z68RFbSxULvQHb_y5J" />
+<link rel="stylesheet" media="all" href="https://www.ny.gov/sites/default/files/css/css_RunoynkdsjnbAEMjeT35DP_kVc0cAPZUhnqV2XrKZkc.css?delta=1&amp;language=en&amp;theme=nygov_theme&amp;include=eJxVy0EOgzAMRNELBXKkypCRG8mOq0wApadHoqtuvt7mc3LA8yZE2k3I-WcHKQqmPTpyi-5i9YvUpsb5Gm84slpsYgvHtNo0nRUX89PVoxyG31z68RFbSxULvQHb_y5J" />
+<link rel="stylesheet" media="all" href="https://www.ny.gov/profiles/contrib/nygov/themes/custom/nygov-theme/nygov_theme/../storybook/dist/styles.css?sp3q0g" />
+<link rel="stylesheet" media="all" href="https://www.ny.gov/sites/default/files/css/css_lf5s1G73sstlPH3RfPhxQ3rL4J9Qz8hf7dwsMBC1vx4.css?delta=3&amp;language=en&amp;theme=nygov_theme&amp;include=eJxVy0EOgzAMRNELBXKkypCRG8mOq0wApadHoqtuvt7mc3LA8yZE2k3I-WcHKQqmPTpyi-5i9YvUpsb5Gm84slpsYgvHtNo0nRUX89PVoxyG31z68RFbSxULvQHb_y5J" />
+
+  
+    <link href="/css/fonts.css" rel="stylesheet">
+    <title>NY.gov Services Search</title>
+  </head>
+  <body class="path-frontpage page-node-type-landing-page">
+    <main class="" id="main-site-content-for-skiplink">
+      <article class="node node--type-landing-page node--promoted node--view-mode-full">
+        <article class="p-landing-page -full-page ">
+          <div class="t-section -container">
+            
+<style>.nysds-search-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 10%;
+}
+
+.nysds-search-hero-heading {
+    font-size: 36px;
+    line-height: 1.15em;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 800;
+    margin-top: 0;
+}
+
+.nysds-text-white {
+    color: #fff;
+}
+
+.nysds-text-black {
+    color: #000;
+}
+
+#nysds-service-search-input {
+    padding: 15px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border:none;
+}
+
+#nysds-service-search-submit {
+    font-size: 1rem;
+}
+
+.nysds-search-container {
+    display: flex;
+    width: 100%;
+    justify-content:center;
+}
+
+.nysds-service-search-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* tablet */
+@media (min-width: 768px) {
+    .nysds-service-search-form {
+        width: 70%;
+    }
+    
+  
+}
+
+
+
+
+/* desktop */
+@media (min-width: 1280px) {
+    .nysds-search-hero {
+        align-items: flex-start;
+        padding: 35px 20%;
+    }
+    .nysds-search-container {
+        justify-content:flex-start;
+    }
+    .nysds-service-search-form {
+        flex-direction: row;
+        width: 100%;
+    }
+}</style>
+
+
+<section class="nysds-search-hero bg-primary-blue">
+
+    <h1 class="nysds-search-hero-heading nysds-text-white">
+        Search All State Services
+    </h1>
+
+    <p class="nysds-text-white">
+        Explore the services offered by the State of New York.
+    </p>
+
+    <div class="nysds-search-container">
+        <form class="nysds-service-search-form">
+            <label for="nysds-service-search-input" class="sr-only">
+                Search All Services
+            </label>
+            <input 
+                id="nysds-service-search-input"
+                placeholder="Search All Services" 
+                size="8" 
+                type="search" 
+                enterkeyhint="search"
+            >
+            <button type="submit" id="nysds-service-search-submit">
+                Search All Services
+            </button>
+        </form>
+    </div>
+
+
+
+
+</section>
+<script> document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('nysds-service-search-input');
+    const searchTerm = searchInput.value; 
+    const submitSearch = document.getElementById('nysds-service-search-submit');
+
+
+    
+
+    console.log(searchTerm)
+})</script>
+          </div>
+        </article>
+      </article>
+    </main>
+
+  </body>
+</html>
