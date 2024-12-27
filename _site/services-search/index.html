@@ -37,7 +37,7 @@
 }
 
 .nysds-text-white {
-    color: #fff;
+    color: #fff !important;
 }
 
 .nysds-text-black {
@@ -118,7 +118,7 @@
 }</style>
 
 
-<section class="nysds-search-hero bg-primary-blue">
+<section class="nysds-search-hero bg-primary-blue" id="nysds-search-hero">
 
     <h1 class="nysds-search-hero-heading nysds-text-white">
         Search All State Services
@@ -140,7 +140,7 @@
                 type="search" 
                 enterkeyhint="search"
             >
-            <input type="submit" id="nysds-service-search-submit" value="Search">
+            <button type="submit" id="nysds-service-search-submit"> Search <span class="sr-only"> all state services </span></button>
             
         </form>
     </div>
@@ -152,6 +152,12 @@
 <script> document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('nysds-service-search-input');
     const submitSearch = document.getElementById('nysds-service-search-form');
+    const searchHero = document.getElementById('nysds-search-hero');
+    const container = searchHero.closest(".o-wysiwyg");
+    if (container) {
+        container.style.maxWidth = '100%';
+        container.style.padding = "0px";
+    }
     function searchServices (e) {
         e.preventDefault();
         var searchTerm = searchInput.value; 
