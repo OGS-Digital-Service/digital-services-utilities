@@ -1,10 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('nysds-service-search-input');
-    const searchTerm = searchInput.value; 
-    const submitSearch = document.getElementById('nysds-service-search-submit');
-
-
-    
-
-    console.log(searchTerm)
+    const submitSearch = document.getElementById('nysds-service-search-form');
+    function searchServices (e) {
+        e.preventDefault();
+        var searchTerm = searchInput.value; 
+        if (!searchTerm) {
+           window.location.href ="https://nygovd8dev.prod.acquia-sites.com/test-all-services-listing"
+        }
+        else {
+            window.location.href ="https://nygovd8dev.prod.acquia-sites.com/test-all-services-listing?search_api_fulltext_tablet=&search_api_fulltext="+searchTerm+"&items_per_page=10#views-exposed-form-filter-frame-services"
+        } 
+    }
+    submitSearch.addEventListener("submit", searchServices)
 })
