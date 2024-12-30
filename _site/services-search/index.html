@@ -10,6 +10,7 @@
 <link rel="stylesheet" media="all" href="https://www.ny.gov/sites/default/files/css/css_RunoynkdsjnbAEMjeT35DP_kVc0cAPZUhnqV2XrKZkc.css?delta=1&amp;language=en&amp;theme=nygov_theme&amp;include=eJxVy0EOgzAMRNELBXKkypCRG8mOq0wApadHoqtuvt7mc3LA8yZE2k3I-WcHKQqmPTpyi-5i9YvUpsb5Gm84slpsYgvHtNo0nRUX89PVoxyG31z68RFbSxULvQHb_y5J" />
 <link rel="stylesheet" media="all" href="https://www.ny.gov/profiles/contrib/nygov/themes/custom/nygov-theme/nygov_theme/../storybook/dist/styles.css?sp3q0g" />
 <link rel="stylesheet" media="all" href="https://www.ny.gov/sites/default/files/css/css_lf5s1G73sstlPH3RfPhxQ3rL4J9Qz8hf7dwsMBC1vx4.css?delta=3&amp;language=en&amp;theme=nygov_theme&amp;include=eJxVy0EOgzAMRNELBXKkypCRG8mOq0wApadHoqtuvt7mc3LA8yZE2k3I-WcHKQqmPTpyi-5i9YvUpsb5Gm84slpsYgvHtNo0nRUX89PVoxyG31z68RFbSxULvQHb_y5J" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   
     <link href="/css/fonts.css" rel="stylesheet">
@@ -24,7 +25,7 @@
 <style>.nysds-search-hero {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     padding: 30px 7% 40px;
 }
 
@@ -33,7 +34,7 @@
     line-height: 1.15em;
     font-family: "Proxima Nova", sans-serif;
     font-weight: 800;
-    margin-top: 0;
+    margin: 0;
 }
 
 .nysds-text-white {
@@ -50,21 +51,24 @@
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border:none;
-    width:70%;
+    width: 100%;
+    -webkit-appearance: none;
+    -webkit-border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
 }
 
 #nysds-service-search-input:focus {
-    outline: 3px #FACE00 solid;
+    outline: 2px #FACE00 solid;
     box-shadow:inset 0 0 0 4px
 }
 
 #nysds-service-search-submit {
     font-size: 1rem;
     border:none;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background: #EDEDED;
-    color: #000;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background: #154973;
+    color: #fff;
     font-weight: bold;
     padding: 0 20px;
 }
@@ -77,7 +81,7 @@
 #nysds-service-search-submit:focus {
     background-color: #000;
     color: #fff;
-    outline: 3px #FACE00 solid;
+    outline: 2px #FACE00 solid;
 } 
 
 .nysds-search-container {
@@ -92,9 +96,18 @@
     justify-content: center;
 }
 
+.nysds-search-box {
+    display: flex;
+    width: 100%;
+    border: 2px solid #62666A;
+    border-radius: 5px;
+}
+
 /* tablet */
 @media (min-width: 768px) {
-
+    .nysds-search-hero {
+        align-items: center;
+    }
     
   
 }
@@ -111,44 +124,41 @@
     #nysds-service-search-form {
         justify-content: flex-start;
     }
-    #nysds-service-search-input {
-        width:50%;
-    }
 
 }</style>
 
 
-<section class="nysds-search-hero bg-primary-blue" id="nysds-search-hero">
 
-    <h1 class="nysds-search-hero-heading nysds-text-white">
-        Search All State Services
+<section class="nysds-search-hero bg-primary-gray" id="nysds-search-hero">
+    <h1 class="nysds-search-hero-heading nysds-text-black">
+        Search New York State Services
     </h1>
-
-    <p class="nysds-text-white">
+    <p class="nysds-text-black">
         Explore the services offered by the State of New York.
     </p>
-
     <div class="nysds-search-container">
         <form id="nysds-service-search-form">
             <label for="nysds-service-search-input" class="sr-only">
                 Search All Services
             </label>
-            <input 
-                id="nysds-service-search-input"
-                placeholder="Search All Services" 
-                size="8" 
-                type="search" 
-                enterkeyhint="search"
-            >
-            <button type="submit" id="nysds-service-search-submit"> Search <span class="sr-only"> all state services </span></button>
-            
+            <div class="nysds-search-box">
+                <input 
+                    id="nysds-service-search-input"
+                    placeholder="Search All Services" 
+                    size="8" 
+                    type="search" 
+                    enterkeyhint="search"
+                >
+                <button type="submit" id="nysds-service-search-submit"> 
+                   <span class="sr-only">  Search all state services </span>
+                    <span class="nygov-search__submit-icon fa-solid fa-magnifying-glass" aria-hidden="true"></span>
+                </button>  
+            </div>  
         </form>
     </div>
-
-
-
-
 </section>
+
+    
 <script> document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('nysds-service-search-input');
     const submitSearch = document.getElementById('nysds-service-search-form');

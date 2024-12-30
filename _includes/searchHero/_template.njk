@@ -1,31 +1,33 @@
+{% if params.variant == "colorHero" %}
 <section class="nysds-search-hero bg-primary-{{params.background}}" id="nysds-search-hero">
-
     <h1 class="nysds-search-hero-heading nysds-text-{{params.color}}">
         {{params.heading}}
     </h1>
-
     <p class="nysds-text-{{params.color}}">
         {{params.description}}
     </p>
-
     <div class="nysds-search-container">
         <form id="nysds-service-search-form">
             <label for="nysds-service-search-input" class="sr-only">
                 Search All Services
             </label>
-            <input 
-                id="nysds-service-search-input"
-                placeholder="Search All Services" 
-                size="8" 
-                type="search" 
-                enterkeyhint="search"
-            >
-            <button type="submit" id="nysds-service-search-submit"> Search <span class="sr-only"> all state services </span></button>
-            
+            <div class="nysds-search-box">
+                <input 
+                    id="nysds-service-search-input"
+                    placeholder="Search All Services" 
+                    size="8" 
+                    type="search" 
+                    enterkeyhint="search"
+                >
+                <button type="submit" id="nysds-service-search-submit"> 
+                   <span class="sr-only">  Search all state services </span>
+                    <span class="nygov-search__submit-icon fa-solid fa-magnifying-glass" aria-hidden="true"></span>
+                </button>  
+            </div>  
         </form>
     </div>
-
-
-
-
 </section>
+{% endif %}
+{% if params.variant == "imageHero" %}
+
+{% endif %}
