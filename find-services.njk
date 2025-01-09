@@ -11,10 +11,22 @@ title: NY.gov Services Search
         heading:"Search New York State Services",
         description:"Explore the services offered by the State of New York.",
         searchBackground:"gray",
-        background:"blue",
+        backgroundColor:"pale-blue",
         color: "black",
         variant:"imageHero",
-        image:"https://www.ny.gov/sites/default/files/2022-04/Mom-daughter-laptop_1280.jpg"
+        images:"https://www.ny.gov/sites/default/files/2022-04/Mom-daughter-laptop_1280.jpg",
+        links: [
+            {
+            text:"first button",
+            link:"https://budget.ny.gov",
+            color:"primary-blue"
+            },
+            {
+            text:"second button",
+            link:"https://budget.ny.gov",
+            color:"primary-light-blue"
+            }
+        ]
     })
 }}    
 <script> {% include './_includes/findServices/_findServices.js'  %}</script>

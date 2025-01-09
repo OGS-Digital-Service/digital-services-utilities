@@ -22,107 +22,46 @@
         <article class="p-landing-page -full-page ">
           <div class="t-section -container">
             
-<style>.nysds-search-hero-container {
-    display: flex;
-    justify-content: center;
-    margin:0.67em 0;
-    margin-top: -25px;
-    text-align: left !important;
-}
-
-.nysds-search-hero {
+<style>/* mobile */
+.nysds-find-services-highlight {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 35px;
-    width: 100%;
-    border-radius: 0;
+    padding: 30px;
 }
 
-.nysds-search-hero-heading {
-    font-size: 36px;
-    line-height: 1.15em;
-    font-family: "Proxima Nova", sans-serif;
-    font-weight: 800;
+.nysds-find-services-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+  height: 48px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  vertical-align: middle;
+  padding: 0 20px;
+  cursor: pointer;
+  border: 1px solid;
+  border-color: #fff;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 15px;
 }
 
-.nysds-search-description {
-    margin: 15px 0 !important;
-}
-
-.nysds-text-white {
-    color: #fff !important;
-}
-
-.nysds-text-black {
-    color: #000;
-}
-
-#nysds-service-search-input {
-    padding: 15px;
-    font-size: 1.1rem;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border:none;
-    width: 100%;
-    -webkit-appearance: none;
-    -webkit-border-top-right-radius: 0;
-    -webkit-border-bottom-right-radius: 0;
-}
-
-#nysds-service-search-input:focus {
-    outline: 2px #FACE00 solid;
-    box-shadow:inset 0 0 0 4px
-}
-
-#nysds-service-search-submit {
-    font-size: 1.3rem;
-    border:none;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    background: #154973;
-    color: #fff;
-    font-weight: bold;
-    padding: 2px 25px 0 25px;
-}
-
-#nysds-service-search-submit:hover {
+.nysds-find-services-button:hover {
     background-color: #000;
-    color: #fff;
 }
 
-#nysds-service-search-submit:focus {
+.nysds-find-services-button:focus {
     background-color: #000;
-    color: #fff;
-    outline: 2px #FACE00 solid;
-} 
-
-.nysds-search-container {
-    display: flex;
-    width: 100%;
-    margin-top: 10px;
 }
 
-#nysds-service-search-form {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
 
-.nysds-search-box {
-    display: flex;
-    width: 100%;
-    border: 2px solid #62666A;
-    border-radius: 5px;
-}
 
 /* tablet */
 @media (min-width: 768px) {
-    
-    .nysds-search-hero {
-        align-items: center;
-        padding: 45px;
-    }
     
   
 }
@@ -132,28 +71,33 @@
 
 /* desktop */
 @media (min-width: 1024px) {
-    .nysds-search-hero-container {
-        height: 512px;
-        justify-content: flex-start;
-    }
-    .nysds-search-hero {
-        align-items: flex-start;
-        width: 580px;
-        padding: 50px;
+    .nysds-find-services-highlight {
+        flex-direction: row;
+        margin: 60px;
         border-radius: 15px;
-        margin: 0 60px;
-        align-self: center;
-    }
-    #nysds-service-search-form {
-        justify-content: flex-start;
-    }
-    .nysds-search-hero-heading {
-        margin:0;
+        border: 2px solid #d0d0ce
     }
 }</style>
 
 
-    
+<section class="nysds-find-services-highlight bg-pale-blue">
+    <div class="">
+        <div class="">
+            <h2 class="nysds-find-services-heading">Search New York State Services</h2>
+            <p class="nysds-find-services-description">Explore the services offered by the State of New York.</p>
+        </div>
+        <div class="">
+            
+                <a href="https://budget.ny.gov" data-path="" class="nysds-find-services-button text-bold bg-primary-blue"> first button </a>
+            
+                <a href="https://budget.ny.gov" data-path="" class="nysds-find-services-button text-bold bg-primary-light-blue"> second button </a>
+            
+        </div>
+    </div>
+    <div class="">
+        <img src="" class="" alt="" />
+    </div>
+</section>    
 <script> document.addEventListener('DOMContentLoaded', function() {
     const searchHero = document.getElementById('nysds-find-services-highlight');
     const container = searchHero.closest(".o-wysiwyg");
