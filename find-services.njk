@@ -1,0 +1,20 @@
+---
+layout: nygov.njk
+title: NY.gov Services Search
+---
+{% from './_includes/_components.njk' import findServices  %}
+<style>{% include './_includes/findServices/_findServices.css'  %}</style>
+
+
+{{
+    findServices({
+        heading:"Search New York State Services",
+        description:"Explore the services offered by the State of New York.",
+        searchBackground:"gray",
+        background:"blue",
+        color: "black",
+        variant:"imageHero",
+        image:"https://www.ny.gov/sites/default/files/2022-04/Mom-daughter-laptop_1280.jpg"
+    })
+}}    
+<script> {% include './_includes/findServices/_findServices.js'  %}</script>
