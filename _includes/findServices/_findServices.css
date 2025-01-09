@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 250px;
+    width: 250px;
   height: 48px;
   color: #fff;
   text-decoration: none;
@@ -34,7 +34,16 @@
     background-color: #000;
 }
 
+.nysds-find-services-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
+.nysds-find-services-links {
+    display: flex;
+    flex-direction: column;
+}
 
 /* tablet */
 @media (min-width: 768px) {
@@ -52,5 +61,13 @@
         margin: 60px;
         border-radius: 15px;
         border: 2px solid #d0d0ce
+    }
+
+    .nysds-find-services-links {
+        flex-direction: row;
+    }
+
+    .nysds-find-services-content {
+        width: 70%;
     }
 }

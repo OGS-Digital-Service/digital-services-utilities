@@ -1,10 +1,8 @@
 <section class="nysds-find-services-highlight bg-{{params.backgroundColor}}">
-    <div class="">
-        <div class="">
-            <h2 class="nysds-find-services-heading">{{params.heading}}</h2>
-            <p class="nysds-find-services-description">{{params.description}}</p>
-        </div>
-        <div class="">
+    <div class="nysds-find-services-content">
+        <h2 class="nysds-find-services-heading">{{params.heading}}</h2>
+        <p class="nysds-find-services-description">{{params.description}}</p>
+        <div class="nysds-find-services-links">
             {% for button in params.links %}
                 <a href="{{button.link}}" data-path="{{button.dataAttribute}}" class="nysds-find-services-button text-bold bg-{{button.color}}"> {{button.text}} </a>
             {% endfor %}
