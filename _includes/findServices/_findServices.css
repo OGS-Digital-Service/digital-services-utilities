@@ -1,0 +1,125 @@
+/* mobile */
+.nysds-find-services-highlight {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.nysds-find-services-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 48px;
+    color: #fff !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    padding: 0 20px;
+    cursor: pointer;
+    border: 1px solid;
+    border-color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.nysds-find-services-button:last-of-type {
+    margin-top: 5%;
+}
+
+.nysds-find-services-button:hover {
+    background-color: #000;
+}
+
+.nysds-find-services-button:focus {
+    background-color: #000;
+}
+
+.nysds-find-services-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.nysds-find-services-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nysds-find-services-image-area {
+    display: none;
+}
+
+.nysds-find-services-heading {
+    font-size: 36px;
+    line-height: 1.15em;
+    margin: 2% 0 4% 0;
+}
+
+.nysds-find-services-description {
+    margin-top: 0;
+}
+
+/* tablet */
+@media (min-width: 768px) {
+   
+    .nysds-find-services-links {
+        flex-direction: row;
+    }
+    .nysds-find-services-button:last-of-type {
+        margin-left: 5%;
+        margin-top:0;
+    }
+  
+  
+}
+
+
+
+
+/* desktop */
+@media (min-width: 1024px) {
+    .nysds-find-services-highlight {
+        flex-direction: row;
+        border-radius: 15px;
+        border: 2px solid #d0d0ce;
+        padding:40px;
+        text-align: left;
+        margin: 60px;
+    }
+
+    .nysds-find-services-content {
+        width:55%;
+    }
+
+    .nysds-find-services-links { 
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .nysds-find-services-image-area {
+        display: flex;
+        width: 45%;
+        margin-left: 5%;
+    }
+    
+    .nysds-find-services-image {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+        max-height: 250px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .nysds-find-services-highlight {
+        margin: 0 auto;
+        max-width: 1160px;
+    }
+
+}
