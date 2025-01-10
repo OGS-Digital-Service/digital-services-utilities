@@ -11,11 +11,11 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         var searchTerm = searchInput.value; 
         if (!searchTerm) {
-           window.location.href ="https://nygovd8stg.prod.acquia-sites.com/all-services-listing"
+           window.location.href ="https://ny.gov/all-services"
         }
         else {
-            window.location.href ="https://nygovd8stg.prod.acquia-sites.com/all-services-listing?search_api_fulltext_tablet=&search_api_fulltext="+searchTerm+"&items_per_page=10#views-exposed-form-filter-frame-services"
+            window.location.href ="https://ny.gov/all-services?search_api_fulltext_tablet=&search_api_fulltext="+searchTerm+"&items_per_page=10#views-exposed-form-filter-frame-services"
         } 
     }
     submitSearch.addEventListener("submit", searchServices)
-}) // url is manually updated here
+})
