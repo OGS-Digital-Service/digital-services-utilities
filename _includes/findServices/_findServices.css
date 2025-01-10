@@ -2,7 +2,8 @@
 .nysds-find-services-highlight {
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 50px 20px;
+    text-align: center;
 }
 
 .nysds-find-services-button {
@@ -27,7 +28,7 @@
 }
 
 .nysds-find-services-button:last-of-type {
-    margin-top: 5%;
+    margin-top: 30px;
 }
 
 .nysds-find-services-button:hover {
@@ -50,6 +51,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 15px;
 }
 
 .nysds-find-services-image-area {
@@ -57,18 +59,20 @@
 }
 
 .nysds-find-services-heading {
-    font-size: 36px;
-    line-height: 1.15em;
-    margin: 2% 0 4% 0;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 
 .nysds-find-services-description {
     margin-top: 0;
+    margin-bottom: 10px !important;
 }
 
 /* tablet */
 @media (min-width: 768px) {
-   
+    .nysds-find-services-highlight {
+        padding: 50px 35px;
+    }
     .nysds-find-services-links {
         flex-direction: row;
     }
