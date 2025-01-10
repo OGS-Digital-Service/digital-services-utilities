@@ -3,16 +3,17 @@
     justify-content: center;
     margin:0.67em 0;
     margin-top: -25px;
-    text-align: left !important;
 }
 
 .nysds-search-hero {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 35px;
+    align-items: center;
+    padding: 50px 20px;
     width: 100%;
     border-radius: 0;
+    background-color: #d0d0ce;
+    text-align: center;
 }
 
 .nysds-search-hero-heading {
@@ -20,6 +21,7 @@
     line-height: 1.15em;
     font-family: "Proxima Nova", sans-serif;
     font-weight: 800;
+    margin: 0;
 }
 
 .nysds-search-description {
@@ -76,7 +78,7 @@
 .nysds-search-container {
     display: flex;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 #nysds-service-search-form {
@@ -94,16 +96,10 @@
 
 /* tablet */
 @media (min-width: 768px) {
-    
     .nysds-search-hero {
-        align-items: center;
-        padding: 45px;
+        padding: 60px 35px;
     }
-    
-  
 }
-
-
 
 
 /* desktop */
@@ -119,11 +115,10 @@
         border-radius: 15px;
         margin: 0 60px;
         align-self: center;
+        background: #fff;
+        text-align: left !important;
     }
     #nysds-service-search-form {
         justify-content: flex-start;
-    }
-    .nysds-search-hero-heading {
-        margin:0;
     }
 }
