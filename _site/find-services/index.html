@@ -1,27 +1,5 @@
-<!doctype html>
-<html lang="en">
-  <!-- If you're reading this: help us obi-wan can-coder, you're our only hope. Apply today: ogs.ny.gov/employment -->
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NY.gov Services Search">
-    <meta name="generator" content="11ty/eleventy">    
-   <link rel="stylesheet" media="all" href="https://www.ny.gov/sites/default/files/css/css_RyBbcD_aYxQO4-iBggim80KgfWl4EEFElDc-Y_ijJaw.css?delta=0&amp;language=en&amp;theme=nygov_theme&amp;include=eJxVy0EOgzAMRNELBXKkypCRG8mOq0wApadHoqtuvt7mc3LA8yZE2k3I-WcHKQqmPTpyi-5i9YvUpsb5Gm84slpsYgvHtNo0nRUX89PVoxyG31z68RFbSxULvQHb_y5J" />
-<link rel="stylesheet" media="all" href="https://www.ny.gov/sites/default/files/css/css_RunoynkdsjnbAEMjeT35DP_kVc0cAPZUhnqV2XrKZkc.css?delta=1&amp;language=en&amp;theme=nygov_theme&amp;include=eJxVy0EOgzAMRNELBXKkypCRG8mOq0wApadHoqtuvt7mc3LA8yZE2k3I-WcHKQqmPTpyi-5i9YvUpsb5Gm84slpsYgvHtNo0nRUX89PVoxyG31z68RFbSxULvQHb_y5J" />
-<link rel="stylesheet" media="all" href="https://www.ny.gov/profiles/contrib/nygov/themes/custom/nygov-theme/nygov_theme/../storybook/dist/styles.css?sp3q0g" />
-<link rel="stylesheet" media="all" href="https://www.ny.gov/sites/default/files/css/css_lf5s1G73sstlPH3RfPhxQ3rL4J9Qz8hf7dwsMBC1vx4.css?delta=3&amp;language=en&amp;theme=nygov_theme&amp;include=eJxVy0EOgzAMRNELBXKkypCRG8mOq0wApadHoqtuvt7mc3LA8yZE2k3I-WcHKQqmPTpyi-5i9YvUpsb5Gm84slpsYgvHtNo0nRUX89PVoxyG31z68RFbSxULvQHb_y5J" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  
-    <link href="/css/fonts.css" rel="stylesheet">
-    <title>NY.gov Services Search</title>
-  </head>
-  <body class="path-frontpage page-node-type-landing-page">
-    <main class="" id="main-site-content-for-skiplink">
-      <article class="node node--type-landing-page node--promoted node--view-mode-full">
-        <article class="p-landing-page -full-page ">
-          <div class="t-section -container">
-            
+
 <style>/* mobile */
 .nysds-find-services-highlight {
     display: flex;
@@ -30,24 +8,28 @@
 }
 
 .nysds-find-services-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 250px;
-  height: 48px;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  vertical-align: middle;
-  padding: 0 20px;
-  cursor: pointer;
-  border: 1px solid;
-  border-color: #fff;
-  border-radius: 15px;
-  text-align: center;
-  font-size: 13px;
-  line-height: 15px;
+    height: 48px;
+    color: #fff !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    padding: 0 20px;
+    cursor: pointer;
+    border: 1px solid;
+    border-color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.nysds-find-services-button:last-of-type {
+    margin-top: 5%;
 }
 
 .nysds-find-services-button:hover {
@@ -61,17 +43,42 @@
 .nysds-find-services-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
 }
 
 .nysds-find-services-links {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nysds-find-services-image-area {
+    display: none;
+}
+
+.nysds-find-services-heading {
+    font-size: 36px;
+    line-height: 1.15em;
+    margin: 2% 0 4% 0;
+}
+
+.nysds-find-services-description {
+    margin-top: 0;
 }
 
 /* tablet */
 @media (min-width: 768px) {
-    
+   
+    .nysds-find-services-links {
+        flex-direction: row;
+    }
+    .nysds-find-services-button:last-of-type {
+        margin-left: 5%;
+        margin-top:0;
+    }
+  
   
 }
 
@@ -82,49 +89,65 @@
 @media (min-width: 1024px) {
     .nysds-find-services-highlight {
         flex-direction: row;
-        margin: 60px;
         border-radius: 15px;
-        border: 2px solid #d0d0ce
-    }
-
-    .nysds-find-services-links {
-        flex-direction: row;
+        border: 2px solid #d0d0ce;
+        padding:40px;
+        text-align: left;
+        margin: 60px;
     }
 
     .nysds-find-services-content {
-        width: 70%;
+        width:55%;
     }
+
+    .nysds-find-services-links { 
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .nysds-find-services-image-area {
+        display: flex;
+        width: 45%;
+        margin-left: 5%;
+    }
+    
+    .nysds-find-services-image {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+        max-height: 250px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .nysds-find-services-highlight {
+        margin: 0 auto;
+        max-width: 1160px;
+    }
+
 }</style>
 
 
-<section class="nysds-find-services-highlight bg-pale-blue">
+<section class="nysds-find-services-highlight bg-pale-blue" id="nysds-find-services-highlight-id">
     <div class="nysds-find-services-content">
-        <h2 class="nysds-find-services-heading">Service Finder Tool</h2>
+        <h2 class="nysds-find-services-heading text-primary-blue">Service Finder Tool</h2>
         <p class="nysds-find-services-description">New York State has resources for New Yorkers in need. Answer a few questions and we&#39;ll show you services that may make a difference.</p>
         <div class="nysds-find-services-links">
             
-                <a href="https://budget.ny.gov" data-path="" class="nysds-find-services-button text-bold bg-primary-blue"> first button </a>
+                <a href="https://forms.ny.gov/s3/Your-Services" data-path="find-services-application" class="nysds-find-services-button text-bold bg-primary-blue"> Find a Service </a>
             
-                <a href="https://budget.ny.gov" data-path="" class="nysds-find-services-button text-bold bg-primary-light-blue"> second button </a>
+                <a href="/all-services-listing" data-path="view-all-services-filter" class="nysds-find-services-button text-bold bg-primary-light-blue"> View All Services </a>
             
         </div>
     </div>
-    <div class="">
-        <img src="" class="" alt="" />
+    <div class="nysds-find-services-image-area">
+        <img src="https://www.ny.gov/sites/default/files/2022-04/Mom-daughter-laptop_1280.jpg" class="nysds-find-services-image" alt="woman sitting at a laptop computer with her daughter" />
     </div>
 </section>    
 <script> document.addEventListener('DOMContentLoaded', function() {
-    const searchHero = document.getElementById('nysds-find-services-highlight');
-    const container = searchHero.closest(".o-wysiwyg");
+    const findServices = document.getElementById('nysds-find-services-highlight-id');
+    const container = findServices.closest(".o-wysiwyg");
     if (container) {
         container.style.maxWidth = '100%';
         container.style.padding = "0px";
     }
-})</script>
-          </div>
-        </article>
-      </article>
-    </main>
-
-  </body>
-</html>
+})</script> 

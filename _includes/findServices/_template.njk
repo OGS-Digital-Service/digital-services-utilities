@@ -1,6 +1,6 @@
-<section class="nysds-find-services-highlight bg-{{params.backgroundColor}}">
+<section class="nysds-find-services-highlight bg-{{params.backgroundColor}}" id="nysds-find-services-highlight-id">
     <div class="nysds-find-services-content">
-        <h2 class="nysds-find-services-heading">{{params.heading}}</h2>
+        <h2 class="nysds-find-services-heading text-primary-blue">{{params.heading}}</h2>
         <p class="nysds-find-services-description">{{params.description}}</p>
         <div class="nysds-find-services-links">
             {% for button in params.links %}
@@ -8,7 +8,7 @@
             {% endfor %}
         </div>
     </div>
-    <div class="">
-        <img src="{{params.image}}" class="" alt="{{params.imageAlt}}" />
+    <div class="nysds-find-services-image-area">
+        <img src="{{params.image}}" class="nysds-find-services-image" alt="{{params.imageAlt}}" />
     </div>
 </section>

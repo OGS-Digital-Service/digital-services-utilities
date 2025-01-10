@@ -1,5 +1,5 @@
 ---
-layout: nygov.njk
+layout: render.njk
 title: NY.gov Services Search
 ---
 {% from './_includes/_components.njk' import findServices  %}
@@ -11,19 +11,22 @@ title: NY.gov Services Search
         heading:"Service Finder Tool",
         description:"New York State has resources for New Yorkers in need. Answer a few questions and we'll show you services that may make a difference.",
         backgroundColor:"pale-blue",
-        images:"https://www.ny.gov/sites/default/files/2022-04/Mom-daughter-laptop_1280.jpg",
+        image:"https://www.ny.gov/sites/default/files/2022-04/Mom-daughter-laptop_1280.jpg",
+        imageAlt:"woman sitting at a laptop computer with her daughter",
         links: [
             {
-            text:"first button",
-            link:"https://budget.ny.gov",
-            color:"primary-blue"
+            text:"Find a Service",
+            link:"https://forms.ny.gov/s3/Your-Services",
+            color:"primary-blue",
+            dataAttribute:"find-services-application"
             },
             {
-            text:"second button",
-            link:"https://budget.ny.gov",
-            color:"primary-light-blue"
+            text:"View All Services",
+            link:"/all-services-listing",
+            color:"primary-light-blue",
+            dataAttribute:"view-all-services-filter"
             }
         ]
     })
 }}    
-<script> {% include './_includes/findServices/_findServices.js'  %}</script>
+<script> {% include './_includes/findServices/_findServices.js'  %}</script> 
