@@ -1,12 +1,14 @@
 {% if params.variant == "colorHero" %}
-<section class="nysds-search-hero-container bg-primary-{{params.background}}" id="nysds-search-hero">
-    <div class="nysds-search-hero bg-primary-{{params.searchBackground}}">
+<section class="nysds-search-hero-container-color" id="nysds-search-hero">
+    <div class="nysds-search-hero-color">
         <h1 class="nysds-search-hero-heading nysds-text-{{params.color}}">
             {{params.heading}}
         </h1>
+        {% if params.description %}
         <p class="nysds-search-description nysds-text-{{params.color}}">
             {{params.description}}
         </p>
+        {%endif%}
         <div class="nysds-search-container">
             <form id="nysds-service-search-form">
                 <label for="nysds-service-search-input" class="sr-only">
