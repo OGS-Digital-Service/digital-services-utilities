@@ -27,7 +27,57 @@
     line-height: 15px;
 }
 
-.nysds-find-services-button:last-of-type {
+.nysds-find-services-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid #004DD1;
+    letter-spacing: 1px;
+    color: #004DD1;
+    cursor: pointer;
+    white-space: nowrap;
+    margin-right: 5px;
+}
+
+.nysds-arrow-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 250px;
+    height: 48px;
+    margin-top: 20px;
+    color: #004DD1;
+}
+
+.nysds-find-services-arrow:hover {
+    border-bottom: 3px solid #004DD1;
+    margin-bottom:-2px;
+}
+
+.nysds-find-services-arrow:focus {
+    border-bottom: 3px solid #004DD1;
+    margin-bottom:-2px;
+}
+
+.nysds-find-services-arrow-icon {
+    border-bottom: none;
+}
+.nysds-find-services-arrow-icon::after {
+    content: "\F30B" !important;
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+    border-bottom: none;
+    color: #004DD1;
+}
+
+.nysds-find-services-button:nth-last-of-type(even)  {
     margin-top: 30px;
 }
 
@@ -76,9 +126,12 @@
     .nysds-find-services-links {
         flex-direction: row;
     }
-    .nysds-find-services-button:last-of-type {
+    .nysds-find-services-button:nth-last-of-type(even)  {
         margin-left: 5%;
         margin-top:0;
+    }
+    .nysds-arrow-link {
+        margin-top: 0;
     }
   
   

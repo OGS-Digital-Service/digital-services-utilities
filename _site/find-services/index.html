@@ -1,5 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <!-- If you're reading this: help us obi-wan can-coder, you're our only hope. Apply today: ogs.ny.gov/employment -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NY.gov Services Search">
+    <meta name="generator" content="11ty/eleventy">    
+   <link rel="stylesheet" media="all" href="https://www.ny.gov/sites/default/files/css/css_RyBbcD_aYxQO4-iBggim80KgfWl4EEFElDc-Y_ijJaw.css?delta=0&amp;language=en&amp;theme=nygov_theme&amp;include=eJxVy0EOgzAMRNELBXKkypCRG8mOq0wApadHoqtuvt7mc3LA8yZE2k3I-WcHKQqmPTpyi-5i9YvUpsb5Gm84slpsYgvHtNo0nRUX89PVoxyG31z68RFbSxULvQHb_y5J" />
+<link rel="stylesheet" media="all" href="https://www.ny.gov/sites/default/files/css/css_RunoynkdsjnbAEMjeT35DP_kVc0cAPZUhnqV2XrKZkc.css?delta=1&amp;language=en&amp;theme=nygov_theme&amp;include=eJxVy0EOgzAMRNELBXKkypCRG8mOq0wApadHoqtuvt7mc3LA8yZE2k3I-WcHKQqmPTpyi-5i9YvUpsb5Gm84slpsYgvHtNo0nRUX89PVoxyG31z68RFbSxULvQHb_y5J" />
+<link rel="stylesheet" media="all" href="https://www.ny.gov/profiles/contrib/nygov/themes/custom/nygov-theme/nygov_theme/../storybook/dist/styles.css?sp3q0g" />
+<link rel="stylesheet" media="all" href="https://www.ny.gov/sites/default/files/css/css_lf5s1G73sstlPH3RfPhxQ3rL4J9Qz8hf7dwsMBC1vx4.css?delta=3&amp;language=en&amp;theme=nygov_theme&amp;include=eJxVy0EOgzAMRNELBXKkypCRG8mOq0wApadHoqtuvt7mc3LA8yZE2k3I-WcHKQqmPTpyi-5i9YvUpsb5Gm84slpsYgvHtNo0nRUX89PVoxyG31z68RFbSxULvQHb_y5J" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
+  
+    <link href="/css/fonts.css" rel="stylesheet">
+    <title>NY.gov Services Search</title>
+  </head>
+  <body class="path-frontpage page-node-type-landing-page">
+    <main class="" id="main-site-content-for-skiplink">
+      <article class="node node--type-landing-page node--promoted node--view-mode-full">
+        <article class="p-landing-page -full-page ">
+          <div class="t-section -container">
+            
 <style>/* mobile */
 .nysds-find-services-highlight {
     display: flex;
@@ -29,7 +51,57 @@
     line-height: 15px;
 }
 
-.nysds-find-services-button:last-of-type {
+.nysds-find-services-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid #004DD1;
+    letter-spacing: 1px;
+    color: #004DD1;
+    cursor: pointer;
+    white-space: nowrap;
+    margin-right: 5px;
+}
+
+.nysds-arrow-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 250px;
+    height: 48px;
+    margin-top: 20px;
+    color: #004DD1;
+}
+
+.nysds-find-services-arrow:hover {
+    border-bottom: 3px solid #004DD1;
+    margin-bottom:-2px;
+}
+
+.nysds-find-services-arrow:focus {
+    border-bottom: 3px solid #004DD1;
+    margin-bottom:-2px;
+}
+
+.nysds-find-services-arrow-icon {
+    border-bottom: none;
+}
+.nysds-find-services-arrow-icon::after {
+    content: "\F30B" !important;
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+    border-bottom: none;
+    color: #004DD1;
+}
+
+.nysds-find-services-button:nth-last-of-type(even)  {
     margin-top: 30px;
 }
 
@@ -78,9 +150,12 @@
     .nysds-find-services-links {
         flex-direction: row;
     }
-    .nysds-find-services-button:last-of-type {
+    .nysds-find-services-button:nth-last-of-type(even)  {
         margin-left: 5%;
         margin-top:0;
+    }
+    .nysds-arrow-link {
+        margin-top: 0;
     }
   
   
@@ -134,17 +209,39 @@
 <section class="nysds-find-services-highlight bg-pale-blue" id="nysds-find-services-highlight-id">
     <div class="nysds-find-services-content">
         <h2 class="nysds-find-services-heading text-primary-blue">Service Finder Tool</h2>
-        <p class="nysds-find-services-description">New York State has resources for New Yorkers in need. Answer a few questions and we&#39;ll show you services that may make a difference.</p>
+        <p class="nysds-find-services-description">Use the services finder tool to answer a few questions and get a customized list of potential services that you may be eligible for.</p>
         <div class="nysds-find-services-links">
             
-                <a href="https://forms.ny.gov/s3/Your-Services" data-path="find-services-application" class="nysds-find-services-button text-bold bg-primary-blue"> Find a Service </a>
+                
+
+                
+                <a href="https://forms.ny.gov/s3/Your-Services" data-path="find-services-application" class="nysds-find-services-button text-bold bg-primary-blue">  Use the Service <br> Finder Tool </a>
+                
+
+                
+                
+                
             
-                <a href="/all-services" data-path="view-all-services-filter" class="nysds-find-services-button text-bold bg-primary-light-blue"> View All Services </a>
+                
+
+                
+
+                
+                <div class="nysds-arrow-link">
+                    <a href="/all-services" data-path="view-all-services-filter" class="nysds-find-services-arrow"> 
+                        View All Services 
+                    </a>
+                    <span class="nysds-find-services-arrow-icon" aria-hidden="true"></span>
+                </div>
+                
+                
+                
+                
             
         </div>
     </div>
     <div class="nysds-find-services-image-area">
-        <img src="https://www.ny.gov/sites/default/files/2025-01/ServiceFinderTool_Image_02.jpg" class="nysds-find-services-image" alt="woman sitting at a laptop computer with her daughter" />
+        <img src="https://www.ny.gov/sites/default/files/2025-01/ServiceFinderTool_Image_02.jpg" class="nysds-find-services-image" alt="pregnant woman standing looking at a laptop computer" />
     </div>
 </section>    
 <script> document.addEventListener('DOMContentLoaded', function() {
@@ -155,3 +252,10 @@
         container.style.padding = "0px";
     }
 })</script> 
+          </div>
+        </article>
+      </article>
+    </main>
+
+  </body>
+</html>

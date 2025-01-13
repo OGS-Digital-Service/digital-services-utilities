@@ -4,7 +4,23 @@
         <p class="nysds-find-services-description">{{params.description}}</p>
         <div class="nysds-find-services-links">
             {% for button in params.links %}
-                <a href="{{button.link}}" data-path="{{button.dataAttribute}}" class="nysds-find-services-button text-bold bg-{{button.color}}"> {{button.text}} </a>
+                
+
+                {% if button.linkStyle == "button"%}
+                <a href="{{button.link}}" data-path="{{button.dataAttribute}}" class="nysds-find-services-button text-bold bg-{{button.color}}">  {{button.text | safe}} </a>
+                {% endif %}
+
+                {% if button.linkStyle =="arrow" %}
+                <div class="nysds-arrow-link">
+                    <a href="{{button.link}}" data-path="{{button.dataAttribute}}" class="nysds-find-services-arrow"> 
+                        {{button.text | safe}} 
+                    </a>
+                    <span class="nysds-find-services-arrow-icon" aria-hidden="true"></span>
+                </div>
+                
+                {% endif %}
+                
+                
             {% endfor %}
         </div>
     </div>
