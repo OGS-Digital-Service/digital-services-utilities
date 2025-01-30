@@ -1,8 +1,6 @@
 .nysds-search-hero-container {
     display: flex;
     justify-content: center;
-    margin:0.67em 0;
-    margin-top: -25px;
 }
 
 .nysds-search-hero-container-color {
@@ -44,6 +42,7 @@
 
 .nysds-search-description {
     margin: 15px 0 !important;
+    font-size: 18px;
 }
 
 .nysds-text-white {

@@ -1,32 +1,8 @@
-<!doctype html>
-<html lang="en">
-  <!-- If you're reading this: help us obi-wan can-coder, you're our only hope. Apply today: ogs.ny.gov/employment -->
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NY.gov Services Search">
-    <meta name="generator" content="11ty/eleventy">    
-   <link rel="stylesheet" media="all" href="https://www.ny.gov/sites/default/files/css/css_RyBbcD_aYxQO4-iBggim80KgfWl4EEFElDc-Y_ijJaw.css?delta=0&amp;language=en&amp;theme=nygov_theme&amp;include=eJxVy0EOgzAMRNELBXKkypCRG8mOq0wApadHoqtuvt7mc3LA8yZE2k3I-WcHKQqmPTpyi-5i9YvUpsb5Gm84slpsYgvHtNo0nRUX89PVoxyG31z68RFbSxULvQHb_y5J" />
-<link rel="stylesheet" media="all" href="https://www.ny.gov/sites/default/files/css/css_RunoynkdsjnbAEMjeT35DP_kVc0cAPZUhnqV2XrKZkc.css?delta=1&amp;language=en&amp;theme=nygov_theme&amp;include=eJxVy0EOgzAMRNELBXKkypCRG8mOq0wApadHoqtuvt7mc3LA8yZE2k3I-WcHKQqmPTpyi-5i9YvUpsb5Gm84slpsYgvHtNo0nRUX89PVoxyG31z68RFbSxULvQHb_y5J" />
-<link rel="stylesheet" media="all" href="https://www.ny.gov/profiles/contrib/nygov/themes/custom/nygov-theme/nygov_theme/../storybook/dist/styles.css?sp3q0g" />
-<link rel="stylesheet" media="all" href="https://www.ny.gov/sites/default/files/css/css_lf5s1G73sstlPH3RfPhxQ3rL4J9Qz8hf7dwsMBC1vx4.css?delta=3&amp;language=en&amp;theme=nygov_theme&amp;include=eJxVy0EOgzAMRNELBXKkypCRG8mOq0wApadHoqtuvt7mc3LA8yZE2k3I-WcHKQqmPTpyi-5i9YvUpsb5Gm84slpsYgvHtNo0nRUX89PVoxyG31z68RFbSxULvQHb_y5J" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  
-    <link href="/css/fonts.css" rel="stylesheet">
-    <title>NY.gov Services Search</title>
-  </head>
-  <body class="path-frontpage page-node-type-landing-page">
-    <main class="" id="main-site-content-for-skiplink">
-      <article class="node node--type-landing-page node--promoted node--view-mode-full">
-        <article class="p-landing-page -full-page ">
-          <div class="t-section -container">
-            
+
 <style>.nysds-search-hero-container {
     display: flex;
     justify-content: center;
-    margin:0.67em 0;
-    margin-top: -25px;
 }
 
 .nysds-search-hero-container-color {
@@ -68,6 +44,7 @@
 
 .nysds-search-description {
     margin: 15px 0 !important;
+    font-size: 18px;
 }
 
 .nysds-text-white {
@@ -166,16 +143,25 @@
 }</style>
 
 
-<section class="nysds-search-hero-container-color" id="nysds-search-hero">
-    <div class="nysds-search-hero-color">
+
+
+
+<style>
+.nysds-search-background-image {
+    background-image: url('https://www.ny.gov/sites/default/files/2025-01/ServiceSearch_Hero_01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+</style>
+<section class="nysds-search-hero-container nysds-search-background-image" id="nysds-search-hero">
+    <div class="nysds-search-hero">
         <h1 class="nysds-search-hero-heading nysds-text-black">
-            Search All New York State Services
+            Search New York State Services
         </h1>
-        
         <p class="nysds-search-description nysds-text-black">
             Explore the services available in New York State.
         </p>
-        
         <div class="nysds-search-container">
             <form id="nysds-service-search-form">
                 <label for="nysds-service-search-input" class="sr-only">
@@ -198,19 +184,11 @@
         </div>
     </div>
 </section>
-
-    
-
-
+     
 <script> document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('nysds-service-search-input');
     const submitSearch = document.getElementById('nysds-service-search-form');
     const searchHero = document.getElementById('nysds-search-hero');
-    const container = searchHero.closest(".o-wysiwyg");
-    if (container) {
-        container.style.maxWidth = '100%';
-        container.style.padding = "0px";
-    }
     function searchServices (e) {
         e.preventDefault();
         var searchTerm = searchInput.value; 
@@ -223,10 +201,3 @@
     }
     submitSearch.addEventListener("submit", searchServices)
 })</script>
-          </div>
-        </article>
-      </article>
-    </main>
-
-  </body>
-</html>
