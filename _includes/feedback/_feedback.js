@@ -17,21 +17,10 @@ for (let i = 0; i < linkArr.length; i++) {
             feedbackArea.setAttribute("style", "display:none;");
             feedbackText.innerText = "Thank you for your feedback!"
         }
-}
-
-function fullPage () {
-    var feedbackId = document.getElementById('nysds-feedback-id');
-    if (feedbackId) {
-        const container = feedbackId.closest(".o-wysiwyg");
-        container.style.maxWidth = '100%';
-        container.style.padding = "0px";
-    }
-}    
+}  
 
 function replaceUrl () {
     thumbsUp.href = urlUp;
     thumbsDown.href = urlDown;
 }
-
-document.addEventListener('DOMContentLoaded', fullPage)
 document.addEventListener('DOMContentLoaded', replaceUrl)

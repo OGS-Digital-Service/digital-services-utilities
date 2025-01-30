@@ -27,7 +27,7 @@
     flex-direction: column;
     background-color:#EFF6FB;
     padding: 15px;
-    margin: 30px 0;
+    margin: 30px auto;
     align-items: center;
 }
 
@@ -40,7 +40,9 @@
 
 .nysds-feedback-landing {
     justify-content: center;
-    background-color: #fff !important;
+    background-color: #EFF6FB;
+    max-width: 1160px;
+    border-radius: 15px;
 }
 
 .nysds-feedback-options {
@@ -102,7 +104,7 @@
     }
    
 }</style>
-<section class="nysds-feedback " >
+<section class="nysds-feedback ">
     <h3 class="nysds-feedback-heading" id="nysds-feedback-helpful">Did you find this page helpful?</h3>
     <div class="nysds-feedback-options" id="nysds-feedback-options-area">
         <a  href="https://forms.ny.gov/s3/Thank-you-for-your-Feedback?thumbs=Up" 
@@ -147,23 +149,12 @@ for (let i = 0; i < linkArr.length; i++) {
             feedbackArea.setAttribute("style", "display:none;");
             feedbackText.innerText = "Thank you for your feedback!"
         }
-}
-
-function fullPage () {
-    var feedbackId = document.getElementById('nysds-feedback-id');
-    if (feedbackId) {
-        const container = feedbackId.closest(".o-wysiwyg");
-        container.style.maxWidth = '100%';
-        container.style.padding = "0px";
-    }
-}    
+}  
 
 function replaceUrl () {
     thumbsUp.href = urlUp;
     thumbsDown.href = urlDown;
 }
-
-document.addEventListener('DOMContentLoaded', fullPage)
 document.addEventListener('DOMContentLoaded', replaceUrl)
 </script>
           </div>
