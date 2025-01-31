@@ -8,7 +8,6 @@
 .nysds-search-hero-container-color {
     display: flex;
     justify-content: center;
-    margin-top: -25px;
     background-color: #d0d0ce;
 }
 
@@ -143,25 +142,16 @@
 }</style>
 
 
-
-
-
-<style>
-.nysds-search-background-image {
-    background-image: url('https://www.ny.gov/sites/default/files/2025-01/ServiceSearch_Hero_01.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-}
-</style>
-<section class="nysds-search-hero-container nysds-search-background-image" id="nysds-search-hero">
-    <div class="nysds-search-hero">
+<section class="nysds-search-hero-container-color" id="nysds-search-hero">
+    <div class="nysds-search-hero-color">
         <h1 class="nysds-search-hero-heading nysds-text-black">
-            Search New York State Services
+            Search All New York State Services
         </h1>
+        
         <p class="nysds-search-description nysds-text-black">
             Explore the services available in New York State.
         </p>
+        
         <div class="nysds-search-container">
             <form id="nysds-service-search-form">
                 <label for="nysds-service-search-input" class="sr-only">
@@ -184,7 +174,10 @@
         </div>
     </div>
 </section>
-     
+
+  
+
+
 <script> document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('nysds-service-search-input');
     const submitSearch = document.getElementById('nysds-service-search-form');
