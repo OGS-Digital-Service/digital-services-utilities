@@ -35,19 +35,14 @@
                     </ul>
                 </div>
 
-                {% if card.cta === 'text'%}
-
-                    <a class="nysds-pillar-link" href="{{card.link}}" aria-label="{{card.ariaLabel}}">
-                        {{card.linkText}} 
-                        <span class="nysds-pillars-arrow" aria-hidden="true"><span>
-                    </a>
-
-                {% else %}
+                {%if card.titleType === 'link' %}
 
                     <a class="nysds-pillar-link" href="{{card.link}}" aria-hidden="true" tabindex="-1">
                         <span class="nysds-pillars-large-arrow" aria-hidden="true"></span>
                         <span class="sr-only">{{card.title}}</span>
                     </a>
+
+                {% else %}  
                     
                 {% endif %}
             </div>
