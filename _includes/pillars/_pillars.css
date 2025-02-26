@@ -171,7 +171,7 @@
     .nysds-pillars-container {
         flex-direction: row;
         padding: 50px 0;
-        align-items: normal;
+        align-items: center;
     }
 
     .nysds-pillars-headline {
@@ -245,5 +245,10 @@
     .nysds-pillars-card-title-link h3 {
         font-size: 28px !important;
        
+    }
+
+    .nysds-pillars-title {
+        font-size: 28px !important;
+        min-height: 65px;
     }
 }
