@@ -25,14 +25,62 @@
 <style>.nysds-avatar {
     display: flex;
     flex-direction: column;
+    padding: 4% 5%;
+    align-items: center;
 }
 
+.nysds-avatar-blue {
+    background-color: #154973;
+    color: #fff;
+}
 
+.nysds-avatar-img-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 3%;
+}
 
+.nysds-avatar-img {
+    object-fit: cover;
+    object-position: top center;
+    border-radius:50%;
+    width: 250px;
+    height: 250px;
+}
+
+.nysds-avatar-bio {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nysds-avatar-name {
+    font-size: 2rem;
+    margin:0.5em auto;
+}
+
+.nysds-avatar-title {
+    font-size: 1rem;
+    margin:0.1em auto;
+    font-style: italic;
+}
+
+.nysds-avatar-description {
+    line-height: 1.5em;
+}
 
 
 /* desktop */
 @media (min-width: 1024px) {
+    .nysds-avatar-name {
+        margin:0.5em 0;
+    }
+    
+    .nysds-avatar-title {
+        margin:0.1em 0;
+    }
+
+
     .nysds-avatar {
         flex-direction: row;
     }
@@ -44,14 +92,37 @@
     <div class="o-embedded-code">
         <div class="o-embedded-code__content-wrapper">
             <div class="o-embedded-code__content">
-                <section class="nysds-avatar">
+                <section class="nysds-avatar ">
 
     <div class="nysds-avatar-img-container">
-        <img class="nysds-avatar-img" alt="" src="" />
+        <img class="nysds-avatar-img" alt="image of jeff knaack wearing a hat that says a11y " src="/img/knaack.jpg" />
     </div>
 
     <div class="nysds-avatar-bio">
         <h2 class="nysds-avatar-name">Jeffrey H.S. Knaack</h2>
+        <h3 class="nysds-avatar-title">Director of Digital Solutions</h3>
+        <p class="nysds-avatar-description">I enjoy taking apart tech problems and reassembling the parts into functional stuff that real humans can use. I&#39;m a strong advocate of usable and accessible design first and fancy complex frameworks last. I believe that the web should be open and inclusive and promote the free and fair sharing of information. </p>
+    </div>
+
+</section>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="t-section__content">
+    <div class="o-embedded-code">
+        <div class="o-embedded-code__content-wrapper">
+            <div class="o-embedded-code__content">
+                <section class="nysds-avatar  nysds-avatar-blue ">
+
+    <div class="nysds-avatar-img-container">
+        <img class="nysds-avatar-img" alt="image of jeff knaack wearing a hat that says a11y " src="/img/knaack.jpg" />
+    </div>
+
+    <div class="nysds-avatar-bio">
+        <h2 class="nysds-avatar-name">Jeffrey H.S. Knaack</h2>
+        <h3 class="nysds-avatar-title">Director of Digital Solutions</h3>
         <p class="nysds-avatar-description">I enjoy taking apart tech problems and reassembling the parts into functional stuff that real humans can use. I&#39;m a strong advocate of usable and accessible design first and fancy complex frameworks last. I believe that the web should be open and inclusive and promote the free and fair sharing of information. </p>
     </div>
 
