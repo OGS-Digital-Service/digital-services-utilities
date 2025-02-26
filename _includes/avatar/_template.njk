@@ -7,7 +7,7 @@
     <div class="nysds-avatar-bio">
         <h2 class="nysds-avatar-name">{{params.name}}</h2>
         <h3 class="nysds-avatar-title">{{params.title}}</h3>
-        <p class="nysds-avatar-description">{{params.bio}}</p>
+        <p class="nysds-avatar-description">{{params.bio | safe }}</p>
     </div>
 
 </section>
