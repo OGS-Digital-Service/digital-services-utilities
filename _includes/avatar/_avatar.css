@@ -1,0 +1,15 @@
+.nysds-avatar {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+/* desktop */
+@media (min-width: 1024px) {
+    .nysds-avatar {
+        flex-direction: row;
+    }
+}

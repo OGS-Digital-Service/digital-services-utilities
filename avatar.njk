@@ -1,0 +1,28 @@
+---
+layout: nygov.njk
+title: NYS Digital Service Avatar Bio
+url: nysds.dev/table-checklist
+domain: nysds.dev
+
+---
+{% from './_includes/_components.njk' import avatar %}
+<style>{% include './_includes/avatar/_avatar.css'  %}</style>
+
+
+
+<div class="t-section__content">
+    <div class="o-embedded-code">
+        <div class="o-embedded-code__content-wrapper">
+            <div class="o-embedded-code__content">
+                {{
+                    avatar({
+                        name:"Jeffrey H.S. Knaack",
+                        img:"",
+                        alt:"",
+                        bio:"I enjoy taking apart tech problems and reassembling the parts into functional stuff that real humans can use. I'm a strong advocate of usable and accessible design first and fancy complex frameworks last. I believe that the web should be open and inclusive and promote the free and fair sharing of information. "
+                    })
+                }}
+            </div>
+        </div>
+    </div>
+</div>
