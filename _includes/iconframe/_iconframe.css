@@ -1,0 +1,79 @@
+.nysds-iconframe {
+    display: flex;
+    flex-direction: column;
+}
+
+.nysds-iconframe-heading {
+    font-size: 36px;
+    line-height: 1.15em;
+    margin-bottom: 0.25em;
+    padding: 0;
+    text-align: center;
+}
+
+.nysds-iconframe-description {
+    text-align: center;
+}
+
+.nysds-iconframe-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.25em 0; 
+}
+
+.nysds-iconframe-iconcard {
+    width: 50%;
+    margin: 1.25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nysds-iconframe-icon {
+    width: 100px;
+    height: 100px;
+    filter: invert(17%) sepia(31%) saturate(3897%) hue-rotate(188deg) brightness(96%) contrast(84%);
+}
+
+.nysds-iconframe-card-heading {
+    font-size: 28px !important;
+    color: #154973;
+    margin-bottom: 0.25em;
+}
+
+.nysds-iconframe-card-link {
+    color: #154973;
+    text-decoration: none;
+}
+
+.nysds-iconframe-card-link:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+.nysds-iconframe-card-link:focus {
+    text-decoration: underline;
+    color: #000;
+    outline: 2px solid #FACE00
+}
+
+.nysds-iconframe-content {
+    line-height: 1.3em;
+    text-align: center;
+}
+
+
+/* desktop */
+@media (min-width: 1024px) {
+    .nysds-iconframe-cards {
+        flex-direction: row;
+        align-items: initial;
+        margin: 2.5em 0;
+    }
+    .nysds-iconframe-iconcard {
+        width: 20%;
+        margin: 0 2em;
+    }
+}

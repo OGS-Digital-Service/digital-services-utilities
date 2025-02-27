@@ -351,6 +351,85 @@
         flex-direction: row;
     }
 }
+      .nysds-iconframe {
+    display: flex;
+    flex-direction: column;
+}
+
+.nysds-iconframe-heading {
+    font-size: 36px;
+    line-height: 1.15em;
+    margin-bottom: 0.25em;
+    padding: 0;
+    text-align: center;
+}
+
+.nysds-iconframe-description {
+    text-align: center;
+}
+
+.nysds-iconframe-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.25em 0; 
+}
+
+.nysds-iconframe-iconcard {
+    width: 50%;
+    margin: 1.25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nysds-iconframe-icon {
+    width: 100px;
+    height: 100px;
+    filter: invert(17%) sepia(31%) saturate(3897%) hue-rotate(188deg) brightness(96%) contrast(84%);
+}
+
+.nysds-iconframe-card-heading {
+    font-size: 28px !important;
+    color: #154973;
+    margin-bottom: 0.25em;
+}
+
+.nysds-iconframe-card-link {
+    color: #154973;
+    text-decoration: none;
+}
+
+.nysds-iconframe-card-link:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+.nysds-iconframe-card-link:focus {
+    text-decoration: underline;
+    color: #000;
+    outline: 2px solid #FACE00
+}
+
+.nysds-iconframe-content {
+    line-height: 1.3em;
+    text-align: center;
+}
+
+
+/* desktop */
+@media (min-width: 1024px) {
+    .nysds-iconframe-cards {
+        flex-direction: row;
+        align-items: initial;
+        margin: 2.5em 0;
+    }
+    .nysds-iconframe-iconcard {
+        width: 20%;
+        margin: 0 2em;
+    }
+}
 
 </style>
 
@@ -558,80 +637,69 @@
 
 
 
-<section class="flex flex-col -mx-8 md:-mx-20  my-14 py-8">
-<h2 class="nysds-text-36 font-extrabold text-black text-center mb-4 w-full">An Icon Frame</h2>
-<p class="text-black mx-8 md:mx-20 justify-center self-center mb-4 max-w-2xl text-center">This is an area for a description of a few sentences. Something that serves to compliment and introduce the series of icons used here.</p>
-<div class="flex flex-col lg:flex-row flex-wrap lg:flex-nowrap items-center lg:justify-center ">
-
-<div class="my-4 mx-8 flex flex-col p-2 w-2/3 md:w-64 ">
-<div class="mb-8 text-center">
-<img class="m-auto object-scale-down max-h-36" src="https://www.ny.gov/sites/default/files/2025-02/Website.svg" alt="an outline of the state of new york" />
-</div>
- 
-<h3 class="font-bold text-xl text-center mb-2">
-    <a href="google.com" class="text-ny-links no-underline hover:underline">Websites</a>
-</h3>
-
-</h3>
-<p class="text-black text-center">One really good descriptive sentence that shouldn&#39;t be terribly long. </p>
-</div>
-
-<div class="nysds-arrow-right "><span class="sr-only"> An arrow pointing to the right indicating the next step in this process </span></div>
-
-
-<div class="my-4 mx-8 flex flex-col p-2 w-2/3 md:w-64 ">
-<div class="mb-8 text-center">
-<img class="m-auto object-scale-down max-h-36" src="https://www.ny.gov/sites/default/files/2025-02/ContentStrategy.svg" alt="an outline of the state of new york" />
-</div>
-
-<h3 class="font-bold text-xl text-center text-black mb-2">
-Content Strategy
-</h3>
-
-</h3>
-<p class="text-black text-center">One really good descriptive sentence that shouldn&#39;t be terribly long. </p>
-</div>
-
-<div class="nysds-arrow-right "><span class="sr-only"> An arrow pointing to the right indicating the next step in this process </span></div>
-
-
-<div class="my-4 mx-8 flex flex-col p-2 w-2/3 md:w-64 ">
-<div class="mb-8 text-center">
-<img class="m-auto object-scale-down max-h-36" src="https://www.ny.gov/sites/default/files/2025-02/FeedbackThumbsUpThumbsDown.svg" alt="an outline of the state of new york" />
-</div>
-
-<h3 class="font-bold text-xl text-center text-black mb-2">
-Feedback
-</h3>
-
-</h3>
-<p class="text-black text-center">One really good descriptive sentence that shouldn&#39;t be terribly long. </p>
-</div>
-
-<div class="nysds-arrow-right "><span class="sr-only"> An arrow pointing to the right indicating the next step in this process </span></div>
-
-
-<div class="my-4 mx-8 flex flex-col p-2 w-2/3 md:w-64 ">
-<div class="mb-8 text-center">
-<img class="m-auto object-scale-down max-h-36" src="https://www.ny.gov/sites/default/files/2025-02/HTML.svg" alt="an outline of the state of new york" />
-</div>
-
-<h3 class="font-bold text-xl text-center text-black mb-2">
-Accessibility
-</h3>
-
-</h3>
-<p class="text-black text-center">One really good descriptive sentence that shouldn&#39;t be terribly long. </p>
-</div>
-
-<div class="nysds-arrow-right "><span class="sr-only"> An arrow pointing to the right indicating the next step in this process </span></div>
-
-
-</div>
-<div class="flex justify-center mt-8">
-
-<a class="bg-admin-first text-white visited:text-white uppercase no-underline hover:bg-black hover:underline focus:bg-black focus:underline mb-8 p-4 rounded-xl  font-bold text-center m-auto lg:m-0 w-1/2 md:w-1/3 lg:w-1/4" href="google.com" >A CTA Link</a>
-</div>
+<section class="nysds-iconframe">
+    <h2 class="nysds-iconframe-heading">How We Work</h2>
+    
+    <div class="nysds-iconframe-cards">
+        
+            <div class="nysds-iconframe-iconcard">
+                <div class="nysds-iconframe-icon">
+                    <img class="nysds-iconframe-icon-img" src="https://www.ny.gov/sites/default/files/2025-02/Website.svg" alt="a mock layout of a website in a web browser" />
+                </div>
+                    
+                    <h3 class="nysds-iconframe-card-heading">
+                        Websites
+                    </h3>
+                    
+            
+                <p class="nysds-iconframe-content">Provide vision and support for our state website ny.gov and Governor Hochul’s website </p>
+            </div>
+            
+        
+            <div class="nysds-iconframe-iconcard">
+                <div class="nysds-iconframe-icon">
+                    <img class="nysds-iconframe-icon-img" src="https://www.ny.gov/sites/default/files/2025-02/ContentStrategy.svg" alt="a diagram showing connection of media and text to form content strategies" />
+                </div>
+                    
+                    <h3 class="nysds-iconframe-card-heading">
+                        Content Strategy
+                    </h3>
+                    
+            
+                <p class="nysds-iconframe-content">To ensure an improved customer experience, the team work closely with the agency to implement plain language wherever possible and optimize the journey</p>
+            </div>
+            
+        
+            <div class="nysds-iconframe-iconcard">
+                <div class="nysds-iconframe-icon">
+                    <img class="nysds-iconframe-icon-img" src="https://www.ny.gov/sites/default/files/2025-02/FeedbackThumbsUpThumbsDown.svg" alt="thumbs up and thumbs down indicating the options for feedback typically presented on a website" />
+                </div>
+                    
+                    <h3 class="nysds-iconframe-card-heading">
+                        Feedback
+                    </h3>
+                    
+            
+                <p class="nysds-iconframe-content">Use surveys and analytics to understand our customers needs and improve our digital footprint</p>
+            </div>
+            
+        
+            <div class="nysds-iconframe-iconcard">
+                <div class="nysds-iconframe-icon">
+                    <img class="nysds-iconframe-icon-img" src="https://www.ny.gov/sites/default/files/2025-02/HTML.svg" alt="open and close tags indicating code, likely html" />
+                </div>
+                    
+                    <h3 class="nysds-iconframe-card-heading">
+                        Accessibility
+                    </h3>
+                    
+            
+                <p class="nysds-iconframe-content">Create easily viewed and read simple html webpages for large PDFs and reports to make information accessible to all </p>
+            </div>
+            
+        
+    </div>
+    
 </section>
           </div>
         </article>
