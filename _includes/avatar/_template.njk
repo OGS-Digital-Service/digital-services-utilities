@@ -1,13 +1,14 @@
 <section class="nysds-avatar {% if params.color === "blue" %} nysds-avatar-blue {%endif%}">
+    <div class="nysds-avatar-inner">
+        <div class="nysds-avatar-img-container">
+            <img class="nysds-avatar-img" alt="{{params.alt}}" src="{{params.img}}" />
+        </div>
 
-    <div class="nysds-avatar-img-container">
-        <img class="nysds-avatar-img" alt="{{params.alt}}" src="{{params.img}}" />
-    </div>
-
-    <div class="nysds-avatar-bio">
-        <h2 class="nysds-avatar-name">{{params.name}}</h2>
-        <h3 class="nysds-avatar-title">{{params.title}}</h3>
-        <p class="nysds-avatar-description">{{params.bio | safe }}</p>
+        <div class="nysds-avatar-bio">
+            <h2 class="nysds-avatar-name">{{params.name}}</h2>
+            <h3 class="nysds-avatar-title">{{params.title}}</h3>
+            <p class="nysds-avatar-description">{{params.bio | safe }}</p>
+        </div>
     </div>
 
 </section>
