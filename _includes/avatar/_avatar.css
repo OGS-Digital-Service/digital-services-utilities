@@ -1,7 +1,8 @@
 .nysds-avatar {
     display: flex;
     flex-direction: column;
-    padding: 4% 5%;
+    margin: 5% 0;
+    padding: 5%;
     align-items: center;
 }
 
@@ -59,5 +60,6 @@
 
     .nysds-avatar {
         flex-direction: row;
+        padding: 5% 10%;
     }
 }
