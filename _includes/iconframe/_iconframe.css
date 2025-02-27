@@ -46,15 +46,18 @@
 .nysds-iconframe-card-link {
     color: #154973;
     text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid #154973;
+    line-height: 1.05em;
 }
 
 .nysds-iconframe-card-link:hover {
-    text-decoration: underline;
+    border-bottom: 3px solid #154973;
     color: #000;
 }
 
 .nysds-iconframe-card-link:focus {
-    text-decoration: underline;
+    border-bottom: 3px solid #154973;
     color: #000;
     outline: 2px solid #FACE00
 }
