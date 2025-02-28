@@ -17,6 +17,7 @@
     border-bottom: 12px solid #457AA5;
     height: 175px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding:20px;  
@@ -27,6 +28,7 @@
     font-size: 28px;
     line-height: 1.15em;
     font-weight: 800;
+    margin-bottom: 0.5em;
 }
 
 .nysds-pillars-card {
@@ -162,7 +164,33 @@
     display: flex;
 }
 
+.nysds-pillars-cta {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FACE00;
+    border-bottom: 2px solid #FACE00;
+    text-decoration: none;
 
+}
+
+.nysds-pillars-cta:hover {
+    border-bottom: 3px solid #FACE00;
+    margin-bottom: -1px;
+}
+
+.nysds-pillars-cta:focus {
+    border-bottom: 3px solid #FACE00;
+    margin-bottom: -1px;
+}
+
+.nysds-pillars-cta::after {
+    content: '\f30B';
+    font-family: 'Font Awesome 6 Free';
+    color: #FACE00;
+    font-weight: bold;
+    padding-left: 5px;
+    display: inline-block;
+  }
 
 
 
@@ -235,8 +263,8 @@
         border-right: 12px solid #457AA5;
         border-bottom: none;
         padding:0 60px;
-        justify-content: flex-start;
         text-align: left;
+        align-items: flex-start;
     }
     .nysds-pillars-headline h2 { 
         font-size: 36px;
@@ -260,7 +288,13 @@
 
 
 
-    <div class="nysds-pillars-headline"> <h2>The New York Experience Playbook </h2></div>
+    <div class="nysds-pillars-headline"> 
+        <h2>The New York Experience Playbook </h2>
+        
+            <a href="https://experience.ny.gov" class="nysds-pillars-cta">Read the CX Strategy</a>
+        
+        
+    </div>
 
     <div class="nysds-pillars-container">
         

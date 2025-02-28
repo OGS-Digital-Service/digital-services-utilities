@@ -40,6 +40,7 @@
     border-bottom: 12px solid #457AA5;
     height: 175px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding:20px;  
@@ -50,6 +51,7 @@
     font-size: 28px;
     line-height: 1.15em;
     font-weight: 800;
+    margin-bottom: 0.5em;
 }
 
 .nysds-pillars-card {
@@ -185,7 +187,33 @@
     display: flex;
 }
 
+.nysds-pillars-cta {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FACE00;
+    border-bottom: 2px solid #FACE00;
+    text-decoration: none;
 
+}
+
+.nysds-pillars-cta:hover {
+    border-bottom: 3px solid #FACE00;
+    margin-bottom: -1px;
+}
+
+.nysds-pillars-cta:focus {
+    border-bottom: 3px solid #FACE00;
+    margin-bottom: -1px;
+}
+
+.nysds-pillars-cta::after {
+    content: '\f30B';
+    font-family: 'Font Awesome 6 Free';
+    color: #FACE00;
+    font-weight: bold;
+    padding-left: 5px;
+    display: inline-block;
+  }
 
 
 
@@ -258,8 +286,8 @@
         border-right: 12px solid #457AA5;
         border-bottom: none;
         padding:0 60px;
-        justify-content: flex-start;
         text-align: left;
+        align-items: flex-start;
     }
     .nysds-pillars-headline h2 { 
         font-size: 36px;
@@ -394,6 +422,7 @@
     font-size: 28px !important;
     color: #154973;
     margin-bottom: 0.25em;
+    text-align: center;
 }
 
 .nysds-iconframe-card-link {
@@ -534,7 +563,13 @@
 
 
 
-    <div class="nysds-pillars-headline"> <h2>The New York Experience Playbook </h2></div>
+    <div class="nysds-pillars-headline"> 
+        <h2>The New York Experience Playbook </h2>
+        
+            <a href="https://experience.ny.gov" class="nysds-pillars-cta">Read the CX Strategy</a>
+        
+        
+    </div>
 
     <div class="nysds-pillars-container">
         
@@ -669,7 +704,7 @@
                     </h3>
                     
             
-                <p class="nysds-iconframe-content">To ensure an improved customer experience, the team work closely with the agency to implement plain language wherever possible and optimize the journey</p>
+                <p class="nysds-iconframe-content">To improve user experience, the team works with agencies to implement plain language wherever possible and optimize the customer journey</p>
             </div>
             
         
@@ -697,7 +732,7 @@
                     </h3>
                     
             
-                <p class="nysds-iconframe-content">Create easily viewed and read simple html webpages for large PDFs and reports to make information accessible to all as well as provide technical solutions </p>
+                <p class="nysds-iconframe-content">Evaluate digital tools for conformance to WCAG and Section 508 standards and provide real, actionable feedback and code-level remediations to improve access for all </p>
             </div>
             
         

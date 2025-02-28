@@ -2,7 +2,13 @@
 
 {% if params.type === 'hollow'%}
 
-    <div class="nysds-pillars-headline"> <h2>{{params.headline}} </h2></div>
+    <div class="nysds-pillars-headline"> 
+        <h2>{{params.headline}} </h2>
+        {% if params.cta %}
+            <a href="{{params.ctaLink}}" class="nysds-pillars-cta">{{params.cta}}</a>
+        {% endif %}
+        
+    </div>
 
     <div class="nysds-pillars-container">
         {% for card in params.pillarCards %}
